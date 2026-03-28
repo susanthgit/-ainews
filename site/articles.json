@@ -7,7 +7,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812991+00:00",
+    "published": "2026-03-28T22:00:06.146297+00:00",
     "snippet": "Google is launching the Developer Knowledge API and MCP Server in public preview. This new toolset provides a canonical, machine-readable way for AI assistants and agentic platforms to search and retrieve up-to-date documentation across Firebase, Google Cloud, Android, and more. By using the official MCP server, developers can connect tools directly to Google’s documentation corpus, ensuring that AI-generated code and guidance are based on authoritative, real-time context.",
     "ai_summary": ""
   },
@@ -19,7 +19,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812982+00:00",
+    "published": "2026-03-28T22:00:06.146288+00:00",
     "snippet": "Data Commons has launched a free, hosted Model Context Protocol (MCP) service on Google Cloud Platform, eliminating the need for users to manage complex local server installations. This update simplifies connecting AI agents and the Gemini CLI to Data Commons, allowing Google to handle security, updates, and resource management while users query data natively.",
     "ai_summary": ""
   },
@@ -31,7 +31,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812972+00:00",
+    "published": "2026-03-28T22:00:06.146278+00:00",
     "snippet": "To simplify the user experience and prevent startup failures, the Gemini CLI has introduced structured extension settings that eliminate the need for manual environment variable configuration. This update enables extensions to automatically prompt users for required details during installation and securely stores sensitive information, such as API keys, directly in the system keychain. Users can now easily manage and override these configurations globally or per project using the new Gemini exte",
     "ai_summary": ""
   },
@@ -43,7 +43,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812963+00:00",
+    "published": "2026-03-28T22:00:06.146268+00:00",
     "snippet": "Conductor for the Gemini CLI has introduced a new Automated Review feature designed to verify the quality and accuracy of AI-generated code. This update addresses the challenge of validating agentic development by automatically checking implementations against original plans, enforcing style guides, and identifying security risks or bugs. by incorporating test-suite validation and providing actionable reports, Conductor helps developers ensure that their AI agents deliver safe, predictable, and ",
     "ai_summary": ""
   },
@@ -55,7 +55,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812953+00:00",
+    "published": "2026-03-28T22:00:06.146259+00:00",
     "snippet": "Google I/O returns May 19-20. Watch the livestreams for updates on Android, AI, Chrome, and Cloud. Registration is open on the Google I/O website.",
     "ai_summary": ""
   },
@@ -67,7 +67,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812944+00:00",
+    "published": "2026-03-28T22:00:06.146250+00:00",
     "snippet": "The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.",
     "ai_summary": ""
   },
@@ -79,7 +79,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812935+00:00",
+    "published": "2026-03-28T22:00:06.146241+00:00",
     "snippet": "Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the \"Tiny Garden\" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gal",
     "ai_summary": ""
   },
@@ -91,7 +91,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812925+00:00",
+    "published": "2026-03-28T22:00:06.146231+00:00",
     "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
     "ai_summary": ""
   },
@@ -103,7 +103,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812916+00:00",
+    "published": "2026-03-28T22:00:06.146222+00:00",
     "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
     "ai_summary": ""
   },
@@ -115,7 +115,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812907+00:00",
+    "published": "2026-03-28T22:00:06.146212+00:00",
     "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
     "ai_summary": ""
   },
@@ -127,7 +127,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812897+00:00",
+    "published": "2026-03-28T22:00:06.146202+00:00",
     "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
     "ai_summary": ""
   },
@@ -139,7 +139,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812887+00:00",
+    "published": "2026-03-28T22:00:06.146193+00:00",
     "snippet": "Wednesday Build Hour is a weekly, interactive \"technical gym session\" led by Google Cloud experts to help developers and architects sharpen their cloud skills. Moving beyond passive slide decks, the program focuses on hands-on building, covering advanced topics like AI agents, Vertex AI, and developer productivity tools. Each hour-long session is designed to provide tangible results that participants can immediately deploy into their own workflows. It serves as a consistent, dedicated space for ",
     "ai_summary": ""
   },
@@ -151,7 +151,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812877+00:00",
+    "published": "2026-03-28T22:00:06.146182+00:00",
     "snippet": "Google has introduced Finish Changes and Outlines for Gemini Code Assist in IntelliJ and VS Code to reduce developer friction and eliminate the need for long, manual prompting. Finish Changes acts as an AI pair programmer that completes code, implements pseudocode, and applies refactoring patterns by observing your current edits and context. Meanwhile, Outlines improves code comprehension by generating interactive, high-level English summaries interleaved directly within the source code to help ",
     "ai_summary": ""
   },
@@ -163,7 +163,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812866+00:00",
+    "published": "2026-03-28T22:00:06.146172+00:00",
     "snippet": "The Gemini Code Assist team has introduced a suite of updates focused on streamlining the core coding workflow through high-velocity tools like Agent Mode with Auto Approve and Inline Diff Views. These enhancements, along with new features for precise context management and custom commands, aim to transform the AI from a general assistant into a highly tailored, seamless collaborator that adapts to your specific development style.",
     "ai_summary": ""
   },
@@ -175,7 +175,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812857+00:00",
+    "published": "2026-03-28T22:00:06.146162+00:00",
     "snippet": "Gemini CLI now features Plan Mode, a read-only environment that allows the AI to analyze complex codebases and map out architectural changes without the risk of accidental execution. By leveraging the new ask_user tool and expanded Model Context Protocol (MCP) support, developers can collaboratively refine strategies and pull in external data before committing to implementation.",
     "ai_summary": ""
   },
@@ -187,7 +187,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812846+00:00",
+    "published": "2026-03-28T22:00:06.146152+00:00",
     "snippet": "When you’re prototyping locally with AI agents like Gemini CLI, Claude Code, or your own agent, thei...",
     "ai_summary": ""
   },
@@ -199,7 +199,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812835+00:00",
+    "published": "2026-03-28T22:00:06.146141+00:00",
     "snippet": "This blog post introduces a suite of six protocols, such as MCP and A2A, designed to eliminate custom integration code by standardizing how AI agents access data and communicate. Using a \"kitchen manager\" agent as a practical example, it demonstrates how these tools handle complex tasks like real-time inventory checks, wholesale commerce via UCP, and secure payment authorization through AP2. By leveraging the Agent Development Kit (ADK), developers can also implement A2UI and AG-UI to deliver in",
     "ai_summary": ""
   },
@@ -211,7 +211,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812823+00:00",
+    "published": "2026-03-28T22:00:06.146129+00:00",
     "snippet": "This blog post introduces a workflow for extracting high-quality data from complex, unstructured documents by combining LlamaParse with Gemini 3.1 models. It demonstrates an event-driven architecture that uses Gemini 3.1 Pro for agentic parsing of dense financial tables and Gemini 3.1 Flash for cost-effective summarization. By following the provided tutorial, developers can build a personal finance assistant capable of transforming messy brokerage statements into structured, human-readable insig",
     "ai_summary": ""
   },
@@ -223,7 +223,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812810+00:00",
+    "published": "2026-03-28T22:00:06.146117+00:00",
     "snippet": "The provided workflow streamlines motion-controlled game development by using Gemini Canvas to rapidly prototype mechanics like the MediaPipe Pose Landmarker through high-level prompting. Developers can refine these prototypes in Google AI Studio by optimizing for low-latency \"lite\" models and stable tracking points, such as shoulder landmarks, to ensure responsive gameplay. The process concludes by using Gemini Code Assist to refactor experimental code into a modular, production-ready applicati",
     "ai_summary": ""
   },
@@ -235,7 +235,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T21:54:08.812786+00:00",
+    "published": "2026-03-28T22:00:06.146091+00:00",
     "snippet": "To bridge the gap between static model knowledge and rapidly evolving software practices, Google DeepMind developed a \"Gemini API developer skill\" that provides agents with live documentation and SDK guidance. Evaluation results show a massive performance boost, with the gemini-3.1-pro-preview model jumping from a 28.2% to a 96.6% success rate when equipped with the skill. This lightweight approach demonstrates how giving models strong reasoning capabilities and access to a \"source of truth\" can",
     "ai_summary": ""
   },
@@ -309,6 +309,78 @@
     "category_emoji": "🔥",
     "published": "2026-03-28T08:00:00-04:00",
     "snippet": "On Tuesday morning, everything was business as usual at OpenAI. By the end of the day, the company had announced that it would scrap its video-generation app, Sora, and reverse plans for video generation inside ChatGPT; it would wind down a $1 billion Disney deal; it would shuffle the role of a high-level executive; and [&#8230;]",
+    "ai_summary": ""
+  },
+  {
+    "id": "cff40313c240061db8bafc3045bebedc",
+    "title": "3 Reasons Why Sony Has Increased PS5 Prices by 30% Since Last Year",
+    "url": "http://comicbook.com/gaming/feature/3-reasons-why-sony-has-increased-ps5-prices-by-30-since-last-year/",
+    "source": "ComicBook.com",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-03-27T22:00:00+00:00",
+    "snippet": "If you’ve felt a sharp sting at the checkout recently, you’re not imagining it. The PlayStation 5 has jumped in price by roughly 30% over the past year, and understanding why is like peeling back the layers of a very tangled global onion. These hikes aren’t t…",
+    "ai_summary": ""
+  },
+  {
+    "id": "8e75c035ab8ac76639b66bccaaa3b568",
+    "title": "Your April Horoscope by Zodiac Sign Is Here",
+    "url": "https://www.cosmopolitan.com/lifestyle/a70703681/april-monthly-horoscope-2026/",
+    "source": "Cosmopolitan.com",
+    "category_id": "google",
+    "category_name": "Google",
+    "category_emoji": "🟥",
+    "published": "2026-03-27T22:00:00+00:00",
+    "snippet": "Read your monthly horoscope for April 2026, according to your zodiac sign.",
+    "ai_summary": ""
+  },
+  {
+    "id": "f32fb5822481daeba5093de3573f2df1",
+    "title": "cognitive-memory-model added to PyPI",
+    "url": "https://pypi.org/project/cognitive-memory-model/",
+    "source": "Pypi.org",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-03-27T21:58:22+00:00",
+    "snippet": "Autoassociative cognitive memory for LLMs and agents — automatic recall with spreading activation, decay, priming, and metamemory",
+    "ai_summary": ""
+  },
+  {
+    "id": "f5a98f883ff7adf8c3f1ac296673727b",
+    "title": "Concerns About AI Model Capabilities Drive Down Cybersecurity Stocks",
+    "url": "https://www.pymnts.com/artificial-intelligence-2/2026/concerns-about-ai-model-capabilities-drive-down-cybersecurity-stocks/",
+    "source": "pymnts.com",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-03-27T21:58:00+00:00",
+    "snippet": "Concerns about the capabilities of an artificial intelligence (AI) model being tested by Anthropic drove down cybersecurity stocks on Friday (March 27), Bloomberg reported. The report attributed the drop to a Fortune report that said a draft blog post that An…",
+    "ai_summary": ""
+  },
+  {
+    "id": "676ad71a0d2d70e11b489d9f4b5363fd",
+    "title": "agentweld 0.2.0",
+    "url": "https://pypi.org/project/agentweld/",
+    "source": "Pypi.org",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-03-27T21:56:20+00:00",
+    "snippet": "Turn any MCP server into a curated, composable, A2A-ready agent.",
+    "ai_summary": ""
+  },
+  {
+    "id": "53537ae21d7b3e14064fcde811f152da",
+    "title": "Your Pisces Monthly Horoscope for April 2026",
+    "url": "https://www.cosmopolitan.com/lifestyle/a70703792/pisces-monthly-horoscope-april-2026/",
+    "source": "Cosmopolitan.com",
+    "category_id": "google",
+    "category_name": "Google",
+    "category_emoji": "🟥",
+    "published": "2026-03-27T21:55:00+00:00",
+    "snippet": "It’s all about budgets and bank accounts this month, Pisces.",
     "ai_summary": ""
   },
   {
@@ -492,18 +564,6 @@
     "ai_summary": ""
   },
   {
-    "id": "ca24e30b7ac3750f7fa54d7ec80f6c43",
-    "title": "An XRP Key Indicator Just Flipped Bullish — and Most Traders Are Not Watching It",
-    "url": "http://www.newsbtc.com/xrp-news/an-xrp-key-indicator-just-flipped-bullish-and-most-traders-are-not-watching-it/",
-    "source": "newsBTC",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-03-27T21:30:53+00:00",
-    "snippet": "XRP is under selling pressure. Weeks of consolidation below $1.50 have given way to a test of critical support. And quietly, an indicator that most traders are not watching has just flipped in a direction they should care about. Related Reading: Unknown Walle…",
-    "ai_summary": ""
-  },
-  {
     "id": "9b53805a9906ca35ce4c74a3d58dde3a",
     "title": "Real Madrid star ‘has already decided’ to leave this summer",
     "url": "https://getfootballnewsspain.com/real-madrid-star-has-already-decided-to-leave-this-summer/",
@@ -532,9 +592,9 @@
     "title": "cupel 0.1.42",
     "url": "https://pypi.org/project/cupel/0.1.42/",
     "source": "Pypi.org",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
     "published": "2026-03-27T21:28:14+00:00",
     "snippet": "separates precious LLMs from base LLMs. works with any OpenAI/Anthropic compatible API",
     "ai_summary": ""
@@ -549,30 +609,6 @@
     "category_emoji": "🟥",
     "published": "2026-03-27T21:25:00+00:00",
     "snippet": "Warning: this month is about bringing everything up to the surface, Virgo.",
-    "ai_summary": ""
-  },
-  {
-    "id": "a8c3b67cb200cd7e91127205dcd9fa84",
-    "title": "mng-claude 0.1.1",
-    "url": "https://pypi.org/project/mng-claude/0.1.1/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-03-27T21:22:32+00:00",
-    "snippet": "Renamed to imbue-mngr-claude. Install imbue-mngr-claude instead.",
-    "ai_summary": ""
-  },
-  {
-    "id": "d52bf2c96a4297c91bf2aa974fd2335e",
-    "title": "pcp-check added to PyPI",
-    "url": "https://pypi.org/project/pcp-check/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-03-27T21:21:51+00:00",
-    "snippet": "Real-time CLI to detect TeamPCP and other active supply chain attacks in your Python dependencies",
     "ai_summary": ""
   },
   {
@@ -609,30 +645,6 @@
     "category_emoji": "🟥",
     "published": "2026-03-27T21:15:00+00:00",
     "snippet": "Change is coming this month, Cancer.",
-    "ai_summary": ""
-  },
-  {
-    "id": "87a129ceda3df7c8772f2de336fdad24",
-    "title": "Oppo made the best foldable phone, again",
-    "url": "https://www.theverge.com/tech/901846/oppo-find-n6-review-crease-screen-specs-price",
-    "source": "The Verge",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T21:12:16+00:00",
-    "snippet": "There are always a few reasons people give for not buying a foldable phone. Some - price, battery life, camera quality - are mostly a matter of manufacturers balancing spec sheets to offset the added cost of the folding hardware. Others - durability, size - w…",
-    "ai_summary": ""
-  },
-  {
-    "id": "811caec59025d2593902c8f6408dfdeb",
-    "title": "Your Gemini Monthly Horoscope for April 2026",
-    "url": "https://www.cosmopolitan.com/lifestyle/a70703717/gemini-monthly-horoscope-april-2026/",
-    "source": "Cosmopolitan.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T21:10:00+00:00",
-    "snippet": "Read your free Gemini horoscope for April here.",
     "ai_summary": ""
   },
   {
@@ -945,18 +957,6 @@
     "category_emoji": "⬛",
     "published": "2026-03-27T17:23:11+00:00",
     "snippet": "If you do not govern agent actions your safety boundary is at risk. Prompt injection, tool misuse, and over-broad credentials turn into real side effects fast. Nomos applies zero-trust controls at the moment an agent tries to do something real. It does not re…",
-    "ai_summary": ""
-  },
-  {
-    "id": "537af83be8eaecaa838d8852780c1899",
-    "title": "context-clutch added to PyPI",
-    "url": "https://pypi.org/project/context-clutch/",
-    "source": "Pypi.org",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-03-27T17:17:48+00:00",
-    "snippet": "Enterprise API Gateway & Sandbox Proxy to protect LLM context windows. Drop-in LangChain tool included.",
     "ai_summary": ""
   },
   {
