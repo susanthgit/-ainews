@@ -7,7 +7,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789233+00:00",
+    "published": "2026-03-28T22:52:59.470509+00:00",
     "snippet": "Google is launching the Developer Knowledge API and MCP Server in public preview. This new toolset provides a canonical, machine-readable way for AI assistants and agentic platforms to search and retrieve up-to-date documentation across Firebase, Google Cloud, Android, and more. By using the official MCP server, developers can connect tools directly to Google’s documentation corpus, ensuring that AI-generated code and guidance are based on authoritative, real-time context.",
     "ai_summary": ""
   },
@@ -19,7 +19,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789223+00:00",
+    "published": "2026-03-28T22:52:59.470499+00:00",
     "snippet": "Data Commons has launched a free, hosted Model Context Protocol (MCP) service on Google Cloud Platform, eliminating the need for users to manage complex local server installations. This update simplifies connecting AI agents and the Gemini CLI to Data Commons, allowing Google to handle security, updates, and resource management while users query data natively.",
     "ai_summary": ""
   },
@@ -31,7 +31,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789213+00:00",
+    "published": "2026-03-28T22:52:59.470489+00:00",
     "snippet": "To simplify the user experience and prevent startup failures, the Gemini CLI has introduced structured extension settings that eliminate the need for manual environment variable configuration. This update enables extensions to automatically prompt users for required details during installation and securely stores sensitive information, such as API keys, directly in the system keychain. Users can now easily manage and override these configurations globally or per project using the new Gemini exte",
     "ai_summary": ""
   },
@@ -43,7 +43,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789204+00:00",
+    "published": "2026-03-28T22:52:59.470480+00:00",
     "snippet": "Conductor for the Gemini CLI has introduced a new Automated Review feature designed to verify the quality and accuracy of AI-generated code. This update addresses the challenge of validating agentic development by automatically checking implementations against original plans, enforcing style guides, and identifying security risks or bugs. by incorporating test-suite validation and providing actionable reports, Conductor helps developers ensure that their AI agents deliver safe, predictable, and ",
     "ai_summary": ""
   },
@@ -55,7 +55,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789194+00:00",
+    "published": "2026-03-28T22:52:59.470470+00:00",
     "snippet": "Google I/O returns May 19-20. Watch the livestreams for updates on Android, AI, Chrome, and Cloud. Registration is open on the Google I/O website.",
     "ai_summary": ""
   },
@@ -67,7 +67,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789185+00:00",
+    "published": "2026-03-28T22:52:59.470461+00:00",
     "snippet": "The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.",
     "ai_summary": ""
   },
@@ -79,164 +79,8 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789175+00:00",
+    "published": "2026-03-28T22:52:59.470451+00:00",
     "snippet": "Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the \"Tiny Garden\" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gal",
-    "ai_summary": ""
-  },
-  {
-    "id": "54c90e8ef76c47afadf3e8a446958348",
-    "title": "Supercharge your AI agents: The New ADK Integrations Ecosystem",
-    "url": "https://developers.googleblog.com/supercharge-your-ai-agents-adk-integrations-ecosystem/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789165+00:00",
-    "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
-    "ai_summary": ""
-  },
-  {
-    "id": "10ba4b135c730e5ab5b39d10bd2c1346",
-    "title": "How we built the Google I/O 2026 Save the Date experience",
-    "url": "https://developers.googleblog.com/how-we-built-the-google-io-2026-save-the-date-experience/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789156+00:00",
-    "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
-    "ai_summary": ""
-  },
-  {
-    "id": "9f1ceb3204f8dd27d3344ef2ecd5b96a",
-    "title": "You can't stream the energy: A developer's guide to Google Cloud Next '26 in Vegas",
-    "url": "https://developers.googleblog.com/you-cant-stream-the-energy-a-developers-guide-to-google-cloud-next-26-in-vegas/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789147+00:00",
-    "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
-    "ai_summary": ""
-  },
-  {
-    "id": "82445eab3aeb8e9842d6278e9eb96a5d",
-    "title": "What's new in TensorFlow 2.21",
-    "url": "https://developers.googleblog.com/whats-new-in-tensorflow-221/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789137+00:00",
-    "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
-    "ai_summary": ""
-  },
-  {
-    "id": "bbe6affd2683fa31b5fcfa541b91409d",
-    "title": "Introducing Wednesday Build Hour",
-    "url": "https://developers.googleblog.com/introducing-wednesday-build-hour/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789127+00:00",
-    "snippet": "Wednesday Build Hour is a weekly, interactive \"technical gym session\" led by Google Cloud experts to help developers and architects sharpen their cloud skills. Moving beyond passive slide decks, the program focuses on hands-on building, covering advanced topics like AI agents, Vertex AI, and developer productivity tools. Each hour-long session is designed to provide tangible results that participants can immediately deploy into their own workflows. It serves as a consistent, dedicated space for ",
-    "ai_summary": ""
-  },
-  {
-    "id": "00fcfffa2bcb8d3c9fd9f3187832d447",
-    "title": "Introducing Finish Changes and Outlines, now available in Gemini Code Assist extensions on IntelliJ and VS Code",
-    "url": "https://developers.googleblog.com/introducing-finish-changes-and-outlines-now-available-in-gemini-code-assist-extensions-on-intellij-and-vs-code/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789117+00:00",
-    "snippet": "Google has introduced Finish Changes and Outlines for Gemini Code Assist in IntelliJ and VS Code to reduce developer friction and eliminate the need for long, manual prompting. Finish Changes acts as an AI pair programmer that completes code, implements pseudocode, and applies refactoring patterns by observing your current edits and context. Meanwhile, Outlines improves code comprehension by generating interactive, high-level English summaries interleaved directly within the source code to help ",
-    "ai_summary": ""
-  },
-  {
-    "id": "ee2db09f5690140fe3bdf723e9f614ae",
-    "title": "Unleash Your Development Superpowers: Refining the Core Coding Experience",
-    "url": "https://developers.googleblog.com/unleash-your-development-superpowers-refining-the-core-coding-experience/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789107+00:00",
-    "snippet": "The Gemini Code Assist team has introduced a suite of updates focused on streamlining the core coding workflow through high-velocity tools like Agent Mode with Auto Approve and Inline Diff Views. These enhancements, along with new features for precise context management and custom commands, aim to transform the AI from a general assistant into a highly tailored, seamless collaborator that adapts to your specific development style.",
-    "ai_summary": ""
-  },
-  {
-    "id": "7494402b0c25be4d730f75b0286fbc36",
-    "title": "Plan mode is now available in Gemini CLI",
-    "url": "https://developers.googleblog.com/plan-mode-now-available-in-gemini-cli/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789097+00:00",
-    "snippet": "Gemini CLI now features Plan Mode, a read-only environment that allows the AI to analyze complex codebases and map out architectural changes without the risk of accidental execution. By leveraging the new ask_user tool and expanded Model Context Protocol (MCP) support, developers can collaboratively refine strategies and pull in external data before committing to implementation.",
-    "ai_summary": ""
-  },
-  {
-    "id": "14ce1192c9715e489e05f57f1bd286c1",
-    "title": "Announcing the Colab MCP Server: Connect Any AI Agent to Google Colab",
-    "url": "https://developers.googleblog.com/announcing-the-colab-mcp-server-connect-any-ai-agent-to-google-colab/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789087+00:00",
-    "snippet": "When you’re prototyping locally with AI agents like Gemini CLI, Claude Code, or your own agent, thei...",
-    "ai_summary": ""
-  },
-  {
-    "id": "42d584233363e81e4b1adf1b68df1b2d",
-    "title": "Developer’s Guide to AI Agent Protocols",
-    "url": "https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789076+00:00",
-    "snippet": "This blog post introduces a suite of six protocols, such as MCP and A2A, designed to eliminate custom integration code by standardizing how AI agents access data and communicate. Using a \"kitchen manager\" agent as a practical example, it demonstrates how these tools handle complex tasks like real-time inventory checks, wholesale commerce via UCP, and secure payment authorization through AP2. By leveraging the Agent Development Kit (ADK), developers can also implement A2UI and AG-UI to deliver in",
-    "ai_summary": ""
-  },
-  {
-    "id": "6e63857a974739b5e44529aee5f633e1",
-    "title": "Build a smart financial assistant with LlamaParse and Gemini 3.1",
-    "url": "https://developers.googleblog.com/build-a-smart-financial-assistant-with-llamaparse-and-gemini-31/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789065+00:00",
-    "snippet": "This blog post introduces a workflow for extracting high-quality data from complex, unstructured documents by combining LlamaParse with Gemini 3.1 models. It demonstrates an event-driven architecture that uses Gemini 3.1 Pro for agentic parsing of dense financial tables and Gemini 3.1 Flash for cost-effective summarization. By following the provided tutorial, developers can build a personal finance assistant capable of transforming messy brokerage statements into structured, human-readable insig",
-    "ai_summary": ""
-  },
-  {
-    "id": "782730526f936a0fbfa5a5da25fe613d",
-    "title": "Jump to play: Building with Gemini & MediaPipe",
-    "url": "https://developers.googleblog.com/jump-to-play-building-with-gemini-mediapipe/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789051+00:00",
-    "snippet": "The provided workflow streamlines motion-controlled game development by using Gemini Canvas to rapidly prototype mechanics like the MediaPipe Pose Landmarker through high-level prompting. Developers can refine these prototypes in Google AI Studio by optimizing for low-latency \"lite\" models and stable tracking points, such as shoulder landmarks, to ensure responsive gameplay. The process concludes by using Gemini Code Assist to refactor experimental code into a modular, production-ready applicati",
-    "ai_summary": ""
-  },
-  {
-    "id": "0b0b0f96a7aab24363cf949332ada928",
-    "title": "Closing the knowledge gap with agent skills",
-    "url": "https://developers.googleblog.com/closing-the-knowledge-gap-with-agent-skills/",
-    "source": "Google Developers Blog",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-28T22:33:20.789026+00:00",
-    "snippet": "To bridge the gap between static model knowledge and rapidly evolving software practices, Google DeepMind developed a \"Gemini API developer skill\" that provides agents with live documentation and SDK guidance. Evaluation results show a massive performance boost, with the gemini-3.1-pro-preview model jumping from a 28.2% to a 96.6% success rate when equipped with the skill. This lightweight approach demonstrates how giving models strong reasoning capabilities and access to a \"source of truth\" can",
     "ai_summary": ""
   },
   {
@@ -312,6 +156,102 @@
     "ai_summary": ""
   },
   {
+    "id": "5b4c0fd636a33c49685f8be45057f4ad",
+    "title": "Chuck Norris learned of secret daughter nearly 30 years after brief affair",
+    "url": "https://www.foxnews.com/entertainment/chuck-norris-learned-secret-daughter-nearly-30-years-after-brief-affair",
+    "source": "Fox News",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-03-27T22:50:35+00:00",
+    "snippet": "Chuck Norris revealed in his 2004 memoir \"Against All Odds\" that a letter from his unknown daughter Dina changed his life after nearly 30 years apart.",
+    "ai_summary": ""
+  },
+  {
+    "id": "2011c03b4ec73f131c136ce1e08f27b3",
+    "title": "nteract 2.0.5a202603272238",
+    "url": "https://pypi.org/project/nteract/2.0.5a202603272238/",
+    "source": "Pypi.org",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-03-27T22:49:52+00:00",
+    "snippet": "Bring AI to Jupyter notebooks. MCP server for Claude, ChatGPT, Gemini, OpenCode and any agent.",
+    "ai_summary": ""
+  },
+  {
+    "id": "122c8825191c3f1fba7b5cda801db077",
+    "title": "Apple is opening up Siri to more third party AI chatbots, new rumor claims",
+    "url": "https://www.gsmarena.com/apple_is_opening_up_siri_to_more_third_party_ai_chatbots_new_rumor_claims-news-72147.php",
+    "source": "GSMArena.com",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-03-27T22:49:01+00:00",
+    "snippet": "According to a new rumor from Bloomberg's Mark Gurman, who is usually a very reliable source of Apple-related information, the company is planning some big changes to Siri in iOS 27, which is due to be unveiled on June 8.\n\nWe don't just mean that the long-awa…",
+    "ai_summary": ""
+  },
+  {
+    "id": "8d821233ecc46d3024c7e2b804e345ee",
+    "title": "Have you heard? GothamChess teaches Jynxzi, 100 eps of ‘Last Meals’, and fruity ‘Love Island’",
+    "url": "https://www.tubefilter.com/2026/03/27/have-you-heard-gotham-chess-jynxzi-mythical-kitchen-fruit-love-island/",
+    "source": "Tubefilter",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-03-27T22:48:47+00:00",
+    "snippet": "Each week, we handpick a selection of stories to give you a snapshot of trends, updates, business moves, and more from around the creator industry.\nThis week, a star gamer kicked off his chess journey, a YouTube food show hit the century mark, and AI-generate…",
+    "ai_summary": ""
+  },
+  {
+    "id": "043b1a0109c19ba20120f9bae307ebf8",
+    "title": "cupel 0.1.46",
+    "url": "https://pypi.org/project/cupel/0.1.46/",
+    "source": "Pypi.org",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-03-27T22:44:17+00:00",
+    "snippet": "separates precious LLMs from base LLMs. works with any OpenAI/Anthropic compatible API",
+    "ai_summary": ""
+  },
+  {
+    "id": "3fa284df476816b7e8fc80bf7e90b103",
+    "title": "orkio added to PyPI",
+    "url": "https://pypi.org/project/orkio/",
+    "source": "Pypi.org",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-03-27T22:39:51+00:00",
+    "snippet": "Autonomous Unified Resource Architect — an extensible MCP platform that reads Notion tasks and executes them",
+    "ai_summary": ""
+  },
+  {
+    "id": "2a533a1980529d91c1fc14be404de0a3",
+    "title": "claude-clean 0.1.1",
+    "url": "https://pypi.org/project/claude-clean/0.1.1/",
+    "source": "Pypi.org",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-03-27T22:37:36+00:00",
+    "snippet": "CLI for selectively purging Claude Code project data — history, settings, metadata, or everything at once.",
+    "ai_summary": ""
+  },
+  {
+    "id": "483d6c5551ac07b8139ceb25bcb53048",
+    "title": "neuro-cortex-memory 2.1.0",
+    "url": "https://pypi.org/project/neuro-cortex-memory/2.1.0/",
+    "source": "Pypi.org",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-03-27T22:35:41+00:00",
+    "snippet": "Persistent memory and cognitive profiling for Claude Code",
+    "ai_summary": ""
+  },
+  {
     "id": "9ec57d83cd486aeb7ac7f05f80316403",
     "title": "Hegseth’s War On Anthropic Encounters The First Amendment",
     "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181134380",
@@ -333,30 +273,6 @@
     "category_emoji": "🟧",
     "published": "2026-03-27T22:31:00+00:00",
     "snippet": "The expression, “to make a federal case out of something” usually describes making a bigger deal out of something than it should be. But in the case of Anthropic and Hegseth, Trump, and the Department of Defense*, this federal case is actually quite simple: w…",
-    "ai_summary": ""
-  },
-  {
-    "id": "24a1f2541cfd553e79c679835ea7bad5",
-    "title": "BTS 2.0 Is Here",
-    "url": "https://www.newyorker.com/newsletter/the-daily/bts-20-is-here",
-    "source": "The New Yorker",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-03-27T22:30:00+00:00",
-    "snippet": "From the daily newsletter: art, commerce, and the return of the K-pop idols BTS.",
-    "ai_summary": ""
-  },
-  {
-    "id": "ee6469b4a10bd71b3ea84185d0b6bec0",
-    "title": "Show HN: Open Source 'Conductor + Ghostty'",
-    "url": "https://github.com/stablyai/orca",
-    "source": "Github.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T22:26:40+00:00",
-    "snippet": "Our team works with Claude Code, Codex, Gemini all day.\nWe love Ghostty, but wanted something where we could work in multiple worktree at once and have multiple agents run.We decided to open source the internal team we use. Hope you might find it useful. Free…",
     "ai_summary": ""
   },
   {
@@ -468,18 +384,6 @@
     "ai_summary": ""
   },
   {
-    "id": "98515d11d9ad199c023076ffac8a695b",
-    "title": "Trabalhando - Marketing digital com Claude Code + lovable + Google Ads",
-    "url": "https://www.youtube.com/supported_browsers?next_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dv8Jt6UiJ9wQ",
-    "source": "YouTube",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-03-27T22:14:41+00:00",
-    "snippet": "Trabalhando - Marketing digital com Claude Code + lovable + Google Adsyoutube.com",
-    "ai_summary": ""
-  },
-  {
     "id": "fa17857030a22c590d6cf3941d00652f",
     "title": "5+ Things to Know About the Siri Chatbot Coming in iOS 27",
     "url": "https://www.macrumors.com/2026/03/27/ios-27-siri-chatbot-features/",
@@ -489,30 +393,6 @@
     "category_emoji": "🟩",
     "published": "2026-03-27T22:13:51+00:00",
     "snippet": "We're less than three months away from our first look at Apple's smarter, redesigned version of Siri. iOS 27, iPadOS 27, and macOS 27 will focus on ‌Siri‌ updates, and rumors about what we can expect are picking up.\n\n\n\n\n\nThere's a full chatbot version of ‌Sir…",
-    "ai_summary": ""
-  },
-  {
-    "id": "4f256d6a5d18b3c094c87c6a93227fbb",
-    "title": "Judge temporarily blocks Pentagon from labeling Anthropic a \"supply chain risk\"",
-    "url": "https://www.cbsnews.com/video/judge-temporarily-blocks-pentagon-labeling-anthropic-supply-chain-risk/",
-    "source": "CBS News",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-03-27T22:13:00+00:00",
-    "snippet": "A judge has temporarily blocked the Pentagon's attempt to designate Anthropic as a supply chain risk. CBS News legal contributor Jessica Levinson joins with analysis.",
-    "ai_summary": ""
-  },
-  {
-    "id": "a5fb7d8534376714a194cbb44697ca80",
-    "title": "Macy’s just launched an AI-powered shopping assistant. Customers who use it spend nearly 400% more",
-    "url": "https://fortune.com/2026/03/27/macys-ai-powered-shopping-assistant-customers-spending-google-gemini/",
-    "source": "Fortune",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T22:11:45+00:00",
-    "snippet": "The “Ask Macy’s” chatbot may help the company’s comeback and reverse declining sales.",
     "ai_summary": ""
   },
   {
@@ -552,90 +432,6 @@
     "ai_summary": ""
   },
   {
-    "id": "0d9e7bce686eb1275b5745f72460ec5f",
-    "title": "12 Tips For Dads Babysitting Their Own Kids",
-    "url": "https://babylonbee.com/news/12-tips-for-dads-babysitting-their-own-kids",
-    "source": "Babylonbee.com",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-03-27T22:00:53+00:00",
-    "snippet": "Don't be alarmed, but there may be times when your wife will leave you home along with the kids for hours — or even days — on end. Knowing what to do in these situations is vital for their survival, and yours.",
-    "ai_summary": ""
-  },
-  {
-    "id": "cff40313c240061db8bafc3045bebedc",
-    "title": "3 Reasons Why Sony Has Increased PS5 Prices by 30% Since Last Year",
-    "url": "http://comicbook.com/gaming/feature/3-reasons-why-sony-has-increased-ps5-prices-by-30-since-last-year/",
-    "source": "ComicBook.com",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-03-27T22:00:00+00:00",
-    "snippet": "If you’ve felt a sharp sting at the checkout recently, you’re not imagining it. The PlayStation 5 has jumped in price by roughly 30% over the past year, and understanding why is like peeling back the layers of a very tangled global onion. These hikes aren’t t…",
-    "ai_summary": ""
-  },
-  {
-    "id": "8e75c035ab8ac76639b66bccaaa3b568",
-    "title": "Your April Horoscope by Zodiac Sign Is Here",
-    "url": "https://www.cosmopolitan.com/lifestyle/a70703681/april-monthly-horoscope-2026/",
-    "source": "Cosmopolitan.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T22:00:00+00:00",
-    "snippet": "Read your monthly horoscope for April 2026, according to your zodiac sign.",
-    "ai_summary": ""
-  },
-  {
-    "id": "f32fb5822481daeba5093de3573f2df1",
-    "title": "cognitive-memory-model added to PyPI",
-    "url": "https://pypi.org/project/cognitive-memory-model/",
-    "source": "Pypi.org",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-03-27T21:58:22+00:00",
-    "snippet": "Autoassociative cognitive memory for LLMs and agents — automatic recall with spreading activation, decay, priming, and metamemory",
-    "ai_summary": ""
-  },
-  {
-    "id": "f5a98f883ff7adf8c3f1ac296673727b",
-    "title": "Concerns About AI Model Capabilities Drive Down Cybersecurity Stocks",
-    "url": "https://www.pymnts.com/artificial-intelligence-2/2026/concerns-about-ai-model-capabilities-drive-down-cybersecurity-stocks/",
-    "source": "pymnts.com",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-03-27T21:58:00+00:00",
-    "snippet": "Concerns about the capabilities of an artificial intelligence (AI) model being tested by Anthropic drove down cybersecurity stocks on Friday (March 27), Bloomberg reported. The report attributed the drop to a Fortune report that said a draft blog post that An…",
-    "ai_summary": ""
-  },
-  {
-    "id": "676ad71a0d2d70e11b489d9f4b5363fd",
-    "title": "agentweld 0.2.0",
-    "url": "https://pypi.org/project/agentweld/",
-    "source": "Pypi.org",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-03-27T21:56:20+00:00",
-    "snippet": "Turn any MCP server into a curated, composable, A2A-ready agent.",
-    "ai_summary": ""
-  },
-  {
-    "id": "53537ae21d7b3e14064fcde811f152da",
-    "title": "Your Pisces Monthly Horoscope for April 2026",
-    "url": "https://www.cosmopolitan.com/lifestyle/a70703792/pisces-monthly-horoscope-april-2026/",
-    "source": "Cosmopolitan.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T21:55:00+00:00",
-    "snippet": "It’s all about budgets and bank accounts this month, Pisces.",
-    "ai_summary": ""
-  },
-  {
     "id": "cf4895cfb333725462e2e077547accb1",
     "title": "Meta orders 10 gas-fired power plants for its Hyperion AI campus in rural Louisiana—more than triple the initial plan",
     "url": "https://fortune.com/2026/03/27/meta-hyperion-10-gas-power-plants-louisiana-entergy/",
@@ -645,54 +441,6 @@
     "category_emoji": "🟪",
     "published": "2026-03-27T21:50:36+00:00",
     "snippet": "The Meta AI complex represents over a 30% increase to Louisiana's total power grid capacity.",
-    "ai_summary": ""
-  },
-  {
-    "id": "f2e968545c28b5f19a3d132d161e4555",
-    "title": "cupel 0.1.45",
-    "url": "https://pypi.org/project/cupel/0.1.45/",
-    "source": "Pypi.org",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-03-27T21:50:02+00:00",
-    "snippet": "separates precious LLMs from base LLMs. works with any OpenAI/Anthropic compatible API",
-    "ai_summary": ""
-  },
-  {
-    "id": "677648442cb2c3f75ff33896650f421e",
-    "title": "Your Aquarius Monthly Horoscope for April 2026",
-    "url": "https://www.cosmopolitan.com/lifestyle/a70703787/aquarius-monthly-horoscope-april-2026/",
-    "source": "Cosmopolitan.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T21:50:00+00:00",
-    "snippet": "You’re trying anything and everything this month, Aquarius.",
-    "ai_summary": ""
-  },
-  {
-    "id": "0f404327da8b5c3a5888430e6c0c8a53",
-    "title": "Why SoftBank’s new $40B loan points to a 2026 OpenAI IPO | TechCrunch",
-    "url": "https://techcrunch.com/2026/03/27/why-softbanks-new-40b-loan-points-to-a-2026-openai-ipo/",
-    "source": "TechCrunch",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-03-27T21:48:37+00:00",
-    "snippet": "Wall Street giants JPMorgan and Goldman Sachs are extending a 12-month, unsecured loan to the Japanese conglomerate.",
-    "ai_summary": ""
-  },
-  {
-    "id": "40da4f634bb1eb2c9d1c9457502411fd",
-    "title": "Your Capricorn Monthly Horoscope for April 2026",
-    "url": "https://www.cosmopolitan.com/lifestyle/a70703781/capricorn-monthly-horoscope-april-2026/",
-    "source": "Cosmopolitan.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T21:45:00+00:00",
-    "snippet": "How about adding journaling to your routine this month, Capricorn?",
     "ai_summary": ""
   },
   {
@@ -708,30 +456,6 @@
     "ai_summary": ""
   },
   {
-    "id": "717f5cd1fdd9f1f32ee2a2cfe849d6bc",
-    "title": "Your Sagittarius Monthly Horoscope for April 2026",
-    "url": "https://www.cosmopolitan.com/lifestyle/a70703772/sagittarius-monthly-horoscope-april-2026/",
-    "source": "Cosmopolitan.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T21:40:00+00:00",
-    "snippet": "Don’t be afraid of this month’s ebbs and flows, Sagittarius.",
-    "ai_summary": ""
-  },
-  {
-    "id": "56481742452d3ddb669f578a2f060022",
-    "title": "cupel 0.1.44",
-    "url": "https://pypi.org/project/cupel/0.1.44/",
-    "source": "Pypi.org",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-03-27T21:39:35+00:00",
-    "snippet": "separates precious LLMs from base LLMs. works with any OpenAI/Anthropic compatible API",
-    "ai_summary": ""
-  },
-  {
     "id": "9efc7411431509773660db36a415e5f2",
     "title": "flash-mlm 1.2.2",
     "url": "https://pypi.org/project/flash-mlm/1.2.2/",
@@ -744,18 +468,6 @@
     "ai_summary": ""
   },
   {
-    "id": "60da8335dc88d1c44683bd94faaed945",
-    "title": "Your Scorpio Monthly Horoscope for April 2026",
-    "url": "https://www.cosmopolitan.com/lifestyle/a70703767/scorpio-monthly-horoscope-april-2026/",
-    "source": "Cosmopolitan.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T21:35:00+00:00",
-    "snippet": "This is a month for deep reflection and change, Scorpio.",
-    "ai_summary": ""
-  },
-  {
     "id": "9b53805a9906ca35ce4c74a3d58dde3a",
     "title": "Real Madrid star ‘has already decided’ to leave this summer",
     "url": "https://getfootballnewsspain.com/real-madrid-star-has-already-decided-to-leave-this-summer/",
@@ -765,18 +477,6 @@
     "category_emoji": "🗣️",
     "published": "2026-03-27T21:30:00+00:00",
     "snippet": "A member of the midfield ranks at La Liga heavyweights Real Madrid has already made the definitive call to depart the club in the summer.The player in question? Dani Ceballos.Ceballos is for his part ...",
-    "ai_summary": ""
-  },
-  {
-    "id": "2487f14401decf864f91dd6fe813a180",
-    "title": "Your Libra Monthly Horoscope for April 2026",
-    "url": "https://www.cosmopolitan.com/lifestyle/a70703750/libra-monthly-horoscope-april-2026/",
-    "source": "Cosmopolitan.com",
-    "category_id": "google",
-    "category_name": "Google",
-    "category_emoji": "🟥",
-    "published": "2026-03-27T21:30:00+00:00",
-    "snippet": "Your social life is at the forefront this month, Libra.",
     "ai_summary": ""
   },
   {
@@ -972,18 +672,6 @@
     "ai_summary": ""
   },
   {
-    "id": "12134eb38b17a95e5a3e51fbddb3a46f",
-    "title": "Save on your AI subscriptions with ChatPlayground: 20 AI models for $67 ($619 value)",
-    "url": "http://9to5toys.com/2026/03/27/save-your-ai-subscriptions-chatplayground/",
-    "source": "9to5Toys",
-    "category_id": "meta",
-    "category_name": "Meta",
-    "category_emoji": "🟪",
-    "published": "2026-03-27T20:10:00+00:00",
-    "snippet": "With this ChatPlayground AI: Lifetime Subscription you’ll get access to over 20 of the top AI models in the world—including GPT-5.1, Claude Sonnet 4.5, Gemini 3 Pro Preview, DeepSeek R1 Qwen3 8B, and Llama 4 Scout—all on one platform for just $67.15 (Reg. $61…",
-    "ai_summary": ""
-  },
-  {
     "id": "df3ec1f21aa09c99707eb10e3aee72e1",
     "title": "langchain-crw 0.1.1",
     "url": "https://pypi.org/project/langchain-crw/0.1.1/",
@@ -1005,18 +693,6 @@
     "category_emoji": "🏭",
     "published": "2026-03-27T19:55:46+00:00",
     "snippet": "Enterprises want to move beyond AI experimentation, but most still struggle to bridge the gap between promising proofs of concept and production-ready cloud-native AI platforms. The challenge is compounding as AI workloads converge with cloud-native infrastru…",
-    "ai_summary": ""
-  },
-  {
-    "id": "9af643594cb42f1fb7e7330ac957637b",
-    "title": "langchain-crw added to PyPI",
-    "url": "https://pypi.org/project/langchain-crw/",
-    "source": "Pypi.org",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-03-27T19:53:45+00:00",
-    "snippet": "LangChain integration for CRW — high-performance web scraping document loader",
     "ai_summary": ""
   },
   {
@@ -1044,54 +720,6 @@
     "ai_summary": ""
   },
   {
-    "id": "78ba680bb4f2de1b3b35ecfcc9ce56c1",
-    "title": "llm-eco-tracker added to PyPI",
-    "url": "https://pypi.org/project/llm-eco-tracker/",
-    "source": "Pypi.org",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-03-27T19:43:13+00:00",
-    "snippet": "Carbon-aware scheduling and telemetry for LLM applications",
-    "ai_summary": ""
-  },
-  {
-    "id": "aff161c83908566ece848155575a6bfc",
-    "title": "hyperbench added to PyPI",
-    "url": "https://pypi.org/project/hyperbench/",
-    "source": "Pypi.org",
-    "category_id": "meta",
-    "category_name": "Meta",
-    "category_emoji": "🟪",
-    "published": "2026-03-27T19:27:09+00:00",
-    "snippet": "Synthetic benchmarking for hyperspectral super-resolution methods",
-    "ai_summary": ""
-  },
-  {
-    "id": "6539a9a7161d1079ca575e38d1b86311",
-    "title": "jton added to PyPI",
-    "url": "https://pypi.org/project/jton/",
-    "source": "Pypi.org",
-    "category_id": "meta",
-    "category_name": "Meta",
-    "category_emoji": "🟪",
-    "published": "2026-03-27T19:22:36+00:00",
-    "snippet": "JTON (JSON Tabular Object Notation) — A Tabular JSON-Superset Encoding for Efficient LLM Data Processing",
-    "ai_summary": ""
-  },
-  {
-    "id": "2073cc1da8195dc4ee46cda8b8cb96ff",
-    "title": "Which M5 Chip Do You Need? MacBook Pro Buying Guide",
-    "url": "https://www.cnet.com/tech/computing/which-m5-chip-do-you-need-macbook-pro-buying-guide/",
-    "source": "CNET",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-03-27T19:21:13+00:00",
-    "snippet": "With over 50 configurations available to buy for just two laptops, choosing the right one isn't easy. Here's how they stack up based on our testing and what they offer.",
-    "ai_summary": ""
-  },
-  {
     "id": "f0ca247329b7d9a019e75b746d30ba08",
     "title": "Memory chip giant SK hynix could help end ‘RAMmageddon’ with blockbuster US IPO",
     "url": "https://techcrunch.com/2026/03/27/memory-chip-giant-sk-hynix-could-help-end-rammageddon-with-blockbuster-us-ipo/",
@@ -1113,18 +741,6 @@
     "category_emoji": "🏭",
     "published": "2026-03-27T18:58:54+00:00",
     "snippet": "Nvidia Corp. is no longer just a hardware company — it has evolved into a full-stack AI platform delivering complete AI systems. Last week’s Nvidia GTC event was a showcase for Nvidia’s numerous partnerships with Dell Technologies Inc., Adobe Inc., Vast Data …",
-    "ai_summary": ""
-  },
-  {
-    "id": "e922509f0cef81304768423fb0b133a7",
-    "title": "Deal With It: The Meta Oakley HSTN Smart Glasses Are Up to 17% Off Right Now",
-    "url": "https://www.cnet.com/deals/meta-oakley-hstn-smart-glasses-discounted/",
-    "source": "CNET",
-    "category_id": "meta",
-    "category_name": "Meta",
-    "category_emoji": "🟪",
-    "published": "2026-03-27T18:26:00+00:00",
-    "snippet": "The Meta Oakley HSTN smart glasses are an attractive $399 during the Amazon Spring Sale.",
     "ai_summary": ""
   },
   {
@@ -1188,18 +804,6 @@
     "ai_summary": ""
   },
   {
-    "id": "6a07ec7056846924f9a372392c073073",
-    "title": "shared-tensor 0.2.13",
-    "url": "https://pypi.org/project/shared-tensor/0.2.13/",
-    "source": "Pypi.org",
-    "category_id": "meta",
-    "category_name": "Meta",
-    "category_emoji": "🟪",
-    "published": "2026-03-27T17:48:20+00:00",
-    "snippet": "Native PyTorch CUDA IPC over Unix Domain Socket for same-host process separation",
-    "ai_summary": ""
-  },
-  {
     "id": "63cd0869fff5a575152f674cabcc3ecf",
     "title": "Disney Imagineering Is About to Change Forever With New AI Executive Take Over",
     "url": "https://insidethemagic.net/2026/03/disney-imagineering-is-about-to-change-forever-with-new-ai-executive-take-over-el1/",
@@ -1236,18 +840,6 @@
     "ai_summary": ""
   },
   {
-    "id": "6da423fba33a9cc044d2b828c79c1d03",
-    "title": "The MacRumors Show: Apple Announces WWDC 2026",
-    "url": "https://www.macrumors.com/2026/03/27/the-macrumors-show-wwdc-2026-announced/",
-    "source": "MacRumors",
-    "category_id": "rumours",
-    "category_name": "Rumours & Gossip",
-    "category_emoji": "🗣️",
-    "published": "2026-03-27T16:51:47+00:00",
-    "snippet": "On this week's episode of The MacRumors Show, we discuss Apple's announcement of its 37th annual Worldwide Developers Conference (WWDC), where the company is expected to unveil a major Siri overhaul alongside iOS 27, macOS 27, and other next-generation operat…",
-    "ai_summary": ""
-  },
-  {
     "id": "0ec35345cce9a85cba9af521b01e62d7",
     "title": "(PR) ASUS Announces ExpertBook B3 G1 Laptops with Intel Core Ultra Series 2 Processors",
     "url": "https://www.techpowerup.com/347802/asus-announces-expertbook-b3-g1-laptops-with-intel-core-ultra-series-2-processors",
@@ -1272,18 +864,6 @@
     "ai_summary": ""
   },
   {
-    "id": "0c72256dbc1e0d91edcb6a8c31b25c65",
-    "title": "Senators want datacenters to come clean on power consumption",
-    "url": "https://www.theregister.com/2026/03/27/senators_datacenter_power_consumption/",
-    "source": "Theregister.com",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T16:40:47+00:00",
-    "snippet": "Ratepayer Protection Pledge is unenforceable without hard numbers, Warren and Hawley argue\nUS senators are pushing to require datacenters and other large energy customers to report consumption, arguing the data is essential to hold them accountable to local c…",
-    "ai_summary": ""
-  },
-  {
     "id": "d0d46033b7fd2390577ab4afff3b9922",
     "title": "Anthropic Wins Injunction in 'Orwellian' Government AI Blacklisting",
     "url": "https://www.androidheadlines.com/2026/03/anthropic-legal-victory-pentagon-supply-chain-risk.html",
@@ -1305,18 +885,6 @@
     "category_emoji": "🔵",
     "published": "2026-03-27T16:31:13+00:00",
     "snippet": "Beijing's review has fueled concerns and confusion among Chinese tech founders and investors that had quietly embraced the so-called \"Singapore-washing\" model.",
-    "ai_summary": ""
-  },
-  {
-    "id": "0e5430795b7e6409a3aa9b3d59acbfc8",
-    "title": "Microsoft secures 900 MW AI capacity at Crusoe Texas campus with mid 2027 target",
-    "url": "https://cryptobriefing.com/microsoft-data-center-lease-texas/",
-    "source": "Crypto Briefing",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T16:26:51+00:00",
-    "snippet": "Crusoe plans a new 900 MW Abilene AI campus for Microsoft, lifting total projected Texas site capacity to 2.1 GW.\nThe post Microsoft secures 900 MW AI capacity at Crusoe Texas campus with mid 2027 target appeared first on Crypto Briefing.",
     "ai_summary": ""
   },
   {
@@ -1368,18 +936,6 @@
     "ai_summary": ""
   },
   {
-    "id": "1432bc9680bb21df39442a8e71c72cd9",
-    "title": "The AI Doc explores how we can survive an uncertain AI future",
-    "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181119802",
-    "source": "Slashdot.org",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T15:53:04+00:00",
-    "snippet": "Anxiety, more so than technological rigor, sits at the heart of The AI Doc: Or How I Became an Apocaloptimist. Director Daniel Roher is anxious about the future he's bringing a child into — will it be an AI-driven utopia? Or does it spell certain doom, someth…",
-    "ai_summary": ""
-  },
-  {
     "id": "0b3b29656e6c239ce5e1e8c5953e5a72",
     "title": "‘The takeaway here is much more sobering than those of cinema’s other big animal fantasies’",
     "url": "https://theweek.com/politics/instant-opinion-hoppers-ai-dating-golden-dome",
@@ -1389,18 +945,6 @@
     "category_emoji": "🔵",
     "published": "2026-03-27T15:45:04+00:00",
     "snippet": "Opinion, comment and editorials of the day",
-    "ai_summary": ""
-  },
-  {
-    "id": "79e0e4dc2234a63b10c7476737e8c93c",
-    "title": "VCs are betting billions on AI’s next wave, so why is OpenAI killing Sora?",
-    "url": "https://techcrunch.com/podcast/vcs-are-betting-billions-on-ais-next-wave-so-why-is-openai-killing-sora/",
-    "source": "TechCrunch AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T15:40:19+00:00",
-    "snippet": "When an 82-year-old Kentucky woman was&#160;offered $26 million&#160;from an AI company that wanted to build a data center on her land, she said no. Sure, that same company can try to rezone&#160;2,000 acres&#160;nearby anyway, but as AI infrastructure stretches further into the real world,&#160;the real world is starting to push back.&#160; That tension is everywhere [&#8230;]",
     "ai_summary": ""
   },
   {
@@ -1428,18 +972,6 @@
     "ai_summary": ""
   },
   {
-    "id": "8d682c2df859d1e1c97efb5f75f54b42",
-    "title": "Half-Life 3 Gameplay Leak Has Fans Losing Their Minds",
-    "url": "https://screenrant.com/half-life-3-gameplay-details-leak-march-2026/",
-    "source": "Screen Rant",
-    "category_id": "rumours",
-    "category_name": "Rumours & Gossip",
-    "category_emoji": "🗣️",
-    "published": "2026-03-27T14:45:08+00:00",
-    "snippet": "A leaked Half-Life 3 gameplay video and years of datamining suggest the highly anticipated game could launch alongside the delayed Steam Machine.",
-    "ai_summary": ""
-  },
-  {
     "id": "3408ae6dd1208312aa70ad56c551dd26",
     "title": "Population Health Management (PHM) Market Report 2026-2030: Identify and Invest in Growth Segments to Ensure Competitive Advantage",
     "url": "https://www.globenewswire.com/news-release/2026/03/27/3263856/28124/en/Population-Health-Management-PHM-Market-Report-2026-2030-Identify-and-Invest-in-Growth-Segments-to-Ensure-Competitive-Advantage.html",
@@ -1449,102 +981,6 @@
     "category_emoji": "🟦",
     "published": "2026-03-27T14:41:00+00:00",
     "snippet": "Key market opportunities include increased healthcare digitization, growing adoption of AI and cloud-based solutions, and rising demand for predictive analytics & preventive care. The market is also benefiting from partnerships, mergers, and regional growth, …",
-    "ai_summary": ""
-  },
-  {
-    "id": "6acd08c273c527ab343a6feca506f2ee",
-    "title": "Mac Pro Discontinued: Reflecting on 20 Years of Apple's Desktop Tower",
-    "url": "https://www.macrumors.com/2026/03/27/reflecting-on-20-years-of-mac-pro/",
-    "source": "MacRumors",
-    "category_id": "rumours",
-    "category_name": "Rumours & Gossip",
-    "category_emoji": "🗣️",
-    "published": "2026-03-27T14:39:49+00:00",
-    "snippet": "Apple this week announced that it has discontinued the Mac Pro, with new configurations no longer available and no further models planned.\n\n\n\n\n\nBelow, we reflect on nearly two decades of the Mac Pro.\n\n\n\n2006 to 2013\n\nIn August 2006, Apple introduced the origi…",
-    "ai_summary": ""
-  },
-  {
-    "id": "8657d5527af010cee3b8e5042c11affd",
-    "title": "Anthropic Considers Fourth-Quarter IPO",
-    "url": "https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-considers-fourth-quarter-ipo/",
-    "source": "pymnts.com",
-    "category_id": "industry",
-    "category_name": "Industry",
-    "category_emoji": "🔵",
-    "published": "2026-03-27T14:37:00+00:00",
-    "snippet": "Anthropic executives are considering taking the company public as early as the fourth quarter, The Information reported Thursday (March 26), citing unnamed sources. Some bankers expect the artificial intelligence (AI) startup to raise more than $60 billion in…",
-    "ai_summary": ""
-  },
-  {
-    "id": "f8bb37fcbc593cb2ac884d31c407f328",
-    "title": "The latest in data centers, AI, and energy",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
-    "source": "The Verge AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T14:35:53-04:00",
-    "snippet": "Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the world over their impact on power grids, utility bills, nearby communities, and the environment.&#160; From audacious plans to launch data centers into [&#8230;]",
-    "ai_summary": ""
-  },
-  {
-    "id": "4658bf3c7c662a27abee5893a1175ef0",
-    "title": "AI Update, March 27, 2026: AI News and Views From the Past Week",
-    "url": "https://www.marketingprofs.com/opinions/2026/54473/ai-update-march-27-2026-ai-news-and-views-from-the-past-week",
-    "source": "MarketingProfs.com",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T14:00:00+00:00",
-    "snippet": "Catch up on select AI news and developments since Friday, March 20. Stay in the know. Read the full article at MarketingProfs",
-    "ai_summary": ""
-  },
-  {
-    "id": "496510f4e7891b04d456adef839c1ec9",
-    "title": "OpenAI shuts down Sora while Meta gets shut out in court",
-    "url": "https://techcrunch.com/video/openai-shuts-down-sora-while-meta-gets-shut-out-in-court/",
-    "source": "TechCrunch AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T13:30:00+00:00",
-    "snippet": "When an 82-year-old Kentucky woman was&#160;offered $26 million&#160;from an AI company that wanted to build a data center on her land, she said no. Sure, that same company can try to rezone&#160;2,000 acres&#160;nearby anyway, but as AI infrastructure stretches further into the real world,&#160;the real world is starting to push back.&#160; That tension is everywhere [&#8230;]",
-    "ai_summary": ""
-  },
-  {
-    "id": "997013a43dcae1955707c1b1287b760d",
-    "title": "Maryland Fire Departments Awarded $520,000 for Cancer Screenings using 20/20 BioLabs’ OneTest ™ Multi-Cancer Early Detection Blood Test",
-    "url": "https://www.globenewswire.com/news-release/2026/03/27/3263759/0/en/Maryland-Fire-Departments-Awarded-520-000-for-Cancer-Screenings-using-20-20-BioLabs-OneTest-Multi-Cancer-Early-Detection-Blood-Test.html",
-    "source": "GlobeNewswire",
-    "category_id": "rumours",
-    "category_name": "Rumours & Gossip",
-    "category_emoji": "🗣️",
-    "published": "2026-03-27T12:31:00+00:00",
-    "snippet": "Maryland Fire Departments Awarded $520,000 for Cancer Screenings using 0/20 BioLabs’ OneTest ™ Multi-Cancer Early Detection Blood Test ...",
-    "ai_summary": ""
-  },
-  {
-    "id": "8dac88e5aea0669521d7af8b505a436b",
-    "title": "ChatGPT “Spud” : What We Know About OpenAI’s Next GPT AI Model Evolution",
-    "url": "https://www.geeky-gadgets.com/openai-spud-model/",
-    "source": "Geeky Gadgets",
-    "category_id": "rumours",
-    "category_name": "Rumours & Gossip",
-    "category_emoji": "🗣️",
-    "published": "2026-03-27T12:11:00+00:00",
-    "snippet": "OpenAI’s upcoming “Spud” model is poised to make a significant impact on the global economy, with its potential to enhance productivity and drive innovation across industries. According to Wes Roth, Spud has completed its pre-training phase and is speculated …",
-    "ai_summary": ""
-  },
-  {
-    "id": "a9318604de56208b79c61941f41395d0",
-    "title": "Microsoft set for worst quarter since 2008 as AI takes two bites",
-    "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/microsoft-set-for-worst-quarter-since-2008-as-ai-takes-two-bites/articleshow/129846807.cms",
-    "source": "The Times of India",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T11:55:32+00:00",
-    "snippet": "Microsoft Corp. is at the intersection of two troubling trends roiling the technology sector, which has the stock on track for its worst quarterly performance since the global financial crisis two decades ago.",
     "ai_summary": ""
   },
   {
@@ -1569,66 +1005,6 @@
     "category_emoji": "✨",
     "published": "2026-03-27T10:35:35+00:00",
     "snippet": "Microsoft made it possible to batch uninstall Copilot in Windows 11, but the caveats make it harder than expected.",
-    "ai_summary": ""
-  },
-  {
-    "id": "051fc4d01431347a5f5a3d297c674f37",
-    "title": "Amazon’s big bet in AI has been 20 years in the making | CNN Business",
-    "url": "https://www.cnn.com/2026/03/27/tech/amazon-ai-aws-vis",
-    "source": "CNN",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T10:09:52+00:00",
-    "snippet": "Matt Garman helps make your online life – your Starbucks order, your Netflix binge, your Pinterest browsing– possible.",
-    "ai_summary": ""
-  },
-  {
-    "id": "8d1e29839642e38139ca2c3224f754e3",
-    "title": "David Sacks is done as AI czar — here’s what he’s doing instead",
-    "url": "https://techcrunch.com/2026/03/26/david-sacks-is-done-as-ai-czar-heres-what-hes-doing-instead/",
-    "source": "TechCrunch AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T01:26:40+00:00",
-    "snippet": "Sacks will be much further from the power center in Washington than since the outset of this second Trump administration.",
-    "ai_summary": ""
-  },
-  {
-    "id": "6ac6e9b565d6422ab35e88e2ea4b6e6d",
-    "title": "Anthropic wins injunction against Trump administration over Defense Department saga",
-    "url": "https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga/",
-    "source": "TechCrunch AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-27T01:18:38+00:00",
-    "snippet": "A federal judge has ordered that the Trump administration rescind recent restrictions it placed on the AI company.",
-    "ai_summary": ""
-  },
-  {
-    "id": "b191adbd15ac7f5118a4e16bb5e530d8",
-    "title": "Liberate your OpenClaw",
-    "url": "https://huggingface.co/blog/liberate-your-openclaw",
-    "source": "Hugging Face Blog",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-03-27T00:00:00+00:00",
-    "snippet": "",
-    "ai_summary": ""
-  },
-  {
-    "id": "ec73e853e9e6d00a0c0c76ddc6267310",
-    "title": "You can now transfer your chats and personal information from other chatbots directly into Gemini",
-    "url": "https://techcrunch.com/2026/03/26/you-can-now-transfer-your-chats-and-personal-information-from-other-chatbots-directly-into-gemini/",
-    "source": "TechCrunch AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-26T23:47:56+00:00",
-    "snippet": "Google is launching \"switching tools\" that, just as it sounds, will make it easier for users of other chatbots to switch to Gemini.",
     "ai_summary": ""
   },
   {
@@ -1689,30 +1065,6 @@
     "category_emoji": "✨",
     "published": "2026-03-26T23:15:28+00:00",
     "snippet": "You’ll notice media quality improvements including support for up to 16 participant videos (4×4 grid) and simulcast streaming when using Direct Guest Join. These updates make cross platform meetings more immersive and reliable when joining Teams meetings from Zoom, Google Meet, or Cisco devices.GA date: May CY2026",
-    "ai_summary": ""
-  },
-  {
-    "id": "ee5732dee625a975791c81c25a27e6da",
-    "title": "Judge sides with Anthropic to temporarily block the Pentagon&#8217;s ban",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction",
-    "source": "The Verge AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-26T20:33:44-04:00",
-    "snippet": "After Anthropic's weeks-long standoff with the Pentagon, the company won one milestone: A judge granted Anthropic a preliminary injunction in its lawsuit, which sought to reverse its government blacklisting while the judicial process plays out. \"The Department of War's records show that it designated Anthropic as a supply chain risk because of its 'hostile manner [&#8230;]",
-    "ai_summary": ""
-  },
-  {
-    "id": "b54f8fb739d630e5f70ba58b96817ee9",
-    "title": "David Sacks is no longer the White House AI and Crypto Czar",
-    "url": "https://www.theverge.com/policy/902140/david-sacks-out-ai-crypto-czar",
-    "source": "The Verge AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-03-26T19:40:22-04:00",
-    "snippet": "David Sacks, the venture capitalist and tech billionaire who'd become Silicon Valley's primary advocate inside the White House and a key architect of its aggressive AI policy initiatives, revealed on Thursday that he was no longer a special government employee - and therefore no longer President Donald Trump's Special Advisor on AI and Crypto. Sacks' [&#8230;]",
     "ai_summary": ""
   }
 ]
