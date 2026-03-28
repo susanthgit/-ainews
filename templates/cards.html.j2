@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News — ainews.aguidetocloud.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a1a;
+            --surface: #12122a;
+            --surface-hover: #1a1a3a;
+            --border: #2a2a4a;
+            --text: #e0e0ff;
+            --text-muted: #8888aa;
+            --neon-cyan: #00ffff;
+            --neon-pink: #ff00ff;
+            --neon-green: #39ff14;
+            --neon-orange: #ff6b35;
+            --neon-purple: #b44aff;
+            --glow-cyan: 0 0 10px #00ffff, 0 0 20px #00ffff44;
+            --glow-pink: 0 0 10px #ff00ff, 0 0 20px #ff00ff44;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ═══ HEADER ═══ */
+        .header {
+            text-align: center;
+            padding: 2rem 1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, #0f0f2a 0%, var(--bg) 100%);
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-pink), transparent);
+            box-shadow: var(--glow-cyan);
+        }
+
+        .header h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 2.2rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, var(--neon-cyan), var(--neon-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+            filter: drop-shadow(0 0 8px #00ffff66);
+        }
+
+        .header .subtitle {
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--neon-green);
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            margin-top: 0.3rem;
+        }
+
+        .header .date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .header .stats {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* ═══ LAYOUT: SIDEBAR + MAIN ═══ */
+        .layout {
+            display: flex;
+            flex: 1;
+        }
+
+        /* ═══ SIDEBAR NAV ═══ */
+        .sidebar {
+            width: 220px;
+            min-width: 220px;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--neon-cyan);
+            padding: 0 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.6rem 1rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar a:hover {
+            color: var(--text);
+            background: var(--surface-hover);
+            border-left-color: var(--neon-cyan);
+        }
+
+        .sidebar a.active {
+            color: var(--neon-cyan);
+            background: #00ffff0a;
+            border-left-color: var(--neon-cyan);
+        }
+
+        .sidebar .nav-count {
+            margin-left: auto;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            background: var(--bg);
+            padding: 0.1rem 0.4rem;
+            border-radius: 8px;
+        }
+
+        .sidebar .nav-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* ═══ MAIN CONTENT ═══ */
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            max-width: 900px;
+            overflow-y: auto;
+            min-width: 0;
+        }
+
+        /* ═══ RIGHT SIDEBAR ═══ */
+        .right-rail {
+            width: 260px;
+            min-width: 260px;
+            background: var(--surface);
+            border-left: 1px solid var(--border);
+            padding: 1.5rem 1rem;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .rail-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .rail-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--neon-pink);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.3rem 0;
+            font-size: 0.85rem;
+        }
+
+        .stat-label {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--text-muted);
+        }
+
+        .stat-value {
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--neon-cyan);
+            font-weight: 700;
+        }
+
+        .trending-tag {
+            display: inline-block;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.78rem;
+            margin: 0.15rem;
+            transition: all 0.2s;
+        }
+
+        .trending-tag:hover {
+            border-color: var(--neon-pink);
+            color: var(--neon-pink);
+        }
+
+        .quick-link {
+            display: block;
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 0.35rem 0;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .quick-link:hover { color: var(--neon-cyan); }
+
+        .update-status {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .status-dot {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--neon-green);
+            box-shadow: 0 0 6px var(--neon-green);
+            margin-right: 0.3rem;
+        }
+
+        .category-section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+
+        .category-header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: var(--neon-cyan);
+            box-shadow: 0 0 6px var(--neon-cyan);
+        }
+
+        .category-header .emoji { font-size: 1.4rem; }
+
+        .category-header h2 {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .category-header .count {
+            margin-left: auto;
+            font-family: 'Share Tech Mono', monospace;
+            background: var(--surface);
+            padding: 0.15rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: var(--neon-cyan);
+            border: 1px solid var(--border);
+        }
+
+        /* ═══ CARDS GRID ═══ */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--neon-cyan);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px #00ffff11;
+        }
+
+        .card:hover::before { opacity: 1; }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .card-title a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .card-title a:hover { color: var(--neon-cyan); }
+
+        .card-summary {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            flex-grow: 1;
+            line-height: 1.5;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.5rem;
+            margin-top: auto;
+        }
+
+        .card-source {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .category-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 4px currentColor;
+        }
+
+        /* ═══ FOOTER ═══ */
+        .footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .footer a { color: var(--neon-cyan); text-decoration: none; }
+        .footer a:hover { text-shadow: 0 0 8px var(--neon-cyan); }
+
+        .no-articles {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* ═══ NAVIGATION BAR ═══ */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.6rem 1rem;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.85rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-bar a {
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 0.3rem 0.7rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .nav-bar a:hover {
+            color: var(--neon-cyan);
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 8px #00ffff22;
+        }
+
+        .nav-bar a.active {
+            color: var(--neon-cyan);
+            border-color: var(--neon-cyan);
+            background: #00ffff0a;
+        }
+
+        .nav-bar .nav-sep {
+            color: var(--border);
+            user-select: none;
+        }
+
+        /* ═══ SCROLLBAR ═══ */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--neon-cyan); }
+
+        /* ═══ RESPONSIVE ═══ */
+        @media (max-width: 1200px) {
+            .right-rail { display: none; }
+        }
+
+        @media (max-width: 900px) {
+            .sidebar { display: none; }
+            .main-content { padding: 1rem; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI NEWS</h1>
+        <div class="subtitle">// {{ page_subtitle | default("DAILY INTELLIGENCE DIGEST") }} //</div>
+        <div class="date">{{ generated_date }}</div>
+        <div class="stats">{{ total_articles }} articles · {{ total_sources }} sources · {{ total_categories }} categories</div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <div class="nav-bar">
+        {% if nav_links.get('prev') %}
+        <a href="{{ nav_links.prev }}">⬅ {{ nav_links.prev_date }}</a>
+        {% endif %}
+
+        <a href="/index.html" {% if page_type == 'daily' %}class="active"{% endif %}>📅 Today</a>
+        <span class="nav-sep">|</span>
+        <a href="/weekly/latest.html" {% if page_type == 'weekly' %}class="active"{% endif %}>📰 This Week</a>
+        <span class="nav-sep">|</span>
+        <a href="/monthly/latest.html" {% if page_type == 'monthly' %}class="active"{% endif %}>📊 This Month</a>
+
+        {% if nav_links.get('next') %}
+        <a href="{{ nav_links.next }}">{{ nav_links.next_date }} ➡</a>
+        {% endif %}
+    </div>
+
+    <div class="layout">
+        <!-- SIDEBAR NAVIGATION -->
+        <nav class="sidebar">
+            <div class="sidebar-title">Categories</div>
+            {% for cat in categories_with_articles %}
+            <a href="#cat-{{ cat.id }}">
+                <span class="nav-dot" style="background: {{ cat.color }}; box-shadow: 0 0 6px {{ cat.color }};"></span>
+                {{ cat.emoji }} {{ cat.name }}
+                <span class="nav-count">{{ cat.articles | length }}</span>
+            </a>
+            {% endfor %}
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            {% if not categories_with_articles %}
+            <div class="no-articles">No articles found for today. Check back tomorrow! 🌅</div>
+            {% endif %}
+
+            {% for cat in categories_with_articles %}
+            <div class="category-section" id="cat-{{ cat.id }}">
+                <div class="category-header">
+                    <span class="emoji">{{ cat.emoji }}</span>
+                    <h2>{{ cat.name }}</h2>
+                    <span class="count">{{ cat.articles | length }} articles</span>
+                </div>
+                <div class="cards-grid">
+                    {% for article in cat.articles %}
+                    <div class="card">
+                        <div class="card-title">
+                            <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
+                        </div>
+                        <div class="card-summary">
+                            {{ article.ai_summary or article.snippet or "No summary available." }}
+                        </div>
+                        <div class="card-meta">
+                            <div class="card-source">
+                                <span class="category-dot" style="background-color: {{ cat.color }}; color: {{ cat.color }};"></span>
+                                {{ article.source }}
+                            </div>
+                            <div>{{ article.published_display }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-rail">
+            <!-- QUICK STATS -->
+            <div class="rail-section">
+                <div class="rail-title">📊 Quick Stats</div>
+                {% for cat in categories_with_articles %}
+                <div class="stat-row">
+                    <span class="stat-label">
+                        <span class="nav-dot" style="background: {{ cat.color }}; width: 6px; height: 6px; border-radius: 50%; display: inline-block;"></span>
+                        {{ cat.emoji }} {{ cat.name }}
+                    </span>
+                    <span class="stat-value">{{ cat.articles | length }}</span>
+                </div>
+                {% endfor %}
+                <div class="stat-row" style="border-top: 1px solid var(--border); margin-top: 0.5rem; padding-top: 0.5rem;">
+                    <span class="stat-label" style="color: var(--text);">Total</span>
+                    <span class="stat-value" style="color: var(--neon-green);">{{ total_articles }}</span>
+                </div>
+            </div>
+
+            <!-- TRENDING TOPICS -->
+            <div class="rail-section">
+                <div class="rail-title">🏷️ Trending Topics</div>
+                <div>
+                    {% for topic in trending_topics %}
+                    <span class="trending-tag">{{ topic }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="rail-section">
+                <div class="rail-title">🔗 Quick Links</div>
+                <a class="quick-link" href="https://www.aguidetocloud.com" target="_blank">🌐 Blog — aguidetocloud.com</a>
+                <a class="quick-link" href="https://learn.aguidetocloud.com" target="_blank">📚 Learning Portal</a>
+                <a class="quick-link" href="https://youtube.com/susanthsutheesh" target="_blank">🎬 YouTube Channel</a>
+                <a class="quick-link" href="https://github.com/susanthgit/-ainews" target="_blank">💻 Source Code (GitHub)</a>
+            </div>
+
+            <!-- UPDATE STATUS -->
+            <div class="rail-section">
+                <div class="rail-title">🕐 Update Info</div>
+                <div class="update-status">
+                    <span class="status-dot"></span> Auto-updated daily<br>
+                    🕛 Next: midnight NZT<br>
+                    📅 {{ generated_date }}
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="footer">
+        <p>[ GENERATED BY <a href="https://github.com/susanthgit/-ainews">AI NEWS BOT</a> ] — GITHUB ACTIONS + GPT-4o MINI</p>
+        <p style="margin-top: 0.4rem;">PART OF <a href="https://www.aguidetocloud.com">AGUIDETOCLOUD.COM</a> — BUILT BY SUTHEESH</p>
+    </div>
+
+    <script>
+        // Highlight active sidebar link on scroll
+        const sections = document.querySelectorAll('.category-section');
+        const navLinks = document.querySelectorAll('.sidebar a');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    const id = entry.target.id;
+                    const activeLink = document.querySelector(`.sidebar a[href="#${id}"]`);
+                    if (activeLink) activeLink.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>

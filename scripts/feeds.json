@@ -1,0 +1,149 @@
+{
+  "categories": [
+    {
+      "id": "top-stories",
+      "name": "Top Stories",
+      "emoji": "🔥",
+      "color": "#FF6B35",
+      "feeds": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+          "type": "rss"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["AI breakthrough", "AI launch", "AI release", "biggest AI", "major AI", "AI announcement"]
+    },
+    {
+      "id": "rumours",
+      "name": "Rumours & Gossip",
+      "emoji": "🗣️",
+      "color": "#9B59B6",
+      "feeds": [],
+      "keywords": ["AI rumor", "AI leak", "reportedly AI", "allegedly AI", "expected to launch", "AI speculation", "upcoming AI model"]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "emoji": "🟦",
+      "color": "#0078D4",
+      "feeds": [
+        {
+          "name": "Microsoft AI Blog",
+          "url": "https://blogs.microsoft.com/ai/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "Azure Blog",
+          "url": "https://azure.microsoft.com/en-us/blog/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "Microsoft 365 Blog",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Microsoft Copilot", "Azure AI", "Azure OpenAI", "Microsoft Foundry", "Windows AI", "Bing AI", "Microsoft 365 Copilot"]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "emoji": "🟩",
+      "color": "#10A37F",
+      "feeds": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/index/rss/",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["OpenAI", "ChatGPT", "GPT-5", "GPT-4o", "DALL-E", "Sora", "OpenAI API"]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "emoji": "🟥",
+      "color": "#EA4335",
+      "feeds": [
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/rss/",
+          "type": "rss"
+        },
+        {
+          "name": "Google Developers Blog",
+          "url": "https://developers.googleblog.com/feeds/posts/default",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Gemini", "Google DeepMind", "Vertex AI", "Google AI", "Bard", "Android AI"]
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "emoji": "🟪",
+      "color": "#0668E1",
+      "feeds": [
+        {
+          "name": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/rss/",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Meta AI", "Llama", "Meta open source", "PyTorch", "Reality Labs AI"]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "emoji": "🟧",
+      "color": "#D4A574",
+      "feeds": [
+        {
+          "name": "Anthropic Blog",
+          "url": "https://www.anthropic.com/feed.xml",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Anthropic", "Claude", "Claude Opus", "Claude Sonnet", "MCP protocol", "Anthropic safety"]
+    },
+    {
+      "id": "opensource",
+      "name": "Open Source",
+      "emoji": "⬛",
+      "color": "#333333",
+      "feeds": [
+        {
+          "name": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/feed.xml",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Hugging Face", "open source LLM", "Mistral", "Stable Diffusion", "LangChain", "LlamaIndex"]
+    },
+    {
+      "id": "industry",
+      "name": "Industry",
+      "emoji": "🔵",
+      "color": "#4A90D9",
+      "feeds": [
+        {
+          "name": "VentureBeat AI",
+          "url": "https://venturebeat.com/category/ai/feed/",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["AI regulation", "AI funding", "AI startup", "AI partnership", "AI trend", "AI safety", "AGI"]
+    }
+  ]
+}

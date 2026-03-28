@@ -1,0 +1,56 @@
+name: 🗞️ Nightly AI News
+
+on:
+  schedule:
+    # Runs at midnight NZT (11:00 UTC during NZDT / 12:00 UTC during NZST)
+    - cron: '0 11 * * *'
+  workflow_dispatch:  # Manual trigger button
+
+permissions:
+  contents: write   # To commit generated files
+  models: read      # To use GitHub Models for summarisation
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt --quiet
+
+      - name: 📡 Fetch news (RSS + NewsAPI)
+        env:
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+        run: python scripts/fetch_news.py
+
+      - name: 🤖 Summarise with AI (GitHub Models)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/summarise.py
+
+      - name: 🎨 Generate HTML pages
+        run: python scripts/generate_page.py
+
+      - name: 💾 Commit generated files
+        run: |
+          git config user.name "AI News Bot"
+          git config user.email "ainews-bot@aguidetocloud.com"
+          git add site/
+          git diff --cached --quiet || git commit -m "📰 Daily news update — $(date -u +%Y-%m-%d)" --author="AI News Bot <ainews-bot@aguidetocloud.com>"
+          git push
+
+      - name: 🚀 Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          action: "upload"
+          app_location: "site"
+          skip_app_build: true
+          skip_api_build: true

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News — ainews.aguidetocloud.com</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header h1 span { color: var(--accent); }
+
+        .header .date {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .header .stats {
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+        }
+
+        .filter-btn {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.25rem;
+            padding: 1rem 1.25rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: border-color 0.2s;
+        }
+
+        .timeline-item:hover {
+            border-color: var(--accent);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -1.75rem;
+            top: 1.25rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid var(--bg);
+        }
+
+        .timeline-badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .timeline-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.4;
+        }
+
+        .timeline-title a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .timeline-title a:hover { color: var(--accent); }
+
+        .timeline-summary {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer a { color: var(--accent); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        .no-articles {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 2rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🗞️ <span>AI News</span> Daily Digest</h1>
+        <div class="date">{{ generated_date }}</div>
+        <div class="stats">{{ total_articles }} articles from {{ total_sources }} sources across {{ total_categories }} categories</div>
+    </div>
+
+    <div class="filter-bar">
+        {% for cat in all_categories %}
+        <button class="filter-btn active" data-category="{{ cat.id }}">
+            {{ cat.emoji }} {{ cat.name }}
+        </button>
+        {% endfor %}
+    </div>
+
+    <div class="container">
+        {% if not articles %}
+        <div class="no-articles">No articles found for today. Check back tomorrow! 🌅</div>
+        {% endif %}
+
+        <div class="timeline">
+            {% for article in articles %}
+            <div class="timeline-item" data-category="{{ article.category_id }}">
+                <div class="timeline-dot" style="background-color: {{ article.category_color }};"></div>
+                <span class="timeline-badge" style="background-color: {{ article.category_color }};">
+                    {{ article.category_emoji }} {{ article.category_name }}
+                </span>
+                <div class="timeline-title">
+                    <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
+                </div>
+                <div class="timeline-summary">
+                    {{ article.ai_summary or article.snippet or "No summary available." }}
+                </div>
+                <div class="timeline-meta">
+                    <span>{{ article.source }}</span>
+                    <span>{{ article.published_display }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Generated automatically by <a href="https://github.com/susanthgit/-ainews">AI News Bot</a> using GitHub Actions + GPT-4o mini</p>
+        <p style="margin-top: 0.5rem;">Part of <a href="https://www.aguidetocloud.com">aguidetocloud.com</a> — Built by Sutheesh</p>
+    </div>
+
+    <script>
+        // Simple category filter toggle
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+                const activeCategories = [...document.querySelectorAll('.filter-btn.active')]
+                    .map(b => b.dataset.category);
+                document.querySelectorAll('.timeline-item').forEach(item => {
+                    item.style.display = activeCategories.includes(item.dataset.category)
+                        ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

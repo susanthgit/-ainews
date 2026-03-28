@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News — ainews.aguidetocloud.com</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header h1 span { color: var(--accent); }
+
+        .header .date {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .header .stats {
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+        }
+
+        .filter-btn {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.25rem;
+            padding: 1rem 1.25rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: border-color 0.2s;
+        }
+
+        .timeline-item:hover {
+            border-color: var(--accent);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -1.75rem;
+            top: 1.25rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid var(--bg);
+        }
+
+        .timeline-badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .timeline-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.4;
+        }
+
+        .timeline-title a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .timeline-title a:hover { color: var(--accent); }
+
+        .timeline-summary {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer a { color: var(--accent); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        .no-articles {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 2rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🗞️ <span>AI News</span> Daily Digest</h1>
+        <div class="date">Saturday, March 28, 2026 — 04:53 UTC</div>
+        <div class="stats">125 articles from 41 sources across 9 categories</div>
+    </div>
+
+    <div class="filter-bar">
+        
+        <button class="filter-btn active" data-category="top-stories">
+            🔥 Top Stories
+        </button>
+        
+        <button class="filter-btn active" data-category="rumours">
+            🗣️ Rumours & Gossip
+        </button>
+        
+        <button class="filter-btn active" data-category="microsoft">
+            🟦 Microsoft
+        </button>
+        
+        <button class="filter-btn active" data-category="openai">
+            🟩 OpenAI
+        </button>
+        
+        <button class="filter-btn active" data-category="google">
+            🟥 Google
+        </button>
+        
+        <button class="filter-btn active" data-category="meta">
+            🟪 Meta
+        </button>
+        
+        <button class="filter-btn active" data-category="anthropic">
+            🟧 Anthropic
+        </button>
+        
+        <button class="filter-btn active" data-category="opensource">
+            ⬛ Open Source
+        </button>
+        
+        <button class="filter-btn active" data-category="industry">
+            🔵 Industry
+        </button>
+        
+    </div>
+
+    <div class="container">
+        
+
+        <div class="timeline">
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/closing-the-knowledge-gap-with-agent-skills/" target="_blank" rel="noopener">Closing the knowledge gap with agent skills</a>
+                </div>
+                <div class="timeline-summary">
+                    To bridge the gap between static model knowledge and rapidly evolving software practices, Google DeepMind developed a "Gemini API developer skill" that provides agents with live documentation and SDK guidance. Evaluation results show a massive performance boost, with the gemini-3.1-pro-preview model jumping from a 28.2% to a 96.6% success rate when equipped with the skill. This lightweight approach demonstrates how giving models strong reasoning capabilities and access to a "source of truth" can
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/jump-to-play-building-with-gemini-mediapipe/" target="_blank" rel="noopener">Jump to play: Building with Gemini & MediaPipe</a>
+                </div>
+                <div class="timeline-summary">
+                    The provided workflow streamlines motion-controlled game development by using Gemini Canvas to rapidly prototype mechanics like the MediaPipe Pose Landmarker through high-level prompting. Developers can refine these prototypes in Google AI Studio by optimizing for low-latency "lite" models and stable tracking points, such as shoulder landmarks, to ensure responsive gameplay. The process concludes by using Gemini Code Assist to refactor experimental code into a modular, production-ready applicati
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/build-a-smart-financial-assistant-with-llamaparse-and-gemini-31/" target="_blank" rel="noopener">Build a smart financial assistant with LlamaParse and Gemini 3.1</a>
+                </div>
+                <div class="timeline-summary">
+                    This blog post introduces a workflow for extracting high-quality data from complex, unstructured documents by combining LlamaParse with Gemini 3.1 models. It demonstrates an event-driven architecture that uses Gemini 3.1 Pro for agentic parsing of dense financial tables and Gemini 3.1 Flash for cost-effective summarization. By following the provided tutorial, developers can build a personal finance assistant capable of transforming messy brokerage statements into structured, human-readable insig
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/" target="_blank" rel="noopener">Developer’s Guide to AI Agent Protocols</a>
+                </div>
+                <div class="timeline-summary">
+                    This blog post introduces a suite of six protocols, such as MCP and A2A, designed to eliminate custom integration code by standardizing how AI agents access data and communicate. Using a "kitchen manager" agent as a practical example, it demonstrates how these tools handle complex tasks like real-time inventory checks, wholesale commerce via UCP, and secure payment authorization through AP2. By leveraging the Agent Development Kit (ADK), developers can also implement A2UI and AG-UI to deliver in
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/announcing-the-colab-mcp-server-connect-any-ai-agent-to-google-colab/" target="_blank" rel="noopener">Announcing the Colab MCP Server: Connect Any AI Agent to Google Colab</a>
+                </div>
+                <div class="timeline-summary">
+                    When you’re prototyping locally with AI agents like Gemini CLI, Claude Code, or your own agent, thei...
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/plan-mode-now-available-in-gemini-cli/" target="_blank" rel="noopener">Plan mode is now available in Gemini CLI</a>
+                </div>
+                <div class="timeline-summary">
+                    Gemini CLI now features Plan Mode, a read-only environment that allows the AI to analyze complex codebases and map out architectural changes without the risk of accidental execution. By leveraging the new ask_user tool and expanded Model Context Protocol (MCP) support, developers can collaboratively refine strategies and pull in external data before committing to implementation.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/unleash-your-development-superpowers-refining-the-core-coding-experience/" target="_blank" rel="noopener">Unleash Your Development Superpowers: Refining the Core Coding Experience</a>
+                </div>
+                <div class="timeline-summary">
+                    The Gemini Code Assist team has introduced a suite of updates focused on streamlining the core coding workflow through high-velocity tools like Agent Mode with Auto Approve and Inline Diff Views. These enhancements, along with new features for precise context management and custom commands, aim to transform the AI from a general assistant into a highly tailored, seamless collaborator that adapts to your specific development style.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/introducing-finish-changes-and-outlines-now-available-in-gemini-code-assist-extensions-on-intellij-and-vs-code/" target="_blank" rel="noopener">Introducing Finish Changes and Outlines, now available in Gemini Code Assist extensions on IntelliJ and VS Code</a>
+                </div>
+                <div class="timeline-summary">
+                    Google has introduced Finish Changes and Outlines for Gemini Code Assist in IntelliJ and VS Code to reduce developer friction and eliminate the need for long, manual prompting. Finish Changes acts as an AI pair programmer that completes code, implements pseudocode, and applies refactoring patterns by observing your current edits and context. Meanwhile, Outlines improves code comprehension by generating interactive, high-level English summaries interleaved directly within the source code to help 
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/introducing-wednesday-build-hour/" target="_blank" rel="noopener">Introducing Wednesday Build Hour</a>
+                </div>
+                <div class="timeline-summary">
+                    Wednesday Build Hour is a weekly, interactive "technical gym session" led by Google Cloud experts to help developers and architects sharpen their cloud skills. Moving beyond passive slide decks, the program focuses on hands-on building, covering advanced topics like AI agents, Vertex AI, and developer productivity tools. Each hour-long session is designed to provide tangible results that participants can immediately deploy into their own workflows. It serves as a consistent, dedicated space for 
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/whats-new-in-tensorflow-221/" target="_blank" rel="noopener">What's new in TensorFlow 2.21</a>
+                </div>
+                <div class="timeline-summary">
+                    Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/you-cant-stream-the-energy-a-developers-guide-to-google-cloud-next-26-in-vegas/" target="_blank" rel="noopener">You can't stream the energy: A developer's guide to Google Cloud Next '26 in Vegas</a>
+                </div>
+                <div class="timeline-summary">
+                    While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the "in-person advantage" lies in over
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/how-we-built-the-google-io-2026-save-the-date-experience/" target="_blank" rel="noopener">How we built the Google I/O 2026 Save the Date experience</a>
+                </div>
+                <div class="timeline-summary">
+                    Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/supercharge-your-ai-agents-adk-integrations-ecosystem/" target="_blank" rel="noopener">Supercharge your AI agents: The New ADK Integrations Ecosystem</a>
+                </div>
+                <div class="timeline-summary">
+                    Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/on-device-function-calling-in-google-ai-edge-gallery/" target="_blank" rel="noopener">On-Device Function Calling in Google AI Edge Gallery</a>
+                </div>
+                <div class="timeline-summary">
+                    Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the "Tiny Garden" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gal
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/turn-creative-prompts-into-interactive-xr-experiences-with-gemini/" target="_blank" rel="noopener">Turn creative prompts into interactive XR experiences with Gemini</a>
+                </div>
+                <div class="timeline-summary">
+                    The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/get-ready-for-google-io-2026/" target="_blank" rel="noopener">Get ready for Google I/O 2026</a>
+                </div>
+                <div class="timeline-summary">
+                    Google I/O returns May 19-20. Watch the livestreams for updates on Android, AI, Chrome, and Cloud. Registration is open on the Google I/O website.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/conductor-update-introducing-automated-reviews/" target="_blank" rel="noopener">Conductor Update: Introducing Automated Reviews</a>
+                </div>
+                <div class="timeline-summary">
+                    Conductor for the Gemini CLI has introduced a new Automated Review feature designed to verify the quality and accuracy of AI-generated code. This update addresses the challenge of validating agentic development by automatically checking implementations against original plans, enforcing style guides, and identifying security risks or bugs. by incorporating test-suite validation and providing actionable reports, Conductor helps developers ensure that their AI agents deliver safe, predictable, and 
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/making-gemini-cli-extensions-easier-to-use/" target="_blank" rel="noopener">Making Gemini CLI extensions easier to use</a>
+                </div>
+                <div class="timeline-summary">
+                    To simplify the user experience and prevent startup failures, the Gemini CLI has introduced structured extension settings that eliminate the need for manual environment variable configuration. This update enables extensions to automatically prompt users for required details during installation and securely stores sensitive information, such as API keys, directly in the system keychain. Users can now easily manage and override these configurations globally or per project using the new Gemini exte
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/access-public-data-insights-faster-data-commons-mcp-is-now-hosted-on-google-cloud/" target="_blank" rel="noopener">Access public data insights faster: Data Commons MCP is now hosted on Google Cloud</a>
+                </div>
+                <div class="timeline-summary">
+                    Data Commons has launched a free, hosted Model Context Protocol (MCP) service on Google Cloud Platform, eliminating the need for users to manage complex local server installations. This update simplifies connecting AI agents and the Gemini CLI to Data Commons, allowing Google to handle security, updates, and resource management while users query data natively.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://developers.googleblog.com/introducing-the-developer-knowledge-api-and-mcp-server/" target="_blank" rel="noopener">Introducing the Developer Knowledge API and MCP Server</a>
+                </div>
+                <div class="timeline-summary">
+                    Google is launching the Developer Knowledge API and MCP Server in public preview. This new toolset provides a canonical, machine-readable way for AI assistants and agentic platforms to search and retrieve up-to-date documentation across Firebase, Google Cloud, Android, and more. By using the official MCP server, developers can connect tools directly to Google’s documentation corpus, ensuring that AI-generated code and guidance are based on authoritative, real-time context.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google Developers Blog</span>
+                    <span>0m ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/27/why-softbanks-new-40b-loan-points-to-a-2026-openai-ipo/" target="_blank" rel="noopener">Why SoftBank’s new $40B loan points to a 2026 OpenAI IPO</a>
+                </div>
+                <div class="timeline-summary">
+                    Wall Street giants JPMorgan and Goldman Sachs are extending a 12-month, unsecured loan to the Japanese conglomerate.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>7h ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/27/memory-chip-giant-sk-hynix-could-help-end-rammageddon-with-blockbuster-us-ipo/" target="_blank" rel="noopener">Memory chip giant SK hynix could help end ‘RAMmageddon’ with blockbuster US IPO</a>
+                </div>
+                <div class="timeline-summary">
+                    SK hynix’s potential U.S. listing could raise $10-$14 billion to help it build more capacity, encourage others to follow, and end the 'RAMmageddon' memory shortage.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>9h ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/podcast/vcs-are-betting-billions-on-ais-next-wave-so-why-is-openai-killing-sora/" target="_blank" rel="noopener">VCs are betting billions on AI’s next wave, so why is OpenAI killing Sora?</a>
+                </div>
+                <div class="timeline-summary">
+                    When an 82-year-old Kentucky woman was&#160;offered $26 million&#160;from an AI company that wanted to build a data center on her land, she said no. Sure, that same company can try to rezone&#160;2,000 acres&#160;nearby anyway, but as AI infrastructure stretches further into the real world,&#160;the real world is starting to push back.&#160; That tension is everywhere [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>13h ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy" target="_blank" rel="noopener">The latest in data centers, AI, and energy</a>
+                </div>
+                <div class="timeline-summary">
+                    Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the world over their impact on power grids, utility bills, nearby communities, and the environment.&#160; From audacious plans to launch data centers into [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>10h ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/video/openai-shuts-down-sora-while-meta-gets-shut-out-in-court/" target="_blank" rel="noopener">OpenAI shuts down Sora while Meta gets shut out in court</a>
+                </div>
+                <div class="timeline-summary">
+                    When an 82-year-old Kentucky woman was&#160;offered $26 million&#160;from an AI company that wanted to build a data center on her land, she said no. Sure, that same company can try to rezone&#160;2,000 acres&#160;nearby anyway, but as AI infrastructure stretches further into the real world,&#160;the real world is starting to push back.&#160; That tension is everywhere [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>15h ago</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="anthropic">
+                <div class="timeline-dot" style="background-color: #D4A574;"></div>
+                <span class="timeline-badge" style="background-color: #D4A574;">
+                    🟧 Anthropic
+                </span>
+                <div class="timeline-title">
+                    <a href="https://slashdot.org/firehose.pl?op=view&amp;id=181113348" target="_blank" rel="noopener">Judge blocks Pentagon order branding Anthropic a national security risk - The Washington Post</a>
+                </div>
+                <div class="timeline-summary">
+                    Judge blocks Pentagon order branding Anthropic a national security riskThe Washington Post Judge blocks Pentagon’s effort to ‘punish’ Anthropic by labeling it a supply chain risk | CNN BusinessCNN Anthropic wins preliminary injunction in DOD fight as judge ci…
+                </div>
+                <div class="timeline-meta">
+                    <span>Slashdot.org</span>
+                    <span>Mar 27, 04:52</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/numpy-vector-store/" target="_blank" rel="noopener">numpy-vector-store added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    A fast, lightweight, and zero-setup in-memory vector store powered by NumPy
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 04:42</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.c-sharpcorner.com/article/top-5-open-source-alternatives-to-openai-operator-for-task-automation/" target="_blank" rel="noopener">Top 5 Open-Source Alternatives to OpenAI Operator for Task Automation</a>
+                </div>
+                <div class="timeline-summary">
+                    Explore top open-source alternatives to OpenAI Operator for task automation. Discover LangChain, Auto-GPT, CrewAI, Flowise, and Hugging Face for efficient workflows.
+                </div>
+                <div class="timeline-meta">
+                    <span>C-sharpcorner.com</span>
+                    <span>Mar 27, 04:40</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.c-sharpcorner.com/article/how-to-implement-agentic-rag-in-a-production-environment/" target="_blank" rel="noopener">How to Implement Agentic RAG in a Production Environment</a>
+                </div>
+                <div class="timeline-summary">
+                    Learn how to implement Agentic RAG for production! Combine LLMs, vector DBs, & agents for intelligent AI apps. Step-by-step guide & best practices included.
+                </div>
+                <div class="timeline-meta">
+                    <span>C-sharpcorner.com</span>
+                    <span>Mar 27, 04:37</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.livemint.com/companies/people/who-is-lindsay-rae-mcintyre-microsofts-diversity-head-quits-as-hr-team-undergoes-major-ai-first-restructuring-11774581156954.html" target="_blank" rel="noopener">Who is Lindsay-Rae McIntyre? Microsoft's diversity head quits as HR team undergoes major AI-first restructuring</a>
+                </div>
+                <div class="timeline-summary">
+                    Lindsay-Rae McIntyre, who leaves Microsoft on March 31, will take on a chief people officer role elsewhere.&nbsp;
+                </div>
+                <div class="timeline-meta">
+                    <span>Livemint</span>
+                    <span>Mar 27, 04:35</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="anthropic">
+                <div class="timeline-dot" style="background-color: #D4A574;"></div>
+                <span class="timeline-badge" style="background-color: #D4A574;">
+                    🟧 Anthropic
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.c-sharpcorner.com/article/claude-code-vs-github-copilot-which-is-better-for-large-scale-refactoring/" target="_blank" rel="noopener">Claude Code vs. GitHub Copilot: Which is Better for Large-Scale Refactoring?</a>
+                </div>
+                <div class="timeline-summary">
+                    Compare Claude Code & GitHub Copilot for refactoring! Discover which AI tool excels at large-scale architecture changes vs. quick code improvements. Boost productivity!
+                </div>
+                <div class="timeline-meta">
+                    <span>C-sharpcorner.com</span>
+                    <span>Mar 27, 04:35</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/nteract/2.0.4a202603270415/" target="_blank" rel="noopener">nteract 2.0.4a202603270415</a>
+                </div>
+                <div class="timeline-summary">
+                    Bring AI to Jupyter notebooks. MCP server for Claude, ChatGPT, Gemini, OpenCode and any agent.
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 04:35</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.yugatech.com/news/google-search-live-expands-globally/" target="_blank" rel="noopener">Google Search Live expands globally</a>
+                </div>
+                <div class="timeline-summary">
+                    Google has expanded its Search Live feature to over 200 countries. With Google’s Search Live feature reaching more than 200...
+The post Google Search Live expands globally appeared first on YugaTech | Philippines Tech News & Reviews.
+                </div>
+                <div class="timeline-meta">
+                    <span>Yugatech.com</span>
+                    <span>Mar 27, 04:23</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="anthropic">
+                <div class="timeline-dot" style="background-color: #D4A574;"></div>
+                <span class="timeline-badge" style="background-color: #D4A574;">
+                    🟧 Anthropic
+                </span>
+                <div class="timeline-title">
+                    <a href="https://decrypt.co/362548/judge-blocks-pentagon-anthropic-national-security-threat" target="_blank" rel="noopener">Judge Blocks Pentagon From Branding Anthropic a National Security Threat</a>
+                </div>
+                <div class="timeline-summary">
+                    The move could raise limits on how agencies can penalize companies over policy disagreements in the future, experts say.
+                </div>
+                <div class="timeline-meta">
+                    <span>Decrypt</span>
+                    <span>Mar 27, 04:16</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.thestar.com.my/tech/tech-news/2026/03/27/why-chinas-humanoid-robots-are-still-waiting-for-their-chatgpt-moment" target="_blank" rel="noopener">Why China’s humanoid robots are still waiting for their ‘ChatGPT moment’</a>
+                </div>
+                <div class="timeline-summary">
+                    Limited training data and unresolved hardware challenges continue to hold back humanoid robots from mass adoption, say experts. Read full story
+                </div>
+                <div class="timeline-meta">
+                    <span>The Star Online</span>
+                    <span>Mar 27, 04:15</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/openai-usage-report/" target="_blank" rel="noopener">openai-usage-report added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    Console OpenAI API cost and token usage analysis by key and model
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 04:13</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/openai-usage-report/0.3.0/" target="_blank" rel="noopener">openai-usage-report 0.3.0</a>
+                </div>
+                <div class="timeline-summary">
+                    Console OpenAI API cost and token usage analysis by key and model
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 04:13</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="anthropic">
+                <div class="timeline-dot" style="background-color: #D4A574;"></div>
+                <span class="timeline-badge" style="background-color: #D4A574;">
+                    🟧 Anthropic
+                </span>
+                <div class="timeline-title">
+                    <a href="https://indianexpress.com/article/technology/tech-news-technology/us-judge-blocks-pentagons-anthropic-blacklisting-for-now-10603801/" target="_blank" rel="noopener">US judge blocks Pentagon’s Anthropic blacklisting for now</a>
+                </div>
+                <div class="timeline-summary">
+                    Anthropic wins temporary relief as U.S. judge halts Pentagon blacklist in escalating AI battlefield dispute
+                </div>
+                <div class="timeline-meta">
+                    <span>The Indian Express</span>
+                    <span>Mar 27, 04:12</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/token0/" target="_blank" rel="noopener">token0 added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    Open-source API proxy that makes vision LLM calls 5-10x cheaper
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 04:09</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="http://www.adexchanger.com/daily-news-roundup/friday-27032026/" target="_blank" rel="noopener">Netflix’s First MLB Broadcast Wasn’t A Home Run; The AI Data Center Backlash Arrives</a>
+                </div>
+                <div class="timeline-summary">
+                    Netflix's MLB streaming is heavy on the ads; the anti-AI movement gains traction; the court dismissed X's antitrust allegations. 
+The post Netflix’s First MLB Broadcast Wasn’t A Home Run; The AI Data Center Backlash Arrives appeared first on AdExchanger.
+                </div>
+                <div class="timeline-meta">
+                    <span>AdExchanger</span>
+                    <span>Mar 27, 04:03</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="openai">
+                <div class="timeline-dot" style="background-color: #10A37F;"></div>
+                <span class="timeline-badge" style="background-color: #10A37F;">
+                    🟩 OpenAI
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.businessinsider.com/make-app-cursor-lovable-base44-vibe-coding-tools-comparison-2026-3" target="_blank" rel="noopener">We tried 3 of the biggest vibe-coding platforms. Here's what we thought about how they stack up.</a>
+                </div>
+                <div class="timeline-summary">
+                    Three app ideas, three platforms, three writers — ready, get set, code!
+                </div>
+                <div class="timeline-meta">
+                    <span>Business Insider</span>
+                    <span>Mar 27, 04:01</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/nteract/2.0.4a202603270333/" target="_blank" rel="noopener">nteract 2.0.4a202603270333</a>
+                </div>
+                <div class="timeline-summary">
+                    Bring AI to Jupyter notebooks. MCP server for Claude, ChatGPT, Gemini, OpenCode and any agent.
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 03:55</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="anthropic">
+                <div class="timeline-dot" style="background-color: #D4A574;"></div>
+                <span class="timeline-badge" style="background-color: #D4A574;">
+                    🟧 Anthropic
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/wati-astra-cli/" target="_blank" rel="noopener">wati-astra-cli added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    Wati Astra CLI: agent optimizer and MCP server (Go binary wrapped for pip)
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 03:54</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="anthropic">
+                <div class="timeline-dot" style="background-color: #D4A574;"></div>
+                <span class="timeline-badge" style="background-color: #D4A574;">
+                    🟧 Anthropic
+                </span>
+                <div class="timeline-title">
+                    <a href="https://agent-kernel.dev/?release=v1.23.0" target="_blank" rel="noopener">Show HN: Agent Kernel – 3 MD files that turn any AI into a self-aware Agent</a>
+                </div>
+                <div class="timeline-summary">
+                    Article URL: https://agent-kernel.dev/?release=v1.23.0
+Comments URL: https://news.ycombinator.com/item?id=47538948
+Points: 2
+# Comments: 0
+                </div>
+                <div class="timeline-meta">
+                    <span>Agent-kernel.dev</span>
+                    <span>Mar 27, 03:49</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="opensource">
+                <div class="timeline-dot" style="background-color: #333333;"></div>
+                <span class="timeline-badge" style="background-color: #333333;">
+                    ⬛ Open Source
+                </span>
+                <div class="timeline-title">
+                    <a href="https://github.com/Caua-ferraz/AgentGuard" target="_blank" rel="noopener">Show HN: AgentGuard – An open-source firewall to secure autonomous AI agents</a>
+                </div>
+                <div class="timeline-summary">
+                    AictionGuard is a firewall for AI agents, preventing that any unwanted surprises go without supervision by your agent - Caua-ferraz/AgentGuard
+                </div>
+                <div class="timeline-meta">
+                    <span>Github.com</span>
+                    <span>Mar 27, 03:47</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/llama-index-readers-mineru/0.1.1/" target="_blank" rel="noopener">llama-index-readers-mineru 0.1.1</a>
+                </div>
+                <div class="timeline-summary">
+                    llama-index readers MinerU integration — parse PDF/Doc/PPT/images into Markdown via MinerU API
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 03:27</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/llama-index-readers-mineru/" target="_blank" rel="noopener">llama-index-readers-mineru added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    llama-index readers MinerU integration — parse PDF/Doc/PPT/images into Markdown via MinerU API
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 03:27</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.techradar.com/computing/search-engines/googles-ai-powered-conversational-search-live-tool-is-going-global-with-real-time-answers-now-available-in-more-languages" target="_blank" rel="noopener">Google's AI-powered conversational Search Live tool is going global — with real-time answers now available in more languages</a>
+                </div>
+                <div class="timeline-summary">
+                    After an initial rollout in the US, Google’s Search Live is now rolling out to 200 other countries, providing conversational search in 98 languages.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechRadar</span>
+                    <span>Mar 27, 03:17</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="industry">
+                <div class="timeline-dot" style="background-color: #4A90D9;"></div>
+                <span class="timeline-badge" style="background-color: #4A90D9;">
+                    🔵 Industry
+                </span>
+                <div class="timeline-title">
+                    <a href="https://economictimes.indiatimes.com/tech/technology/claude-ai-maker-anthropic-considers-ipo-as-soon-as-october/articleshow/129837524.cms" target="_blank" rel="noopener">Claude AI maker Anthropic considers IPO as soon as October</a>
+                </div>
+                <div class="timeline-summary">
+                    Anthropic PBC is considering going public as soon as in October, according to people familiar with the matter, as the artificial intelligence company races with rival OpenAI Inc. to hold an initial public offering.
+                </div>
+                <div class="timeline-meta">
+                    <span>The Times of India</span>
+                    <span>Mar 27, 02:52</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="industry">
+                <div class="timeline-dot" style="background-color: #4A90D9;"></div>
+                <span class="timeline-badge" style="background-color: #4A90D9;">
+                    🔵 Industry
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.digitimes.com/news/a20260327VL201/anthropic-ipo-ban-legal-government.html" target="_blank" rel="noopener">US AI startup Anthropic battles government ban, eyeing US$60b IPO in high-stakes AI showdown</a>
+                </div>
+                <div class="timeline-summary">
+                    US-based AI startup Anthropic is navigating a pivotal moment that blends legal confrontation with financial ambition, as the firm both fends off a US government ban and explores a potential initial public offering (IPO), according to Bloomberg.
+                </div>
+                <div class="timeline-meta">
+                    <span>Digitimes</span>
+                    <span>Mar 27, 02:51</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.androidauthority.com/gemini-memory-chat-import-rollout-3652475/" target="_blank" rel="noopener">Gemini launches memory and chat import feature that makes it easier to switch</a>
+                </div>
+                <div class="timeline-summary">
+                    Google is rolling out a chat history and memory import feature for Gemini that makes it easy to switch without losing your data.
+                </div>
+                <div class="timeline-meta">
+                    <span>Android Authority</span>
+                    <span>Mar 27, 02:49</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.digitimes.com/news/a20260327PD204/openai-anthropic-google-gemini-apple-ai-2025.html" target="_blank" rel="noopener">Analysis: OpenAI shifts to enterprise, Anthropic advances; Google Gemini leads consumer AI</a>
+                </div>
+                <div class="timeline-summary">
+                    By late 2025, most enterprises adopting AI chose OpenAI. In 2026, that trend is reversing. Enterprise users now increasingly favor Anthropic over OpenAI, marking a shift in competitive positioning within enterprise AI.
+                </div>
+                <div class="timeline-meta">
+                    <span>Digitimes</span>
+                    <span>Mar 27, 02:48</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/loongsuite-instrumentation-google-adk/" target="_blank" rel="noopener">loongsuite-instrumentation-google-adk added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    LoongSuite instrumentation for Google Agent Development Kit (ADK)
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 02:47</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://golf.com/instruction/wring-water-feel-fix-slice/" target="_blank" rel="noopener">"Wring the water" - why this simple feel will fix your slice</a>
+                </div>
+                <div class="timeline-summary">
+                    This simple swing feel from Cameron McCormick will teach you to how to square your clubface and straighten out your shots.
+                </div>
+                <div class="timeline-meta">
+                    <span>Golf.com</span>
+                    <span>Mar 27, 02:44</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://slashdot.org/firehose.pl?op=view&amp;id=181111880" target="_blank" rel="noopener">Google is making it easier to import another AI’s memory into Gemini - The Verge</a>
+                </div>
+                <div class="timeline-summary">
+                    Google is making it easier to import another AI’s memory into GeminiThe Verge Make the switch: Bring your AI memories and chat history to Geminiblog.google Google Gemini Adds Tool to Make It Easier to Switch From ChatGPTBloomberg.com You can now transfer your…
+                </div>
+                <div class="timeline-meta">
+                    <span>Slashdot.org</span>
+                    <span>Mar 27, 02:32</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/dotai-cli/" target="_blank" rel="noopener">dotai-cli added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    Universal AI context for any coding agent. Roles, skills, and rules in ~/.ai/
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 02:26</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="industry">
+                <div class="timeline-dot" style="background-color: #4A90D9;"></div>
+                <span class="timeline-badge" style="background-color: #4A90D9;">
+                    🔵 Industry
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theregister.com/2026/03/27/china_ai_regulation/" target="_blank" rel="noopener">China’s not thrilled its AI experts want to leave the country</a>
+                </div>
+                <div class="timeline-summary">
+                    Urges scientists to avoid major conference, and looks unkindly on Meta's Manus acquisition China appears to be unhappy about its brightest AI talent going offshore, either to visit or to sell their wares.…
+                </div>
+                <div class="timeline-meta">
+                    <span>Theregister.com</span>
+                    <span>Mar 27, 01:41</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/mohitkhare/" target="_blank" rel="noopener">mohitkhare added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    Developer utilities and AI engineering tools by Mohit Khare — code snippets, model helpers, and dev productivity.
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 01:39</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/mcp-armor/" target="_blank" rel="noopener">mcp-armor added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    A comprehensive MCP configuration scanner with client-aware security analysis.
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 01:38</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/david-sacks-is-done-as-ai-czar-heres-what-hes-doing-instead/" target="_blank" rel="noopener">David Sacks is done as AI czar — here’s what he’s doing instead</a>
+                </div>
+                <div class="timeline-summary">
+                    Sacks will be much further from the power center in Washington than since the outset of this second Trump administration.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 27, 01:26</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/orion-v2-compiler/2.1.4/" target="_blank" rel="noopener">orion-v2-compiler 2.1.4</a>
+                </div>
+                <div class="timeline-summary">
+                    Orion FHE compiler — traces, fits, and compiles PyTorch neural networks for encrypted inference
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 01:24</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga/" target="_blank" rel="noopener">Anthropic wins injunction against Trump administration over Defense Department saga</a>
+                </div>
+                <div class="timeline-summary">
+                    A federal judge has ordered that the Trump administration rescind recent restrictions it placed on the AI company.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 27, 01:18</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.androidauthority.com/motorola-razr-ultra-2026-leak-3652450/" target="_blank" rel="noopener">Motorola’s next Razr Ultra leak hints at a thicker, but potentially better Galaxy Z Flip 8 rival</a>
+                </div>
+                <div class="timeline-summary">
+                    Motorola may be focusing on making its flip phone more practical, instead of chasing on an ultra-thin design.
+                </div>
+                <div class="timeline-meta">
+                    <span>Android Authority</span>
+                    <span>Mar 27, 01:06</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.lokmattimes.com/business/embee-software-expands-cybersecurity-portfolio-with-advanced-microsoft-security-stack-and-zero-trust-frameworks/" target="_blank" rel="noopener">Embee Software Expands Cybersecurity Portfolio with Advanced Microsoft Security Stack and Zero Trust Frameworks - www.lokmattimes.com</a>
+                </div>
+                <div class="timeline-summary">
+                    Embee Software Expands Cybersecurity Portfolio with Advanced Microsoft Security Stack and Zero Trust Frameworks - BusinessWire India New Delhi [India], March 26: Embee Software, a leading digital transformation and managed services provider, today announced .…
+                </div>
+                <div class="timeline-meta">
+                    <span>Lokmattimes.com</span>
+                    <span>Mar 27, 01:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="opensource">
+                <div class="timeline-dot" style="background-color: #333333;"></div>
+                <span class="timeline-badge" style="background-color: #333333;">
+                    ⬛ Open Source
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/language-model-common/1.0.21/" target="_blank" rel="noopener">language-model-common 1.0.21</a>
+                </div>
+                <div class="timeline-summary">
+                    Provides the underlying framework to enhance langchain and add loading configurations
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 00:49</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/pytorch-ignite/0.6.0.dev20260327/" target="_blank" rel="noopener">pytorch-ignite 0.6.0.dev20260327</a>
+                </div>
+                <div class="timeline-summary">
+                    A lightweight library to help with training neural networks in PyTorch.
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 27, 00:29</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.nature.com/articles/s41467-026-71038-2" target="_blank" rel="noopener">Generative AI for misalignment-resistant virtual staining to accelerate histopathology workflows</a>
+                </div>
+                <div class="timeline-summary">
+                    Ma, Li, and colleagues present a virtual tissue staining method that overcomes data mismatch by separating image generation from spatial alignment. This approach produces highly accurate diagnostic images that expert pathologists cannot distinguish from real …
+                </div>
+                <div class="timeline-meta">
+                    <span>Nature.com</span>
+                    <span>Mar 27, 00:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="meta">
+                <div class="timeline-dot" style="background-color: #0668E1;"></div>
+                <span class="timeline-badge" style="background-color: #0668E1;">
+                    🟪 Meta
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.nature.com/articles/s41598-026-44282-1" target="_blank" rel="noopener">Graph attention network-based multimodal approach for lung diseases classification</a>
+                </div>
+                <div class="timeline-summary">
+                    Scientific Reports - Graph attention network-based multimodal approach for lung diseases classification
+                </div>
+                <div class="timeline-meta">
+                    <span>Nature.com</span>
+                    <span>Mar 27, 00:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="opensource">
+                <div class="timeline-dot" style="background-color: #333333;"></div>
+                <span class="timeline-badge" style="background-color: #333333;">
+                    ⬛ Open Source
+                </span>
+                <div class="timeline-title">
+                    <a href="https://siliconangle.com/2026/03/26/google-cohere-launch-new-audio-models/" target="_blank" rel="noopener">Google, Cohere launch new audio AI models</a>
+                </div>
+                <div class="timeline-summary">
+                    Google LLC and Cohere Inc. today released new artificial intelligence models optimized for audio processing tasks.  The search giant’s algorithm, Gemini 3.1 Flash Live, can automate customer service interactions. Cohere’s new AI is designed to transcribe spee…
+                </div>
+                <div class="timeline-meta">
+                    <span>SiliconANGLE News</span>
+                    <span>Mar 26, 23:59</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/you-can-now-transfer-your-chats-and-personal-information-from-other-chatbots-directly-into-gemini/" target="_blank" rel="noopener">You can now transfer your chats and personal information from other chatbots directly into Gemini</a>
+                </div>
+                <div class="timeline-summary">
+                    Google is launching "switching tools" that, just as it sounds, will make it easier for users of other chatbots to switch to Gemini.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 23:47</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.businessinsider.com/judge-blocks-anthropic-supply-chain-risk-2026-3" target="_blank" rel="noopener">Judge temporarily blocks the Pentagon from declaring Anthropic a national security risk</a>
+                </div>
+                <div class="timeline-summary">
+                    Anthropic has said it could lose billions if a federal judge didn't step in to block the Trump administration.
+                </div>
+                <div class="timeline-meta">
+                    <span>Business Insider</span>
+                    <span>Mar 26, 23:40</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="opensource">
+                <div class="timeline-dot" style="background-color: #333333;"></div>
+                <span class="timeline-badge" style="background-color: #333333;">
+                    ⬛ Open Source
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/langchain-oneshot/0.8.1/" target="_blank" rel="noopener">langchain-oneshot 0.8.1</a>
+                </div>
+                <div class="timeline-summary">
+                    LangChain tools for OneShot — commercial actions for AI agents
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 23:11</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.notebookcheck.net/Samsung-no-longer-dominates-US-foldable-market-iPhone-Fold-coming-right-on-time.1259973.0.html" target="_blank" rel="noopener">Samsung no longer dominates US foldable market; iPhone Fold coming right on time</a>
+                </div>
+                <div class="timeline-summary">
+                    Samsung's foldable reign is coming to a close as US market shift proves Apple was right to wait. New data shows North American foldable shipments surged 28% as Motorola’s 44% market share and Google’s triple-digit growth put Samsung on high alert.
+                </div>
+                <div class="timeline-meta">
+                    <span>Notebookcheck.net</span>
+                    <span>Mar 26, 22:58</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/windowsml/2.0.297rc0/" target="_blank" rel="noopener">windowsml 2.0.297rc0</a>
+                </div>
+                <div class="timeline-summary">
+                    Python bindings for the Windows AI Machine Learning EP Catalog API
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 22:33</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/windowsml/" target="_blank" rel="noopener">windowsml added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    Python bindings for the Windows AI Machine Learning EP Catalog API
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 22:33</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="opensource">
+                <div class="timeline-dot" style="background-color: #333333;"></div>
+                <span class="timeline-badge" style="background-color: #333333;">
+                    ⬛ Open Source
+                </span>
+                <div class="timeline-title">
+                    <a href="https://japantoday.com/category/tech/ai-is-giving-bad-advice-to-flatter-its-users-says-new-study-on-dangers-of-overly-agreeable-chatbots" target="_blank" rel="noopener">AI is giving bad advice to flatter its users, says new study on dangers of overly agreeable chatbots</a>
+                </div>
+                <div class="timeline-summary">
+                    Artificial intelligence chatbots are so prone to flattering and validating their human users that they are giving bad advice that can damage relationships and reinforce harmful behaviors, according to a new study that explores the dangers of AI telling people…
+                </div>
+                <div class="timeline-meta">
+                    <span>Japan Today</span>
+                    <span>Mar 26, 21:51</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/" target="_blank" rel="noopener">Wikipedia cracks down on the use of AI in article writing</a>
+                </div>
+                <div class="timeline-summary">
+                    The site, whose policies are subject to change, has struggled with the issue of AI-generated writing.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 21:50</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://github.com/camgitt/memoir" target="_blank" rel="noopener">Show HN: Memoir – Sync your AI coding memory across 11 tools and every device</a>
+                </div>
+                <div class="timeline-summary">
+                    Sync and translate AI memory across devices and tools. Back up and migrate Claude, Gemini, Codex, Cursor, Copilot, Windsurf, and Aider configs with one command. - camgitt/memoir
+                </div>
+                <div class="timeline-meta">
+                    <span>Github.com</span>
+                    <span>Mar 26, 21:44</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/tonybaloney-azure-ai-agentserver-copilot/1.0.0b3/" target="_blank" rel="noopener">tonybaloney-azure-ai-agentserver-copilot 1.0.0b3</a>
+                </div>
+                <div class="timeline-summary">
+                    GitHub Copilot SDK adapter for Azure AI Agent Server
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 21:18</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.phonearena.com/news/apple-might-do-the-most-un-apple-thing-with-siri-on-ios-27_id179198" target="_blank" rel="noopener">Apple might do the most un-Apple thing with Siri on iOS 27</a>
+                </div>
+                <div class="timeline-summary">
+                    Apple’s big Siri overhaul could let you personalize your iPhone in a very unusual way.
+                </div>
+                <div class="timeline-meta">
+                    <span>PhoneArena</span>
+                    <span>Mar 26, 21:09</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="opensource">
+                <div class="timeline-dot" style="background-color: #333333;"></div>
+                <span class="timeline-badge" style="background-color: #333333;">
+                    ⬛ Open Source
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/cordum-guard/2.8.4/" target="_blank" rel="noopener">cordum-guard 2.8.4</a>
+                </div>
+                <div class="timeline-summary">
+                    Cordum Safety Guard — @guard decorator for LangChain, LlamaIndex, and plain Python functions
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 20:55</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://wccftech.com/apple-iphone-fold-reportedly-not-launching-alongside-the-iphone-18-pro-duo/" target="_blank" rel="noopener">Apple iPhone Fold Reportedly Not Launching Alongside The iPhone 18 Pro Duo</a>
+                </div>
+                <div class="timeline-summary">
+                    Just around a week ago, a relatively obscure analyst created something of an upheaval when he declared that the iPhone Fold won't actually go on sale until December 2026. Now, a much more authoritative tipster has added his weight behind this delayed launch t…
+                </div>
+                <div class="timeline-meta">
+                    <span>Wccftech</span>
+                    <span>Mar 26, 20:40</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction" target="_blank" rel="noopener">Judge sides with Anthropic to temporarily block the Pentagon&#8217;s ban</a>
+                </div>
+                <div class="timeline-summary">
+                    After Anthropic's weeks-long standoff with the Pentagon, the company won one milestone: A judge granted Anthropic a preliminary injunction in its lawsuit, which sought to reverse its government blacklisting while the judicial process plays out. "The Department of War's records show that it designated Anthropic as a supply chain risk because of its 'hostile manner [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 20:33</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/hb-firewall/" target="_blank" rel="noopener">hb-firewall added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    Multi-tier firewall for AI agents — prompt injection, jailbreak, and scope violation protection
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 20:20</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.windowscentral.com/artificial-intelligence/openai-sora-dead-new-funding-ponzi-scheme-is-the-end-of-openai-nigh-and-will-microsoft-end-up-picking-up-the-pieces" target="_blank" rel="noopener">OpenAI Sora dead, new funding "Ponzi scheme" ... is the end of OpenAI nigh, and will Microsoft end up picking up the pieces?</a>
+                </div>
+                <div class="timeline-summary">
+                    OpenAI looks increasingly chaotic, as it shutters various projects and restructures in ongoing, increasingly fruitless-looking attempts to become profitable.
+                </div>
+                <div class="timeline-meta">
+                    <span>Windows Central</span>
+                    <span>Mar 26, 20:11</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.phonearena.com/news/apples-biggest-iphone-redesign-since-the-iphone-x-might-still-launch-next-year_id179194" target="_blank" rel="noopener">Apple’s biggest iPhone redesign since the iPhone X might still launch next year</a>
+                </div>
+                <div class="timeline-summary">
+                    Despite the setbacks, Apple continues to test crazy design ideas for the 20th anniversary iPhone.
+                </div>
+                <div class="timeline-meta">
+                    <span>PhoneArena</span>
+                    <span>Mar 26, 20:03</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/policy/902140/david-sacks-out-ai-crypto-czar" target="_blank" rel="noopener">David Sacks is no longer the White House AI and Crypto Czar</a>
+                </div>
+                <div class="timeline-summary">
+                    David Sacks, the venture capitalist and tech billionaire who'd become Silicon Valley's primary advocate inside the White House and a key architect of its aggressive AI policy initiatives, revealed on Thursday that he was no longer a special government employee - and therefore no longer President Donald Trump's Special Advisor on AI and Crypto. Sacks' [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 19:40</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.kqed.org/news/12077674/a-new-homelessness-strategy-with-roots-in-the-south-bay-is-sweeping-california" target="_blank" rel="noopener">A New Homelessness Strategy With Roots in the South Bay Is Sweeping California</a>
+                </div>
+                <div class="timeline-summary">
+                    Homelessness prevention shows promising results in California, as advocates push to spread it statewide and nationally.
+                </div>
+                <div class="timeline-meta">
+                    <span>KQED</span>
+                    <span>Mar 26, 19:26</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="http://futurism.com/artificial-intelligence/protestors-anthropic-ai" target="_blank" rel="noopener">Protestors Outside Anthropic Warn of AI That Keeps Improving Itself</a>
+                </div>
+                <div class="timeline-summary">
+                    "It's not only me and other researchers saying this, it's the lab CEOs themselves that [say] the risk is real."
+The post Protestors Outside Anthropic Warn of AI That Keeps Improving Itself appeared first on Futurism.
+                </div>
+                <div class="timeline-meta">
+                    <span>Futurism</span>
+                    <span>Mar 26, 19:04</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.cnbc.com/2026/03/26/meta-to-spend-10-billion-on-ai-data-center-in-el-paso-1gw-by-2028.html" target="_blank" rel="noopener">Meta boosts investment in West Texas AI data center by over sixfold to $10 billion</a>
+                </div>
+                <div class="timeline-summary">
+                    Meta is increasing investment at a data center in El Paso, Texas, to $10 billion from $1.5 billion, as the company ramps up spending on AI infrastructure.
+                </div>
+                <div class="timeline-meta">
+                    <span>CNBC</span>
+                    <span>Mar 26, 19:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/llama-index-embeddings-azure-openai/0.5.2/" target="_blank" rel="noopener">llama-index-embeddings-azure-openai 0.5.2</a>
+                </div>
+                <div class="timeline-summary">
+                    llama-index embeddings azure openai integration
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 18:59</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="industry">
+                <div class="timeline-dot" style="background-color: #4A90D9;"></div>
+                <span class="timeline-badge" style="background-color: #4A90D9;">
+                    🔵 Industry
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.breitbart.com/tech/2026/03/26/ai-startup-backed-by-nvidia-plans-to-take-on-chinas-deepseek/" target="_blank" rel="noopener">AI Startup Backed by Nvidia Plans to Take on China's DeepSeek</a>
+                </div>
+                <div class="timeline-summary">
+                    Reflection, an AI startup supported by chip manufacturer Nvidia, is currently in discussions to raise $2.5 billion at a valuation of $25 billion, with plans to take on China's open source approach to artificial intelligence popularized by DeepSeek.
+The post A…
+                </div>
+                <div class="timeline-meta">
+                    <span>Breitbart News</span>
+                    <span>Mar 26, 18:40</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="industry">
+                <div class="timeline-dot" style="background-color: #4A90D9;"></div>
+                <span class="timeline-badge" style="background-color: #4A90D9;">
+                    🔵 Industry
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/openai-abandons-yet-another-side-quest-chatgpts-erotic-mode/" target="_blank" rel="noopener">OpenAI abandons yet another side quest: ChatGPT's erotic mode | TechCrunch</a>
+                </div>
+                <div class="timeline-summary">
+                    It's only the latest of several side project that the AI startup has ditched over the past week.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch</span>
+                    <span>Mar 26, 18:36</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/openai-abandons-yet-another-side-quest-chatgpts-erotic-mode/" target="_blank" rel="noopener">OpenAI abandons yet another side quest: ChatGPT’s erotic mode</a>
+                </div>
+                <div class="timeline-summary">
+                    It's only the latest of several side projects that the AI startup has ditched over the past week.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 18:34</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/data-centers-get-ready-the-senate-wants-to-see-your-power-bills/" target="_blank" rel="noopener">Data centers get ready — the Senate wants to see your power bills</a>
+                </div>
+                <div class="timeline-summary">
+                    Senators Josh Hawley and Elizabeth Warren want the Energy Information Administration to gather more details about how data centers use power — and how that affects the grid.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 18:23</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="industry">
+                <div class="timeline-dot" style="background-color: #4A90D9;"></div>
+                <span class="timeline-badge" style="background-color: #4A90D9;">
+                    🔵 Industry
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.nextgov.com/artificial-intelligence/2026/03/white-house-official-advocates-give-and-take-state-ai-preemption/412407/" target="_blank" rel="noopener">White House official advocates for a ‘give and take’ on state AI preemption</a>
+                </div>
+                <div class="timeline-summary">
+                    Office of Science and Technology Policy Director Michael Kratsios argued the administration’s AI policy framework allows states to regulate some things about the technology — like child safety and state government procurement — while ensuring a national stand…
+                </div>
+                <div class="timeline-meta">
+                    <span>Nextgov</span>
+                    <span>Mar 26, 18:22</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="industry">
+                <div class="timeline-dot" style="background-color: #4A90D9;"></div>
+                <span class="timeline-badge" style="background-color: #4A90D9;">
+                    🔵 Industry
+                </span>
+                <div class="timeline-title">
+                    <a href="https://cointelegraph.com/news/cftc-chairman-mike-selig-says-blockchain-could-help-verify-ai-generated-content" target="_blank" rel="noopener">CFTC chair Selig says blockchain could help verify AI-generated content</a>
+                </div>
+                <div class="timeline-summary">
+                    The regulator views timestamps and onchain identifiers as tools to distinguish real media from synthetic content, while calling for a light-touch approach to regulating AI agents.
+                </div>
+                <div class="timeline-meta">
+                    <span>Cointelegraph</span>
+                    <span>Mar 26, 18:17</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://alltoc.com/tech/why-did-china-computer-federation-demand-a-neurips-boycott" target="_blank" rel="noopener">Why did China Computer Federation demand a NeurIPS boycott? #tech</a>
+                </div>
+                <div class="timeline-summary">
+                    NeurIPS pushed back against submissions from sanctioned firms The China Computer Federation called for a boycott of NeurIPS after organizers barred submissions from US sanctioned companies, including Huawei. The dispute matters because it ties AI research acc…
+                </div>
+                <div class="timeline-meta">
+                    <span>Alltoc.com</span>
+                    <span>Mar 26, 18:03</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="industry">
+                <div class="timeline-dot" style="background-color: #4A90D9;"></div>
+                <span class="timeline-badge" style="background-color: #4A90D9;">
+                    🔵 Industry
+                </span>
+                <div class="timeline-title">
+                    <a href="https://slashdot.org/firehose.pl?op=view&amp;id=181108770" target="_blank" rel="noopener">Sanders and Ocasio-Cortez introduce a bill to pause US data center construction</a>
+                </div>
+                <div class="timeline-summary">
+                    File this one under "things that might have a shot after the midterms." On Wednesday, Senator Bernie Sanders (I-VT) and Rep. Alexandria Ocasio-Cortez (D-NY) introduced the Artificial Intelligence Data Center Moratorium Act. The bill would require an immediate…
+                </div>
+                <div class="timeline-meta">
+                    <span>Slashdot.org</span>
+                    <span>Mar 26, 17:53</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history" target="_blank" rel="noopener">Google is making it easier to import another AI’s memory into Gemini</a>
+                </div>
+                <div class="timeline-summary">
+                    After Anthropic updated its tool for copying another AI's memory into Claude earlier this month, Google Gemini is rolling out new "Import Memory" and "Import Chat History" features on desktop that can help users quickly copy over everything their current AI already knows about them. To use the "Import Memory" tool, users copy and paste [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 17:44</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="http://electrek.co/2026/03/26/first-ev-with-semi-solid-state-ev-batteries-launching-europe/" target="_blank" rel="noopener">The first EV with a semi-solid-state battery is launching in Europe</a>
+                </div>
+                <div class="timeline-summary">
+                    After introducing the first mass-produced EV with a semi-solid-state battery, MG Motor said it will bring the new battery tech to Europe by the end of 2026. In China, the new MG4 with a semi-solid-state battery starts at under $15,000. Although not that cheap…
+                </div>
+                <div class="timeline-meta">
+                    <span>Electrek</span>
+                    <span>Mar 26, 17:37</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27" target="_blank" rel="noopener">Apple will reportedly allow other AI chatbots to plug into Siri</a>
+                </div>
+                <div class="timeline-summary">
+                    Apple's iOS 27 update will allow users to choose the AI chatbot they want to link with Siri. That's according to a report from Bloomberg's Mark Gurman, who says third-party chatbots downloaded from the App Store, like Google's Gemini or Anthropic's Claude, will be able to fetch replies for Siri - similar to how the [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 17:31</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.globenewswire.com/news-release/2026/03/26/3263312/0/en/Media-Minds-AI-Group-Launches-TrustGraph-The-First-Authority-and-Verification-Standard-for-the-AI-Era.html" target="_blank" rel="noopener">Media Minds AI Group Launches TrustGraph | The First Authority and Verification Standard for the AI Era</a>
+                </div>
+                <div class="timeline-summary">
+                    TrustGraph becomes the SSL for AI - a cryptographic trust standard that ensures every brand's AI identity is verified, authenticated, and permanently on-chain. TrustGraph becomes the SSL for AI - a cryptographic trust standard that ensures every brand's AI id…
+                </div>
+                <div class="timeline-meta">
+                    <span>GlobeNewswire</span>
+                    <span>Mar 26, 17:03</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/" target="_blank" rel="noopener">Watch James Manyika talk AI and creativity with LL COOL J.</a>
+                </div>
+                <div class="timeline-summary">
+                    In the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google AI Blog</span>
+                    <span>Mar 26, 17:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.windowscentral.com/gaming/xbox/everything-announced-at-the-xbox-partner-preview-march-2026-sega-xbox-game-pass-xbox-play-anywhere-and-more" target="_blank" rel="noopener">Everything announced at the Xbox Partner Preview March 2026 — SEGA, Xbox Game Pass, Xbox Play Anywhere, and more</a>
+                </div>
+                <div class="timeline-summary">
+                    Another Xbox Partner Preview showcase is upon us, giving us a closer look at new Xbox and PC games and updates coming from Microsoft's game dev partners.
+                </div>
+                <div class="timeline-meta">
+                    <span>Windows Central</span>
+                    <span>Mar 26, 16:59</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/report/902005/apple-ai-playlist-playground-bad-at-music" target="_blank" rel="noopener">Apple’s AI Playlist Playground is bad at music</a>
+                </div>
+                <div class="timeline-summary">
+                    Apple Music: "What do you want to hear?" Me: "Atmospheric instrumental black metal to write to." Apple Music: "Here's three metal songs with vocals, a field recording, an ambient electronic track, and a piece of doom jazz." I am skeptical of AI's ability to serve up the music I want to begin with, but even [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 16:51</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://timesofindia.indiatimes.com/city/bengaluru/with-vertical-growth-focus-ordinance-planned-for-apartment-residents/articleshow/129830042.cms" target="_blank" rel="noopener">With vertical growth focus, ordinance planned for apartment residents</a>
+                </div>
+                <div class="timeline-summary">
+                    Bengaluru: Signalling a shift towards vertical growth in the city, the govt Thursday said it will go ahead with Karnataka Apartment Ownership and Mana.
+                </div>
+                <div class="timeline-meta">
+                    <span>The Times of India</span>
+                    <span>Mar 26, 16:49</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="microsoft">
+                <div class="timeline-dot" style="background-color: #0078D4;"></div>
+                <span class="timeline-badge" style="background-color: #0078D4;">
+                    🟦 Microsoft
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/ehs-llm-client/0.1.7/" target="_blank" rel="noopener">ehs-llm-client 0.1.7</a>
+                </div>
+                <div class="timeline-summary">
+                    Unified LLM client. Currently supports Openai, Azure Openai and Google Gemini
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 16:28</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.notebookcheck.net/Vivo-Pad6-tablet-tipped-to-depart-from-Vivo-Pad6-Pro-in-crucial-areas.1259933.0.html" target="_blank" rel="noopener">Vivo Pad6 tablet tipped to depart from Vivo Pad6 Pro in crucial areas</a>
+                </div>
+                <div class="timeline-summary">
+                    The Vivo Pad6 Pro is days away from receiving an official release. According to a reliable leaker, Vivo will not be launching a cheaper alternative simultaneously. Instead, the probable Vivo Pad6 is set to arrive separately and with a different display from i…
+                </div>
+                <div class="timeline-meta">
+                    <span>Notebookcheck.net</span>
+                    <span>Mar 26, 16:04</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/" target="_blank" rel="noopener">Transform your headphones into a live personal translator on iOS.</a>
+                </div>
+                <div class="timeline-summary">
+                    Google Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…
+                </div>
+                <div class="timeline-meta">
+                    <span>Google AI Blog</span>
+                    <span>Mar 26, 16:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/" target="_blank" rel="noopener">ByteDance’s new AI video generation model, Dreamina Seedance 2.0, comes to CapCut</a>
+                </div>
+                <div class="timeline-summary">
+                    The new model in CapCut will have built-in protections for making video from real faces or unauthorized intellectual property.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 15:25</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/" target="_blank" rel="noopener">Gemini 3.1 Flash Live: Making audio AI more natural and reliable</a>
+                </div>
+                <div class="timeline-summary">
+                    The Gemini emblem sits next to text reading 'Gemini 3.1 Flash Live'. The background has blue, multicolored dots making up a microphone icon
+                </div>
+                <div class="timeline-meta">
+                    <span>Google AI Blog</span>
+                    <span>Mar 26, 15:21</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="google">
+                <div class="timeline-dot" style="background-color: #EA4335;"></div>
+                <span class="timeline-badge" style="background-color: #EA4335;">
+                    🟥 Google
+                </span>
+                <div class="timeline-title">
+                    <a href="https://blog.google/products-and-platforms/products/search/search-live-global-expansion/" target="_blank" rel="noopener">Search Live is expanding globally</a>
+                </div>
+                <div class="timeline-summary">
+                    A graphic with the words Search Live shown underneath a waveform icon. To the right, a phone shows the Google app with Search Live open. The camera is pointing at trees in a forest.
+                </div>
+                <div class="timeline-meta">
+                    <span>Google AI Blog</span>
+                    <span>Mar 26, 15:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="rumours">
+                <div class="timeline-dot" style="background-color: #9B59B6;"></div>
+                <span class="timeline-badge" style="background-color: #9B59B6;">
+                    🗣️ Rumours & Gossip
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.notebookcheck.net/Massive-DJI-Osmo-Pocket-4-vlogging-camera-shipment-spotted-before-release.1259611.0.html" target="_blank" rel="noopener">Massive DJI Osmo Pocket 4 vlogging camera shipment spotted before release</a>
+                </div>
+                <div class="timeline-summary">
+                    A huge number of DJI Osmo Pocket 4 dummy units have been spotted at a Chinese warehouse. Indicating that a release is almost upon us, the dummy units will be used in retail stores once DJI has officially unveiled its long-awaited Osmo Pocket 3 successor.
+                </div>
+                <div class="timeline-meta">
+                    <span>Notebookcheck.net</span>
+                    <span>Mar 26, 15:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/tech/901816/google-search-live-ai-assistant-expansion" target="_blank" rel="noopener">Google&#8217;s &#8216;live&#8217; AI search assistant can handle conversations in dozens more languages</a>
+                </div>
+                <div class="timeline-summary">
+                    Google is expanding access to Search Live, a feature that lets you search for information using your voice and camera. The AI search assistant is now available in more than 200 countries and territories, as well as dozens of languages, according to an announcement on Thursday. Search Live rolled out broadly in the US last [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 14:47</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://pypi.org/project/mcp-tokenwise/" target="_blank" rel="noopener">mcp-tokenwise added to PyPI</a>
+                </div>
+                <div class="timeline-summary">
+                    Free, local MCP server for context window visibility across all major AI models
+                </div>
+                <div class="timeline-meta">
+                    <span>Pypi.org</span>
+                    <span>Mar 26, 13:49</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/conntour-raises-7m-from-general-catalyst-yc-to-build-an-ai-search-engine-for-security-video-systems/" target="_blank" rel="noopener">Conntour raises $7M from General Catalyst, YC to build an AI search engine for security video systems</a>
+                </div>
+                <div class="timeline-summary">
+                    Conntour uses AI models to let security teams query camera feeds using natural language to find any object, person, or situation.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 13:41</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/cohere-launches-an-open-source-voice-model-specifically-for-transcription/" target="_blank" rel="noopener">Cohere launches an open source voice model specifically for transcription</a>
+                </div>
+                <div class="timeline-summary">
+                    Relatively light at just 2 billion parameters, the model is meant for use with consumer-grade GPUs for those who want to self-host it. It currently supports 14 languages.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 13:30</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.infosecurity-magazine.com/news/ai-top-cyber-priority-defenders-pwc/" target="_blank" rel="noopener">AI Becomes the Top Cybersecurity Priority for Defenders as Criminals Exploit It, PwC Warns</a>
+                </div>
+                <div class="timeline-summary">
+                    PwC Annual Threat Dynamics report says AI-threats are the biggest concern of clients
+                </div>
+                <div class="timeline-meta">
+                    <span>Infosecurity Magazine</span>
+                    <span>Mar 26, 13:15</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/column/901314/meta-new-ray-ban-ai-glasses" target="_blank" rel="noopener">Meta gets ready to launch two new Ray-Ban AI glasses</a>
+                </div>
+                <div class="timeline-summary">
+                    This is Lowpass by Janko Roettgers, a newsletter on the ever-evolving intersection of tech and entertainment, syndicated just for The Verge subscribers once a week. Meta and its AI glasses hardware partner EssilorLuxottica are getting ready to launch the next generation of their Ray-Ban AI glasses. That's according to a series of FCC filings for [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 12:30</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/a-pound-of-flesh-from-data-centers-one-senators-answer-to-ai-job-losses/" target="_blank" rel="noopener">A ‘pound of flesh’ from data centers: one senator’s answer to AI job losses</a>
+                </div>
+                <div class="timeline-summary">
+                    Fears of AI-driven job loss are growing fast, and they’re fueling backlash against data centers. Sen. Mark Warner suggests taxing them to help workers survive the transition.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 12:00</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://techcrunch.com/2026/03/26/mistral-releases-a-new-open-source-model-for-speech-generation/" target="_blank" rel="noopener">Mistral releases a new open source model for speech generation</a>
+                </div>
+                <div class="timeline-summary">
+                    The model, which lets enterprises build voice agents for sales and customer engagement, puts Mistral in direct competition with the likes of ElevenLabs, Deepgram, and OpenAI.
+                </div>
+                <div class="timeline-meta">
+                    <span>TechCrunch AI</span>
+                    <span>Mar 26, 11:30</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/tech/901461/wikipedia-ai-generated-article-ban" target="_blank" rel="noopener">Wikipedia bans AI-generated articles</a>
+                </div>
+                <div class="timeline-summary">
+                    Wikipedia will no longer allow editors to write or rewrite articles using AI. The update, which was added to Wikipedia's guidelines late last week, cites the tendency for AI-written articles to violate "several of Wikipedia's core content policies" as the reason for the ban. The change applies to the English version of Wikipedia and will [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 11:02</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.cnbc.com/2026/03/26/google-ai-turboquant-memory-chip-stocks-samsung-micron.html" target="_blank" rel="noopener">A Google AI breakthrough is pressuring memory chip stocks from Samsung to Micron</a>
+                </div>
+                <div class="timeline-summary">
+                    SK Hynix, Samsung and Micron shares fell as investors fear fewer memory chips may be required in the future.
+                </div>
+                <div class="timeline-meta">
+                    <span>CNBC</span>
+                    <span>Mar 26, 10:58</span>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-category="top-stories">
+                <div class="timeline-dot" style="background-color: #FF6B35;"></div>
+                <span class="timeline-badge" style="background-color: #FF6B35;">
+                    🔥 Top Stories
+                </span>
+                <div class="timeline-title">
+                    <a href="https://www.theverge.com/policy/901404/senators-warren-hawley-eia-letter-data-centers" target="_blank" rel="noopener">Senators are pushing to find out how much electricity data centers actually use</a>
+                </div>
+                <div class="timeline-summary">
+                    On Thursday, senators Elizabeth Warren (D-MA) and Josh Hawley (R-MO) sent a letter to the Energy Information Administration (EIA) asking it to collect "comprehensive, annual energy-use disclosures" on data centers and make that information publicly available, as first reported by Wired. They're urging the agency to "establish a mandatory annual reporting requirement for data centers," [&#8230;]
+                </div>
+                <div class="timeline-meta">
+                    <span>The Verge AI</span>
+                    <span>Mar 26, 10:25</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Generated automatically by <a href="https://github.com/susanthgit/-ainews">AI News Bot</a> using GitHub Actions + GPT-4o mini</p>
+        <p style="margin-top: 0.5rem;">Part of <a href="https://www.aguidetocloud.com">aguidetocloud.com</a> — Built by Sutheesh</p>
+    </div>
+
+    <script>
+        // Simple category filter toggle
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+                const activeCategories = [...document.querySelectorAll('.filter-btn.active')]
+                    .map(b => b.dataset.category);
+                document.querySelectorAll('.timeline-item').forEach(item => {
+                    item.style.display = activeCategories.includes(item.dataset.category)
+                        ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
