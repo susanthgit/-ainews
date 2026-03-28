@@ -5,6 +5,7 @@
       "name": "Top Stories",
       "emoji": "🔥",
       "color": "#FF6B35",
+      "max_articles": 10,
       "feeds": [
         {
           "name": "TechCrunch AI",
@@ -29,6 +30,7 @@
       "name": "Rumours & Gossip",
       "emoji": "🗣️",
       "color": "#9B59B6",
+      "max_articles": 5,
       "feeds": [],
       "keywords": ["AI rumor", "AI leak", "reportedly AI", "allegedly AI", "expected to launch", "AI speculation", "upcoming AI model"]
     },
@@ -136,6 +138,7 @@
       "name": "OpenAI",
       "emoji": "🟩",
       "color": "#10A37F",
+      "max_articles": 7,
       "feeds": [
         {
           "name": "OpenAI Blog",
@@ -150,6 +153,7 @@
       "name": "Google",
       "emoji": "🟥",
       "color": "#EA4335",
+      "max_articles": 7,
       "feeds": [
         {
           "name": "Google AI Blog",
@@ -169,6 +173,7 @@
       "name": "Meta",
       "emoji": "🟪",
       "color": "#0668E1",
+      "max_articles": 5,
       "feeds": [
         {
           "name": "Meta AI Blog",
@@ -183,6 +188,7 @@
       "name": "Anthropic",
       "emoji": "🟧",
       "color": "#D4A574",
+      "max_articles": 5,
       "feeds": [
         {
           "name": "Anthropic Blog",
@@ -197,6 +203,7 @@
       "name": "Open Source",
       "emoji": "⬛",
       "color": "#333333",
+      "max_articles": 5,
       "feeds": [
         {
           "name": "Hugging Face Blog",
@@ -211,6 +218,7 @@
       "name": "Industry",
       "emoji": "🔵",
       "color": "#4A90D9",
+      "max_articles": 7,
       "feeds": [
         {
           "name": "VentureBeat AI",

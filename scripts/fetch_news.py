@@ -211,6 +211,36 @@ def main():
     # Sort by published date (newest first)
     all_articles.sort(key=lambda a: a["published"], reverse=True)
 
+    # Apply per-category article limits (Microsoft categories are unlimited)
+    cat_limits = {}
+    ms_categories = set()
+    for cat in categories:
+        if cat.get("parent") == "microsoft" or cat["id"] == "microsoft":
+            ms_categories.add(cat["id"])
+        max_articles = cat.get("max_articles")
+        if max_articles:
+            cat_limits[cat["id"]] = max_articles
+
+    # Filter: keep all Microsoft articles, limit others
+    cat_counts = {}
+    filtered_articles = []
+    for article in all_articles:
+        cat_id = article["category_id"]
+        cat_counts[cat_id] = cat_counts.get(cat_id, 0) + 1
+
+        if cat_id in ms_categories:
+            filtered_articles.append(article)
+        elif cat_id in cat_limits:
+            if cat_counts[cat_id] <= cat_limits[cat_id]:
+                filtered_articles.append(article)
+        else:
+            filtered_articles.append(article)
+
+    if len(filtered_articles) < len(all_articles):
+        print(f"   📊 Trimmed from {len(all_articles)} → {len(filtered_articles)} (non-Microsoft categories capped)")
+
+    all_articles = filtered_articles
+
     # Save output
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:

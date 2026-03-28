@@ -7,8 +7,8 @@ on:
   workflow_dispatch:  # Manual trigger button
 
 permissions:
-  contents: write   # To commit generated files
-  models: read      # To use GitHub Models for summarisation
+  contents: write
+  id-token: write  # For Azure OIDC login
 
 jobs:
   fetch-and-deploy:
@@ -30,10 +30,17 @@ jobs:
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: python scripts/fetch_news.py
 
-      - name: 🤖 Summarise with AI (GitHub Models)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/summarise.py
+      - name: 🔐 Login to Azure
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: 🤖 Summarise with AI (Azure OpenAI)
+        run: |
+          # Get Azure AD token for Cognitive Services
+          export AZURE_OPENAI_TOKEN=$(az account get-access-token --resource https://cognitiveservices.azure.com --query accessToken -o tsv)
+          export AZURE_OPENAI_ENDPOINT="https://ainews-openai.openai.azure.com/"
+          python scripts/summarise.py
 
       - name: 🎨 Generate HTML pages
         run: python scripts/generate_page.py

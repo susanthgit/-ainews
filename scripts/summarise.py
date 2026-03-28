@@ -1,9 +1,9 @@
 """
-Step 2: Summarise articles using GitHub Models (GPT-4o mini).
+Step 2: Summarise articles using Azure OpenAI (GPT-4o mini).
 Reads articles.json, adds AI summaries, outputs summaries.json.
 
-Uses BATCH mode — sends multiple articles per API call to stay
-within GitHub Models free-tier rate limit (150 req/day).
+Uses BATCH mode — sends multiple articles per API call for efficiency.
+Authenticates via Azure AD token (no API keys needed).
 """
 
 import json
@@ -12,19 +12,20 @@ import sys
 import time
 from pathlib import Path
 
-from openai import OpenAI
+from openai import AzureOpenAI
 
 
 SCRIPT_DIR = Path(__file__).parent
 INPUT_FILE = SCRIPT_DIR / ".." / "site" / "articles.json"
 OUTPUT_FILE = SCRIPT_DIR / ".." / "site" / "summaries.json"
 
-# GitHub Models endpoint
-GITHUB_MODELS_URL = "https://models.inference.ai.azure.com"
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-MODEL = "gpt-4o-mini"
+# Azure OpenAI configuration
+AZURE_ENDPOINT = os.environ.get("AZURE_OPENAI_ENDPOINT", "https://ainews-openai.openai.azure.com/")
+AZURE_TOKEN = os.environ.get("AZURE_OPENAI_TOKEN", "")
+DEPLOYMENT = "gpt-4o-mini"
+API_VERSION = "2024-10-21"
 
-BATCH_SIZE = 10  # Articles per API call (keeps total calls under 150/day)
+BATCH_SIZE = 10  # Articles per API call
 
 SYSTEM_PROMPT = """You are an AI news summariser. You will receive multiple articles.
 For EACH article, write a concise 2-3 sentence summary that:
@@ -47,7 +48,7 @@ def summarise_batch(client, batch):
 
     try:
         response = client.chat.completions.create(
-            model=MODEL,
+            model=DEPLOYMENT,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": f"Summarise these {len(batch)} articles:\n{articles_text}"},
@@ -75,7 +76,7 @@ def summarise_single(client, title, snippet):
     """Fallback: summarise one article at a time."""
     try:
         response = client.chat.completions.create(
-            model=MODEL,
+            model=DEPLOYMENT,
             messages=[
                 {"role": "system", "content": "You are an AI news summariser. Write a 2-3 sentence summary under 80 words. Be factual and neutral."},
                 {"role": "user", "content": f"Title: {title}\nContent: {snippet[:500]}\n\nWrite a 2-3 sentence summary."},
@@ -90,12 +91,12 @@ def summarise_single(client, title, snippet):
 
 
 def main():
-    print("🤖 AI News Summariser (GitHub Models — GPT-4o mini, batch mode)")
+    print("🤖 AI News Summariser (Azure OpenAI — GPT-4o mini)")
     print("=" * 60)
 
-    if not GITHUB_TOKEN:
-        print("❌ GITHUB_TOKEN not set. Set it as an environment variable.")
-        print("   For local testing: $env:GITHUB_TOKEN = 'your-token'")
+    if not AZURE_TOKEN:
+        print("❌ AZURE_OPENAI_TOKEN not set.")
+        print("   Run: az account get-access-token --resource https://cognitiveservices.azure.com --query accessToken -o tsv")
         sys.exit(1)
 
     if not INPUT_FILE.exists():
@@ -107,12 +108,15 @@ def main():
         articles = json.load(f)
 
     print(f"📰 {len(articles)} articles to summarise")
-    print(f"📦 Batch size: {BATCH_SIZE} → ~{(len(articles) // BATCH_SIZE) + 1} API calls")
+    print(f"📦 Batch size: {BATCH_SIZE}")
+    print(f"🔗 Endpoint: {AZURE_ENDPOINT}")
     print()
 
-    client = OpenAI(
-        base_url=GITHUB_MODELS_URL,
-        api_key=GITHUB_TOKEN,
+    # Azure OpenAI client with AD token auth
+    client = AzureOpenAI(
+        azure_endpoint=AZURE_ENDPOINT,
+        api_key=AZURE_TOKEN,
+        api_version=API_VERSION,
     )
 
     # Build list of articles that need summarising
@@ -129,7 +133,7 @@ def main():
     for batch_start in range(0, len(to_summarise), BATCH_SIZE):
         batch = to_summarise[batch_start:batch_start + BATCH_SIZE]
         batch_num = (batch_start // BATCH_SIZE) + 1
-        total_batches = (len(to_summarise) // BATCH_SIZE) + 1
+        total_batches = (len(to_summarise) + BATCH_SIZE - 1) // BATCH_SIZE
         print(f"  📦 Batch {batch_num}/{total_batches} ({len(batch)} articles)...", end=" ")
 
         results = summarise_batch(client, batch)
@@ -154,7 +158,6 @@ def main():
                     summarised += 1
                 time.sleep(0.5)
 
-        # Brief pause between batches to avoid rate-limit bursts
         time.sleep(1)
 
     skipped = len(articles) - summarised
@@ -164,7 +167,7 @@ def main():
 
     print()
     print(f"✅ Done: {summarised} summarised, {skipped} skipped")
-    print(f"   🔄 API calls used: {api_calls} (limit: 150/day)")
+    print(f"   🔄 API calls used: {api_calls}")
     print(f"   Saved to: {OUTPUT_FILE}")
 
 
