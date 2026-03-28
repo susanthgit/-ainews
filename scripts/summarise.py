@@ -1,11 +1,15 @@
 """
 Step 2: Summarise articles using GitHub Models (GPT-4o mini).
 Reads articles.json, adds AI summaries, outputs summaries.json.
+
+Uses BATCH mode — sends multiple articles per API call to stay
+within GitHub Models free-tier rate limit (150 req/day).
 """
 
 import json
 import os
 import sys
+import time
 from pathlib import Path
 
 from openai import OpenAI
@@ -20,30 +24,61 @@ GITHUB_MODELS_URL = "https://models.inference.ai.azure.com"
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 MODEL = "gpt-4o-mini"
 
-SYSTEM_PROMPT = """You are an AI news summariser. For each article, write a concise 2-3 sentence summary that:
+BATCH_SIZE = 10  # Articles per API call (keeps total calls under 150/day)
+
+SYSTEM_PROMPT = """You are an AI news summariser. You will receive multiple articles.
+For EACH article, write a concise 2-3 sentence summary that:
 1. States what happened or was announced
 2. Explains why it matters
 3. Uses plain English — avoid jargon
 
-Keep each summary under 80 words. Be factual and neutral."""
+Keep each summary under 80 words. Be factual and neutral.
+
+Return your response as a JSON array of objects, one per article, in the SAME order as the input.
+Each object must have: {"index": <number>, "summary": "<text>"}
+Return ONLY the JSON array, no other text."""
 
 
-def summarise_article(client, title, snippet):
-    """Generate an AI summary for a single article."""
-    user_prompt = f"""Summarise this AI news article:
-
-Title: {title}
-
-Content: {snippet}
-
-Write a 2-3 sentence summary."""
+def summarise_batch(client, batch):
+    """Summarise a batch of articles in a single API call."""
+    articles_text = ""
+    for i, (idx, title, snippet) in enumerate(batch):
+        articles_text += f"\n---\nArticle {i}:\nTitle: {title}\nContent: {snippet[:500]}\n"
 
     try:
         response = client.chat.completions.create(
             model=MODEL,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt},
+                {"role": "user", "content": f"Summarise these {len(batch)} articles:\n{articles_text}"},
+            ],
+            max_tokens=200 * len(batch),
+            temperature=0.3,
+        )
+        raw = response.choices[0].message.content.strip()
+        # Strip markdown code fences if present
+        if raw.startswith("```"):
+            raw = raw.split("\n", 1)[1] if "\n" in raw else raw[3:]
+            if raw.endswith("```"):
+                raw = raw[:-3]
+            raw = raw.strip()
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        print(f"    ⚠️  JSON parse failed, retrying one-by-one")
+        return None
+    except Exception as e:
+        print(f"    ❌ Batch failed: {e}")
+        return None
+
+
+def summarise_single(client, title, snippet):
+    """Fallback: summarise one article at a time."""
+    try:
+        response = client.chat.completions.create(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": "You are an AI news summariser. Write a 2-3 sentence summary under 80 words. Be factual and neutral."},
+                {"role": "user", "content": f"Title: {title}\nContent: {snippet[:500]}\n\nWrite a 2-3 sentence summary."},
             ],
             max_tokens=150,
             temperature=0.3,
@@ -55,15 +90,14 @@ Write a 2-3 sentence summary."""
 
 
 def main():
-    print("🤖 AI News Summariser (GitHub Models — GPT-4o mini)")
-    print("=" * 50)
+    print("🤖 AI News Summariser (GitHub Models — GPT-4o mini, batch mode)")
+    print("=" * 60)
 
     if not GITHUB_TOKEN:
         print("❌ GITHUB_TOKEN not set. Set it as an environment variable.")
         print("   For local testing: $env:GITHUB_TOKEN = 'your-token'")
         sys.exit(1)
 
-    # Load articles
     if not INPUT_FILE.exists():
         print(f"❌ No articles found at {INPUT_FILE}")
         print("   Run fetch_news.py first.")
@@ -73,49 +107,65 @@ def main():
         articles = json.load(f)
 
     print(f"📰 {len(articles)} articles to summarise")
+    print(f"📦 Batch size: {BATCH_SIZE} → ~{(len(articles) // BATCH_SIZE) + 1} API calls")
     print()
 
-    # Set up GitHub Models client
     client = OpenAI(
         base_url=GITHUB_MODELS_URL,
         api_key=GITHUB_TOKEN,
     )
 
-    # Summarise each article
-    summarised = 0
-    skipped = 0
+    # Build list of articles that need summarising
+    to_summarise = []
     for i, article in enumerate(articles):
         title = article.get("title", "")
         snippet = article.get("snippet", "")
+        if title or snippet:
+            to_summarise.append((i, title, snippet))
 
-        if not snippet and not title:
-            skipped += 1
-            continue
+    # Process in batches
+    summarised = 0
+    api_calls = 0
+    for batch_start in range(0, len(to_summarise), BATCH_SIZE):
+        batch = to_summarise[batch_start:batch_start + BATCH_SIZE]
+        batch_num = (batch_start // BATCH_SIZE) + 1
+        total_batches = (len(to_summarise) // BATCH_SIZE) + 1
+        print(f"  📦 Batch {batch_num}/{total_batches} ({len(batch)} articles)...", end=" ")
 
-        print(f"  [{i+1}/{len(articles)}] {title[:60]}...", end=" ")
-        summary = summarise_article(client, title, snippet)
+        results = summarise_batch(client, batch)
+        api_calls += 1
 
-        if summary:
-            article["ai_summary"] = summary
-            summarised += 1
-            print("✅")
+        if results and isinstance(results, list):
+            for j, item in enumerate(results):
+                summary = item.get("summary", "") if isinstance(item, dict) else ""
+                if summary and j < len(batch):
+                    orig_idx = batch[j][0]
+                    articles[orig_idx]["ai_summary"] = summary
+                    summarised += 1
+            print(f"✅ ({len(results)} summaries)")
         else:
-            skipped += 1
-            print("⏭️ skipped")
+            # Fallback: summarise individually
+            print("⚠️  falling back to individual mode")
+            for idx, title, snippet in batch:
+                summary = summarise_single(client, title, snippet)
+                api_calls += 1
+                if summary:
+                    articles[idx]["ai_summary"] = summary
+                    summarised += 1
+                time.sleep(0.5)
 
-    # Save output
+        # Brief pause between batches to avoid rate-limit bursts
+        time.sleep(1)
+
+    skipped = len(articles) - summarised
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(articles, f, indent=2, ensure_ascii=False)
 
     print()
     print(f"✅ Done: {summarised} summarised, {skipped} skipped")
+    print(f"   🔄 API calls used: {api_calls} (limit: 150/day)")
     print(f"   Saved to: {OUTPUT_FILE}")
-
-    # Rough cost estimate
-    avg_tokens = 200  # rough average per article (input + output)
-    total_tokens = avg_tokens * summarised
-    cost = (total_tokens / 1_000_000) * 0.15  # GPT-4o mini input pricing
-    print(f"   💰 Estimated cost: ~${cost:.4f}")
 
 
 if __name__ == "__main__":
