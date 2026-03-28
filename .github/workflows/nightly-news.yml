@@ -44,6 +44,7 @@ jobs:
           git config user.email "ainews-bot@aguidetocloud.com"
           git add site/
           git diff --cached --quiet || git commit -m "📰 Daily news update — $(date -u +%Y-%m-%d)" --author="AI News Bot <ainews-bot@aguidetocloud.com>"
+          git pull --rebase || true
           git push
 
       - name: 🚀 Deploy to Azure Static Web Apps

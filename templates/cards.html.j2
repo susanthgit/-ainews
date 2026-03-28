@@ -153,6 +153,11 @@
             border-radius: 8px;
         }
 
+        .sidebar a.sub-category {
+            padding-left: 2rem;
+            font-size: 0.85rem;
+        }
+
         .sidebar .nav-dot {
             width: 8px;
             height: 8px;
@@ -507,9 +512,9 @@
         <nav class="sidebar">
             <div class="sidebar-title">Categories</div>
             {% for cat in categories_with_articles %}
-            <a href="#cat-{{ cat.id }}">
+            <a href="#cat-{{ cat.id }}"{% if cat.parent %} class="sub-category"{% endif %}>
                 <span class="nav-dot" style="background: {{ cat.color }}; box-shadow: 0 0 6px {{ cat.color }};"></span>
-                {{ cat.emoji }} {{ cat.name }}
+                {% if cat.parent %}└ {% endif %}{{ cat.emoji }} {{ cat.name }}
                 <span class="nav-count">{{ cat.articles | length }}</span>
             </a>
             {% endfor %}

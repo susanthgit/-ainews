@@ -109,6 +109,7 @@ def generate_cards(articles, feeds_config, date_str=None, nav_links=None, page_t
             "name": cat["name"],
             "emoji": cat["emoji"],
             "color": cat["color"],
+            "parent": cat.get("parent", ""),
             "articles": [],
         }
 

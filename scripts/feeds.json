@@ -57,6 +57,81 @@
       "keywords": ["Microsoft Copilot", "Azure AI", "Azure OpenAI", "Microsoft Foundry", "Windows AI", "Bing AI", "Microsoft 365 Copilot"]
     },
     {
+      "id": "m365-copilot",
+      "name": "M365 Copilot",
+      "emoji": "✨",
+      "color": "#6264A7",
+      "parent": "microsoft",
+      "feeds": [
+        {
+          "name": "Microsoft 365 Copilot Blog",
+          "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot/bg-p/Microsoft365CopilotBlog/rss/board",
+          "type": "rss"
+        },
+        {
+          "name": "M365 Roadmap RSS",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/RoadmapFeatureRSS",
+          "type": "rss"
+        },
+        {
+          "name": "Microsoft 365 Blog",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "Microsoft 365 Admin Blog",
+          "url": "https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rss/board",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Microsoft 365 Copilot", "M365 Copilot", "Copilot for Microsoft 365", "Copilot features", "Copilot update", "Copilot roadmap", "Copilot wave", "Copilot agents", "Microsoft Copilot", "Copilot rollout", "Copilot GA", "Copilot preview"]
+    },
+    {
+      "id": "copilot-studio",
+      "name": "Copilot Studio",
+      "emoji": "🛠️",
+      "color": "#742774",
+      "parent": "microsoft",
+      "feeds": [
+        {
+          "name": "Copilot Studio Blog",
+          "url": "https://techcommunity.microsoft.com/t5/copilot-studio-blog/bg-p/CopilotStudioBlog/rss/board",
+          "type": "rss"
+        },
+        {
+          "name": "Power Platform Blog",
+          "url": "https://techcommunity.microsoft.com/t5/power-platform-blog/bg-p/powerplatformblog/rss/board",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Copilot Studio", "Power Virtual Agents", "declarative agent", "custom copilot", "copilot builder", "Copilot Studio agent", "copilot extensibility", "copilot connector", "copilot action", "agent builder"]
+    },
+    {
+      "id": "ai-foundry",
+      "name": "AI Foundry",
+      "emoji": "🏭",
+      "color": "#008272",
+      "parent": "microsoft",
+      "feeds": [
+        {
+          "name": "AI Platform Blog",
+          "url": "https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog/rss/board",
+          "type": "rss"
+        },
+        {
+          "name": "Azure AI Services Blog",
+          "url": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Services-blog/rss/board",
+          "type": "rss"
+        },
+        {
+          "name": "Azure Blog",
+          "url": "https://azure.microsoft.com/en-us/blog/feed/",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Azure AI Foundry", "AI Foundry", "Azure AI Studio", "Azure Machine Learning", "AI Platform", "prompt flow", "Azure OpenAI", "model catalog", "AI Foundry SDK", "Azure AI agent", "model deployment", "fine-tuning Azure"]
+    },
+    {
       "id": "openai",
       "name": "OpenAI",
       "emoji": "🟩",
