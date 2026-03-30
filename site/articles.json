@@ -7,7 +7,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-30T07:08:43.688443+00:00",
+    "published": "2026-03-30T07:11:34.952608+00:00",
     "snippet": "Google is launching the Developer Knowledge API and MCP Server in public preview. This new toolset provides a canonical, machine-readable way for AI assistants and agentic platforms to search and retrieve up-to-date documentation across Firebase, Google Cloud, Android, and more. By using the official MCP server, developers can connect tools directly to Google’s documentation corpus, ensuring that AI-generated code and guidance are based on authoritative, real-time context.",
     "ai_summary": ""
   },
@@ -19,7 +19,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-30T07:08:43.688434+00:00",
+    "published": "2026-03-30T07:11:34.952599+00:00",
     "snippet": "Data Commons has launched a free, hosted Model Context Protocol (MCP) service on Google Cloud Platform, eliminating the need for users to manage complex local server installations. This update simplifies connecting AI agents and the Gemini CLI to Data Commons, allowing Google to handle security, updates, and resource management while users query data natively.",
     "ai_summary": ""
   },
@@ -31,7 +31,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-30T07:08:43.688425+00:00",
+    "published": "2026-03-30T07:11:34.952574+00:00",
     "snippet": "To simplify the user experience and prevent startup failures, the Gemini CLI has introduced structured extension settings that eliminate the need for manual environment variable configuration. This update enables extensions to automatically prompt users for required details during installation and securely stores sensitive information, such as API keys, directly in the system keychain. Users can now easily manage and override these configurations globally or per project using the new Gemini exte",
     "ai_summary": ""
   },
@@ -43,7 +43,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-30T07:08:43.688416+00:00",
+    "published": "2026-03-30T07:11:34.952565+00:00",
     "snippet": "Conductor for the Gemini CLI has introduced a new Automated Review feature designed to verify the quality and accuracy of AI-generated code. This update addresses the challenge of validating agentic development by automatically checking implementations against original plans, enforcing style guides, and identifying security risks or bugs. by incorporating test-suite validation and providing actionable reports, Conductor helps developers ensure that their AI agents deliver safe, predictable, and ",
     "ai_summary": ""
   },
@@ -55,7 +55,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-30T07:08:43.688406+00:00",
+    "published": "2026-03-30T07:11:34.952556+00:00",
     "snippet": "Google I/O returns May 19-20. Watch the livestreams for updates on Android, AI, Chrome, and Cloud. Registration is open on the Google I/O website.",
     "ai_summary": ""
   },
@@ -67,7 +67,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-30T07:08:43.688397+00:00",
+    "published": "2026-03-30T07:11:34.952547+00:00",
     "snippet": "The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.",
     "ai_summary": ""
   },
@@ -79,7 +79,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-03-30T07:08:43.688388+00:00",
+    "published": "2026-03-30T07:11:34.952538+00:00",
     "snippet": "Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the \"Tiny Garden\" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gal",
     "ai_summary": ""
   },
