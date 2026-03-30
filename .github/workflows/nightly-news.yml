@@ -71,13 +71,13 @@ jobs:
       - name: 🚀 Deploy main website
         run: |
           # Install Hugo
-          wget -q https://github.com/gohugoio/hugo/releases/download/v0.159.1/hugo_extended_0.159.1_linux-amd64.tar.gz
-          tar -xzf hugo_extended_0.159.1_linux-amd64.tar.gz hugo
+          wget -q https://github.com/gohugoio/hugo/releases/download/v0.159.1/hugo_extended_0.159.1_linux-amd64.tar.gz -O /tmp/hugo.tar.gz
+          tar -xzf /tmp/hugo.tar.gz -C /tmp hugo
           # Build Hugo site
           cd /tmp/main-site
-          /tmp/main-site/../hugo --minify --source /tmp/main-site
+          /tmp/hugo --minify
           # Deploy with SWA CLI
-          npm install -g @azure/static-web-apps-cli --quiet
+          npm install -g @azure/static-web-apps-cli --quiet 2>/dev/null
           swa deploy /tmp/main-site/public --deployment-token ${{ secrets.MAIN_SITE_SWA_TOKEN }} --env production
 
       - name: 🚀 Deploy AI News standalone (legacy)
