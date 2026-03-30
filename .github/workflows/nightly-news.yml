@@ -54,7 +54,33 @@ jobs:
           git pull --rebase || true
           git push
 
-      - name: 🚀 Deploy to Azure Static Web Apps
+      - name: 🔄 Update main website with latest news
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_PAT }}
+        run: |
+          # Clone the main site repo, update news data, push
+          git clone https://x-access-token:${GH_TOKEN}@github.com/susanthgit/aguidetocloud-revamp.git /tmp/main-site
+          cp site/summaries.json /tmp/main-site/static/data/ainews/latest.json
+          cd /tmp/main-site
+          git config user.name "AI News Bot"
+          git config user.email "ainews-bot@aguidetocloud.com"
+          git add static/data/ainews/latest.json
+          git diff --cached --quiet || git commit -m "📰 AI News data update — $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: 🚀 Deploy main website
+        run: |
+          # Install Hugo
+          wget -q https://github.com/gohugoio/hugo/releases/download/v0.159.1/hugo_extended_0.159.1_linux-amd64.tar.gz
+          tar -xzf hugo_extended_0.159.1_linux-amd64.tar.gz hugo
+          # Build Hugo site
+          cd /tmp/main-site
+          /tmp/main-site/../hugo --minify --source /tmp/main-site
+          # Deploy with SWA CLI
+          npm install -g @azure/static-web-apps-cli --quiet
+          swa deploy /tmp/main-site/public --deployment-token ${{ secrets.MAIN_SITE_SWA_TOKEN }} --env production
+
+      - name: 🚀 Deploy AI News standalone (legacy)
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
