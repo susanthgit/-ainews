@@ -363,7 +363,13 @@ def main():
         sys.exit(1)
 
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        articles = json.load(f)
+        raw_data = json.load(f)
+
+    # Support both old format (bare array) and new format (object with articles key)
+    if isinstance(raw_data, dict):
+        articles = raw_data.get("articles", [])
+    else:
+        articles = raw_data
 
     with open(FEEDS_FILE, "r", encoding="utf-8") as f:
         feeds_config = json.load(f)
