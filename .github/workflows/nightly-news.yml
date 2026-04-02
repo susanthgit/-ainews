@@ -39,7 +39,7 @@ jobs:
         run: |
           # Get Azure AD token for Cognitive Services
           export AZURE_OPENAI_TOKEN=$(az account get-access-token --resource https://cognitiveservices.azure.com --query accessToken -o tsv)
-          export AZURE_OPENAI_ENDPOINT="https://australiaeast.api.cognitive.microsoft.com/"
+          export AZURE_OPENAI_ENDPOINT="https://ainews-openai.openai.azure.com/"
           python scripts/summarise.py
 
       - name: 🎨 Generate HTML pages
