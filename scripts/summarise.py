@@ -21,7 +21,7 @@ INPUT_FILE = SCRIPT_DIR / ".." / "site" / "articles.json"
 OUTPUT_FILE = SCRIPT_DIR / ".." / "site" / "summaries.json"
 
 # Azure OpenAI configuration
-AZURE_ENDPOINT = os.environ.get("AZURE_OPENAI_ENDPOINT", "https://ainews-openai.openai.azure.com/")
+AZURE_ENDPOINT = os.environ.get("AZURE_OPENAI_ENDPOINT", "https://australiaeast.api.cognitive.microsoft.com/")
 AZURE_TOKEN = os.environ.get("AZURE_OPENAI_TOKEN", "")
 DEPLOYMENT = "gpt-4o-mini"
 API_VERSION = "2024-10-21"
