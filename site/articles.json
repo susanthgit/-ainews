@@ -7,7 +7,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:05:59.117254+00:00",
+    "published": "2026-04-02T01:18:37.602031+00:00",
     "snippet": "Google I/O returns May 19-20. Watch the livestreams for updates on Android, AI, Chrome, and Cloud. Registration is open on the Google I/O website.",
     "ai_summary": ""
   },
@@ -19,7 +19,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:05:59.117244+00:00",
+    "published": "2026-04-02T01:18:37.602021+00:00",
     "snippet": "The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.",
     "ai_summary": ""
   },
@@ -31,7 +31,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:05:59.117235+00:00",
+    "published": "2026-04-02T01:18:37.602012+00:00",
     "snippet": "Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the \"Tiny Garden\" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gal",
     "ai_summary": ""
   },
@@ -43,7 +43,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:05:59.117225+00:00",
+    "published": "2026-04-02T01:18:37.602002+00:00",
     "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
     "ai_summary": ""
   },
@@ -55,7 +55,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:05:59.117216+00:00",
+    "published": "2026-04-02T01:18:37.601993+00:00",
     "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
     "ai_summary": ""
   },
@@ -67,7 +67,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:05:59.117206+00:00",
+    "published": "2026-04-02T01:18:37.601983+00:00",
     "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
     "ai_summary": ""
   },
@@ -79,7 +79,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:05:59.117196+00:00",
+    "published": "2026-04-02T01:18:37.601973+00:00",
     "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
     "ai_summary": ""
   },
@@ -252,6 +252,54 @@
     "ai_summary": ""
   },
   {
+    "id": "47474539e2b67d642116313f46cf0326",
+    "title": "OpenAI: The Fix Is In",
+    "url": "https://om.co/2026/03/31/openai-the-fix-is-in/",
+    "source": "Om.co",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-01T01:18:06+00:00",
+    "snippet": "An update to More Magic Math from OpenAI The final mad dash to IPO is on for the big AI companies. SpaceX, OpenAI, and Anthropic have all made their intentions clear. And nothing could be more obvious about OpenAI’s intent than today’s new funding announcemen…",
+    "ai_summary": ""
+  },
+  {
+    "id": "a7f434dc861eeca231fa0a5ffac5b0ec",
+    "title": "langchain-litellm 0.6.3",
+    "url": "https://pypi.org/project/langchain-litellm/0.6.3/",
+    "source": "Pypi.org",
+    "category_id": "opensource",
+    "category_name": "Open Source",
+    "category_emoji": "⬛",
+    "published": "2026-04-01T01:17:41+00:00",
+    "snippet": "An integration package connecting LiteLLM and LangChain",
+    "ai_summary": ""
+  },
+  {
+    "id": "ef02e81b3f4342c9e7003016b7fe8a0a",
+    "title": "CNBC Daily Open: Markets rally as Trump signals Iran war could end soon",
+    "url": "https://www.cnbc.com/2026/04/01/cnbc-daily-open-us-iran-war-markets-rally-oil-ai-oracle-layoffs.html",
+    "source": "CNBC",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-01T01:17:06+00:00",
+    "snippet": "The impacts from the Iran war continue to way on global supply chains as economists raise their expectations for a potential recession in the U.S.",
+    "ai_summary": ""
+  },
+  {
+    "id": "7d9f695035640a88881ad3eb95169856",
+    "title": "runtm 0.2.16",
+    "url": "https://pypi.org/project/runtm/0.2.16/",
+    "source": "Pypi.org",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-04-01T01:10:19+00:00",
+    "snippet": "Sandboxes where AI agents build and deploy. Spin up isolated environments for Claude Code, Cursor, and other agents.",
+    "ai_summary": ""
+  },
+  {
     "id": "95c1feb2fac9526a97ed4f18fd9f7c32",
     "title": "infinium-claude-code-connector 1.1.1",
     "url": "https://pypi.org/project/infinium-claude-code-connector/1.1.1/",
@@ -384,18 +432,6 @@
     "ai_summary": ""
   },
   {
-    "id": "655cd0535be53ff99c56e27875159afc",
-    "title": "ouroboros-ai 0.26.7.dev1",
-    "url": "https://pypi.org/project/ouroboros-ai/0.26.7.dev1/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-04-01T00:27:50+00:00",
-    "snippet": "Specification-first workflow engine for AI coding agents. Works with Claude Code and Codex CLI.",
-    "ai_summary": ""
-  },
-  {
     "id": "662a7442c5b30306f793326c7f264250",
     "title": "pytorch-tokenizers 1.2.0",
     "url": "https://pypi.org/project/pytorch-tokenizers/1.2.0/",
@@ -453,30 +489,6 @@
     "category_emoji": "⬛",
     "published": "2026-04-01T00:05:03+00:00",
     "snippet": "Provides the underlying framework to enhance langchain and add loading configurations",
-    "ai_summary": ""
-  },
-  {
-    "id": "c1848658200d971b7d8298dbedb60383",
-    "title": "What is OpenAI’s “social contract” policy push? #lifestyle",
-    "url": "https://alltoc.com/lifestyle/what-is-openais-social-contract-policy-push",
-    "source": "Alltoc.com",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-01T00:03:38+00:00",
-    "snippet": "OpenAI’s policy push and what it signals OpenAI is preparing a major policy effort framed around “rethink the social contract,” according to the newest reporting tied to a large funding announcement. The move comes as OpenAI staffers take what’s described as …",
-    "ai_summary": ""
-  },
-  {
-    "id": "f023582ebada9ea4f5d7322db8ef9b94",
-    "title": "How did OpenAI use retail investors in $122B funding? #tech",
-    "url": "https://alltoc.com/tech/how-did-openai-use-retail-investors-in-122b-funding",
-    "source": "Alltoc.com",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-01T00:02:38+00:00",
-    "snippet": "OpenAI adds retail investors to its record $122B funding round OpenAI has closed a massive funding round totaling about $122 billion at an $852 billion valuation, and the company’s capital raise now includes retail investors for the first time. That portion o…",
     "ai_summary": ""
   },
   {
@@ -561,18 +573,6 @@
     "category_emoji": "🔥",
     "published": "2026-03-31T23:58:26+00:00",
     "snippet": "A human really borks things at Anthropic for the second time this week.",
-    "ai_summary": ""
-  },
-  {
-    "id": "cf5ab9ed53dffbc52572cd3ff09252cb",
-    "title": "agent-failure-debugger added to PyPI",
-    "url": "https://pypi.org/project/agent-failure-debugger/",
-    "source": "Pypi.org",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-03-31T23:54:51+00:00",
-    "snippet": "Diagnose why your LLM agent failed. Deterministic causal analysis with fix generation.",
     "ai_summary": ""
   },
   {
