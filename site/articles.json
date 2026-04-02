@@ -7,8 +7,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:31:51.765495+00:00",
+    "published": "2026-04-02T02:31:03.766182+00:00",
     "snippet": "Google I/O returns May 19-20. Watch the livestreams for updates on Android, AI, Chrome, and Cloud. Registration is open on the Google I/O website.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -19,8 +20,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:31:51.765486+00:00",
+    "published": "2026-04-02T02:31:03.766168+00:00",
     "snippet": "The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -31,8 +33,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:31:51.765476+00:00",
+    "published": "2026-04-02T02:31:03.766155+00:00",
     "snippet": "Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the \"Tiny Garden\" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gal",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -43,8 +46,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:31:51.765467+00:00",
+    "published": "2026-04-02T02:31:03.766141+00:00",
     "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -55,8 +59,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:31:51.765457+00:00",
+    "published": "2026-04-02T02:31:03.766126+00:00",
     "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -67,8 +72,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:31:51.765448+00:00",
+    "published": "2026-04-02T02:31:03.766110+00:00",
     "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -79,8 +85,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:31:51.765438+00:00",
+    "published": "2026-04-02T02:31:03.766096+00:00",
     "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -93,6 +100,7 @@
     "category_emoji": "✨",
     "published": "2026-04-01T23:15:50+00:00",
     "snippet": "Skills allow extensibility of the SharePoint AI Agent, enabling customizable solutions that adapt to unique business needs. They address gaps in out-of-the-box functionality for unique business processes and enable reusable multi-step workflows. GA date: May CY2026Preview date: April CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -105,6 +113,7 @@
     "category_emoji": "✨",
     "published": "2026-04-01T23:15:50+00:00",
     "snippet": "Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You’re always in control, as each section can be turned on or off based on your preferences.GA date: May CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -117,6 +126,7 @@
     "category_emoji": "✨",
     "published": "2026-04-01T23:15:50+00:00",
     "snippet": "A new feed type available to users to catch up on posts from people and communities they follow with featured, leadership, and corporate updates.GA date: June CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -129,6 +139,7 @@
     "category_emoji": "✨",
     "published": "2026-04-01T23:15:50+00:00",
     "snippet": "Use the in-product migration tool in Unified Catalog to migrate classic glossary terms, associated term templates, and asset and column relationships to Unified Catalog\nGA date: July CY2026Preview date: April CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -141,6 +152,7 @@
     "category_emoji": "✨",
     "published": "2026-04-01T23:15:50+00:00",
     "snippet": "Facilitator now automatically detects open questions raised during a Teams meeting and offers to help answer them using web search. When a participant asks a question (e.g., “What is an LLM?”) and no one answers, Facilitator posts a prompt offering to find an answer. Participants can select “Yes” to have the agent retrieve and share the information.GA date: June CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -153,6 +165,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-01T22:12:13+00:00",
     "snippet": "Anthropic executives said it was an accident and retracted the bulk of the takedown notices.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -165,6 +178,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-01T18:35:36+00:00",
     "snippet": "Meta's upcoming Hyperion AI data center will be powered by 10 new natural gas plants.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -177,6 +191,7 @@
     "category_emoji": "⬛",
     "published": "2026-04-01T16:36:15+00:00",
     "snippet": "",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -189,6 +204,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-01T16:00:00+00:00",
     "snippet": "The firm says it can reduce the cost of chip development by more than 75% and cut the timeline by more than half.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -201,6 +217,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-01T14:00:00+00:00",
     "snippet": "StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together on April 30. Space is limited. Register here for your pass.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -213,6 +230,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-01T08:38:58-04:00",
     "snippet": "If you're tired of controlling Stream Deck devices by manually pushing buttons, then good news: Elgato will now let you delegate that task to a chatbot instead. The Stream Deck 7.4 software update released today introduces Model Context Protocol (MCP) support, allowing AI assistants like Claude, ChatGPT, and Nvidia G-Assist to find and activate Stream [&#8230;]",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -225,6 +243,7 @@
     "category_emoji": "⬛",
     "published": "2026-04-01T07:13:20+00:00",
     "snippet": "",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -237,6 +256,150 @@
     "category_emoji": "🔥",
     "published": "2026-04-01T06:39:52-04:00",
     "snippet": "Numerous robotaxis operated by Chinese tech giant Baidu froze in a major city on Tuesday, reportedly trapping passengers inside, stranding them on highways, and causing at least one accident in snarled traffic. Police in Wuhan confirmed receiving multiple reports of Baidu's Apollo Go robotaxis stopping in the middle of streets and being unable to move. [&#8230;]",
+    "image": "",
+    "ai_summary": ""
+  },
+  {
+    "id": "0bde015a2b31af574e7a53cfea7f27b1",
+    "title": "Microsoft 365 Copilotに「Copilot Cowork」など追加",
+    "url": "https://codezine.jp/news/detail/23827",
+    "source": "Codezine.jp",
+    "category_id": "m365-copilot",
+    "category_name": "M365 Copilot",
+    "category_emoji": "✨",
+    "published": "2026-04-01T02:30:00+00:00",
+    "snippet": "",
+    "image": "https://codezine.jp/static/images/article/23827/microsoft.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "a09004258e0c3d9bf30dc7a1058aa852",
+    "title": "Anthropic signs deal with federal government",
+    "url": "https://www.itnews.com.au/news/anthropic-signs-deal-with-federal-government-624725?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Software+feed",
+    "source": "iTnews",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-04-01T02:26:10+00:00",
+    "snippet": "On AI safety and economic data tracking.",
+    "image": "https://i.nextmedia.com.au/News/pp-canberra-parliament-shutterstock_85527103.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "60ab7f6bf3e4bc4f29314248c9757f16",
+    "title": "Anthropic signs deal with federal government",
+    "url": "https://www.itnews.com.au/news/anthropic-signs-deal-with-federal-government-624725?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+News+feed",
+    "source": "iTnews",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-04-01T02:25:04+00:00",
+    "snippet": "On AI safety and economic data tracking.",
+    "image": "https://i.nextmedia.com.au/News/pp-canberra-parliament-shutterstock_85527103.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "b2b5070d106c939aede15fe9f156bdc4",
+    "title": "ion-cli added to PyPI",
+    "url": "https://pypi.org/project/ion-cli/",
+    "source": "Pypi.org",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-04-01T02:16:04+00:00",
+    "snippet": "The physics simulation runtime for AI agents",
+    "image": "https://pypi.org/static/images/twitter.abaf4b19.webp",
+    "ai_summary": ""
+  },
+  {
+    "id": "9cfae0bca418a5c706de298d7ef45187",
+    "title": "lefx 0.3.1",
+    "url": "https://pypi.org/project/lefx/0.3.1/",
+    "source": "Pypi.org",
+    "category_id": "opensource",
+    "category_name": "Open Source",
+    "category_emoji": "⬛",
+    "published": "2026-04-01T02:14:33+00:00",
+    "snippet": "LangSmith Evaluation Framework - A plug-and-play evaluation system for LangChain, LangGraph, and LangSmith projects",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "472df88dc5129a6dc7afd0af221fe735",
+    "title": "Meta's new structured prompting technique makes LLMs significantly better at code review",
+    "url": "https://venturebeat.com/orchestration/metas-new-structured-prompting-technique-makes-llms-significantly-better-at",
+    "source": "VentureBeat",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-04-01T02:13:56+00:00",
+    "snippet": "This technique can be used out-of-the-box, requiring no model training or special packaging. It is code-execution free, which means you do not need to add additional tools to your LLM environment.",
+    "image": "https://images.ctfassets.net/jdtwqhzvc2n1/0K2ROWPBO4EuSMhg5LPky/cc517300d97768f9fdbd4130d72f182e/agentic_code_reasoning.jpg?w=800&q=75",
+    "ai_summary": ""
+  },
+  {
+    "id": "84149c57fd5307ef7dd560e076a30943",
+    "title": "Anthropic Accidentally Exposes Source Code for Claude Code",
+    "url": "https://www.cnet.com/tech/anthropic-accidentally-exposes-source-code-for-claude-code/",
+    "source": "CNET",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-01T02:10:06+00:00",
+    "snippet": "The AI company blames the leak on human error, but says no customer data was released.",
+    "image": "https://www.cnet.com/a/img/resize/78687bd6a4f7082d418126ac1aaaa028a1a0e3ef/hub/2026/04/01/a3e29691-0059-49b8-aa41-4581e4b0d193/gettyimages-2261821464.jpg?auto=webp&fit=crop&height=675&width=1200",
+    "ai_summary": ""
+  },
+  {
+    "id": "3d4eb841f439dc8d61c29c974773e1d6",
+    "title": "ccmeter 0.1.8",
+    "url": "https://pypi.org/project/ccmeter/0.1.8/",
+    "source": "Pypi.org",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-04-01T02:09:15+00:00",
+    "snippet": "Measure your actual Claude Code usage limits instead of guessing",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "16d9f95f643aa57d1cb17748f1dd2594",
+    "title": "Morning Headlines 4/1/26",
+    "url": "https://histalk2.com/2026/03/31/morning-headlines-4-1-26/",
+    "source": "Histalk2.com",
+    "category_id": "ai-foundry",
+    "category_name": "AI Foundry",
+    "category_emoji": "🏭",
+    "published": "2026-04-01T02:03:02+00:00",
+    "snippet": "HHS Aligns Health Technology Leadership to Deliver Data Liquidity, Affordability, ...",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "f6aa2fb610cf52e21a478e1eedd470d1",
+    "title": "Nomadic is making video data searchable for AI model training after raising $8.4M in funding",
+    "url": "https://siliconangle.com/2026/03/31/nomadic-making-video-data-searchable-ai-model-training-raising-8-4m-funding/",
+    "source": "SiliconANGLE News",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-01T01:56:24+00:00",
+    "snippet": "NomadicML Inc. said today it has raised $8.4 million in seed funding to address the critical video data management headaches that are unique to autonomous robots and vehicles. The round was led by TQ Ventures and saw participation from Pear VC, with Jeff Dean…",
+    "image": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/03/Screenshot-from-2026-04-01-08-50-51.png",
+    "ai_summary": ""
+  },
+  {
+    "id": "26a536cd3cfc97a3e2d2ee3c63e4aa50",
+    "title": "Mercor says it was hit by cyberattack tied to compromise of open-source LiteLLM project | TechCrunch",
+    "url": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
+    "source": "TechCrunch",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-01T01:44:21+00:00",
+    "snippet": "The AI recruiting startup confirmed a security incident after an extortion hacking crew took credit for stealing data from the company's systems.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/03/mercor-website.jpg?resize=1200,800",
     "ai_summary": ""
   },
   {
@@ -249,18 +412,33 @@
     "category_emoji": "🔥",
     "published": "2026-04-01T01:42:59+00:00",
     "snippet": "The AI recruiting startup confirmed a security incident after an extortion hacking crew took credit for stealing data from the company's systems.",
+    "image": "",
     "ai_summary": ""
   },
   {
-    "id": "ba031cc5eda90b967543e5af002daee1",
-    "title": "comfyui-skill-cli added to PyPI",
-    "url": "https://pypi.org/project/comfyui-skill-cli/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-04-01T01:31:43+00:00",
-    "snippet": "ComfyUI Skill CLI — Agent-friendly workflow management",
+    "id": "87911907fd3b581f9b0a243026ea7010",
+    "title": "OpenAI raises $122 billion in boosted funding round",
+    "url": "https://economictimes.indiatimes.com/tech/funding/openai-raises-122-billion-in-boosted-funding-round/articleshow/129939140.cms",
+    "source": "The Times of India",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-01T01:39:07+00:00",
+    "snippet": "The funding round included a diverse set of partners, including Amazon, Microsoft, Nvidia, and Softbank, according to OpenAI. In an unusual move, some $3 billion was reportedly raised from individual investors. The company in February, began rolling out adver…",
+    "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-253714,resizemode-75,msid-129939140/tech/funding/openai-raises-122-billion-in-boosted-funding-round.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "b8478e93bc11ca288cc417963dacafce",
+    "title": "Anthropic seals new multi-billion dollar deal with Albanese government to track, advance use of AI",
+    "url": "https://thenightly.com.au/business/anthropic-seals-new-multi-billion-dollar-deal-with-albanese-government-to-track-advance-use-of-ai--c-22078764",
+    "source": "Thenightly.com.au",
+    "category_id": "ai-foundry",
+    "category_name": "AI Foundry",
+    "category_emoji": "🏭",
+    "published": "2026-04-01T01:34:41+00:00",
+    "snippet": "AI giant Anthropic has sealed a multi-billion dollar deal with the Albanese government to track and advance the use of artificial intelligence in Australia.",
+    "image": "https://images.thenightly.com.au/publication/C-22078764/17680b105e3fd4789ae128dc2c45e0272e81771d-16x9-x701y80w3253h1830.webp?imwidth=1200",
     "ai_summary": ""
   },
   {
@@ -273,6 +451,7 @@
     "category_emoji": "🗣️",
     "published": "2026-04-01T01:29:32+00:00",
     "snippet": "Nothing is rumored to launch a brand-new product early next year.",
+    "image": "https://m-cdn.phonearena.com/images/article/179337-wide-two_1200/This-small-brand-could-mess-up-Apples-2027-plans.jpg",
     "ai_summary": ""
   },
   {
@@ -285,6 +464,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-01T01:25:18+00:00",
     "snippet": "Package:\r\n\nPHP AI Models\r\n\nSummary: \r\n\nClass to encapsulate constants used by AI models\r\n\nGroups: \r\n\nArtificial intelligence, PHP 8, Web services\r\n\nAuthor: \r\n\nUjah Chigozie peter\r\n\nDescription: \r\n\nThis package has a class to encapsulate constants used by AI m…",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -297,6 +477,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-01T01:18:06+00:00",
     "snippet": "An update to More Magic Math from OpenAI The final mad dash to IPO is on for the big AI companies. SpaceX, OpenAI, and Anthropic have all made their intentions clear. And nothing could be more obvious about OpenAI’s intent than today’s new funding announcemen…",
+    "image": "https://om.co/wp-content/uploads/2023/03/om-fallback1.png",
     "ai_summary": ""
   },
   {
@@ -309,6 +490,7 @@
     "category_emoji": "⬛",
     "published": "2026-04-01T01:17:41+00:00",
     "snippet": "An integration package connecting LiteLLM and LangChain",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -321,30 +503,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-01T01:17:06+00:00",
     "snippet": "The impacts from the Iran war continue to way on global supply chains as economists raise their expectations for a potential recession in the U.S.",
-    "ai_summary": ""
-  },
-  {
-    "id": "7d9f695035640a88881ad3eb95169856",
-    "title": "runtm 0.2.16",
-    "url": "https://pypi.org/project/runtm/0.2.16/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-04-01T01:10:19+00:00",
-    "snippet": "Sandboxes where AI agents build and deploy. Spin up isolated environments for Claude Code, Cursor, and other agents.",
-    "ai_summary": ""
-  },
-  {
-    "id": "95c1feb2fac9526a97ed4f18fd9f7c32",
-    "title": "infinium-claude-code-connector 1.1.1",
-    "url": "https://pypi.org/project/infinium-claude-code-connector/1.1.1/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-04-01T01:04:39+00:00",
-    "snippet": "Bridge between Claude Code hooks and Infinium agent tracing",
+    "image": "https://image.cnbcfm.com/api/v1/image/108285724-17749938202026-03-31t214003z_642498300_rc2xfkato9es_rtrmadp_0_usa-trump.jpeg?v=1774993845&w=1920&h=1080",
     "ai_summary": ""
   },
   {
@@ -357,42 +516,7 @@
     "category_emoji": "🔵",
     "published": "2026-04-01T01:01:41+00:00",
     "snippet": "Woven Capital is the growth-stage venture capital arm of Toyota, focused on backing founders building in space, cybersecurity, and autonomous driving.",
-    "ai_summary": ""
-  },
-  {
-    "id": "c65a9a905b64b6861205dd992bed28b5",
-    "title": "横須賀商工会議所パソコン教室が2026年4月1日にリニューアル！",
-    "url": "https://prtimes.jp/main/html/rd/p/000000012.000149948.html",
-    "source": "Prtimes.jp",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-01T01:00:00+00:00",
-    "snippet": "[株式会社ミライフ]\n[画像1: https://prcdn.freetls.fastly.net/release_image/149948/12/149948-12-0d56960d87ff8d77c06ad9c36abc8c73-720x540.jpg?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&am...",
-    "ai_summary": ""
-  },
-  {
-    "id": "95bbcf10224189b4437605e2f47fd731",
-    "title": "'You've tarnished Apple's reputation': 11 things Apple got horribly wrong over the past 50 years",
-    "url": "https://www.techradar.com/tech/youve-tarnished-apples-reputation-11-things-apple-got-horribly-wrong-over-the-past-50-years",
-    "source": "TechRadar",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-01T01:00:00+00:00",
-    "snippet": "From rock band downloads to unreliable keyboards, here are the biggest Apple misfires in the last fifty years.",
-    "ai_summary": ""
-  },
-  {
-    "id": "fd41cd62c2b5e416e688ec6c09a627fb",
-    "title": "Show HN: WMB-100K – Open benchmark for AI memory systems at 100K turns",
-    "url": "https://github.com/Irina1920/WMB-100K",
-    "source": "Github.com",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-01T00:59:55+00:00",
-    "snippet": "Article URL: https://github.com/Irina1920/WMB-100K\nComments URL: https://news.ycombinator.com/item?id=47595494\nPoints: 1\n# Comments: 0",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/03/Woven-Capital.jpg?resize=1200,800",
     "ai_summary": ""
   },
   {
@@ -405,30 +529,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-01T00:41:44+00:00",
     "snippet": "Meta is using artificial intelligence to handle some of the tasks that help it build safer products and services, the company said in a Tuesday (March 31) blog post. The firm’s AI-powered Risk Review program has enabled Meta to identify risks earlier, apply s…",
-    "ai_summary": ""
-  },
-  {
-    "id": "90e7e0753b324981084cfc6ccfce5c20",
-    "title": "feishu-cc added to PyPI",
-    "url": "https://pypi.org/project/feishu-cc/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-04-01T00:34:32+00:00",
-    "snippet": "Feishu (Lark) bot messaging and remote control for Claude Code and terminals",
-    "ai_summary": ""
-  },
-  {
-    "id": "9beab5d889a536a9bbbe3ed2aa9e332d",
-    "title": "feishu-cc 0.1.0",
-    "url": "https://pypi.org/project/feishu-cc/0.1.0/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-04-01T00:34:32+00:00",
-    "snippet": "Feishu (Lark) bot messaging and remote control for Claude Code and terminals",
+    "image": "https://www.pymnts.com/wp-content/uploads/2026/03/Meta-AI-development-1.jpg",
     "ai_summary": ""
   },
   {
@@ -441,18 +542,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-01T00:32:41+00:00",
     "snippet": "A lightweight library to help with training neural networks in PyTorch.",
-    "ai_summary": ""
-  },
-  {
-    "id": "9b98be6c9818c500acea79d36463f804",
-    "title": "IAMAI sees ‘overreach’ in NHRC’s notice to AI companies on DPDP violations",
-    "url": "https://economictimes.indiatimes.com/tech/technology/iamai-sees-overreach-in-nhrcs-notice-to-ai-companies-on-dpdp-violations/articleshow/129934002.cms",
-    "source": "The Times of India",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-01T00:30:00+00:00",
-    "snippet": "The Internet and Mobile Association of India (IAMAI) has written to the Ministry of Electronics and Information Technology (MeitY), voicing its concerns over the March 24 National Human Rights Commission (NHRC) notice that had alleged breaches of the Digital …",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -465,6 +555,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-01T00:18:48+00:00",
     "snippet": "A package with common tokenizers in Python and C++",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -477,6 +568,7 @@
     "category_emoji": "🏭",
     "published": "2026-04-01T00:12:00+00:00",
     "snippet": "NeuroView AI Glasses 2026: real-time translation, HD capture, AI features, pricing, and key consumer considerations reviewed....",
+    "image": "https://ml.globenewswire.com/Resource/Download/a3a82f62-0aa7-4e2b-9f9f-60939b66c001",
     "ai_summary": ""
   },
   {
@@ -489,6 +581,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-01T00:07:06+00:00",
     "snippet": "Scrub PII from PDFs, images, and DOCX files. Local-only. One command.",
+    "image": "https://pypi.org/static/images/twitter.abaf4b19.webp",
     "ai_summary": ""
   },
   {
@@ -501,6 +594,20 @@
     "category_emoji": "⬛",
     "published": "2026-04-01T00:05:03+00:00",
     "snippet": "Provides the underlying framework to enhance langchain and add loading configurations",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "c1848658200d971b7d8298dbedb60383",
+    "title": "What is OpenAI’s “social contract” policy push? #lifestyle",
+    "url": "https://alltoc.com/lifestyle/what-is-openais-social-contract-policy-push",
+    "source": "Alltoc.com",
+    "category_id": "industry",
+    "category_name": "Industry",
+    "category_emoji": "🔵",
+    "published": "2026-04-01T00:03:38+00:00",
+    "snippet": "OpenAI’s policy push and what it signals OpenAI is preparing a major policy effort framed around “rethink the social contract,” according to the newest reporting tied to a large funding announcement. The move comes as OpenAI staffers take what’s described as …",
+    "image": "https://alltoc.com/cdn/1046/og.png",
     "ai_summary": ""
   },
   {
@@ -513,6 +620,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-01T00:00:00+00:00",
     "snippet": "Salesforce transforms Slack into an AI operating system with 30+ new features! Slackbot orchestrates tasks, boosts productivity, and competes with Microsoft & Google.",
+    "image": "https://www.c-sharpcorner.com/images/csharp-corner-new.png",
     "ai_summary": ""
   },
   {
@@ -525,6 +633,7 @@
     "category_emoji": "🟦",
     "published": "2026-04-01T00:00:00+00:00",
     "snippet": "A fully automated methodology based on rubrics capturing a broad range of cognitive and intellectual demands is illustrated using LLMs and tasks, demonstrating a new way to evaluate the capabilities of AI systems and anticipate their performance.",
+    "image": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41586-026-10303-2/MediaObjects/41586_2026_10303_Fig1_HTML.png",
     "ai_summary": ""
   },
   {
@@ -537,6 +646,7 @@
     "category_emoji": "🟦",
     "published": "2026-04-01T00:00:00+00:00",
     "snippet": "The 10 highest-rated articles on\nHacker News\non March 31, 2026 which have not appeared on any previous\nHacker News Daily\nare:\n<ul>\n<li>\nDo your own writing\n(comments)\n</li>\n<li>\nCodingFont: A game to help you pick a coding font\n(comments)\n</li>\n<li>\nArtemis I…",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -549,6 +659,7 @@
     "category_emoji": "🏭",
     "published": "2026-04-01T00:00:00+00:00",
     "snippet": "Most leaders I speak with are well past the hype cycle of AI. The question is no longer whether AI matters. The question is how to move from experimentation to production in a way that is security-focused, supportable, and repeatable across teams.From where I…",
+    "image": "https://www.redhat.com/themes/custom/rhdc/img/red-hat-social-share.jpg",
     "ai_summary": ""
   },
   {
@@ -561,18 +672,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-01T00:00:00+00:00",
     "snippet": "The study introduces manifold topological deep learning (MTDL) that extends topological deep learning to data on differentiable manifolds through de Rham-Hodge theory. MTDL outperforms competing methods on various biomedical imaging benchmarks.",
-    "ai_summary": ""
-  },
-  {
-    "id": "ecaef4926578a23cc105687398053b66",
-    "title": "Quantifying uncertainty in protein representations across models and tasks",
-    "url": "https://www.nature.com/articles/s41592-026-03028-7",
-    "source": "Nature.com",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-04-01T00:00:00+00:00",
-    "snippet": "A model-agnostic empirical framework is proposed to measure the uncertainty associated with protein embeddings and to assess the biological relevance of these embeddings in order to improve model reliability and performance on downstream tasks.",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -585,6 +685,7 @@
     "category_emoji": "🔥",
     "published": "2026-03-31T23:58:26+00:00",
     "snippet": "A human really borks things at Anthropic for the second time this week.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -597,6 +698,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T23:15:47+00:00",
     "snippet": "Microsoft Teams displays a badge on the app bar that reflects activity across chats and channels. Now, it’s easier to find and clear the messages behind that badge. Unmuted chats show a purple indicator when they affect the badge, while mentions, followed threads, and tag mentions display a purple number indicating how many items within are unread and part of the count.GA date: May CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -609,6 +711,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T23:15:47+00:00",
     "snippet": "Teams chat and channel lists can be filtered to show unread items only. When this filter is applied, hovering over a section reveals an eye icon next to the section name. Selecting the eye icon opens a list of read chats or channels within that section, allowing you to open them without leaving the unread-only view.GA date: May CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -621,6 +724,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T23:15:47+00:00",
     "snippet": "Users will be able to see a community's pinned resources and related communities in Teams for iOS.GA date: April CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -633,6 +737,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T23:15:47+00:00",
     "snippet": "Introduce an AI-powered capability leveraging Microsoft Security Copilot to automatically generate natural language explanations of changes made to DLP policies after each update within Microsoft Purview. This feature will analyze policy version deltas (pre-update vs. post-update) and produce a structured, human-readable summary that clearly explains: What changed Where the change occurred (rule, condition, action, location, etc.) The impact of the change The potential enforcement implications T",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -645,6 +750,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T23:15:47+00:00",
     "snippet": "Enables auto‑labeling of existing SharePoint files to match the default sensitivity label configured on their document library. This helps organizations close labeling gaps for data at rest and ensure consistent, secure‑by‑default protection across SharePoint libraries—without relying on manual user labeling.GA date: May CY2026Preview date: March CY2026",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -657,6 +763,7 @@
     "category_emoji": "🏭",
     "published": "2026-03-31T22:47:00+00:00",
     "snippet": "Major service provider T-Mobile has just released its network-based live translation feature to a subset of beta users, which doesn't even require an app.",
+    "image": "https://www.bgr.com/img/gallery/t-mobile-just-released-its-network-based-live-translation-beta/l-intro-1774988590.jpg",
     "ai_summary": ""
   },
   {
@@ -669,6 +776,7 @@
     "category_emoji": "🔥",
     "published": "2026-03-31T22:46:25+00:00",
     "snippet": "Slack just got a whole lot more useful.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -681,6 +789,7 @@
     "category_emoji": "🏭",
     "published": "2026-03-31T22:46:18+00:00",
     "snippet": "Tenex.ai Inc., a provider of managed threat detection and response services, today announced that it raised $250 million in funding. Crosspoint Capital Partners led the Series B round with participation from Shield Capital and DeepWork Capital. The cash infus…",
+    "image": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/03/security-265130_1280.jpg",
     "ai_summary": ""
   },
   {
@@ -693,6 +802,7 @@
     "category_emoji": "🗣️",
     "published": "2026-03-31T21:41:57+00:00",
     "snippet": "The Pixel 11 Pro renders look like Google has run out of ideas.",
+    "image": "https://m-cdn.phonearena.com/images/article/179334-wide-two_1200/Pixel-11-Pro-leak-reveals-design-changes-that-look-disappointing.jpg",
     "ai_summary": ""
   },
   {
@@ -705,6 +815,7 @@
     "category_emoji": "🗣️",
     "published": "2026-03-31T21:12:06+00:00",
     "snippet": "Nothing is reportedly working on smart glasses and new earbuds. The smart glasses could launch sooner than you expect.",
+    "image": "https://www.androidauthority.com/wp-content/uploads/2022/07/nothing-phone-1-logo-1-scaled.jpeg",
     "ai_summary": ""
   },
   {
@@ -717,6 +828,7 @@
     "category_emoji": "🗣️",
     "published": "2026-03-31T20:57:00+00:00",
     "snippet": "20/20 BioLabs Reports Full Year 2025 Financial Results and Recent Operational Progress...",
+    "image": "https://ml.globenewswire.com/Resource/Download/bcaf95ca-9983-408c-bc61-646e4ee2f925",
     "ai_summary": ""
   },
   {
@@ -729,6 +841,7 @@
     "category_emoji": "🏭",
     "published": "2026-03-31T20:29:03+00:00",
     "snippet": "SyntaxMatrix: A Framework for building owned AI Platform.",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -741,6 +854,7 @@
     "category_emoji": "🟦",
     "published": "2026-03-31T20:24:58+00:00",
     "snippet": "Before its global rollout, Lenovo first launched the Yoga Mini i mini PC in China, a few months after its introduction at CES 2026. The Yoga Mini i is built around the Intel Panther Lake platform, with configurations listed up to a Core Ultra X7 385H processo…",
+    "image": "https://www.techpowerup.com/img/lgEhxsCThfFbffQF.jpg",
     "ai_summary": ""
   },
   {
@@ -753,6 +867,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T20:19:29+00:00",
     "snippet": "With Microsoft losing almost a quarter of its value this year, investors have reset the company's earnings multiple to the lowest since late 2022.",
+    "image": "https://image.cnbcfm.com/api/v1/image/108285098-1774917942238-gettyimages-2262969012-20090101260225-99-646954.jpeg?v=1774918005&w=1920&h=1080",
     "ai_summary": ""
   },
   {
@@ -765,6 +880,7 @@
     "category_emoji": "🔵",
     "published": "2026-03-31T20:18:45+00:00",
     "snippet": "Governor Gavin Newsom orders stronger safeguards for AI companies seeking California contracts, escalating tensions with the Trump administration over national AI regulation.",
+    "image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2025/09/gavin-newsom-decrypt-style-01-gID_7.jpg",
     "ai_summary": ""
   },
   {
@@ -777,6 +893,7 @@
     "category_emoji": "🟦",
     "published": "2026-03-31T19:59:23+00:00",
     "snippet": "Auto-generate beautiful docs from any codebase",
+    "image": "https://pypi.org/static/images/twitter.abaf4b19.webp",
     "ai_summary": ""
   },
   {
@@ -789,6 +906,7 @@
     "category_emoji": "🏭",
     "published": "2026-03-31T19:31:02+00:00",
     "snippet": "SyntaxMatrix: A Framework for building owned AI Platform.",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -801,18 +919,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T19:30:00+00:00",
     "snippet": "Service Agent brings Dynamics 365 Customer Service context, insights, and actions directly into Microsoft 365 Copilot.\nThe post Introducing Service Agent in Microsoft 365 Copilot appeared first on Microsoft Dynamics 365 Blog.",
-    "ai_summary": ""
-  },
-  {
-    "id": "74bab405a87accddd810f3cb66cc1d39",
-    "title": "Iran threatens imminent attacks on US tech companies in the Middle East",
-    "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181193926",
-    "source": "Slashdot.org",
-    "category_id": "ai-foundry",
-    "category_name": "AI Foundry",
-    "category_emoji": "🏭",
-    "published": "2026-03-31T19:12:21+00:00",
-    "snippet": "The Islamic Revolutionary Guard Corps (IRGC), a branch of Iran's armed forces, has threatened to target US tech companies' operations in the Middle East. It told employees of 18 companies — including Apple, Google, Meta and NVIDIA — “to leave their workplaces…",
+    "image": "https://www.microsoft.com/en-us/dynamics-365/blog/wp-content/uploads/2025/09/MSC22_Getty_UK_Finance_1044306972.jpg",
     "ai_summary": ""
   },
   {
@@ -825,6 +932,7 @@
     "category_emoji": "🗣️",
     "published": "2026-03-31T19:01:24+00:00",
     "snippet": "Apple has updated its list of vintage and obsolete products today, with additions that include select Apple TV HD, iPad mini, and MacBook Air models.\n\n\n\n more…",
+    "image": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/03/apple-tv-4k-4.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
     "ai_summary": ""
   },
   {
@@ -837,6 +945,7 @@
     "category_emoji": "🔵",
     "published": "2026-03-31T18:56:18+00:00",
     "snippet": "n the small hours of Tuesday morning, something unexpected appeared on iPhones across mainland China. Apple Intelligence, the suite of AI-powered tools that the company has spent nearly two years trying to bring to its largest market outside the US, flickered…",
+    "image": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2026%2F03%2Fapple-intelligence-china-accidental-rollout-regulatory-risk.png&signature=cea77dd5535f533fb3fce331dcdd97c4",
     "ai_summary": ""
   },
   {
@@ -849,6 +958,7 @@
     "category_emoji": "🔵",
     "published": "2026-03-31T18:42:13+00:00",
     "snippet": "Launched for public use in June last year, Yupp was a free-to-use platform that provided users with response options generated by over 500 generative AI models, including OpenAI's ChatGPT, Anthropic's Claude, Google's Gemini, and models from Mistral. In addit…",
+    "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1293939,resizemode-75,msid-129934965/tech/startups/a16z-backed-yupp-ai-shuts-down-operations-here-is-why.jpg",
     "ai_summary": ""
   },
   {
@@ -861,6 +971,7 @@
     "category_emoji": "🔵",
     "published": "2026-03-31T18:22:00+00:00",
     "snippet": "At 4 AM on March 31, 2026, I woke up to my phone blowing up with notifications. The Claude Code source had been exposed, and the entire dev community was in a frenzy. My girlfriend in Korea was genuinely worried I might face legal action from Anthropic just f…",
+    "image": "https://opengraph.githubassets.com/fea9f0189ca9b98646ed30548ae51fc8a3a2398cda7538e2116247e831e5e0f0/instructkr/claw-code",
     "ai_summary": ""
   },
   {
@@ -873,6 +984,7 @@
     "category_emoji": "🔵",
     "published": "2026-03-31T18:20:51+00:00",
     "snippet": "AI models can analyze images that don't exist, new research shows, raising big questions about how they work and well they will perform in real world settings",
+    "image": "https://fortune.com/img-assets/wp-content/uploads/2026/03/GettyImages-1059288688-e1774977477412.jpg?resize=1200,600",
     "ai_summary": ""
   },
   {
@@ -885,6 +997,7 @@
     "category_emoji": "🟦",
     "published": "2026-03-31T17:56:45+00:00",
     "snippet": "Modular, provider-agnostic RAG library — any LLM, any vector store, any graph DB, any file format",
+    "image": "https://pypi.org/static/images/twitter.abaf4b19.webp",
     "ai_summary": ""
   },
   {
@@ -897,18 +1010,7 @@
     "category_emoji": "🟦",
     "published": "2026-03-31T17:45:46+00:00",
     "snippet": "There were more than a few developers flabbergasted to find out Copilot had injected advertisements into the descriptions of GitHub pull requests they made recently.  Microsoft was injecting ads for Raycast,…",
-    "ai_summary": ""
-  },
-  {
-    "id": "59a2c85a24b4d2fcdc4de31bc08f76bd",
-    "title": "AI Startup “Upstage” in Talks to Purchase 10,000 Advanced Micro Devices (AMD) Chips in Korea",
-    "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_20fffaa1-b41f-492c-8be4-16ca86c83ea3",
-    "source": "Yahoo Entertainment",
-    "category_id": "industry",
-    "category_name": "Industry",
-    "category_emoji": "🔵",
-    "published": "2026-03-31T17:39:24+00:00",
-    "snippet": "",
+    "image": "https://pcper.com/wp-content/uploads/2026/03/microsoft-copilot.png",
     "ai_summary": ""
   },
   {
@@ -921,6 +1023,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T17:00:00+00:00",
     "snippet": "Microsoft commissioned Forrester Consulting to evaluate the potential return on investment organizations may realize by deploying Business Central.\nThe post Enable accelerated growth with confidence: A Forrester TEI study projects more than 200% ROI over thre…",
+    "image": "https://www.microsoft.com/en-us/dynamics-365/blog/wp-content/uploads/2026/03/GettyImages-1392016982-rgb-scaled.jpg",
     "ai_summary": ""
   },
   {
@@ -933,6 +1036,7 @@
     "category_emoji": "🟦",
     "published": "2026-03-31T16:09:49+00:00",
     "snippet": "Explore AI-powered .NET development using a Copilot-first approach. Learn how to build real-time applications with SignalR and AI, shifting from CRUD to experience-driven systems.",
+    "image": "https://www.c-sharpcorner.com/images/csharp-corner-new.png",
     "ai_summary": ""
   },
   {
@@ -945,6 +1049,7 @@
     "category_emoji": "🟦",
     "published": "2026-03-31T16:00:00+00:00",
     "snippet": "Read actionable advice for CISOs on securing AI, managing risk, and applying core security principles in today’s AI‑powered environment.\nThe post Applying security fundamentals to AI: Practical advice for CISOs appeared first on Microsoft Security Blog.",
+    "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/03/Practical-CISO-advice.jpg",
     "ai_summary": ""
   },
   {
@@ -957,18 +1062,7 @@
     "category_emoji": "🟦",
     "published": "2026-03-31T15:00:00+00:00",
     "snippet": "f菴儀篋パソ⒢с\r\n\n<ul> <li> ャ500筝LiteLLMｅ、潟ケ祀穩SH泣AWS茯┝私皿渇莢 (qiita, 2026.03.25) \r\n LiteLLM㍇I/CD、ゃb>吾恰絎/b>гrivy、潟ケ祀礒羆rivyゃ❼、喝yPI茯┝祚紙＜朱rrishdholakia「ヲ潟箙障 \r\n <li> 2026綛1ャaxiosオゃс恰网牙ッ若cヲ潟\n罘 (yamory.io, 2026.03.31) \r\n 紙篋plain-crypto-js ェ宴吾axios絖篆菴遵br>\nnpm install 茵postins…",
-    "ai_summary": ""
-  },
-  {
-    "id": "8b421b16bd18f8e22efeba4a4c608ba1",
-    "title": "(PC蚊㍾紜膀, 3/31) indows11WindowsUpdat ...",
-    "url": "http://www.st.ryukoku.ac.jp/~kjm/security/memo/2026/04.html#20260401__win11",
-    "source": "Ryukoku.ac.jp",
-    "category_id": "m365-copilot",
-    "category_name": "M365 Copilot",
-    "category_emoji": "✨",
-    "published": "2026-03-31T15:00:00+00:00",
-    "snippet": "(PC蚊㍾紜膀, 3/31) <li> indows11WindowsUpdate 2026綛筝 絽紊違㏍ー❼ KB5086672 (PC蚊㍾紜膀, 4/1) \r\n </li>",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -981,6 +1075,20 @@
     "category_emoji": "✨",
     "published": "2026-03-31T15:00:00+00:00",
     "snippet": "(ebisuda.net, 3/31) Microsoft撮炊罧泣owerShell*Windows Management Instrumentation鐚徑I鐚*owerShell腟у⑧礙エミowerShellMI鴻「サ鴻 Get-WmiObject Get-CimInstance 潟潟ャ潟潟❼、潟篁ヤ純",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "8b421b16bd18f8e22efeba4a4c608ba1",
+    "title": "(PC蚊㍾紜膀, 3/31) indows11WindowsUpdat ...",
+    "url": "http://www.st.ryukoku.ac.jp/~kjm/security/memo/2026/04.html#20260401__win11",
+    "source": "Ryukoku.ac.jp",
+    "category_id": "m365-copilot",
+    "category_name": "M365 Copilot",
+    "category_emoji": "✨",
+    "published": "2026-03-31T15:00:00+00:00",
+    "snippet": "(PC蚊㍾紜膀, 3/31) <li> indows11WindowsUpdate 2026綛筝 絽紊違㏍ー❼ KB5086672 (PC蚊㍾紜膀, 4/1) \r\n </li>",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -993,6 +1101,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T15:00:00+00:00",
     "snippet": "nginx\r\n \n<ul> <li> Web泣ginx祉ュャ」≪若篁吟識с篆③ (腦 2026.03.27) \r\n\n</li></ul>\n\r\n ぞ Wi-Fi 帥\r\n \n<ul> <li>\r\n Aterm激若コi-Fi帥識сf。若ァ≪違❾羈腆肴/a> (Internet Watch, 2026.03.27) \r\n <li>\r\n 。㏍茲㍽綣掩'＜ヲс「違❾膈羈腆肴/a> (Internet Watch, 2026.03.26) \r\n <li>\r\n NTTウ≪home 5G HR01❼キｃ若ソ若≪ゃ帥8茖遵綣掩'＜ヲ…",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -1005,6 +1114,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T14:34:04+00:00",
     "snippet": "NEW YORK — Microsoft Corp. shares climbed more than 2% in morning trading Tuesday, with the stock reaching around $366.64 as broader market optimism over potential Iran conflict de-escalation lifted tech names and investors looked past recent concerns about h…",
+    "image": "https://d.ibtimes.com.au/en/full/1891680/microsoft-slashes-jobs-across-teams-aims-streamline-management.jpg",
     "ai_summary": ""
   },
   {
@@ -1017,18 +1127,7 @@
     "category_emoji": "✨",
     "published": "2026-03-31T13:43:05+00:00",
     "snippet": "A malware campaign uses WhatsApp messages to deliver VBS scripts that initiate a multi-stage infection chain. The attack leverages renamed Windows tools and cloud-hosted payloads to install MSI backdoors and maintain persistent access to compromised systems.\n…",
-    "ai_summary": ""
-  },
-  {
-    "id": "08f8dc3b82df11642ce3ff4a6c40b405",
-    "title": "This is Microsoft's new \"Copilot Cowork\": An experiment with Anthropic's Claude AI models that plans and delegates your work",
-    "url": "https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/this-is-microsoft-new-copilot-cowork-ai",
-    "source": "Windows Central",
-    "category_id": "m365-copilot",
-    "category_name": "M365 Copilot",
-    "category_emoji": "✨",
-    "published": "2026-03-31T10:00:00+00:00",
-    "snippet": "Microsoft’s Copilot Cowork is now available through the Frontier program, giving users access to Anthropic's Claude Cowork AI model for smarter task management.",
+    "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/03/MS_Actional-Insights_Malware-ransomware-1.jpg",
     "ai_summary": ""
   },
   {
@@ -1041,6 +1140,7 @@
     "category_emoji": "🛠️",
     "published": "2026-03-31T07:51:01+00:00",
     "snippet": "Declarative agent orchestration for engineering teams",
+    "image": null,
     "ai_summary": ""
   }
 ]
