@@ -395,7 +395,51 @@ def main():
     generate_monthly_digest(feeds_config)
     print()
 
+    # 4. Generate RSS feed
+    print("📡 RSS feed:")
+    generate_rss(articles)
+    print()
+
     print("🎉 Done!")
+
+
+def generate_rss(articles):
+    """Generate an RSS feed XML from curated articles."""
+    from xml.sax.saxutils import escape as xml_escape
+
+    rss_items = ""
+    for article in articles[:50]:  # Cap at 50 items
+        title = xml_escape(article.get("title", ""))
+        link = xml_escape(article.get("url", ""))
+        summary = xml_escape(article.get("ai_summary", article.get("snippet", "")))
+        pub = article.get("published", "")
+        category = xml_escape(article.get("category_name", ""))
+        rss_items += f"""    <item>
+      <title>{title}</title>
+      <link>{link}</link>
+      <description>{summary}</description>
+      <category>{category}</category>
+      <pubDate>{pub}</pubDate>
+      <guid>{link}</guid>
+    </item>\n"""
+
+    now_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI News — A Guide to Cloud &amp; AI</title>
+    <link>https://www.aguidetocloud.com/ai-news/</link>
+    <description>Daily AI news digest — curated headlines, summaries and trends</description>
+    <language>en</language>
+    <lastBuildDate>{now_str}</lastBuildDate>
+    <atom:link href="https://www.aguidetocloud.com/data/ainews/feed.xml" rel="self" type="application/rss+xml"/>
+{rss_items}  </channel>
+</rss>"""
+
+    rss_path = SITE_DIR / "feed.xml"
+    with open(rss_path, "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"  ✅ RSS feed ({len(articles[:50])} items) → {rss_path}")
 
 
 if __name__ == "__main__":

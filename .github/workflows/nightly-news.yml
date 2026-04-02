@@ -4,6 +4,8 @@ on:
   schedule:
     # Runs at midnight NZT (11:00 UTC during NZDT / 12:00 UTC during NZST)
     - cron: '0 11 * * *'
+    # Runs at noon NZT (23:00 UTC during NZDT / 00:00 UTC+1 during NZST)
+    - cron: '0 23 * * *'
   workflow_dispatch:  # Manual trigger button
 
 permissions:
@@ -63,10 +65,12 @@ jobs:
           # Clone the main site repo, update news data, push
           git clone https://x-access-token:${GH_TOKEN}@github.com/susanthgit/aguidetocloud-revamp.git /tmp/main-site
           cp site/summaries.json /tmp/main-site/static/data/ainews/latest.json
+          # Copy RSS feed if it exists
+          [ -f site/feed.xml ] && mkdir -p /tmp/main-site/static/data/ainews && cp site/feed.xml /tmp/main-site/static/data/ainews/feed.xml
           cd /tmp/main-site
           git config user.name "AI News Bot"
           git config user.email "ainews-bot@aguidetocloud.com"
-          git add static/data/ainews/latest.json
+          git add static/data/ainews/
           git diff --cached --quiet || git commit -m "📰 AI News data update — $(date -u +%Y-%m-%d)"
           git push
 
