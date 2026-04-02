@@ -80,6 +80,22 @@ def fetch_rss_feeds(categories, cutoff_time):
                         summary = re.sub(r"<[^>]+>", "", summary)
                         summary = summary[:500]
 
+                    # Extract thumbnail from RSS media tags
+                    image = ""
+                    media = getattr(entry, "media_content", None)
+                    if media and len(media) > 0:
+                        image = media[0].get("url", "")
+                    if not image:
+                        media_thumb = getattr(entry, "media_thumbnail", None)
+                        if media_thumb and len(media_thumb) > 0:
+                            image = media_thumb[0].get("url", "")
+                    if not image:
+                        enclosures = getattr(entry, "enclosures", [])
+                        for enc in enclosures:
+                            if enc.get("type", "").startswith("image/"):
+                                image = enc.get("href", enc.get("url", ""))
+                                break
+
                     articles.append({
                         "id": article_id(link, title),
                         "title": title,
@@ -90,6 +106,7 @@ def fetch_rss_feeds(categories, cutoff_time):
                         "category_emoji": cat_emoji,
                         "published": published.isoformat() if published else datetime.now(timezone.utc).isoformat(),
                         "snippet": summary,
+                        "image": image,
                         "ai_summary": ""
                     })
                     count += 1
@@ -164,6 +181,7 @@ def fetch_newsapi(categories, cutoff_time):
                     "category_emoji": cat_emoji,
                     "published": published.isoformat() if published else datetime.now(timezone.utc).isoformat(),
                     "snippet": description[:500],
+                    "image": item.get("urlToImage", ""),
                     "ai_summary": ""
                 })
                 count += 1

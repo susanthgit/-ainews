@@ -38,11 +38,12 @@ For EACH article, produce:
    - "headline" — Major breaking news, big product launches, significant funding rounds, industry-shaking announcements. Only 3-5 articles per batch should be headlines.
    - "deep_dive" — Interesting analysis, detailed coverage, noteworthy developments worth reading in full.
    - "quick" — Minor updates, routine announcements, niche topics that are good to know but don't need deep attention.
+4. **cluster** — If multiple articles in this batch cover the SAME event/topic, assign them the same short cluster label (2-4 lowercase words, hyphenated, e.g. "openai-funding-round" or "claude-code-leak"). If an article is unique, set cluster to null.
 
 Be factual and neutral. Aim for roughly 20% headlines, 50% deep_dive, 30% quick.
 
 Return your response as a JSON array of objects, one per article, in the SAME order as the input.
-Each object must have: {"index": <number>, "summary": "<text>", "why_it_matters": "<text>", "tier": "<headline|deep_dive|quick>"}
+Each object must have: {"index": <number>, "summary": "<text>", "why_it_matters": "<text>", "tier": "<headline|deep_dive|quick>", "cluster": "<label-or-null>"}
 Return ONLY the JSON array, no other text."""
 
 
@@ -159,10 +160,11 @@ def main():
                     articles[orig_idx]["ai_summary"] = summary
                     articles[orig_idx]["why_it_matters"] = item.get("why_it_matters", "")
                     articles[orig_idx]["tier"] = item.get("tier", "deep_dive")
+                    articles[orig_idx]["cluster"] = item.get("cluster") or None
                     summarised += 1
             print(f"✅ ({len(results)} summaries)")
         else:
-            # Fallback: summarise individually
+            # Fallback: summarise individually (no clustering possible)
             print("⚠️  falling back to individual mode")
             for idx, title, snippet in batch:
                 result = summarise_single(client, title, snippet)
@@ -171,6 +173,7 @@ def main():
                     articles[idx]["ai_summary"] = result["summary"]
                     articles[idx]["why_it_matters"] = result.get("why_it_matters", "")
                     articles[idx]["tier"] = result.get("tier", "deep_dive")
+                    articles[idx]["cluster"] = None
                     summarised += 1
                 time.sleep(0.5)
 
