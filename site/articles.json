@@ -7,7 +7,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:18:37.602031+00:00",
+    "published": "2026-04-02T01:31:51.765495+00:00",
     "snippet": "Google I/O returns May 19-20. Watch the livestreams for updates on Android, AI, Chrome, and Cloud. Registration is open on the Google I/O website.",
     "ai_summary": ""
   },
@@ -19,7 +19,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:18:37.602021+00:00",
+    "published": "2026-04-02T01:31:51.765486+00:00",
     "snippet": "The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.",
     "ai_summary": ""
   },
@@ -31,7 +31,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:18:37.602012+00:00",
+    "published": "2026-04-02T01:31:51.765476+00:00",
     "snippet": "Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the \"Tiny Garden\" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gal",
     "ai_summary": ""
   },
@@ -43,7 +43,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:18:37.602002+00:00",
+    "published": "2026-04-02T01:31:51.765467+00:00",
     "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
     "ai_summary": ""
   },
@@ -55,7 +55,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:18:37.601993+00:00",
+    "published": "2026-04-02T01:31:51.765457+00:00",
     "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
     "ai_summary": ""
   },
@@ -67,7 +67,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:18:37.601983+00:00",
+    "published": "2026-04-02T01:31:51.765448+00:00",
     "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
     "ai_summary": ""
   },
@@ -79,7 +79,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-02T01:18:37.601973+00:00",
+    "published": "2026-04-02T01:31:51.765438+00:00",
     "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
     "ai_summary": ""
   },
@@ -252,6 +252,42 @@
     "ai_summary": ""
   },
   {
+    "id": "ba031cc5eda90b967543e5af002daee1",
+    "title": "comfyui-skill-cli added to PyPI",
+    "url": "https://pypi.org/project/comfyui-skill-cli/",
+    "source": "Pypi.org",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-04-01T01:31:43+00:00",
+    "snippet": "ComfyUI Skill CLI — Agent-friendly workflow management",
+    "ai_summary": ""
+  },
+  {
+    "id": "535dac88363cf9ab81d9998683e6abae",
+    "title": "This small brand could mess up Apple’s 2027 plans",
+    "url": "https://www.phonearena.com/news/this-small-brand-could-mess-up-apples-2027-plans_id179337",
+    "source": "PhoneArena",
+    "category_id": "rumours",
+    "category_name": "Rumours & Gossip",
+    "category_emoji": "🗣️",
+    "published": "2026-04-01T01:29:32+00:00",
+    "snippet": "Nothing is rumored to launch a brand-new product early next year.",
+    "ai_summary": ""
+  },
+  {
+    "id": "a533fbb806cfcdb49f036cbe23fbd616",
+    "title": "PHP AI Models",
+    "url": "https://www.phpclasses.org/package/13694-PHP-Class-to-encapsulate-constants-used-by-AI-models.html",
+    "source": "Phpclasses.org",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-01T01:25:18+00:00",
+    "snippet": "Package:\r\n\nPHP AI Models\r\n\nSummary: \r\n\nClass to encapsulate constants used by AI models\r\n\nGroups: \r\n\nArtificial intelligence, PHP 8, Web services\r\n\nAuthor: \r\n\nUjah Chigozie peter\r\n\nDescription: \r\n\nThis package has a class to encapsulate constants used by AI m…",
+    "ai_summary": ""
+  },
+  {
     "id": "47474539e2b67d642116313f46cf0326",
     "title": "OpenAI: The Fix Is In",
     "url": "https://om.co/2026/03/31/openai-the-fix-is-in/",
@@ -408,18 +444,6 @@
     "ai_summary": ""
   },
   {
-    "id": "8f7390880443b4daa819fd6f0c33b856",
-    "title": "Claude Code source code accidentally leaked in NPM package",
-    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-code-source-code-accidentally-leaked-in-npm-package/",
-    "source": "BleepingComputer",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-04-01T00:32:25+00:00",
-    "snippet": "Anthropic says it accidentally leaked the source code for Claude Code, which is closed source, but the company says no customer data or credentials were exposed. [...]",
-    "ai_summary": ""
-  },
-  {
     "id": "9b98be6c9818c500acea79d36463f804",
     "title": "IAMAI sees ‘overreach’ in NHRC’s notice to AI companies on DPDP violations",
     "url": "https://economictimes.indiatimes.com/tech/technology/iamai-sees-overreach-in-nhrcs-notice-to-ai-companies-on-dpdp-violations/articleshow/129934002.cms",
@@ -468,18 +492,6 @@
     "ai_summary": ""
   },
   {
-    "id": "8759d955a616d22748d4ce4ede07a818",
-    "title": "agentbreak 0.3.1",
-    "url": "https://pypi.org/project/agentbreak/0.3.1/",
-    "source": "Pypi.org",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-01T00:06:49+00:00",
-    "snippet": "Chaos proxy for testing LLM agents. Supports OpenAI, Anthropic, and MCP.",
-    "ai_summary": ""
-  },
-  {
     "id": "9b2e475f64567c5c28090028ac54906f",
     "title": "language-model-common 1.0.24",
     "url": "https://pypi.org/project/language-model-common/1.0.24/",
@@ -504,18 +516,6 @@
     "ai_summary": ""
   },
   {
-    "id": "43016a23eb9206baa73a7f58688ed2e8",
-    "title": "Daily Hacker News for 2026-03-31",
-    "url": "https://www.daemonology.net/hn-daily/2026-03-31.html",
-    "source": "Daemonology.net",
-    "category_id": "microsoft",
-    "category_name": "Microsoft",
-    "category_emoji": "🟦",
-    "published": "2026-04-01T00:00:00+00:00",
-    "snippet": "The 10 highest-rated articles on\nHacker News\non March 31, 2026 which have not appeared on any previous\nHacker News Daily\nare:\n<ul>\n<li>\nDo your own writing\n(comments)\n</li>\n<li>\nCodingFont: A game to help you pick a coding font\n(comments)\n</li>\n<li>\nArtemis I…",
-    "ai_summary": ""
-  },
-  {
     "id": "949900123f065d9914fa5acb7d6884d4",
     "title": "General scales unlock AI evaluation with explanatory and predictive power",
     "url": "https://www.nature.com/articles/s41586-026-10303-2",
@@ -525,6 +525,18 @@
     "category_emoji": "🟦",
     "published": "2026-04-01T00:00:00+00:00",
     "snippet": "A fully automated methodology based on rubrics capturing a broad range of cognitive and intellectual demands is illustrated using LLMs and tasks, demonstrating a new way to evaluate the capabilities of AI systems and anticipate their performance.",
+    "ai_summary": ""
+  },
+  {
+    "id": "43016a23eb9206baa73a7f58688ed2e8",
+    "title": "Daily Hacker News for 2026-03-31",
+    "url": "https://www.daemonology.net/hn-daily/2026-03-31.html",
+    "source": "Daemonology.net",
+    "category_id": "microsoft",
+    "category_name": "Microsoft",
+    "category_emoji": "🟦",
+    "published": "2026-04-01T00:00:00+00:00",
+    "snippet": "The 10 highest-rated articles on\nHacker News\non March 31, 2026 which have not appeared on any previous\nHacker News Daily\nare:\n<ul>\n<li>\nDo your own writing\n(comments)\n</li>\n<li>\nCodingFont: A game to help you pick a coding font\n(comments)\n</li>\n<li>\nArtemis I…",
     "ai_summary": ""
   },
   {
@@ -864,18 +876,6 @@
     "ai_summary": ""
   },
   {
-    "id": "8adadb2603dc48be765d823195f50ed0",
-    "title": "Apple tests Siri feature that handles multiple commands at once: Report",
-    "url": "https://economictimes.indiatimes.com/tech/technology/apple-tests-siri-feature-that-handles-multiple-commands-at-once-report/articleshow/129934082.cms",
-    "source": "The Times of India",
-    "category_id": "rumours",
-    "category_name": "Rumours & Gossip",
-    "category_emoji": "🗣️",
-    "published": "2026-03-31T18:00:56+00:00",
-    "snippet": "The feature is ‌being built ⁠into iOS ⁠27, iPadOS 27 and macOS 27 operating systems, all ​of which are expected to launch later this year, Bloomberg said, ​citing people familiar with the matter.",
-    "ai_summary": ""
-  },
-  {
     "id": "3a44ab8b4ecf79621589b2e13d5d54b6",
     "title": "cognity-ai added to PyPI",
     "url": "https://pypi.org/project/cognity-ai/",
@@ -960,18 +960,6 @@
     "ai_summary": ""
   },
   {
-    "id": "690c536f975d8627fa06d29a95430710",
-    "title": "(ebisuda.net, 3/31) Microsoft撮炊罧泣o ...",
-    "url": "http://www.st.ryukoku.ac.jp/~kjm/security/memo/2026/04.html#20260401__wmic",
-    "source": "Ryukoku.ac.jp",
-    "category_id": "m365-copilot",
-    "category_name": "M365 Copilot",
-    "category_emoji": "✨",
-    "published": "2026-03-31T15:00:00+00:00",
-    "snippet": "(ebisuda.net, 3/31) Microsoft撮炊罧泣owerShell*Windows Management Instrumentation鐚徑I鐚*owerShell腟у⑧礙エミowerShellMI鴻「サ鴻 Get-WmiObject Get-CimInstance 潟潟ャ潟潟❼、潟篁ヤ純",
-    "ai_summary": ""
-  },
-  {
     "id": "8b421b16bd18f8e22efeba4a4c608ba1",
     "title": "(PC蚊㍾紜膀, 3/31) indows11WindowsUpdat ...",
     "url": "http://www.st.ryukoku.ac.jp/~kjm/security/memo/2026/04.html#20260401__win11",
@@ -981,6 +969,18 @@
     "category_emoji": "✨",
     "published": "2026-03-31T15:00:00+00:00",
     "snippet": "(PC蚊㍾紜膀, 3/31) <li> indows11WindowsUpdate 2026綛筝 絽紊違㏍ー❼ KB5086672 (PC蚊㍾紜膀, 4/1) \r\n </li>",
+    "ai_summary": ""
+  },
+  {
+    "id": "690c536f975d8627fa06d29a95430710",
+    "title": "(ebisuda.net, 3/31) Microsoft撮炊罧泣o ...",
+    "url": "http://www.st.ryukoku.ac.jp/~kjm/security/memo/2026/04.html#20260401__wmic",
+    "source": "Ryukoku.ac.jp",
+    "category_id": "m365-copilot",
+    "category_name": "M365 Copilot",
+    "category_emoji": "✨",
+    "published": "2026-03-31T15:00:00+00:00",
+    "snippet": "(ebisuda.net, 3/31) Microsoft撮炊罧泣owerShell*Windows Management Instrumentation鐚徑I鐚*owerShell腟у⑧礙エミowerShellMI鴻「サ鴻 Get-WmiObject Get-CimInstance 潟潟ャ潟潟❼、潟篁ヤ純",
     "ai_summary": ""
   },
   {
