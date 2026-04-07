@@ -21,6 +21,21 @@
           "name": "Ars Technica",
           "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
           "type": "rss"
+        },
+        {
+          "name": "Wired AI",
+          "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+          "type": "rss"
+        },
+        {
+          "name": "MIT Technology Review",
+          "url": "https://www.technologyreview.com/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "The Register AI",
+          "url": "https://www.theregister.com/headlines.atom",
+          "type": "rss"
         }
       ],
       "keywords": ["AI breakthrough", "AI launch", "AI release", "biggest AI", "major AI", "AI announcement"]
@@ -31,7 +46,18 @@
       "emoji": "🗣️",
       "color": "#9B59B6",
       "max_articles": 5,
-      "feeds": [],
+      "feeds": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+          "type": "rss"
+        }
+      ],
       "keywords": ["AI rumor", "AI leak", "reportedly AI", "allegedly AI", "expected to launch", "AI speculation", "upcoming AI model"]
     },
     {
@@ -149,6 +175,56 @@
       "keywords": ["OpenAI", "ChatGPT", "GPT-5", "GPT-4o", "DALL-E", "Sora", "OpenAI API"]
     },
     {
+      "id": "apple",
+      "name": "Apple",
+      "emoji": "🍎",
+      "color": "#A2AAAD",
+      "max_articles": 5,
+      "feeds": [
+        {
+          "name": "Apple Machine Learning",
+          "url": "https://machinelearning.apple.com/rss.xml",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Apple Intelligence", "Apple AI", "Siri AI", "Apple machine learning", "Apple LLM", "Apple foundation model", "Apple Vision Pro AI"]
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "emoji": "💚",
+      "color": "#76B900",
+      "max_articles": 5,
+      "feeds": [
+        {
+          "name": "NVIDIA Blog",
+          "url": "https://blogs.nvidia.com/feed/",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["NVIDIA AI", "CUDA", "GPU AI", "NVIDIA inference", "NVIDIA NIM", "Jensen Huang", "NVIDIA DGX", "H100", "B200", "Blackwell", "NVIDIA Omniverse"]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "emoji": "📦",
+      "color": "#FF9900",
+      "max_articles": 5,
+      "feeds": [
+        {
+          "name": "AWS Machine Learning Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "Amazon Science",
+          "url": "https://www.amazon.science/index.rss",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Amazon Bedrock", "AWS AI", "Amazon Q", "Alexa AI", "Amazon SageMaker", "AWS Trainium", "Amazon Nova"]
+    },
+    {
       "id": "google",
       "name": "Google",
       "emoji": "🟥",
@@ -223,6 +299,11 @@
         {
           "name": "VentureBeat AI",
           "url": "https://venturebeat.com/category/ai/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "ZDNet AI",
+          "url": "https://www.zdnet.com/topic/artificial-intelligence/rss.xml",
           "type": "rss"
         }
       ],

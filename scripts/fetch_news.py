@@ -194,14 +194,44 @@ def fetch_newsapi(categories, cutoff_time):
 
 
 def deduplicate(articles):
-    """Remove duplicate articles by ID."""
-    seen = set()
+    """Remove duplicate articles by ID and fuzzy title matching."""
+    seen_ids = set()
+    seen_titles = []
     unique = []
     for article in articles:
-        if article["id"] not in seen:
-            seen.add(article["id"])
-            unique.append(article)
+        if article["id"] in seen_ids:
+            continue
+        # Fuzzy title dedup: normalise and check similarity
+        norm_title = _normalise_title(article.get("title", ""))
+        if norm_title and any(_title_similarity(norm_title, st) > 0.75 for st in seen_titles):
+            continue
+        seen_ids.add(article["id"])
+        if norm_title:
+            seen_titles.append(norm_title)
+        unique.append(article)
     return unique
+
+
+def _normalise_title(title):
+    """Lowercase, strip punctuation and common prefixes for comparison."""
+    import re
+    t = title.lower().strip()
+    # Remove common source prefixes like "[EXTERNAL]", "BREAKING:", etc.
+    t = re.sub(r"^\[.*?\]\s*", "", t)
+    t = re.sub(r"^(breaking|exclusive|update|report):\s*", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"[^\w\s]", "", t)
+    return " ".join(t.split())
+
+
+def _title_similarity(a, b):
+    """Simple word-overlap similarity ratio (Jaccard-like)."""
+    words_a = set(a.split())
+    words_b = set(b.split())
+    if not words_a or not words_b:
+        return 0.0
+    intersection = words_a & words_b
+    union = words_a | words_b
+    return len(intersection) / len(union)
 
 
 def main():
