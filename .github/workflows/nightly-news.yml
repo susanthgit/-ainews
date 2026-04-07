@@ -2,10 +2,11 @@ name: 🗞️ Nightly AI News
 
 on:
   schedule:
-    # Runs at midnight NZT (11:00 UTC during NZDT / 12:00 UTC during NZST)
-    - cron: '0 11 * * *'
-    # Runs at noon NZT (23:00 UTC during NZDT / 00:00 UTC+1 during NZST)
-    - cron: '0 23 * * *'
+    # 4x daily — every 6 hours aligned to NZ time zones
+    - cron: '0 5 * * *'   # 6 PM NZT (NZST) / 6 PM NZDT → catches European business day
+    - cron: '0 11 * * *'  # 12 AM NZT (midnight) → catches US business day
+    - cron: '0 17 * * *'  # 6 AM NZT → catches overnight US news
+    - cron: '0 23 * * *'  # 12 PM NZT (noon) → catches morning NZ/AU + late US
   workflow_dispatch:  # Manual trigger button
 
 permissions:
