@@ -135,6 +135,26 @@
       "keywords": ["Copilot Studio", "Power Virtual Agents", "declarative agent", "custom copilot", "copilot builder", "Copilot Studio agent", "copilot extensibility", "copilot connector", "copilot action", "agent builder"]
     },
     {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "emoji": "🤖",
+      "color": "#1F6FEB",
+      "parent": "microsoft",
+      "feeds": [
+        {
+          "name": "GitHub Blog",
+          "url": "https://github.blog/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "GitHub Changelog",
+          "url": "https://github.blog/changelog/feed/",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["GitHub Copilot", "Copilot CLI", "GitHub Copilot CLI", "Copilot in the CLI", "gh copilot", "Copilot coding agent", "Copilot Workspace", "Copilot code review", "GitHub Copilot update", "Copilot extension", "GitHub AI", "Copilot chat", "code completion AI", "GitHub Copilot Enterprise", "Copilot for pull requests"]
+    },
+    {
       "id": "ai-foundry",
       "name": "AI Foundry",
       "emoji": "🏭",
