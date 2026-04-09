@@ -7,7 +7,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T22:28:08.448547+00:00",
+    "published": "2026-04-09T22:48:08.677873+00:00",
     "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
     "image": "",
     "ai_summary": ""
@@ -20,7 +20,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T22:28:08.448534+00:00",
+    "published": "2026-04-09T22:48:08.677860+00:00",
     "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
     "image": "",
     "ai_summary": ""
@@ -33,7 +33,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T22:28:08.448521+00:00",
+    "published": "2026-04-09T22:48:08.677847+00:00",
     "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
     "image": "",
     "ai_summary": ""
@@ -46,7 +46,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T22:28:08.448507+00:00",
+    "published": "2026-04-09T22:48:08.677833+00:00",
     "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
     "image": "",
     "ai_summary": ""
@@ -59,7 +59,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T22:28:08.448494+00:00",
+    "published": "2026-04-09T22:48:08.677821+00:00",
     "snippet": "Wednesday Build Hour is a weekly, interactive \"technical gym session\" led by Google Cloud experts to help developers and architects sharpen their cloud skills. Moving beyond passive slide decks, the program focuses on hands-on building, covering advanced topics like AI agents, Vertex AI, and developer productivity tools. Each hour-long session is designed to provide tangible results that participants can immediately deploy into their own workflows. It serves as a consistent, dedicated space for ",
     "image": "",
     "ai_summary": ""
@@ -72,7 +72,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T22:28:08.448480+00:00",
+    "published": "2026-04-09T22:48:08.677807+00:00",
     "snippet": "The Gemini Code Assist team has introduced a suite of updates focused on streamlining the core coding workflow through high-velocity tools like Agent Mode with Auto Approve and Inline Diff Views. These enhancements, along with new features for precise context management and custom commands, aim to transform the AI from a general assistant into a highly tailored, seamless collaborator that adapts to your specific development style.",
     "image": "",
     "ai_summary": ""
@@ -85,7 +85,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T22:28:08.448466+00:00",
+    "published": "2026-04-09T22:48:08.677794+00:00",
     "snippet": "Google has introduced Finish Changes and Outlines for Gemini Code Assist in IntelliJ and VS Code to reduce developer friction and eliminate the need for long, manual prompting. Finish Changes acts as an AI pair programmer that completes code, implements pseudocode, and applies refactoring patterns by observing your current edits and context. Meanwhile, Outlines improves code comprehension by generating interactive, high-level English summaries interleaved directly within the source code to help ",
     "image": "",
     "ai_summary": ""
@@ -572,6 +572,162 @@
     "ai_summary": ""
   },
   {
+    "id": "2f9df34ea07cc852a51ae9bd317f33e1",
+    "title": "nvidia-nat-llama-index 1.6.0rc1",
+    "url": "https://pypi.org/project/nvidia-nat-llama-index/1.6.0rc1/",
+    "source": "Pypi.org",
+    "category_id": "meta",
+    "category_name": "Meta",
+    "category_emoji": "🟪",
+    "published": "2026-04-08T22:47:15+00:00",
+    "snippet": "Subpackage for Llama-Index integration in NeMo Agent Toolkit",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "f0fe2323e2a4ee3973cc79fd63ffc01c",
+    "title": "nteract 2.1.4a202604082223",
+    "url": "https://pypi.org/project/nteract/2.1.4a202604082223/",
+    "source": "Pypi.org",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-08T22:46:15+00:00",
+    "snippet": "Bring AI to Jupyter notebooks. MCP server for Claude, ChatGPT, Gemini, OpenCode and any agent.",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "f99472dd44cd864da69f05e8172b729a",
+    "title": "nvidia-nat-langchain 1.6.0rc1",
+    "url": "https://pypi.org/project/nvidia-nat-langchain/1.6.0rc1/",
+    "source": "Pypi.org",
+    "category_id": "opensource",
+    "category_name": "Open Source",
+    "category_emoji": "⬛",
+    "published": "2026-04-08T22:42:25+00:00",
+    "snippet": "Subpackage for LangChain/LangGraph integration in NeMo Agent Toolkit",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "f99c1166148683f6600945e51898c13b",
+    "title": "[OpenSearch Service] ML Commons(AI Connectors) を Workflow API で構築して、Slackメッセージのハイブリッド検索を作成してみました",
+    "url": "https://dev.classmethod.jp/articles/opensearch-workflow-api-slack-hybrid-search/",
+    "source": "Classmethod.jp",
+    "category_id": "amazon",
+    "category_name": "Amazon",
+    "category_emoji": "📦",
+    "published": "2026-04-08T22:39:51+00:00",
+    "snippet": "[OpenSearch Service] ML Commons(AI Connectors) を Workflow API で構築して、Slackメッセージのハイブリッド検索を作成してみました",
+    "image": "https://images.ctfassets.net/ct0aopd36mqt/wp-thumbnail-b383cfad7452c18278d4772c71cae640/70681da1d5cfd4b8d3a7edcc29830075/amazon-opensearch-service",
+    "ai_summary": ""
+  },
+  {
+    "id": "665194aa57271c025b908950f1954aa1",
+    "title": "Patreon podcast revenue jumps 33% year-over-year, reaching $629 million",
+    "url": "https://www.tubefilter.com/2026/04/08/patreon-podcasts-annual-revenue-629-million/",
+    "source": "Tubefilter",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-08T22:37:40+00:00",
+    "snippet": "Years after becoming a desirable revenue stream for creators, podcasts are continuing to flourish on Patreon. The monetization platform has announced that revenue generated by its podcast library reached $629 million in 2025. That sum represents a year-over-y…",
+    "image": "https://www.tubefilter.com/wp-content/uploads/2026/04/joe-budden-podcast.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "87ec87231ca1782fbc503b62e538e86f",
+    "title": "tend 0.0.7",
+    "url": "https://pypi.org/project/tend/0.0.7/",
+    "source": "Pypi.org",
+    "category_id": "anthropic",
+    "category_name": "Anthropic",
+    "category_emoji": "🟧",
+    "published": "2026-04-08T22:37:29+00:00",
+    "snippet": "Claude-powered CI for GitHub repos",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "e70562b198ae271f41adbc45a2c1bc50",
+    "title": "uipath-langchain 0.9.23",
+    "url": "https://pypi.org/project/uipath-langchain/0.9.23/",
+    "source": "Pypi.org",
+    "category_id": "opensource",
+    "category_name": "Open Source",
+    "category_emoji": "⬛",
+    "published": "2026-04-08T22:36:22+00:00",
+    "snippet": "Python SDK that enables developers to build and deploy LangGraph agents to the UiPath Cloud Platform",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "2432327c97da7032289006b737fb152d",
+    "title": "talon-bridge added to PyPI",
+    "url": "https://pypi.org/project/talon-bridge/",
+    "source": "Pypi.org",
+    "category_id": "meta",
+    "category_name": "Meta",
+    "category_emoji": "🟪",
+    "published": "2026-04-08T22:35:42+00:00",
+    "snippet": "TALON Bridge: PyTorch export, import, and runtime for Talon IR graphs",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "7e1856c8ceeb110de68b66996dda12bf",
+    "title": "claude-ai-clone-client added to PyPI",
+    "url": "https://pypi.org/project/claude-ai-clone-client/",
+    "source": "Pypi.org",
+    "category_id": "ai-foundry",
+    "category_name": "AI Foundry",
+    "category_emoji": "🏭",
+    "published": "2026-04-08T22:32:45+00:00",
+    "snippet": "CLI client for the local self-hosted AI platform — no external APIs, fully local",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "0a396ef4597bb08f59c459b5f3f4a6db",
+    "title": "stats-compass-mcp 0.3.10",
+    "url": "https://pypi.org/project/stats-compass-mcp/0.3.10/",
+    "source": "Pypi.org",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-08T22:31:44+00:00",
+    "snippet": "MCP server exposing stats-compass-core tools to LLMs like ChatGPT, Claude, and Gemini",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "13ea12d0e5bc28a2034e47f8880d09e3",
+    "title": "broccoli-ml 21.0.1",
+    "url": "https://pypi.org/project/broccoli-ml/21.0.1/",
+    "source": "Pypi.org",
+    "category_id": "meta",
+    "category_name": "Meta",
+    "category_emoji": "🟪",
+    "published": "2026-04-08T22:31:30+00:00",
+    "snippet": "Some useful Pytorch models, circa 2025",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "5b7a3e7c7d91784f25f9370af161573e",
+    "title": "X's Grok AI now automatically translates posts and lets you edit photos using simple prompts",
+    "url": "https://www.tweaktown.com/news/110934/xs-grok-ai-now-automatically-translates-posts-and-lets-you-edit-photos-using-simple-prompts/index.html",
+    "source": "TweakTown",
+    "category_id": "openai",
+    "category_name": "OpenAI",
+    "category_emoji": "🟩",
+    "published": "2026-04-08T22:29:01+00:00",
+    "snippet": "X is rolling out automatic translation worldwide and an AI photo editor for iOS that works like Gemini or ChatGPT, all without leaving the app.Continue reading at TweakTown",
+    "image": "https://static.tweaktown.com/news/1/1/110934_1_expands-ai-translations-and-adds-in-stream-photo-editing_full.jpg",
+    "ai_summary": ""
+  },
+  {
     "id": "c5f2810b8c072b4c3e806b7d82caf8a1",
     "title": "Anthropic Supply-Chain Risk Label Should Stay In Place, Appeals Court Says",
     "url": "https://www.wired.com/story/anthropic-appeals-court-ruling/",
@@ -595,19 +751,6 @@
     "published": "2026-04-08T22:27:22+00:00",
     "snippet": "(Corrects dateline to April 8. No changes to text)By Jack QueenNEW YORK, April 8 : A Washington, D.C., federal appeals court on Wednesday declined to block the Pentagon's national security blacklisting of Anthropic for now, a win for the Trump administration …",
     "image": "https://dam.mediacorp.sg/image/upload/s--bfrhJmyp--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-04-08T222722Z_4_LYNXMPEM371BT_RTROPTP_3_ANTHROPIC-AI-CYBERSECURITY.JPG?itok=2CE3Q0ZN",
-    "ai_summary": ""
-  },
-  {
-    "id": "4267e61b90a7021af47a37644475337b",
-    "title": "Show HN: I built an open source multi-agent harness in Go",
-    "url": "https://github.com/AndreBaltazar8/artificial",
-    "source": "Github.com",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-08T22:19:10+00:00",
-    "snippet": "Hey HN. I built an AI agent harness over the past few months and I'm open sourcing it today.Some context on why. I've been building with Claude Code daily using this harness. It orchestrates multiple AI agents as a team, with a dashboard, chat, kanban board, …",
-    "image": "https://opengraph.githubassets.com/025781cf35752564f66344c1fe0e18792199c40179225795cab9dc2ec6c3ea5b/AndreBaltazar8/artificial",
     "ai_summary": ""
   },
   {
@@ -650,32 +793,6 @@
     "ai_summary": ""
   },
   {
-    "id": "3f35347cc012ebd00f1aafde15822ad4",
-    "title": "OpenAI will reserve portion of IPO shares for retail investors, CFO tells CNBC",
-    "url": "https://www.channelnewsasia.com/business/openai-will-reserve-portion-ipo-shares-retail-investors-cfo-tells-cnbc-6045081",
-    "source": "CNA",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-08T22:06:22+00:00",
-    "snippet": "April 8 : OpenAI plans to reserve a portion of its shares from an initial public offering for individual investors, CFO Sarah Friar told CNBC on Wednesday, as the ChatGPT maker gears up for a highly anticipated U.S. stock market listing.The AI startup is layi…",
-    "image": "https://dam.mediacorp.sg/image/upload/s--xELZY1rd--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-04-08T220622Z_1_LYNXMPEM371CA_RTROPTP_3_OPENAI-CHATGPT-ADS.JPG?itok=NsGvsL8p",
-    "ai_summary": ""
-  },
-  {
-    "id": "686f665ebb391936e8ba3cd56fcfb6bc",
-    "title": "Meta releases first new AI model since shaking up team",
-    "url": "https://japantoday.com/category/tech/meta-releases-first-new-ai-model-since-shaking-up-team",
-    "source": "Japan Today",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-08T21:57:26+00:00",
-    "snippet": "Meta on Wednesday released an artificial intelligence model, Muse Spark, it touts as smarter and faster than what it offered before shaking up its Superintelligence Labs unit. &quot;Over the last nine months, Meta Superintelligence Labs rebuilt our AI stack f…",
-    "image": null,
-    "ai_summary": ""
-  },
-  {
     "id": "5b0c52b8f0c582bd25f6d91626770038",
     "title": "OnePay Partners with Workday Wellness to Expand Distribution",
     "url": "https://finovate.com/onepay-partners-with-workday-wellness-to-expand-distribution/",
@@ -689,19 +806,6 @@
     "ai_summary": ""
   },
   {
-    "id": "04a85fdc22fa17ad9751e78f44522a13",
-    "title": "athanor-ai added to PyPI",
-    "url": "https://pypi.org/project/athanor-ai/",
-    "source": "Pypi.org",
-    "category_id": "anthropic",
-    "category_name": "Anthropic",
-    "category_emoji": "🟧",
-    "published": "2026-04-08T21:50:25+00:00",
-    "snippet": "Lean 4 proof verification as agentic training signal",
-    "image": "https://pypi.org/static/images/twitter.abaf4b19.webp",
-    "ai_summary": ""
-  },
-  {
     "id": "b2ba06999633f1f7da61f73e79b8deab",
     "title": "copilot-operator 2.0.0",
     "url": "https://pypi.org/project/copilot-operator/2.0.0/",
@@ -712,19 +816,6 @@
     "published": "2026-04-08T21:45:33+00:00",
     "snippet": "Autonomous orchestration loop for GitHub Copilot in VS Code — drives multi-iteration coding sessions with self-correction, learning, and intelligent strategy.",
     "image": null,
-    "ai_summary": ""
-  },
-  {
-    "id": "d0b69eae06dee0beb25a25651199133e",
-    "title": "Why Anthropic won't release its new Claude Mythos AI model to the public",
-    "url": "https://www.nbcnews.com/tech/security/anthropic-project-glasswing-mythos-preview-claude-gets-limited-release-rcna267234",
-    "source": "NBC News",
-    "category_id": "openai",
-    "category_name": "OpenAI",
-    "category_emoji": "🟩",
-    "published": "2026-04-08T21:42:01+00:00",
-    "snippet": "Claude Mythos Preview can identify and exploit software vulnerabilities with unprecedented accuracy, the company says.",
-    "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-04/260408-anthropic-rs-a69c46.jpg",
     "ai_summary": ""
   },
   {
@@ -754,6 +845,45 @@
     "ai_summary": ""
   },
   {
+    "id": "80443b5e00d5db37c2c326ec665c182f",
+    "title": "xAI’s Memphis Water Treatment Plant ‘on an Indefinite Pause’",
+    "url": "https://512pixels.net/2026/04/xais-memphis-water-treatment-plant-on-an-indefinite-pause/",
+    "source": "512pixels.net",
+    "category_id": "xai",
+    "category_name": "xAI",
+    "category_emoji": "⚡",
+    "published": "2026-04-08T21:15:18+00:00",
+    "snippet": "What a shock.",
+    "image": "https://512pixels.net/wp-content/uploads/2026/04/xai-water-groundbreaking.jpeg",
+    "ai_summary": ""
+  },
+  {
+    "id": "a4aaba3d5dc8659e5d0ead76009436ef",
+    "title": "Le Monde says it has seen a \"significant amount of new revenue\", including via subscriptions, after licensing content to OpenAI, Perplexity, and Meta (Alice Brooker/Press Gazette)",
+    "url": "https://mediagazer.com/260408/p17",
+    "source": "Mediagazer.com",
+    "category_id": "perplexity",
+    "category_name": "Perplexity",
+    "category_emoji": "🔍",
+    "published": "2026-04-08T21:15:01+00:00",
+    "snippet": "Alice Brooker / Press Gazette:\nLe Monde says it has seen a “significant amount of new revenue”, including via subscriptions, after licensing content to OpenAI, Perplexity, and Meta  —  Boss of French newsbrand says deals with OpenAI, Perplexity and Meta are p…",
+    "image": "https://pressgazette.co.uk/wp-content/uploads/sites/7/2025/01/Delporte-LouisDreyfus2-800x418.webp?1775651441",
+    "ai_summary": ""
+  },
+  {
+    "id": "cddb1d82f4aa0bff90e025cb30b14c54",
+    "title": "collaborAItr – A multi-LLM chat app with up to 4 models side by side",
+    "url": "https://betalist.com/startups/collaboraitr",
+    "source": "Betalist.com",
+    "category_id": "xai",
+    "category_name": "xAI",
+    "category_emoji": "⚡",
+    "published": "2026-04-08T21:10:00+00:00",
+    "snippet": "A multi-LLM chat app with up to 4 models side by side",
+    "image": "https://resize.imagekit.co/MupnKDCyncxT8WPtPWZWUcpegzMfwON_Vx6hbjQ4Trc/plain/s3://betalist-production/x9kjblegy9yxdjlfsofbrsol3pzs",
+    "ai_summary": ""
+  },
+  {
     "id": "27ad020c6122cb7147ee84553190801d",
     "title": "Canva doubles down on AI and marketing automation with Simtheory, Ortto acquisitions | TechCrunch",
     "url": "https://techcrunch.com/2026/04/08/canva-doubles-down-on-ai-and-marketing-automation-with-simtheory-ortto-acquisitions/",
@@ -777,19 +907,6 @@
     "published": "2026-04-08T21:00:05+00:00",
     "snippet": "Both companies were built by brothers Chris and Mike Sharkey, who previously co-founded Australian holiday rental site Stayz. Financial terms were not disclosed. Canva will preview what it calls the biggest transformation in its history at Canva Create on 16 …",
     "image": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2026/04/Simtheory-and-Ortto-founders.png",
-    "ai_summary": ""
-  },
-  {
-    "id": "0fe4339529c899427dee2d73c85898fb",
-    "title": "skrl 2.0.0",
-    "url": "https://pypi.org/project/skrl/2.0.0/",
-    "source": "Pypi.org",
-    "category_id": "meta",
-    "category_name": "Meta",
-    "category_emoji": "🟪",
-    "published": "2026-04-08T20:49:54+00:00",
-    "snippet": "Modular and flexible library for reinforcement learning on PyTorch and JAX",
-    "image": null,
     "ai_summary": ""
   },
   {
@@ -819,19 +936,6 @@
     "ai_summary": ""
   },
   {
-    "id": "03a8f11f38917d3605e876e99777bb8f",
-    "title": "langchain-agentkit 0.14.0",
-    "url": "https://pypi.org/project/langchain-agentkit/0.14.0/",
-    "source": "Pypi.org",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-04-08T20:32:36+00:00",
-    "snippet": "Composable extension framework for LangGraph agents",
-    "image": null,
-    "ai_summary": ""
-  },
-  {
     "id": "9a8d43be4c1b0e3e3d06ab7c142cef10",
     "title": "From pilots to productivity: How one AI leader operationalizes enterprise AI",
     "url": "https://www.atlassian.com/blog/artificial-intelligence/from-pilots-to-productivity-how-one-ai-leader-operationalizes-enterprise-ai",
@@ -842,45 +946,6 @@
     "published": "2026-04-08T20:20:49+00:00",
     "snippet": "AI may be helping individual employees work faster, but most organizations still struggle to turn individual wins into enterprise-wide execution...\nThe post From pilots to productivity: How one AI leader operationalizes enterprise AI appeared first on Work Li…",
     "image": "https://www.atlassian.com/blog/wp-content/uploads/2024/05/atlassian-intelligence_mark_neutral-4x.png",
-    "ai_summary": ""
-  },
-  {
-    "id": "f1b3bc447062e22356d03ee96c7a089b",
-    "title": "How Meta’s New AI Model Could Change Travel",
-    "url": "https://skift.com/2026/04/08/meta-ai-muse-spark-travel/",
-    "source": "Skift",
-    "category_id": "meta",
-    "category_name": "Meta",
-    "category_emoji": "🟪",
-    "published": "2026-04-08T20:13:47+00:00",
-    "snippet": "Meta just unveiled a new AI model that could reshape how travelers discover and navigate the world — combining social history with real-time visual",
-    "image": "https://skift.com/wp-content/uploads/2026/04/Meta-Muse-Spark.png?resize=1024,683",
-    "ai_summary": ""
-  },
-  {
-    "id": "07caf0a571b03bb02c883fc22e41e634",
-    "title": "Meta’s Muse Spark is here – and it’s closed source",
-    "url": "https://thenextweb.com/news/meta-muse-spark-msl-first-model/",
-    "source": "The Next Web",
-    "category_id": "meta",
-    "category_name": "Meta",
-    "category_emoji": "🟪",
-    "published": "2026-04-08T20:09:31+00:00",
-    "snippet": "In short: Meta has released Muse Spark, the first model from Meta Superintelligence Labs, the unit it assembled under Alexandr Wang after spending $14.3 billion to acquire a stake in Scale AI. Rebuilt from scratch over nine months, the model is natively multi…",
-    "image": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2026/04/meta-muse-spark-msl-first-model.png",
-    "ai_summary": ""
-  },
-  {
-    "id": "eae8583082ca0edf362eaeff2c974933",
-    "title": "madeonsol-x402 0.2.1",
-    "url": "https://pypi.org/project/madeonsol-x402/0.2.1/",
-    "source": "Pypi.org",
-    "category_id": "opensource",
-    "category_name": "Open Source",
-    "category_emoji": "⬛",
-    "published": "2026-04-08T20:05:06+00:00",
-    "snippet": "x402 client SDK for MadeOnSol Solana KOL intelligence API. Works with LangChain, CrewAI, and standalone.",
-    "image": null,
     "ai_summary": ""
   },
   {
@@ -936,19 +1001,6 @@
     "ai_summary": ""
   },
   {
-    "id": "dbf5b5957c81739e1cf6cfbe5de175df",
-    "title": "Customize Amazon Nova models with Amazon Bedrock fine-tuning",
-    "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-with-amazon-bedrock-fine-tuning/",
-    "source": "AWS Machine Learning Blog",
-    "category_id": "amazon",
-    "category_name": "Amazon",
-    "category_emoji": "📦",
-    "published": "2026-04-08T19:51:50+00:00",
-    "snippet": "In this post, we'll walk you through a complete implementation of model fine-tuning in Amazon Bedrock using Amazon Nova models, demonstrating each step through an intent classifier example that achieves superior performance on a domain specific task. Throughout this guide, you'll learn to prepare high-quality training data that drives meaningful model improvements, configure hyperparameters to optimize learning without overfitting, and deploy your fine-tuned model for improved accuracy and reduc",
-    "image": "",
-    "ai_summary": ""
-  },
-  {
     "id": "670de011b295827157c724047f0a66e7",
     "title": "GitHub Mobile: Research and code with Copilot cloud agent anywhere",
     "url": "https://github.blog/changelog/2026-04-08-github-mobile-research-and-code-with-copilot-cloud-agent-anywhere",
@@ -975,6 +1027,19 @@
     "ai_summary": ""
   },
   {
+    "id": "23fc60fcf1c295d25436149f795fafc7",
+    "title": "Study: Google’s AI Overviews show millions of wrong answers every hour",
+    "url": "http://www.popsci.com/technology/ai-overview-inaccuracy-google/",
+    "source": "Popular Science",
+    "category_id": "perplexity",
+    "category_name": "Perplexity",
+    "category_emoji": "🔍",
+    "published": "2026-04-08T19:19:08+00:00",
+    "snippet": "With over 4 trillion Google queries every year, the inaccuracies add up.\nThe post Study: Google’s AI Overviews show millions of wrong answers every hour appeared first on Popular Science.",
+    "image": "https://www.popsci.com/wp-content/uploads/2026/04/Untitled-design-17.png?w=1200",
+    "ai_summary": ""
+  },
+  {
     "id": "acf22718d2dba1669ee81b855a6cede4",
     "title": "Pictures of iPhone Fold appear online, just before Apple’s supposed foldable hits engineering challenges",
     "url": "https://www.yankodesign.com/2026/04/08/pictures-of-iphone-fold-appear-online-just-before-apples-supposed-foldable-hits-engineering-challenges/",
@@ -985,6 +1050,58 @@
     "published": "2026-04-08T19:15:40+00:00",
     "snippet": "Pictures of iPhone Fold appear online, just before Apple’s supposed foldable hits engineering challenges  Apple’s first foldable phone, the Apple’s first foldable phone, iPhone Fold (if that’s how it will be called) is one of the most anticipated...",
     "image": "https://www.yankodesign.com/images/design_news/2026/04/new-pictures-of-iphone-fold-appear-online-just-before-apples-supposed-foldable-phone-hits-engineering-challenges/iPhone-Fold-2.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "238b33b6cc0c0041808e628d50c85d7d",
+    "title": "X Launches New AI Photo Editor on iOS",
+    "url": "https://www.iphoneincanada.ca/2026/04/08/x-launches-new-ai-photo-editor-on-ios/",
+    "source": "iPhone in Canada",
+    "category_id": "xai",
+    "category_name": "xAI",
+    "category_emoji": "⚡",
+    "published": "2026-04-08T19:04:20+00:00",
+    "snippet": "The update allow creators to annotate images, add captions, or highlight specific details without needing to leave the app for third-party editing software.\nThe post X Launches New AI Photo Editor on iOS first appeared on iPhone in Canada.",
+    "image": "https://cdn.iphoneincanada.ca/wp-content/uploads/2026/04/X-composer.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "b2d2597d28a7a11959f4c83a60ddc1f7",
+    "title": "Genealogy Education Bytes - Week of 2 to 8 April 2026",
+    "url": "https://www.blogger.com/browser-not-supported/?ref=/comment/fullpage/post/26204193/426471271335386783",
+    "source": "Blogger.com",
+    "category_id": "perplexity",
+    "category_name": "Perplexity",
+    "category_emoji": "🔍",
+    "published": "2026-04-08T19:01:00+00:00",
+    "snippet": "",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "76060d034f49f8f4872a0eeb67234b42",
+    "title": "'Tokenmaxxing' has techies debating if leaderboards tracking AI token use are a good idea",
+    "url": "https://www.businessinsider.com/tokenmaxxing-ai-token-leaderboards-debate-2026-4",
+    "source": "Business Insider",
+    "category_id": "xai",
+    "category_name": "xAI",
+    "category_emoji": "⚡",
+    "published": "2026-04-08T18:58:00+00:00",
+    "snippet": "Some engineers are \"tokenmaxxing,\" or spending as many AI tokens as possible. But are leaderboards tracking token use the answer?",
+    "image": "https://i.insider.com/69d6a4b61a512d0a63e73aa5?width=1200&format=jpeg",
+    "ai_summary": ""
+  },
+  {
+    "id": "2ef6154a1e3eb47d438a788cba6f6f3b",
+    "title": "OpenAI Publishes Child Safety Blueprint to Address AI-Enabled Exploitation",
+    "url": "https://decrypt.co/363681/openai-child-safety-blueprint-ai-exploitation",
+    "source": "Decrypt",
+    "category_id": "xai",
+    "category_name": "xAI",
+    "category_emoji": "⚡",
+    "published": "2026-04-08T18:51:32+00:00",
+    "snippet": "OpenAI's new policy blueprint outlines steps the industry can take to combat AI-enabled child sexual exploitation.",
+    "image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2025/10/openai-decrypt-style-02-gID_7.jpg",
     "ai_summary": ""
   },
   {
@@ -1023,6 +1140,19 @@
     "category_emoji": "🍎",
     "published": "2026-04-08T18:26:52+00:00",
     "snippet": "Joe Rossignol: Three established YouTube channels have sued Apple, alleging that the company violated the U.S. Digital Millennium Copyright Act (DMCA) by unlawfully accessing and scraping millions of copyrighted videos from YouTube to train its AI models. […]…",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "f2ecb5f3f3f441b499a02baa7cd7258f",
+    "title": "Perplexity Privacy Lawsuit",
+    "url": "https://mjtsai.com/blog/2026/04/08/perplexity-privacy-lawsuit/",
+    "source": "Mjtsai.com",
+    "category_id": "perplexity",
+    "category_name": "Perplexity",
+    "category_emoji": "🔍",
+    "published": "2026-04-08T18:26:47+00:00",
+    "snippet": "Ashley Belanger (via John Gruber): Perplexity’s AI search engine encourages users to go deeper with their prompts by engaging in chat sessions that a lawsuit has alleged are often shared in their entirety with Google and Meta without users’ knowledge or conse…",
     "image": null,
     "ai_summary": ""
   },
@@ -1076,6 +1206,19 @@
     "published": "2026-04-08T17:25:56+00:00",
     "snippet": "David's Bridal president Elina Vilk on transforming a 76-year-old retailer into a media and AI platform, building Pearl, and why the bride is retail's most valuable audience",
     "image": "https://clickz.com/wp-content/uploads/2026/04/kunal-interview-thumbnail-1.png",
+    "ai_summary": ""
+  },
+  {
+    "id": "4e12fd1c831c582989ea6ac94a5ae897",
+    "title": "IMS Announces Executive AEO Training to Help Companies Increase Visibility Across Generative AI Platforms Including ChatGPT, Claude, Grok, and Perplexity",
+    "url": "https://www.globenewswire.com/news-release/2026/04/08/3270440/0/en/IMS-Announces-Executive-AEO-Training-to-Help-Companies-Increase-Visibility-Across-Generative-AI-Platforms-Including-ChatGPT-Claude-Grok-and-Perplexity.html",
+    "source": "GlobeNewswire",
+    "category_id": "perplexity",
+    "category_name": "Perplexity",
+    "category_emoji": "🔍",
+    "published": "2026-04-08T17:25:00+00:00",
+    "snippet": "Free April 14 live workshop provides business leaders with a structured Answer Engine Optimization framework for improving discoverability inside AI search assistants, conversational platforms, and emerging intent-driven discovery environments with live Q&A a…",
+    "image": "https://ml.globenewswire.com/Resource/Download/91ba449a-8e81-4e10-8a4d-2539bb79ce3a",
     "ai_summary": ""
   },
   {
@@ -1196,6 +1339,32 @@
     "ai_summary": ""
   },
   {
+    "id": "3b45a635423d478c6505a0bfd66bcf16",
+    "title": "Show HN: I built a personal corporation of AI agents that runs on your PC",
+    "url": "https://github.com/re-marked/claude-corp",
+    "source": "Github.com",
+    "category_id": "deepseek",
+    "category_name": "DeepSeek",
+    "category_emoji": "🇨🇳",
+    "published": "2026-04-08T16:20:32+00:00",
+    "snippet": "Claude Corp is a daemon that runs and orchestrates an autonomous personal corporation of AI agents on your machine.OpenClaw agents form a social hierarchy, and everybody knows who they listen and report to.Agents can discuss stuff in channels, by @mentioning …",
+    "image": "https://opengraph.githubassets.com/a6c72a8466c82404d33a27bc57945694357a9dc01cec832a2b181f597771304c/re-marked/claude-corp",
+    "ai_summary": ""
+  },
+  {
+    "id": "aa29433569ef3ca038884c2c98101ca9",
+    "title": "sir-agent added to PyPI",
+    "url": "https://pypi.org/project/sir-agent/",
+    "source": "Pypi.org",
+    "category_id": "mistral",
+    "category_name": "Mistral",
+    "category_emoji": "🇪🇺",
+    "published": "2026-04-08T16:14:42+00:00",
+    "snippet": "Single-Input-Reasoning: one LLM call, full action graph execution with evolutionary memory",
+    "image": "https://pypi.org/static/images/twitter.abaf4b19.webp",
+    "ai_summary": ""
+  },
+  {
     "id": "7bdb67caed03b7d93bda9316544edd3e",
     "title": "New PGP signing key for GitHub CLI Linux packages",
     "url": "https://github.blog/changelog/2026-04-08-new-pgp-signing-key-for-github-cli-linux-packages",
@@ -1219,6 +1388,19 @@
     "published": "2026-04-08T16:04:52+00:00",
     "snippet": "Part of the Visa Intelligent Commerce portfolio, Intelligent Commerce Connect will enable more ways for agents to pay and merchants to accept agentic transactions in a single integration Currently in pilot with select partners including Aldar, AWS, Diddo, Hig…",
     "image": null,
+    "ai_summary": ""
+  },
+  {
+    "id": "4596dcebd180843daf183ee8e747408c",
+    "title": "Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unlock real business value",
+    "url": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real-business-value/",
+    "source": "Azure Blog",
+    "category_id": "ai-foundry",
+    "category_name": "AI Foundry",
+    "category_emoji": "🏭",
+    "published": "2026-04-08T16:00:00+00:00",
+    "snippet": "Get practical strategies and best practices to help you plan, design, and manage AI investments for sustainable value and efficiency.\nThe post Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unlock real business value appeared first on Microsoft Azure Blog.",
+    "image": "",
     "ai_summary": ""
   },
   {
@@ -1248,16 +1430,16 @@
     "ai_summary": ""
   },
   {
-    "id": "d5f817effd03edf6b03479eadba178b7",
-    "title": "Top open source AI platform Flowise hit by maximum-level security issue",
-    "url": "https://www.techradar.com/pro/security/top-open-source-ai-platform-flowise-hit-by-maximum-level-security-issue",
-    "source": "TechRadar",
-    "category_id": "ai-foundry",
-    "category_name": "AI Foundry",
-    "category_emoji": "🏭",
-    "published": "2026-04-08T15:10:00+00:00",
-    "snippet": "A 10/10 Flowise bug was patched, but is now being abused in the wild.",
-    "image": "https://cdn.mos.cms.futurecdn.net/BWBeAxrLrBFHHdNreUhfgW-970-80.jpg",
+    "id": "63daddb71ac1a6840e85d6be353dbded",
+    "title": "paygent-sdk 4.7.0",
+    "url": "https://pypi.org/project/paygent-sdk/4.7.0/",
+    "source": "Pypi.org",
+    "category_id": "deepseek",
+    "category_name": "DeepSeek",
+    "category_emoji": "🇨🇳",
+    "published": "2026-04-08T14:22:45+00:00",
+    "snippet": "Official Python SDK for Paygent - Track AI usage and costs across multiple providers (OpenAI, Anthropic, Google, DeepSeek, etc.)",
+    "image": null,
     "ai_summary": ""
   },
   {
@@ -1284,6 +1466,32 @@
     "published": "2026-04-08T14:06:39+00:00",
     "snippet": "There is a particular kind of frustration that comes from feeding an AI tool the same context your team spent three days assembling on a whiteboard. You copy the sticky notes into a prompt, paste the diagram description, try to explain the relationships betwe…",
     "image": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2026/04/Miro-Deal.png",
+    "ai_summary": ""
+  },
+  {
+    "id": "87182c09122cdadd0d7ac1cfcdced843",
+    "title": "Perceptions of Chinese higher-vocational nursing program directors on digital transformation: A qualitative study",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0346261",
+    "source": "Plos.org",
+    "category_id": "deepseek",
+    "category_name": "DeepSeek",
+    "category_emoji": "🇨🇳",
+    "published": "2026-04-08T14:00:00+00:00",
+    "snippet": "Background Currently, most research on digital transformation in higher vocational education conducts macro-level analyses, and few comprehensive studies specifically address higher vocational nursing education. Moreover, research is notably lacking on the pe…",
+    "image": "https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0346261.t003&size=inline",
+    "ai_summary": ""
+  },
+  {
+    "id": "5ad5a72bd0fc986180f824a7ce5e0124",
+    "title": "Performance benchmarking of LLMs on Chinese national medical licensing education: Cross-lingual and question-type effects",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0346518",
+    "source": "Plos.org",
+    "category_id": "deepseek",
+    "category_name": "DeepSeek",
+    "category_emoji": "🇨🇳",
+    "published": "2026-04-08T14:00:00+00:00",
+    "snippet": "Background The cross-lingual and question-type variations affecting large language models (LLMs) accuracy on the Chinese national medical licensing educations remain insufficiently explored.   Methods In this cross-sectional study (May 13–20, 2025), 396 educa…",
+    "image": "https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0346518.g004&size=inline",
     "ai_summary": ""
   },
   {
@@ -1365,6 +1573,32 @@
     "ai_summary": ""
   },
   {
+    "id": "4395039f72136aebfeed95536c4fc6d5",
+    "title": "Bengaluru-based research lab claims India’s own DeepSeek moment",
+    "url": "https://www.thehindubusinessline.com/info-tech/bengaluru-based-research-lab-claims-indias-own-deepseek-moment/article70837736.ece",
+    "source": "BusinessLine",
+    "category_id": "deepseek",
+    "category_name": "DeepSeek",
+    "category_emoji": "🇨🇳",
+    "published": "2026-04-08T09:09:12+00:00",
+    "snippet": "Bud Ecosystem may have managed to do something similar - not with a chatbot, but with a fresh approach to how AI itself is built",
+    "image": "https://bl-i.thgim.com/public/incoming/xnaa0h/article70837717.ece/alternates/LANDSCAPE_1200/Jithin%20VG.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "2fad1479047ab41fcebe764df75548c3",
+    "title": "mistralai-workflows 3.1.1",
+    "url": "https://pypi.org/project/mistralai-workflows/3.1.1/",
+    "source": "Pypi.org",
+    "category_id": "mistral",
+    "category_name": "Mistral",
+    "category_emoji": "🇪🇺",
+    "published": "2026-04-08T08:58:51+00:00",
+    "snippet": "Mistral Workflows - Build reliable AI workflows with Python",
+    "image": null,
+    "ai_summary": ""
+  },
+  {
     "id": "07bdf7723b379306a96634842689a883",
     "title": "bernstein 1.5.3",
     "url": "https://pypi.org/project/bernstein/1.5.3/",
@@ -1388,6 +1622,19 @@
     "published": "2026-04-08T07:29:56+00:00",
     "snippet": "Build intelligent C# .NET apps with Retrieval-Augmented Generation (RAG) using Azure AI Search. Learn to combine your data with AI for accurate, up-to-date responses.",
     "image": "https://www.c-sharpcorner.com/images/csharp-corner-new.png",
+    "ai_summary": ""
+  },
+  {
+    "id": "180d63a2ef51d5a2588e10797d20f411",
+    "title": "openagent-framework added to PyPI",
+    "url": "https://pypi.org/project/openagent-framework/",
+    "source": "Pypi.org",
+    "category_id": "mistral",
+    "category_name": "Mistral",
+    "category_emoji": "🇪🇺",
+    "published": "2026-04-08T06:17:59+00:00",
+    "snippet": "Simplified LLM agent framework with MCP, memory, and multi-channel support",
+    "image": "https://pypi.org/static/images/twitter.abaf4b19.webp",
     "ai_summary": ""
   },
   {
@@ -1430,6 +1677,19 @@
     "ai_summary": ""
   },
   {
+    "id": "11257bee3e0f85909f211c0c9cbae281",
+    "title": "milla-jovovich/mempalace: The highest-scoring AI memory system ever benchmarked. And it's free.",
+    "url": "https://github.com/milla-jovovich/mempalace",
+    "source": "Github.com",
+    "category_id": "mistral",
+    "category_name": "Mistral",
+    "category_emoji": "🇪🇺",
+    "published": "2026-04-08T05:47:01+00:00",
+    "snippet": "The highest-scoring AI memory system ever benchmarked. And it's free. - milla-jovovich/mempalace",
+    "image": "https://opengraph.githubassets.com/edbbccf77dc416e48e2dc609649016dba5b76a1af01bf10f7a2f6b3e8cb87b62/milla-jovovich/mempalace",
+    "ai_summary": ""
+  },
+  {
     "id": "92ba11cb83d696ab0a961f4622e61c93",
     "title": "GitHub Copilot for Eclipse Moves to Open Source Under MIT License",
     "url": "https://www.c-sharpcorner.com/news/github-copilot-for-eclipse-moves-to-open-source-under-mit-license",
@@ -1453,6 +1713,19 @@
     "published": "2026-04-08T00:00:00+00:00",
     "snippet": "Microsoft Copilot chat now supports interactive apps via MCP, enabling rich visualizations, embedded media, and seamless workflows within the chat interface. Revolutionizing AI agent capabilities!",
     "image": "https://www.c-sharpcorner.com/images/csharp-corner-new.png",
+    "ai_summary": ""
+  },
+  {
+    "id": "d77926e0e65de2de6ad8aad739a9a83e",
+    "title": "cyris 0.2.0",
+    "url": "https://pypi.org/project/cyris/0.2.0/",
+    "source": "Pypi.org",
+    "category_id": "mistral",
+    "category_name": "Mistral",
+    "category_emoji": "🇪🇺",
+    "published": "2026-04-07T23:57:12+00:00",
+    "snippet": "The system of record for AI agent decisions. Auto-instruments OpenAI, Anthropic, Bedrock, Gemini, Vertex AI, Mistral, Cohere, Groq, Together, Ollama, and MCP. Hash-chains the audit trail and answers hospital compliance questionnaires from real data.",
+    "image": null,
     "ai_summary": ""
   }
 ]
