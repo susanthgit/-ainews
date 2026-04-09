@@ -20,7 +20,7 @@ FEEDS_FILE = SCRIPT_DIR / "feeds.json"
 OUTPUT_FILE = SCRIPT_DIR / ".." / "site" / "articles.json"
 BROKEN_FEEDS_FILE = SCRIPT_DIR / ".." / "site" / "broken_feeds.json"
 NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
-HOURS_LOOKBACK = 48  # fetch last 48 hours to catch anything missed
+HOURS_LOOKBACK = 72  # fetch last 72 hours to catch delayed proxy feeds
 
 
 def load_feeds():

@@ -277,12 +277,17 @@
       "max_articles": 5,
       "feeds": [
         {
-          "name": "Anthropic Blog",
+          "name": "Anthropic News (taobojlen)",
           "url": "https://raw.githubusercontent.com/taobojlen/anthropic-rss-feed/main/anthropic_news_rss.xml",
+          "type": "rss"
+        },
+        {
+          "name": "Anthropic News (0xSMW)",
+          "url": "https://raw.githubusercontent.com/0xSMW/rss-feeds/main/feeds/feed_anthropic_news.xml",
           "type": "rss"
         }
       ],
-      "keywords": ["Anthropic", "Claude", "Claude Opus", "Claude Sonnet", "MCP protocol", "Anthropic safety"]
+      "keywords": ["Anthropic", "Claude", "Claude Opus", "Claude Sonnet", "MCP protocol", "Anthropic safety", "Glasswing", "Mythos", "Claude Code", "Anthropic Institute"]
     },
     {
       "id": "deepseek",
