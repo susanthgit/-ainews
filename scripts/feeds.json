@@ -82,7 +82,7 @@
           "type": "rss"
         }
       ],
-      "keywords": ["Microsoft Copilot", "Azure AI", "Azure OpenAI", "Microsoft Foundry", "Windows AI", "Bing AI", "Microsoft 365 Copilot"]
+      "keywords": ["Microsoft Copilot", "Azure AI", "Azure OpenAI", "Microsoft Foundry", "Windows AI", "Bing AI", "Microsoft 365 Copilot", "Microsoft AI", "Phi-4", "Phi-5", "Microsoft Build"]
     },
     {
       "id": "m365-copilot",
@@ -182,7 +182,7 @@
           "type": "rss"
         }
       ],
-      "keywords": ["OpenAI", "ChatGPT", "GPT-5", "GPT-4o", "DALL-E", "Sora", "OpenAI API"]
+      "keywords": ["OpenAI", "ChatGPT", "GPT-5", "GPT-4o", "DALL-E", "Sora", "OpenAI API", "Sam Altman", "OpenAI o3", "OpenAI o4", "Codex"]
     },
     {
       "id": "apple",
@@ -197,7 +197,7 @@
           "type": "rss"
         }
       ],
-      "keywords": ["Apple Intelligence", "Apple AI", "Siri AI", "Apple machine learning", "Apple LLM", "Apple foundation model", "Apple Vision Pro AI"]
+      "keywords": ["Apple Intelligence", "Apple AI", "Siri AI", "Apple machine learning", "Apple LLM", "Apple foundation model", "Apple Vision Pro AI", "Apple WWDC AI"]
     },
     {
       "id": "nvidia",
@@ -212,7 +212,7 @@
           "type": "rss"
         }
       ],
-      "keywords": ["NVIDIA AI", "CUDA", "GPU AI", "NVIDIA inference", "NVIDIA NIM", "Jensen Huang", "NVIDIA DGX", "H100", "B200", "Blackwell", "NVIDIA Omniverse"]
+      "keywords": ["NVIDIA AI", "CUDA", "GPU AI", "NVIDIA inference", "NVIDIA NIM", "Jensen Huang", "NVIDIA DGX", "H100", "B200", "Blackwell", "NVIDIA Omniverse", "NVIDIA GTC"]
     },
     {
       "id": "amazon",
@@ -232,7 +232,7 @@
           "type": "rss"
         }
       ],
-      "keywords": ["Amazon Bedrock", "AWS AI", "Amazon Q", "Alexa AI", "Amazon SageMaker", "AWS Trainium", "Amazon Nova"]
+      "keywords": ["Amazon Bedrock", "AWS AI", "Amazon Q", "Alexa AI", "Amazon SageMaker", "AWS Trainium", "Amazon Nova", "AWS re:Invent AI"]
     },
     {
       "id": "google",
@@ -252,7 +252,7 @@
           "type": "rss"
         }
       ],
-      "keywords": ["Gemini", "Google DeepMind", "Vertex AI", "Google AI", "Bard", "Android AI"]
+      "keywords": ["Gemini", "Google DeepMind", "Vertex AI", "Google AI", "Bard", "Android AI", "Google I/O", "Gemma", "AlphaFold"]
     },
     {
       "id": "meta",
@@ -262,12 +262,17 @@
       "max_articles": 5,
       "feeds": [
         {
-          "name": "Meta AI Blog",
+          "name": "Meta Engineering Blog",
           "url": "https://engineering.fb.com/feed/",
+          "type": "rss"
+        },
+        {
+          "name": "Meta Research",
+          "url": "https://research.facebook.com/feed/",
           "type": "rss"
         }
       ],
-      "keywords": ["Meta AI", "Llama", "Meta open source", "PyTorch", "Reality Labs AI"]
+      "keywords": ["Meta AI", "Llama", "Meta open source", "PyTorch", "Reality Labs AI", "Llama 4", "Meta Llama"]
     },
     {
       "id": "anthropic",
@@ -296,7 +301,7 @@
       "color": "#4D6BFE",
       "max_articles": 5,
       "feeds": [],
-      "keywords": ["DeepSeek", "DeepSeek-R1", "DeepSeek-V3", "DeepSeek Coder", "DeepSeek reasoning"]
+      "keywords": ["DeepSeek", "DeepSeek-R1", "DeepSeek-R2", "DeepSeek-V3", "DeepSeek Coder", "DeepSeek reasoning", "DeepSeek model"]
     },
     {
       "id": "mistral",
@@ -319,8 +324,14 @@
       "emoji": "⚡",
       "color": "#1DA1F2",
       "max_articles": 5,
-      "feeds": [],
-      "keywords": ["xAI", "Grok", "Grok-3", "Elon Musk AI", "xAI Colossus"]
+      "feeds": [
+        {
+          "name": "xAI News (0xSMW)",
+          "url": "https://raw.githubusercontent.com/0xSMW/rss-feeds/main/feeds/feed_xai_news.xml",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["xAI", "Grok", "Grok-3", "Elon Musk AI", "xAI Colossus", "Grok model"]
     },
     {
       "id": "perplexity",
@@ -329,7 +340,7 @@
       "color": "#20808D",
       "max_articles": 5,
       "feeds": [],
-      "keywords": ["Perplexity", "Perplexity AI", "AI search", "Perplexity Pro"]
+      "keywords": ["Perplexity", "Perplexity AI", "AI search", "Perplexity Pro", "Perplexity Sonar"]
     },
     {
       "id": "opensource",
