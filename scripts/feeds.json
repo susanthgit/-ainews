@@ -73,12 +73,12 @@
         },
         {
           "name": "Azure Blog",
-          "url": "https://azure.microsoft.com/en-us/blog/feed/",
+          "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
           "type": "rss"
         },
         {
           "name": "Microsoft 365 Blog",
-          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
+          "url": "https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rss/board",
           "type": "rss"
         }
       ],
@@ -94,11 +94,6 @@
         {
           "name": "Microsoft 365 Copilot Blog",
           "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot/bg-p/Microsoft365CopilotBlog/rss/board",
-          "type": "rss"
-        },
-        {
-          "name": "M365 Roadmap RSS",
-          "url": "https://www.microsoft.com/en-us/microsoft-365/RoadmapFeatureRSS",
           "type": "rss"
         },
         {
@@ -188,7 +183,7 @@
       "feeds": [
         {
           "name": "OpenAI Blog",
-          "url": "https://openai.com/index/rss/",
+          "url": "https://openai.com/news/rss.xml",
           "type": "rss"
         }
       ],
@@ -273,7 +268,7 @@
       "feeds": [
         {
           "name": "Meta AI Blog",
-          "url": "https://ai.meta.com/blog/rss/",
+          "url": "https://engineering.fb.com/feed/",
           "type": "rss"
         }
       ],
@@ -288,7 +283,7 @@
       "feeds": [
         {
           "name": "Anthropic Blog",
-          "url": "https://www.anthropic.com/feed.xml",
+          "url": "https://raw.githubusercontent.com/taobojlen/anthropic-rss-feed/main/anthropic_news_rss.xml",
           "type": "rss"
         }
       ],
