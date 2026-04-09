@@ -246,6 +246,46 @@ def _title_similarity(a, b):
     return len(intersection) / len(union)
 
 
+def recategorize_by_keywords(articles, categories):
+    """Move articles from general categories to vendor categories if keywords match.
+    
+    Articles from TechCrunch/Verge about DeepSeek get moved to the DeepSeek category.
+    Only moves from general categories (top-stories, rumours, industry, opensource).
+    Never moves articles already in a specific vendor category.
+    """
+    # Build keyword → category mapping (only for categories that have keywords)
+    general_cats = {"top-stories", "rumours", "industry", "opensource"}
+    keyword_map = []
+    for cat in categories:
+        keywords = cat.get("keywords", [])
+        if keywords and cat["id"] not in general_cats:
+            keyword_map.append({
+                "id": cat["id"],
+                "name": cat["name"],
+                "emoji": cat["emoji"],
+                "keywords": [kw.lower() for kw in keywords],
+            })
+
+    moved = 0
+    for article in articles:
+        # Only re-categorize articles currently in general categories
+        if article["category_id"] not in general_cats:
+            continue
+
+        text = (article.get("title", "") + " " + article.get("snippet", "")).lower()
+
+        for cat_info in keyword_map:
+            if any(kw in text for kw in cat_info["keywords"]):
+                article["category_id"] = cat_info["id"]
+                article["category_name"] = cat_info["name"]
+                article["category_emoji"] = cat_info["emoji"]
+                moved += 1
+                break
+
+    print(f"  📦 Re-categorized {moved} articles based on keyword matching")
+    return articles
+
+
 def main():
     print("🗞️  AI News Fetcher")
     print("=" * 50)
@@ -267,6 +307,11 @@ def main():
     # Combine and deduplicate
     all_articles = rss_articles + newsapi_articles
     all_articles = deduplicate(all_articles)
+
+    # Re-categorize: move articles from general feeds to vendor categories based on keywords
+    print()
+    print("🏷️  Keyword re-categorization:")
+    all_articles = recategorize_by_keywords(all_articles, categories)
 
     # Sort by published date (newest first)
     all_articles.sort(key=lambda a: a["published"], reverse=True)

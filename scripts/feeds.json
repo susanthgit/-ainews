@@ -290,13 +290,7 @@
       "emoji": "🇨🇳",
       "color": "#4D6BFE",
       "max_articles": 5,
-      "feeds": [
-        {
-          "name": "DeepSeek Blog",
-          "url": "https://api-docs.deepseek.com/news/feed.xml",
-          "type": "rss"
-        }
-      ],
+      "feeds": [],
       "keywords": ["DeepSeek", "DeepSeek-R1", "DeepSeek-V3", "DeepSeek Coder", "DeepSeek reasoning"]
     },
     {
@@ -308,7 +302,7 @@
       "feeds": [
         {
           "name": "Mistral AI Blog",
-          "url": "https://mistral.ai/feed.xml",
+          "url": "https://raw.githubusercontent.com/0xSMW/rss-feeds/main/feeds/feed_mistral_news.xml",
           "type": "rss"
         }
       ],
@@ -320,13 +314,7 @@
       "emoji": "⚡",
       "color": "#1DA1F2",
       "max_articles": 5,
-      "feeds": [
-        {
-          "name": "xAI Blog",
-          "url": "https://x.ai/blog/rss.xml",
-          "type": "rss"
-        }
-      ],
+      "feeds": [],
       "keywords": ["xAI", "Grok", "Grok-3", "Elon Musk AI", "xAI Colossus"]
     },
     {
@@ -335,13 +323,7 @@
       "emoji": "🔍",
       "color": "#20808D",
       "max_articles": 5,
-      "feeds": [
-        {
-          "name": "Perplexity Blog",
-          "url": "https://www.perplexity.ai/hub/blog/rss.xml",
-          "type": "rss"
-        }
-      ],
+      "feeds": [],
       "keywords": ["Perplexity", "Perplexity AI", "AI search", "Perplexity Pro"]
     },
     {

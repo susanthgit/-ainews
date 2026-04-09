@@ -310,9 +310,10 @@ def generate_weekly_digest(feeds_config):
         f.write(html)
 
     # Also save as JSON for the main site JS to consume
+    trending = extract_trending_topics(all_articles, top_n=20)
     weekly_json_path = SITE_DIR / "weekly.json"
     with open(weekly_json_path, "w", encoding="utf-8") as f:
-        json.dump({"articles": all_articles, "generated_at": datetime.now(timezone.utc).isoformat(), "period": date_range}, f, indent=2, ensure_ascii=False)
+        json.dump({"articles": all_articles, "generated_at": datetime.now(timezone.utc).isoformat(), "period": date_range, "trending_topics": trending}, f, indent=2, ensure_ascii=False)
 
     print(f"  ✅ Weekly digest ({len(all_articles)} articles) → {weekly_path} + {weekly_json_path}")
 
