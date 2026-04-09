@@ -45,30 +45,6 @@
     "name": "Azure AI Services Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Services-blog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
-  },
-  {
-    "name": "DeepSeek Blog",
-    "url": "https://api-docs.deepseek.com/news/feed.xml",
-    "category": "DeepSeek",
-    "error": "<unknown>:2:0: syntax error"
-  },
-  {
-    "name": "Mistral AI Blog",
-    "url": "https://mistral.ai/feed.xml",
-    "category": "Mistral",
-    "error": "<unknown>:3:0: junk after document element"
-  },
-  {
-    "name": "xAI Blog",
-    "url": "https://x.ai/blog/rss.xml",
-    "category": "xAI",
-    "error": "<unknown>:2:7447: not well-formed (invalid token)"
-  },
-  {
-    "name": "Perplexity Blog",
-    "url": "https://www.perplexity.ai/hub/blog/rss.xml",
-    "category": "Perplexity",
-    "error": "<unknown>:2:751: not well-formed (invalid token)"
+    "error": "<unknown>:14:71: not well-formed (invalid token)"
   }
 ]
