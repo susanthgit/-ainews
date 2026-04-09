@@ -365,6 +365,56 @@ def generate_monthly_digest(feeds_config):
     print(f"  ✅ Monthly digest ({len(all_articles)} articles) → {monthly_path} + {monthly_json_path}")
 
 
+def detect_breaking_news(articles):
+    """Flag articles as breaking if the same story appears in 3+ different sources."""
+    # Group by cluster label (set by AI summariser)
+    clusters = {}
+    for article in articles:
+        cluster = article.get("cluster")
+        if cluster:
+            if cluster not in clusters:
+                clusters[cluster] = []
+            clusters[cluster].append(article)
+
+    # Also detect by fuzzy title similarity across different sources
+    from collections import defaultdict
+    title_groups = defaultdict(list)
+    for article in articles:
+        words = set(re.findall(r"[A-Za-z]{4,}", article.get("title", "").lower()))
+        for other_group_key, other_articles in list(title_groups.items()):
+            other_words = set(other_group_key.split("|"))
+            overlap = len(words & other_words) / max(len(words | other_words), 1)
+            if overlap > 0.5:
+                title_groups[other_group_key].append(article)
+                break
+        else:
+            title_groups["|".join(sorted(words))].append(article)
+
+    # Mark as breaking if 3+ different sources cover the same story
+    breaking_count = 0
+    for cluster_id, cluster_articles in clusters.items():
+        sources = set(a.get("source", "") for a in cluster_articles)
+        if len(sources) >= 3:
+            for article in cluster_articles:
+                article["is_breaking"] = True
+                if article.get("tier") != "headline":
+                    article["tier"] = "headline"
+            breaking_count += 1
+
+    for group_key, group_articles in title_groups.items():
+        sources = set(a.get("source", "") for a in group_articles)
+        if len(sources) >= 3:
+            for article in group_articles:
+                if not article.get("is_breaking"):
+                    article["is_breaking"] = True
+                    if article.get("tier") != "headline":
+                        article["tier"] = "headline"
+                    breaking_count += 1
+
+    print(f"  {'🚨 ' + str(breaking_count) + ' breaking stories detected' if breaking_count else '✅ No breaking stories'}")
+    return articles
+
+
 def main():
     print("🎨 AI News Page Generator")
     print("=" * 50)
@@ -387,6 +437,11 @@ def main():
         feeds_config = json.load(f)
 
     print(f"📰 {len(articles)} articles to render")
+    print()
+
+    # Detect breaking news — stories covered by 3+ different sources
+    print("🚨 Breaking news detection:")
+    articles = detect_breaking_news(articles)
     print()
 
     SITE_DIR.mkdir(parents=True, exist_ok=True)

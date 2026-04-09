@@ -285,6 +285,66 @@
       "keywords": ["Anthropic", "Claude", "Claude Opus", "Claude Sonnet", "MCP protocol", "Anthropic safety"]
     },
     {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "emoji": "🇨🇳",
+      "color": "#4D6BFE",
+      "max_articles": 5,
+      "feeds": [
+        {
+          "name": "DeepSeek Blog",
+          "url": "https://api-docs.deepseek.com/news/feed.xml",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["DeepSeek", "DeepSeek-R1", "DeepSeek-V3", "DeepSeek Coder", "DeepSeek reasoning"]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "emoji": "🇪🇺",
+      "color": "#FF7000",
+      "max_articles": 5,
+      "feeds": [
+        {
+          "name": "Mistral AI Blog",
+          "url": "https://mistral.ai/feed.xml",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Mistral", "Mixtral", "Mistral AI", "Mistral Large", "Le Chat", "Pixtral"]
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "emoji": "⚡",
+      "color": "#1DA1F2",
+      "max_articles": 5,
+      "feeds": [
+        {
+          "name": "xAI Blog",
+          "url": "https://x.ai/blog/rss.xml",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["xAI", "Grok", "Grok-3", "Elon Musk AI", "xAI Colossus"]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "emoji": "🔍",
+      "color": "#20808D",
+      "max_articles": 5,
+      "feeds": [
+        {
+          "name": "Perplexity Blog",
+          "url": "https://www.perplexity.ai/hub/blog/rss.xml",
+          "type": "rss"
+        }
+      ],
+      "keywords": ["Perplexity", "Perplexity AI", "AI search", "Perplexity Pro"]
+    },
+    {
       "id": "opensource",
       "name": "Open Source",
       "emoji": "⬛",
