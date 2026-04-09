@@ -18,6 +18,7 @@ from dateutil import parser as dateparser
 SCRIPT_DIR = Path(__file__).parent
 FEEDS_FILE = SCRIPT_DIR / "feeds.json"
 OUTPUT_FILE = SCRIPT_DIR / ".." / "site" / "articles.json"
+BROKEN_FEEDS_FILE = SCRIPT_DIR / ".." / "site" / "broken_feeds.json"
 NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
 HOURS_LOOKBACK = 48  # fetch last 48 hours to catch anything missed
 
@@ -49,6 +50,7 @@ def article_id(url, title):
 def fetch_rss_feeds(categories, cutoff_time):
     """Fetch articles from all RSS feeds."""
     articles = []
+    broken_feeds = []
     for category in categories:
         cat_id = category["id"]
         cat_name = category["name"]
@@ -61,6 +63,15 @@ def fetch_rss_feeds(categories, cutoff_time):
 
             try:
                 feed = feedparser.parse(feed_url)
+                if feed.bozo and not feed.entries:
+                    error_msg = str(getattr(feed, 'bozo_exception', 'Unknown parse error'))
+                    print(f"❌ Feed error: {error_msg[:60]}")
+                    broken_feeds.append({"name": feed_name, "url": feed_url, "category": cat_name, "error": error_msg[:120]})
+                    continue
+                if hasattr(feed, 'status') and feed.status >= 400:
+                    print(f"❌ HTTP {feed.status}")
+                    broken_feeds.append({"name": feed_name, "url": feed_url, "category": cat_name, "error": f"HTTP {feed.status}"})
+                    continue
                 count = 0
                 for entry in feed.entries:
                     published = parse_date(
@@ -114,8 +125,9 @@ def fetch_rss_feeds(categories, cutoff_time):
                 print(f"✅ {count} articles")
             except Exception as e:
                 print(f"❌ Error: {e}")
+                broken_feeds.append({"name": feed_name, "url": feed_url, "category": cat_name, "error": str(e)[:120]})
 
-    return articles
+    return articles, broken_feeds
 
 
 def fetch_newsapi(categories, cutoff_time):
@@ -246,7 +258,7 @@ def main():
 
     # Fetch from both sources
     print("📡 RSS Feeds:")
-    rss_articles = fetch_rss_feeds(categories, cutoff_time)
+    rss_articles, broken_feeds = fetch_rss_feeds(categories, cutoff_time)
 
     print()
     print("🔍 NewsAPI:")
@@ -298,6 +310,13 @@ def main():
     print(f"✅ Total: {len(all_articles)} unique articles")
     print(f"   RSS: {len(rss_articles)} | NewsAPI: {len(newsapi_articles)}")
     print(f"   Saved to: {OUTPUT_FILE}")
+
+    # Write broken feeds report
+    BROKEN_FEEDS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(BROKEN_FEEDS_FILE, "w", encoding="utf-8") as f:
+        json.dump(broken_feeds, f, indent=2, ensure_ascii=False)
+    if broken_feeds:
+        print(f"   ⚠️  {len(broken_feeds)} broken feed(s) — see {BROKEN_FEEDS_FILE}")
 
 
 if __name__ == "__main__":

@@ -308,7 +308,13 @@ def generate_weekly_digest(feeds_config):
     weekly_path = weekly_dir / "latest.html"
     with open(weekly_path, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"  ✅ Weekly digest ({len(all_articles)} articles) → {weekly_path}")
+
+    # Also save as JSON for the main site JS to consume
+    weekly_json_path = SITE_DIR / "weekly.json"
+    with open(weekly_json_path, "w", encoding="utf-8") as f:
+        json.dump({"articles": all_articles, "generated_at": datetime.now(timezone.utc).isoformat(), "period": date_range}, f, indent=2, ensure_ascii=False)
+
+    print(f"  ✅ Weekly digest ({len(all_articles)} articles) → {weekly_path} + {weekly_json_path}")
 
 
 def generate_monthly_digest(feeds_config):
@@ -350,7 +356,13 @@ def generate_monthly_digest(feeds_config):
     monthly_path = monthly_dir / "latest.html"
     with open(monthly_path, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"  ✅ Monthly digest ({len(all_articles)} articles) → {monthly_path}")
+
+    # Also save as JSON for the main site JS to consume
+    monthly_json_path = SITE_DIR / "monthly.json"
+    with open(monthly_json_path, "w", encoding="utf-8") as f:
+        json.dump({"articles": all_articles, "generated_at": datetime.now(timezone.utc).isoformat(), "period": month_display}, f, indent=2, ensure_ascii=False)
+
+    print(f"  ✅ Monthly digest ({len(all_articles)} articles) → {monthly_path} + {monthly_json_path}")
 
 
 def main():

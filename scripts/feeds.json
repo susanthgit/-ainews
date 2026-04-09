@@ -97,11 +97,6 @@
           "type": "rss"
         },
         {
-          "name": "Microsoft 365 Blog",
-          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
-          "type": "rss"
-        },
-        {
           "name": "Microsoft 365 Admin Blog",
           "url": "https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rss/board",
           "type": "rss"
