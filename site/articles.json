@@ -7,7 +7,7 @@
     "category_id": "anthropic",
     "category_name": "Anthropic",
     "category_emoji": "🟧",
-    "published": "2026-04-09T23:15:24.080600+00:00",
+    "published": "2026-04-09T23:30:50.837126+00:00",
     "snippet": "Today we are publishing a significant update to our Responsible Scaling Policy (RSP), the risk governance framework we use to mitigate potential catastrophic risks from frontier AI systems. This update introduces a more flexible and nuanced approach to assessing and managing AI risks while maintaining our commitment not to train or deploy models unless we have implemented adequate safeguards. Key improvements include new capability thresholds to indicate when we will upgrade our safeguards, refi",
     "image": "",
     "ai_summary": ""
@@ -20,7 +20,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T23:15:23.525040+00:00",
+    "published": "2026-04-09T23:30:49.032481+00:00",
     "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
     "image": "",
     "ai_summary": ""
@@ -33,7 +33,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T23:15:23.525026+00:00",
+    "published": "2026-04-09T23:30:49.032467+00:00",
     "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
     "image": "",
     "ai_summary": ""
@@ -46,7 +46,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T23:15:23.525013+00:00",
+    "published": "2026-04-09T23:30:49.032454+00:00",
     "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
     "image": "",
     "ai_summary": ""
@@ -59,7 +59,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T23:15:23.524999+00:00",
+    "published": "2026-04-09T23:30:49.032440+00:00",
     "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
     "image": "",
     "ai_summary": ""
@@ -72,7 +72,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T23:15:23.524985+00:00",
+    "published": "2026-04-09T23:30:49.032426+00:00",
     "snippet": "Wednesday Build Hour is a weekly, interactive \"technical gym session\" led by Google Cloud experts to help developers and architects sharpen their cloud skills. Moving beyond passive slide decks, the program focuses on hands-on building, covering advanced topics like AI agents, Vertex AI, and developer productivity tools. Each hour-long session is designed to provide tangible results that participants can immediately deploy into their own workflows. It serves as a consistent, dedicated space for ",
     "image": "",
     "ai_summary": ""
@@ -85,7 +85,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T23:15:23.524971+00:00",
+    "published": "2026-04-09T23:30:49.032412+00:00",
     "snippet": "The Gemini Code Assist team has introduced a suite of updates focused on streamlining the core coding workflow through high-velocity tools like Agent Mode with Auto Approve and Inline Diff Views. These enhancements, along with new features for precise context management and custom commands, aim to transform the AI from a general assistant into a highly tailored, seamless collaborator that adapts to your specific development style.",
     "image": "",
     "ai_summary": ""
@@ -98,7 +98,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-09T23:15:23.524958+00:00",
+    "published": "2026-04-09T23:30:49.032398+00:00",
     "snippet": "Google has introduced Finish Changes and Outlines for Gemini Code Assist in IntelliJ and VS Code to reduce developer friction and eliminate the need for long, manual prompting. Finish Changes acts as an AI pair programmer that completes code, implements pseudocode, and applies refactoring patterns by observing your current edits and context. Meanwhile, Outlines improves code comprehension by generating interactive, high-level English summaries interleaved directly within the source code to help ",
     "image": "",
     "ai_summary": ""
@@ -523,7 +523,7 @@
     "id": "85c41d1a880ecc6b458a2ca3faef1e65",
     "title": "Escaping the Fork: How Meta Modernized WebRTC Across 50+ Use Cases",
     "url": "https://engineering.fb.com/2026/04/09/developer-tools/escaping-the-fork-how-meta-modernized-webrtc-across-50-use-cases/",
-    "source": "Meta AI Blog",
+    "source": "Meta Engineering Blog",
     "category_id": "meta",
     "category_name": "Meta",
     "category_emoji": "🟪",
@@ -770,7 +770,7 @@
     "id": "660dd3dfed0aa01eb39f8e82114b230d",
     "title": "Trust But Canary: Configuration Safety at Scale",
     "url": "https://engineering.fb.com/2026/04/08/security/trust-but-canary-configuration-safety-at-scale-meta-tech-podcast/",
-    "source": "Meta AI Blog",
+    "source": "Meta Engineering Blog",
     "category_id": "meta",
     "category_name": "Meta",
     "category_emoji": "🟪",
