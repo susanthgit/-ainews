@@ -12,12 +12,6 @@
     "error": "<unknown>:363:18687: undefined entity"
   },
   {
-    "name": "Microsoft 365 Copilot Blog",
-    "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot/bg-p/Microsoft365CopilotBlog/rss/board",
-    "category": "M365 Copilot",
-    "error": "text/html; charset=utf-8 is not an XML media type"
-  },
-  {
     "name": "Microsoft 365 Admin Blog",
     "url": "https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rss/board",
     "category": "M365 Copilot",
@@ -39,7 +33,7 @@
     "name": "AI Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "Azure AI Services Blog",
