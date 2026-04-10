@@ -7,9 +7,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-10T01:34:38.349819+00:00",
+    "published": "2026-04-10T02:08:53.348983+00:00",
     "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
-    "image": "",
+    "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/meta_image.2e16d0ba.fill-1200x600.png",
     "ai_summary": ""
   },
   {
@@ -20,9 +20,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-10T01:34:38.349806+00:00",
+    "published": "2026-04-10T02:08:53.348932+00:00",
     "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
-    "image": "",
+    "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/mbu-svd-hero.2e16d0ba.fill-1200x600.png",
     "ai_summary": ""
   },
   {
@@ -33,9 +33,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-10T01:34:38.349793+00:00",
+    "published": "2026-04-10T02:08:53.348913+00:00",
     "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
-    "image": "",
+    "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/PXL_20250410_214904365.PANO.2e16d0ba.fill-1200x600.jpg",
     "ai_summary": ""
   },
   {
@@ -46,9 +46,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-10T01:34:38.349779+00:00",
+    "published": "2026-04-10T02:08:53.348884+00:00",
     "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
-    "image": "",
+    "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_me05j6me05.2e16d0ba.fill-1200x600.jpg",
     "ai_summary": ""
   },
   {
@@ -59,9 +59,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-10T01:34:38.349765+00:00",
+    "published": "2026-04-10T02:08:53.348843+00:00",
     "snippet": "Wednesday Build Hour is a weekly, interactive \"technical gym session\" led by Google Cloud experts to help developers and architects sharpen their cloud skills. Moving beyond passive slide decks, the program focuses on hands-on building, covering advanced topics like AI agents, Vertex AI, and developer productivity tools. Each hour-long session is designed to provide tangible results that participants can immediately deploy into their own workflows. It serves as a consistent, dedicated space for ",
-    "image": "",
+    "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Google_Cloud_EMEA_Developers_1_1_.2e16d0ba.fill-1200x600.png",
     "ai_summary": ""
   },
   {
@@ -72,9 +72,9 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-10T01:34:38.349752+00:00",
+    "published": "2026-04-10T02:08:53.348809+00:00",
     "snippet": "The Gemini Code Assist team has introduced a suite of updates focused on streamlining the core coding workflow through high-velocity tools like Agent Mode with Auto Approve and Inline Diff Views. These enhancements, along with new features for precise context management and custom commands, aim to transform the AI from a general assistant into a highly tailored, seamless collaborator that adapts to your specific development style.",
-    "image": "",
+    "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_y2nrxky2nr.2e16d0ba.fill-1200x600.jpg",
     "ai_summary": ""
   },
   {
@@ -85,9 +85,22 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-10T01:34:38.349738+00:00",
+    "published": "2026-04-10T02:08:53.348791+00:00",
     "snippet": "Google has introduced Finish Changes and Outlines for Gemini Code Assist in IntelliJ and VS Code to reduce developer friction and eliminate the need for long, manual prompting. Finish Changes acts as an AI pair programmer that completes code, implements pseudocode, and applies refactoring patterns by observing your current edits and context. Meanwhile, Outlines improves code comprehension by generating interactive, high-level English summaries interleaved directly within the source code to help ",
-    "image": "",
+    "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_eao8o6eao8.2e16d0ba.fill-1200x600.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "c25e670ad48933fc9f23cc4385fac57f",
+    "title": "Surprise: Not every Lenovo laptop is worth recommending in 2026 - the Yoga 7i is proof",
+    "url": "https://www.zdnet.com/article/lenovo-yoga-7a-2-in-1-review/",
+    "source": "ZDNet AI",
+    "category_id": "industry",
+    "category_name": "Industry",
+    "category_emoji": "🔵",
+    "published": "2026-04-10T02:00:50+00:00",
+    "snippet": "Lenovo's Yoga 7a 2-in-1 is a versatile and well-built PC, though its mid-tier hardware makes it hard to recommend over rivals.",
+    "image": "https://www.zdnet.com/a/img/resize/bff251002f0e6a498b941da9060c468055bd103c/2026/04/08/b3b400aa-6f66-457a-9009-a9e7a2ba6568/lenovo-yoga-7a-2-in-1-image-2.png?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -100,7 +113,7 @@
     "category_emoji": "🔵",
     "published": "2026-04-10T01:05:00+00:00",
     "snippet": "Samsung's flagship OLED TV got a refresh in 2026, but is it enough of an upgrade to skip over last year's S95F? For most people, probably not.",
-    "image": "",
+    "image": "https://www.zdnet.com/a/img/resize/18f86cd6762a63d4ef5d60d101475d7ceab7a119/2026/04/09/90ce7c4d-1181-4e40-a670-6ff260f94727/samsung-s95f-vs-s95h-tv.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -113,7 +126,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-10T00:28:32+00:00",
     "snippet": "Just in time to get buyers thinking as physical PC prices rise Microsoft has told its channel partners to get ready for a 20 percent price cut for Windows 365 cloud PCs, effective May 1st.…",
-    "image": "",
+    "image": "https://regmedia.co.uk/2022/10/18/shutterstock_cloud_pc.jpg",
     "ai_summary": ""
   },
   {
@@ -139,7 +152,7 @@
     "category_emoji": "🔵",
     "published": "2026-04-10T00:00:39+00:00",
     "snippet": "Get a jump on lawn care projects with this DeWalt string trimmer and leaf blower bundle - plus choose an extra tool or extra battery for free.",
-    "image": "",
+    "image": "https://www.zdnet.com/a/img/resize/2c779ffacfad0f0fbe0cab75dd0b75f51e78076f/2026/04/09/216e643b-9459-462f-bfb3-b0cebfbacb9d/dewalt-bundle.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -152,7 +165,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-09T23:05:31+00:00",
     "snippet": "Urge restraints before AdLand does this without appropriate disclosures Large language models can be very persuasive, and researchers say that's a problem when they’re used to create advertising.… ",
-    "image": "",
+    "image": "https://regmedia.co.uk/2017/05/23/puppet-master.jpg",
     "ai_summary": ""
   },
   {
@@ -165,7 +178,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-09T21:29:11+00:00",
     "snippet": "OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.",
-    "image": "",
+    "image": "https://techcrunch.com/wp-content/uploads/2023/09/GettyImages-1574154948-e1695647511123.jpg?resize=1200,676",
     "ai_summary": ""
   },
   {
@@ -178,7 +191,7 @@
     "category_emoji": "🔵",
     "published": "2026-04-09T21:03:00+00:00",
     "snippet": "CuerdOS is a lightning-fast Linux distro with an alternative approach to preinstalled software. Here's what makes it so unique.",
-    "image": "",
+    "image": "https://www.zdnet.com/a/img/resize/7111c950fd131fd84acba120b4bcaf14e5673116/2026/04/06/21d7889b-378d-4f76-9904-e9e9aa9129ab/cuerdoshero.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -191,7 +204,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-09T20:11:55+00:00",
     "snippet": "ChatGPT had reportedly been used to plan the attack that killed two and injured five at Florida State University last April. The family of one victim has said that they plan to sue OpenAI over the incident.",
-    "image": "",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/02/EU-ai-1258475609.jpg?w=1024",
     "ai_summary": ""
   },
   {
@@ -217,7 +230,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-09T19:33:54+00:00",
     "snippet": "After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.",
-    "image": "",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/10/54888410931_c37fed4674_k.jpg?resize=1200,800",
     "ai_summary": ""
   },
   {
@@ -230,7 +243,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-09T19:33:16+00:00",
     "snippet": "Organization admins and security managers can now jump into a Copilot experience directly from secret risk assessment or Code Security risk assessment results to get contextual explanations and guided next&#8230;\nThe post Ask Copilot in security assessments now available appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.blog/wp-content/uploads/2026/04/Ask-Copilot-in-security-assessment-social.jpeg",
     "ai_summary": ""
   },
   {
@@ -243,7 +256,7 @@
     "category_emoji": "🟧",
     "published": "2026-04-09T19:29:46+00:00",
     "snippet": "Want to run your business on autopilot? For better or worse, Managed Agents might help with that If you need AI agents to do a lot of ongoing tasks for your business, Anthropic has a new answer for you. The Claude maker has introduced Managed Agents, a service to help organizations create and deploy cloud-hosted knowledge work automations.…",
-    "image": "",
+    "image": "https://regmedia.co.uk/2024/11/19/shutterstock_agents.jpg",
     "ai_summary": ""
   },
   {
@@ -256,7 +269,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-09T19:10:07+00:00",
     "snippet": "The app was ranking No. 57 on the App Store just before Meta AI's new model launched. Now it's No. 5 — and rising.",
-    "image": "",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195497483.jpg?resize=1200,800",
     "ai_summary": ""
   },
   {
@@ -269,7 +282,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-09T19:03:41+00:00",
     "snippet": "Custom ASIC biz now running at a $1B annual pace for Intel Google will continue to work with Intel, buying SmartNICs for its public cloud rather than blazing its own trail as AWS has done with its Nitro NICs.…",
-    "image": "",
+    "image": "https://regmedia.co.uk/2023/01/20/shutterstock_intel.jpg",
     "ai_summary": ""
   },
   {
@@ -282,7 +295,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-09T18:57:15-04:00",
     "snippet": "OpenAI has announced a new version of its ChatGPT Pro subscription that costs $100 per month. The new Pro tier offers \"5x more\" usage of its Codex coding tool than the $20 per month Plus subscription and \"is best for longer, high-effort Codex sessions,\" OpenAI says. The company is introducing the new tier as it [&#8230;]",
-    "image": "",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25462046/STK155_OPEN_AI_CVirginia_2_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
     "ai_summary": ""
   },
   {
@@ -295,7 +308,7 @@
     "category_emoji": "🟧",
     "published": "2026-04-09T18:50:05+00:00",
     "snippet": "Anthropic said this week that it limited the release of its newest model, dubbed Mythos, because it is too capable of finding security exploits in software relied upon by users around the world. Are real cybersecurity concerns a cover for a bigger problem at the frontier lab?",
-    "image": "",
+    "image": "https://techcrunch.com/wp-content/uploads/2025/02/Anthropic-Dario-Amodei.jpeg?w=1182",
     "ai_summary": ""
   },
   {
@@ -308,7 +321,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-09T18:27:47+00:00",
     "snippet": "The two tech giants are looking to co-develop custom chips, at a time when demand for CPUs is high due to a growing global shortage.",
-    "image": "",
+    "image": "https://techcrunch.com/wp-content/uploads/2024/04/GettyImages-1709348485.jpg?w=1024",
     "ai_summary": ""
   },
   {
@@ -321,7 +334,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-09T18:20:15+00:00",
     "snippet": "Cops bust latest scam, return $12m to bilked victims US, UK, and Canadian law enforcement Thursday said that they disrupted a $45 million global cryptocurrency scam, freezing $12 million in stolen funds and identifying more than 20,000 cryptocurrency wallet addresses linked to fraud victims across 30 countries.…",
-    "image": "",
+    "image": "https://regmedia.co.uk/2026/04/09/crypto_scam_seizure.jpg",
     "ai_summary": ""
   },
   {
@@ -334,7 +347,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-09T18:17:06-04:00",
     "snippet": "Florida Attorney General James Uthmeier is launching an investigation into OpenAI over public safety and national security risks, as reported earlier by Reuters. In a statement on Thursday, Uthmeier says there are concerns that OpenAI's data and technology are \"falling into the hands of America's enemies, such as the Chinese Communist Party.\" Uthmeier also says [&#8230;]",
-    "image": "",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK155_OPEN_AI_2025_CVirgiia_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
     "ai_summary": ""
   },
   {
@@ -360,7 +373,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-09T17:45:25+00:00",
     "snippet": "C-suite forced to take sandwiches into work, cycle home It's going to be hard holding back our tears. The C-suite lieutenants at Amazon didn’t exactly get the bumper payday that many El Reg readers would expect, particularly compared with prior years.…",
-    "image": "",
+    "image": "https://regmedia.co.uk/2021/06/02/amazon.jpg",
     "ai_summary": ""
   },
   {
@@ -373,7 +386,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-09T17:40:09+00:00",
     "snippet": "GitHub moderators can now classify hidden comments as Low Quality, a new option in the Hide comment dropdown menu available across issues, discussions, pull requests, and commits. Previously, the available&#8230;\nThe post New Low Quality option in the Hide comment menu appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.com/user-attachments/assets/d1ea20bc-92c0-41f1-8761-f782e93d8b0b",
     "ai_summary": ""
   },
   {
@@ -386,7 +399,7 @@
     "category_emoji": "📦",
     "published": "2026-04-09T17:33:28+00:00",
     "snippet": "This post shows you how to manage FM transitions in Amazon Bedrock, so you can make sure your AI applications remain operational as models evolve. We discuss the three lifecycle states, how to plan migrations with the new extended access feature, and practical strategies to transition your applications to newer models without disruption.",
-    "image": "",
+    "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/12/22/ml-19718-image-1.png",
     "ai_summary": ""
   },
   {
@@ -399,7 +412,7 @@
     "category_emoji": "🔥",
     "published": "2026-04-09T17:30:10+00:00",
     "snippet": "Your agent will be pushed, filed, stamped, indexed, briefed, debriefed, and numbered AI agents should not be secret agents, at least in corporate environments. But when companies deploy software automations, they don't always have visibility into what their roboscripts are actually doing.… ",
-    "image": "",
+    "image": "https://regmedia.co.uk/2025/12/15/shutterstock_2644320231.jpg",
     "ai_summary": ""
   },
   {
@@ -412,7 +425,7 @@
     "category_emoji": "📦",
     "published": "2026-04-09T17:28:20+00:00",
     "snippet": "Today, we're announcing AWS Agent Registry (preview) in AgentCore, a single place to discover, share, and reuse AI agents, tools, and agent skills across your enterprise.",
-    "image": "",
+    "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/08/ml-20825-image-1-new.png",
     "ai_summary": ""
   },
   {
@@ -425,7 +438,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-09T17:27:51+00:00",
     "snippet": "A new &#8220;Sort by&#8221; control appears on the Notifications page, with two options: Newest to oldest (which matches the previous behavior) and Oldest to newest. The selected sort order applies&#8230;\nThe post New Sort by control added to Notifications appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.blog/wp-content/uploads/2026/04/SortBy_Improvement_Unfurl_Centered.png",
     "ai_summary": ""
   },
   {
@@ -438,7 +451,7 @@
     "category_emoji": "🔵",
     "published": "2026-04-09T17:16:00+00:00",
     "snippet": "There's no need for a separate device when your Android tablet or iPad can hold your whole reading library - just like a Kindle.",
-    "image": "",
+    "image": "https://www.zdnet.com/a/img/resize/875660e0053c725d36927ce0f3cde16f105107c4/2026/01/23/00f50196-263e-4544-be7d-e091fc8350c6/3.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -451,7 +464,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-09T17:15:16+00:00",
     "snippet": "You can now see repository member role labels directly in the pull request list view for public repositories. Role labels, such as First-time contributor, Contributor, and Member, now appear inline&#8230;\nThe post Repository member role labels now in pull request list view appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.com/user-attachments/assets/3fb440b9-649b-4107-9eea-8884fb0ccaa5",
     "ai_summary": ""
   },
   {
@@ -464,7 +477,7 @@
     "category_emoji": "📦",
     "published": "2026-04-09T17:06:07+00:00",
     "snippet": "This post walks you through three steps: starting a session and generating the Live View URL, rendering the stream in your React application, and wiring up an AI agent that drives the browser while your users watch. At the end, you will have a working sample application you can clone and run.",
-    "image": "",
+    "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/07/architecture_liveview-1024x566.png",
     "ai_summary": ""
   },
   {
@@ -477,7 +490,7 @@
     "category_emoji": "🔵",
     "published": "2026-04-09T16:59:24+00:00",
     "snippet": "The latest iOS update also repairs a glitch with iCloud syncing and comes with the usual bug fixes.",
-    "image": "",
+    "image": "https://www.zdnet.com/a/img/resize/6a5b81a728875fdd1eb164ea0444a446d1bd62cb/2026/04/09/06a50d05-5711-4918-ba3f-a719bcb06bf5/apples-new-ios-update-is-a-minor-one-but-you-should-still-install-it-heres-why.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -490,7 +503,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-09T16:53:00+00:00",
     "snippet": "The free Tubi TV video streamer now integrates with ChatGPT so you can ask the AI to search the site's lineup of more than 300,000 movies and TV episodes.",
-    "image": "",
+    "image": "https://www.zdnet.com/a/img/resize/90c173e8a6d918f7bf1be76b41bf3baa86d020b0/2026/04/09/12f2bd5c-4820-4639-8ead-f7ab63d7b0d5/chatgpt-tubi.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -503,7 +516,7 @@
     "category_emoji": "🔵",
     "published": "2026-04-09T16:45:05+00:00",
     "snippet": "I love this new release for its speed, replacement apps - and for what's missing.",
-    "image": "",
+    "image": "https://www.zdnet.com/a/img/resize/8c4f2c4cdcbd2d03664432d23381631e5392b477/2026/04/06/00333ed2-d405-455a-958d-2848b356bee1/ubuntu2604hero.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -516,7 +529,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-09T16:15:32+00:00",
     "snippet": "This update brings release tracking closer to your issues, configurable defaults for project fields, and faster navigation across related issues. Release information in the issue sidebar When an issue is&#8230;\nThe post Release information in issue sidebar and default values for project fields appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.com/user-attachments/assets/ec969161-8e22-487f-9336-40873cf3dedd",
     "ai_summary": ""
   },
   {
@@ -529,20 +542,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-09T16:00:34+00:00",
     "snippet": "At Meta, WebRTC powers real-time audio and video across various platforms. But forking a large open-source project like WebRTC within our monorepo presents unique challenges – over time, an internal fork can drift behind upstream, cutting itself off from community upgrades. We&#8217;re sharing how we escaped this &#8220;forking trap&#8221; &#8211; from building a dual-stack architecture [...]\nRead More...\nThe post Escaping the Fork: How Meta Modernized WebRTC Across 50+ Use Cases appeared first ",
-    "image": "",
-    "ai_summary": ""
-  },
-  {
-    "id": "26e73bbdb242aae075405ab5fff812d6",
-    "title": "The best Android tablets of 2026: Lab tested, expert recommended",
-    "url": "https://www.zdnet.com/article/best-android-tablet/",
-    "source": "ZDNet AI",
-    "category_id": "industry",
-    "category_name": "Industry",
-    "category_emoji": "🔵",
-    "published": "2026-04-09T14:55:00+00:00",
-    "snippet": "There's more to tablets than iPads. ZDNET tested our favorite Android tablets from Samsung, TCL, and others.",
-    "image": "",
+    "image": "https://engineering.fb.com/wp-content/uploads/2026/04/Meta-WebRTC-escaping-the-fork-image-1.png?w=916",
     "ai_summary": ""
   },
   {
@@ -555,7 +555,7 @@
     "category_emoji": "🟩",
     "published": "2026-04-09T14:54:41+00:00",
     "snippet": "Sam Altman's datacenter dreams hit a wall of watts and wonkery, cooling Britain's AI ambitions OpenAI is pausing its planned Stargate datacenter project in the UK just months after announcing it, citing the regulatory environment and cost of energy as reasons for putting it on hold.…",
-    "image": "",
+    "image": "https://regmedia.co.uk/2026/04/09/shutterstock_2719900129.jpg",
     "ai_summary": ""
   },
   {
@@ -568,7 +568,7 @@
     "category_emoji": "📦",
     "published": "2026-04-09T14:47:57+00:00",
     "snippet": "In this post, you will learn how to build stateful MCP servers that request user input during execution, invoke LLM sampling for dynamic content generation, and stream progress updates for long-running tasks. You will see code examples for each capability and deploy a working stateful MCP server to Amazon Bedrock AgentCore Runtime.",
-    "image": "",
+    "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/03/ml20073-image-1.png",
     "ai_summary": ""
   },
   {
@@ -594,7 +594,7 @@
     "category_emoji": "🍎",
     "published": "2026-04-09T13:00:06+00:00",
     "snippet": "Wash your mouth out with digital soap Apple Intelligence, the personal AI system integrated into newer Macs, iPhones, and other iThings, can be hijacked using prompt injection, forcing the model into producing an attacker-controlled result and putting millions of users at risk, researchers have shown.…",
-    "image": "",
+    "image": "https://regmedia.co.uk/2024/09/09/shutterstock_2477800659.jpg",
     "ai_summary": ""
   },
   {
@@ -607,7 +607,7 @@
     "category_emoji": "🟧",
     "published": "2026-04-09T10:00:00-04:00",
     "snippet": "Today on Decoder, let’s talk about the looming AI monetization cliff, and whether some of the biggest companies in the space can become real, profitable businesses before they careen right off it. My guest today is Hayden Field, who’s our senior AI reporter here at The Verge. She’s been keeping close tabs on both Anthropic [&#8230;]",
-    "image": "",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/DCD_0409.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
     "ai_summary": ""
   },
   {
@@ -633,7 +633,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-09T02:21:17+00:00",
     "snippet": "In March, we experienced four incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: March 2026 appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.blog/wp-content/uploads/2025/09/wallpaper-generic-blog-header.png",
     "ai_summary": ""
   },
   {
@@ -646,7 +646,7 @@
     "category_emoji": "🍎",
     "published": "2026-04-09T00:00:00+00:00",
     "snippet": "This paper provides a theoretical framework for interpreting acoustic neighbor embeddings, which are representations of the phonetic content of variable-width audio or text in a fixed-dimensional embedding space. A probabilistic interpretation of the distances between embeddings is proposed, based on a general quantitative definition of phonetic similarity between words. This provides us a framework for understanding and applying the embeddings in a principled manner. Theoretical and empirical e",
-    "image": "",
+    "image": "https://mlr.cdn-apple.com/media/Home_1200x630_48225d82e9.png",
     "ai_summary": ""
   },
   {
@@ -659,7 +659,7 @@
     "category_emoji": "🍎",
     "published": "2026-04-09T00:00:00+00:00",
     "snippet": "This paper was accepted at the Workshop on Memory for LLM-Based Agentic Systems at ICLR.\n\nLanguage models have consistently grown to compress more world knowledge into their parameters, but the knowledge that can be pretrained into them is upper-bounded by their parameter size. Especially the capacity of Small Language Models (SLMs) is limited, leading to factually incorrect generations. This problem is often mitigated by giving the SLM access to an outside source: the ability to query a larger ",
-    "image": "",
+    "image": "https://mlr.cdn-apple.com/media/Home_1200x630_48225d82e9.png",
     "ai_summary": ""
   },
   {
@@ -672,7 +672,7 @@
     "category_emoji": "⬛",
     "published": "2026-04-09T00:00:00+00:00",
     "snippet": "",
-    "image": "",
+    "image": "https://huggingface.co/blog/assets/overworld/waypoint-v1-5.png",
     "ai_summary": ""
   },
   {
@@ -685,7 +685,7 @@
     "category_emoji": "⬛",
     "published": "2026-04-09T00:00:00+00:00",
     "snippet": "",
-    "image": "",
+    "image": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
     "ai_summary": ""
   },
   {
@@ -698,7 +698,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-08T23:21:50+00:00",
     "snippet": "Building on the pull request throughput and cycle-time metrics shipped in February, which track Copilot-created pull requests from the coding agent, the Copilot usage metrics API now includes two new&#8230;\nThe post Copilot-reviewed pull request merge metrics now in the usage metrics API appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.blog/wp-content/uploads/2026/04/575599341-38f80681-abea-46f5-8c0d-ab7276542adf.jpeg",
     "ai_summary": ""
   },
   {
@@ -724,7 +724,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-08T19:56:31+00:00",
     "snippet": "This week, we&#8217;re rolling out several improvements to our APIs, webhooks, and delegated workflows. These improvements strengthen our continued investment in the developer experience of our secret scanning features. Built&#8230;\nThe post Secret scanning improvements to alert APIs, webhooks, and delegated workflows appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.blog/wp-content/uploads/2026/04/571554102-6349f5b6-b0b7-4130-9300-6d5d87e0b6e9.jpg",
     "ai_summary": ""
   },
   {
@@ -737,7 +737,7 @@
     "category_emoji": "📦",
     "published": "2026-04-08T19:51:50+00:00",
     "snippet": "In this post, we'll walk you through a complete implementation of model fine-tuning in Amazon Bedrock using Amazon Nova models, demonstrating each step through an intent classifier example that achieves superior performance on a domain specific task. Throughout this guide, you'll learn to prepare high-quality training data that drives meaningful model improvements, configure hyperparameters to optimize learning without overfitting, and deploy your fine-tuned model for improved accuracy and reduc",
-    "image": "",
+    "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/06/ML-20219-1.png",
     "ai_summary": ""
   },
   {
@@ -750,7 +750,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-08T19:37:15+00:00",
     "snippet": "Copilot cloud agent now supports more than pull request workflows on GitHub Mobile, so you can keep work moving even when you&#8217;re away from your desk. Ask Copilot to research&#8230;\nThe post GitHub Mobile: Research and code with Copilot cloud agent anywhere appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.blog/wp-content/uploads/2026/04/CCA-Social.png",
     "ai_summary": ""
   },
   {
@@ -763,7 +763,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-08T18:25:26+00:00",
     "snippet": "As AI increases developer speed and productivity it also increases the need for safeguards. On this episode of the Meta Tech Podcast, Pascal Hartig sits down with Ishwari and Joe from Meta&#8217;s Configurations team to discuss how Meta makes config rollouts safe at scale. Listen in to learn about canarying and progressive rollouts, the health checks [...]\nRead More...\nThe post Trust But Canary: Configuration Safety at Scale appeared first on Engineering at Meta.",
-    "image": "",
+    "image": "https://engineering.fb.com/wp-content/uploads/2026/04/Meta-Tech-Podcast-episode-84-Configuration-Safety-at-Scale.webp",
     "ai_summary": ""
   },
   {
@@ -789,7 +789,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-08T16:52:15+00:00",
     "snippet": "Organization admins and security managers can now run a free Code Security risk assessment to review security vulnerabilities across their organization. The assessment summarizes vulnerabilities by severity, rule type, and&#8230;\nThe post Code Security risk assessment available for organizations appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.com/user-attachments/assets/09d93818-d102-4bbc-b810-ec05f7564d0c",
     "ai_summary": ""
   },
   {
@@ -802,7 +802,7 @@
     "category_emoji": "🤖",
     "published": "2026-04-08T16:35:46+00:00",
     "snippet": "Get inspired by five of the most memorable, magical, and quirky Universe sessions to date.\nThe post GitHub Universe is back: We want you to take the stage appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.blog/wp-content/uploads/2026/04/Image-1.jpeg?resize=1024%2C683",
     "ai_summary": ""
   },
   {
@@ -815,7 +815,20 @@
     "category_emoji": "🤖",
     "published": "2026-04-08T16:13:36+00:00",
     "snippet": "We&#8217;ve published an updated PGP keyring for GitHub CLI&#8217;s Linux package repositories. The keyring now includes both the current signing key and a new replacement key. If you&#8217;ve already rerun&#8230;\nThe post New PGP signing key for GitHub CLI Linux packages appeared first on The GitHub Blog.",
-    "image": "",
+    "image": "https://github.blog/wp-content/uploads/2026/04/CLI_Linux_social.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "4596dcebd180843daf183ee8e747408c",
+    "title": "Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unlock real business value",
+    "url": "https://azure.microsoft.com/en-us/blog/cloud-cost-optimization-how-to-maximize-roi-from-ai-manage-costs-and-unlock-real-business-value/",
+    "source": "Azure Blog",
+    "category_id": "ai-foundry",
+    "category_name": "AI Foundry",
+    "category_emoji": "🏭",
+    "published": "2026-04-08T16:00:00+00:00",
+    "snippet": "Get practical strategies and best practices to help you plan, design, and manage AI investments for sustainable value and efficiency.\nThe post Cloud Cost Optimization: How to maximize ROI from AI, manage costs, and unlock real business value appeared first on Microsoft Azure Blog.",
+    "image": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/04/Maximizing-ROI-manage-cost-1.jpg",
     "ai_summary": ""
   },
   {
@@ -828,7 +841,7 @@
     "category_emoji": "⬛",
     "published": "2026-04-08T14:27:42+00:00",
     "snippet": "",
-    "image": "",
+    "image": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/uxQyadM-_5UjGrNiwUGI0.png",
     "ai_summary": ""
   },
   {
@@ -841,7 +854,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-08T12:12:54-04:00",
     "snippet": "Meta Superintelligence Labs is launching its first model since Mark Zuckerberg spent billions overhauling the company's AI efforts. Called Muse Spark, the model now powers the Meta AI app and the Meta AI website in the US, per the company's announcement. In the coming weeks, Meta says, it will appear in WhatsApp, Instagram, Facebook, Messenger, [&#8230;]",
-    "image": "",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/257980_Meta_Ray-Ban_Display_AKrales_0312.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
     "ai_summary": ""
   },
   {
@@ -854,7 +867,7 @@
     "category_emoji": "🍎",
     "published": "2026-04-08T00:00:00+00:00",
     "snippet": "Enterprise multi-agent AI systems produce thousands of inter-agent interactions per hour, yet existing observability tools capture these dependencies without enforcing anything. OpenTelemetry and Langfuse collect telemetry but treat governance as a downstream analytics concern, not a real-time enforcement target. The result is an “observe-but-do-not-act” gap where policy violations are detected only after damage is done. We present Governance-Aware Agent Telemetry (GAAT), a reference architectur",
-    "image": "",
+    "image": "https://mlr.cdn-apple.com/media/Home_1200x630_48225d82e9.png",
     "ai_summary": ""
   },
   {
@@ -867,7 +880,7 @@
     "category_emoji": "🟪",
     "published": "2026-04-08T00:00:00+00:00",
     "snippet": "",
-    "image": "",
+    "image": "https://huggingface.co/blog/assets/safetensors-joins-pytorch-foundation/thumbnail.png",
     "ai_summary": ""
   }
 ]
