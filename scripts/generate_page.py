@@ -392,27 +392,27 @@ def detect_breaking_news(articles):
             title_groups["|".join(sorted(words))].append(article)
 
     # Mark as breaking if 3+ different sources cover the same story
-    breaking_count = 0
+    breaking_stories = set()
     for cluster_id, cluster_articles in clusters.items():
         sources = set(a.get("source", "") for a in cluster_articles)
         if len(sources) >= 3:
+            breaking_stories.add(cluster_id)
             for article in cluster_articles:
                 article["is_breaking"] = True
                 if article.get("tier") != "headline":
                     article["tier"] = "headline"
-            breaking_count += 1
 
     for group_key, group_articles in title_groups.items():
         sources = set(a.get("source", "") for a in group_articles)
-        if len(sources) >= 3:
+        if len(sources) >= 3 and group_key not in breaking_stories:
+            breaking_stories.add(group_key)
             for article in group_articles:
                 if not article.get("is_breaking"):
                     article["is_breaking"] = True
                     if article.get("tier") != "headline":
                         article["tier"] = "headline"
-                    breaking_count += 1
 
-    print(f"  {'🚨 ' + str(breaking_count) + ' breaking stories detected' if breaking_count else '✅ No breaking stories'}")
+    print(f"  {'🚨 ' + str(len(breaking_stories)) + ' breaking stories detected' if breaking_stories else '✅ No breaking stories'}")
     return articles
 
 
@@ -474,14 +474,23 @@ def main():
 def generate_rss(articles):
     """Generate an RSS feed XML from curated articles."""
     from xml.sax.saxutils import escape as xml_escape
+    from email.utils import format_datetime as format_rfc822
 
     rss_items = ""
     for article in articles[:50]:  # Cap at 50 items
         title = xml_escape(article.get("title", ""))
         link = xml_escape(article.get("url", ""))
         summary = xml_escape(article.get("ai_summary", article.get("snippet", "")))
-        pub = article.get("published", "")
         category = xml_escape(article.get("category_name", ""))
+
+        # Convert ISO date to RFC 822 (required by RSS spec)
+        pub_raw = article.get("published", "")
+        try:
+            pub_dt = dateparser.parse(pub_raw)
+            pub = format_rfc822(pub_dt)
+        except Exception:
+            pub = pub_raw
+
         rss_items += f"""    <item>
       <title>{title}</title>
       <link>{link}</link>

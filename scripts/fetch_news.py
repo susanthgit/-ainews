@@ -5,6 +5,7 @@ Outputs articles.json with deduplicated, last-24-hour articles.
 
 import json
 import os
+import re
 import sys
 import hashlib
 from datetime import datetime, timedelta, timezone
@@ -62,15 +63,20 @@ def fetch_rss_feeds(categories, cutoff_time):
             print(f"  📡 Fetching RSS: {feed_name}...", end=" ")
 
             try:
-                feed = feedparser.parse(feed_url)
+                # Use requests with timeout, then parse content (WARN-2 fix)
+                try:
+                    resp = requests.get(feed_url, timeout=15, headers={"User-Agent": "AINewsBot/1.0"})
+                    resp.raise_for_status()
+                    feed = feedparser.parse(resp.content)
+                except requests.RequestException as e:
+                    print(f"❌ HTTP error: {str(e)[:60]}")
+                    broken_feeds.append({"name": feed_name, "url": feed_url, "category": cat_name, "error": str(e)[:120]})
+                    continue
+
                 if feed.bozo and not feed.entries:
                     error_msg = str(getattr(feed, 'bozo_exception', 'Unknown parse error'))
                     print(f"❌ Feed error: {error_msg[:60]}")
                     broken_feeds.append({"name": feed_name, "url": feed_url, "category": cat_name, "error": error_msg[:120]})
-                    continue
-                if hasattr(feed, 'status') and feed.status >= 400:
-                    print(f"❌ HTTP {feed.status}")
-                    broken_feeds.append({"name": feed_name, "url": feed_url, "category": cat_name, "error": f"HTTP {feed.status}"})
                     continue
                 count = 0
                 for entry in feed.entries:
@@ -83,11 +89,13 @@ def fetch_rss_feeds(categories, cutoff_time):
                         continue
 
                     title = getattr(entry, "title", "No title")
+                    # C1 fix: skip articles with junk titles (single word, <3 chars, generic nav text)
+                    if not title or len(title.strip()) < 5 or title.strip().lower() in ("company", "blog", "news", "home", "about", "untitled"):
+                        continue
                     link = getattr(entry, "link", "")
                     summary = getattr(entry, "summary", "")
                     # Clean HTML tags from summary
                     if summary:
-                        import re
                         summary = re.sub(r"<[^>]+>", "", summary)
                         summary = summary[:500]
 
@@ -226,7 +234,6 @@ def deduplicate(articles):
 
 def _normalise_title(title):
     """Lowercase, strip punctuation and common prefixes for comparison."""
-    import re
     t = title.lower().strip()
     # Remove common source prefixes like "[EXTERNAL]", "BREAKING:", etc.
     t = re.sub(r"^\[.*?\]\s*", "", t)

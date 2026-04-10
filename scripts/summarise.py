@@ -153,16 +153,25 @@ def main():
         api_calls += 1
 
         if results and isinstance(results, list):
-            for j, item in enumerate(results):
-                summary = item.get("summary", "") if isinstance(item, dict) else ""
-                if summary and j < len(batch):
+            # Map by AI-returned index field (not position — GPT may reorder)
+            index_map = {}
+            for item in results:
+                if isinstance(item, dict):
+                    idx = item.get("index")
+                    if idx is not None and 0 <= idx < len(batch):
+                        index_map[idx] = item
+
+            for j in range(len(batch)):
+                item = index_map.get(j) or (results[j] if j < len(results) and isinstance(results[j], dict) else {})
+                summary = item.get("summary", "")
+                if summary:
                     orig_idx = batch[j][0]
                     articles[orig_idx]["ai_summary"] = summary
                     articles[orig_idx]["why_it_matters"] = item.get("why_it_matters", "")
                     articles[orig_idx]["tier"] = item.get("tier", "deep_dive")
                     articles[orig_idx]["cluster"] = item.get("cluster") or None
                     summarised += 1
-            print(f"✅ ({len(results)} summaries)")
+            print(f"✅ ({len(index_map) or len(results)} summaries)")
         else:
             # Fallback: summarise individually (no clustering possible)
             print("⚠️  falling back to individual mode")
