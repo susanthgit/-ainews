@@ -8,6 +8,7 @@ import os
 import re
 import sys
 import hashlib
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -46,6 +47,94 @@ def article_id(url, title):
     """Generate a unique ID for deduplication."""
     key = (url or "") + (title or "")
     return hashlib.md5(key.encode()).hexdigest()
+
+
+def extract_image_from_html(html_str):
+    """Extract the first meaningful image URL from HTML content."""
+    if not html_str:
+        return ""
+    # Match <img src="..."> or <img src='...'>
+    matches = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', html_str, re.IGNORECASE)
+    for url in matches:
+        # Skip tiny tracking pixels, spacers, and data URIs
+        if any(skip in url.lower() for skip in [
+            "pixel", "spacer", "1x1", "tracking", "beacon",
+            "data:image", ".gif", "blank.", "transparent.",
+            "feedburner", "stats.", "analytics.",
+        ]):
+            continue
+        # Must be a full HTTP(S) URL
+        if url.startswith("http"):
+            return url
+    return ""
+
+
+def fetch_og_image(article_url):
+    """Fetch the og:image meta tag from an article page (lightweight HEAD-like fetch)."""
+    if not article_url:
+        return ""
+    try:
+        # Only fetch the first 50KB to find meta tags in <head>
+        resp = requests.get(
+            article_url,
+            timeout=8,
+            headers={"User-Agent": "AINewsBot/1.0", "Range": "bytes=0-51200"},
+            stream=True,
+        )
+        # Read limited content
+        content = ""
+        for chunk in resp.iter_content(chunk_size=16384, decode_unicode=True):
+            if isinstance(chunk, bytes):
+                chunk = chunk.decode("utf-8", errors="ignore")
+            content += chunk
+            if len(content) > 51200 or "</head>" in content.lower():
+                break
+        resp.close()
+
+        # Extract og:image (handles both property= and name= attributes, various quote styles)
+        match = re.search(
+            r'<meta[^>]+(?:property|name)=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+            content, re.IGNORECASE,
+        )
+        if not match:
+            # Try reversed attribute order: content before property
+            match = re.search(
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']og:image["\']',
+                content, re.IGNORECASE,
+            )
+        if match:
+            return match.group(1)
+    except Exception:
+        pass
+    return ""
+
+
+def backfill_og_images(articles):
+    """Fetch og:image for articles missing thumbnails (parallel, best-effort)."""
+    missing = [(i, a) for i, a in enumerate(articles) if not a.get("image")]
+    if not missing:
+        return articles
+
+    print(f"  🖼️  Fetching og:image for {len(missing)} articles without thumbnails...")
+    filled = 0
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = {
+            pool.submit(fetch_og_image, a["url"]): idx
+            for idx, a in missing
+        }
+        for future in as_completed(futures):
+            idx = futures[future]
+            try:
+                image = future.result()
+                if image:
+                    articles[idx]["image"] = image
+                    filled += 1
+            except Exception:
+                pass
+
+    print(f"  🖼️  Filled {filled}/{len(missing)} via og:image")
+    return articles
 
 
 def fetch_rss_feeds(categories, cutoff_time):
@@ -93,13 +182,16 @@ def fetch_rss_feeds(categories, cutoff_time):
                     if not title or len(title.strip()) < 5 or title.strip().lower() in ("company", "blog", "news", "home", "about", "untitled"):
                         continue
                     link = getattr(entry, "link", "")
-                    summary = getattr(entry, "summary", "")
-                    # Clean HTML tags from summary
+                    summary_raw = getattr(entry, "summary", "")
+                    # Extract image from summary HTML before stripping tags
+                    summary_image = extract_image_from_html(summary_raw)
+                    # Clean HTML tags from summary for text display
+                    summary = summary_raw
                     if summary:
                         summary = re.sub(r"<[^>]+>", "", summary)
                         summary = summary[:500]
 
-                    # Extract thumbnail from RSS media tags
+                    # Extract thumbnail — check multiple RSS fields
                     image = ""
                     media = getattr(entry, "media_content", None)
                     if media and len(media) > 0:
@@ -114,6 +206,24 @@ def fetch_rss_feeds(categories, cutoff_time):
                             if enc.get("type", "").startswith("image/"):
                                 image = enc.get("href", enc.get("url", ""))
                                 break
+                    # Fallback: extract from entry.content HTML
+                    if not image:
+                        content_list = getattr(entry, "content", [])
+                        for content_item in content_list:
+                            img = extract_image_from_html(content_item.get("value", ""))
+                            if img:
+                                image = img
+                                break
+                    # Fallback: extract from summary HTML
+                    if not image and summary_image:
+                        image = summary_image
+                    # Fallback: check entry.links for image types
+                    if not image:
+                        for link_item in getattr(entry, "links", []):
+                            if link_item.get("type", "").startswith("image/"):
+                                image = link_item.get("href", "")
+                                if image:
+                                    break
 
                     articles.append({
                         "id": article_id(link, title),
@@ -352,6 +462,11 @@ def main():
         print(f"   📊 Trimmed from {len(all_articles)} → {len(filtered_articles)} (non-Microsoft categories capped)")
 
     all_articles = filtered_articles
+
+    # Backfill: fetch og:image for articles still missing thumbnails
+    print()
+    print("🖼️  Thumbnail backfill:")
+    all_articles = backfill_og_images(all_articles)
 
     # Save output
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
