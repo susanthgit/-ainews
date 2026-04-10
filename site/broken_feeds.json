@@ -3,42 +3,48 @@
     "name": "Azure Blog",
     "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
     "category": "Microsoft",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "403 Client Error: Forbidden for url: https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board"
   },
   {
     "name": "Microsoft 365 Blog",
     "url": "https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rss/board",
     "category": "Microsoft",
-    "error": "<unknown>:363:18687: undefined entity"
+    "error": "403 Client Error: Forbidden for url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rs"
+  },
+  {
+    "name": "Microsoft 365 Copilot Blog",
+    "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot/bg-p/Microsoft365CopilotBlog/rss/board",
+    "category": "M365 Copilot",
+    "error": "403 Client Error: Forbidden for url: https://techcommunity.microsoft.com/t5/microsoft-365-copilot/bg-p/Microsoft365Copil"
   },
   {
     "name": "Microsoft 365 Admin Blog",
     "url": "https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rss/board",
     "category": "M365 Copilot",
-    "error": "<unknown>:363:18687: undefined entity"
+    "error": "403 Client Error: Forbidden for url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rs"
   },
   {
     "name": "Copilot Studio Blog",
     "url": "https://techcommunity.microsoft.com/t5/copilot-studio-blog/bg-p/CopilotStudioBlog/rss/board",
     "category": "Copilot Studio",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "403 Client Error: Forbidden for url: https://techcommunity.microsoft.com/t5/copilot-studio-blog/bg-p/CopilotStudioBlog/r"
   },
   {
     "name": "Power Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/power-platform-blog/bg-p/powerplatformblog/rss/board",
     "category": "Copilot Studio",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
+    "error": "403 Client Error: Forbidden for url: https://techcommunity.microsoft.com/t5/power-platform-blog/bg-p/powerplatformblog/r"
   },
   {
     "name": "AI Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "403 Client Error: Forbidden for url: https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog/rss/"
   },
   {
     "name": "Azure AI Services Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Services-blog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "403 Client Error: Forbidden for url: https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Serv"
   }
 ]
