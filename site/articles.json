@@ -7,7 +7,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-12T09:17:53.789886+00:00",
+    "published": "2026-04-12T11:34:44.506003+00:00",
     "snippet": "Agent Development Kit (ADK) now supports a robust ecosystem of third-party tools and integrations. Connect your agents to GitHub, Notion, Hugging Face, and more to build capable, real-world applications.",
     "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/meta_image.2e16d0ba.fill-1200x600.png",
     "ai_summary": ""
@@ -20,7 +20,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-12T09:17:53.789850+00:00",
+    "published": "2026-04-12T11:34:44.505985+00:00",
     "snippet": "Google I/O 2026 is returning May 19-20 at Shoreline Amphitheatre in Mountain View, CA. But before the keynotes begin, you can get into the spirit of the event with our annual tradition: the save the date puzzle.  This year's experience highlights how AI can empower and accelerate",
     "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/mbu-svd-hero.2e16d0ba.fill-1200x600.png",
     "ai_summary": ""
@@ -33,7 +33,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-12T09:17:53.789832+00:00",
+    "published": "2026-04-12T11:34:44.505968+00:00",
     "snippet": "While keynotes are available online, Google Cloud Next '26 in Las Vegas offers an irreplaceable in-person experience centered on networking, hands-on problem solving, and the transition to agentic AI. The event features specialized technical tracks covering everything from Gemini multimodal breakthroughs to zero-trust security on Cloud Run, providing developers with the tools to balance individual speed with organizational stability. Beyond formal sessions, the \"in-person advantage\" lies in over",
     "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/PXL_20250410_214904365.PANO.2e16d0ba.fill-1200x600.jpg",
     "ai_summary": ""
@@ -46,7 +46,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-12T09:17:53.789814+00:00",
+    "published": "2026-04-12T11:34:44.505950+00:00",
     "snippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
     "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_me05j6me05.2e16d0ba.fill-1200x600.jpg",
     "ai_summary": ""
@@ -59,7 +59,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-12T09:17:53.789796+00:00",
+    "published": "2026-04-12T11:34:44.505932+00:00",
     "snippet": "Wednesday Build Hour is a weekly, interactive \"technical gym session\" led by Google Cloud experts to help developers and architects sharpen their cloud skills. Moving beyond passive slide decks, the program focuses on hands-on building, covering advanced topics like AI agents, Vertex AI, and developer productivity tools. Each hour-long session is designed to provide tangible results that participants can immediately deploy into their own workflows. It serves as a consistent, dedicated space for ",
     "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Google_Cloud_EMEA_Developers_1_1_.2e16d0ba.fill-1200x600.png",
     "ai_summary": ""
@@ -72,7 +72,7 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-12T09:17:53.789778+00:00",
+    "published": "2026-04-12T11:34:44.505915+00:00",
     "snippet": "The Gemini Code Assist team has introduced a suite of updates focused on streamlining the core coding workflow through high-velocity tools like Agent Mode with Auto Approve and Inline Diff Views. These enhancements, along with new features for precise context management and custom commands, aim to transform the AI from a general assistant into a highly tailored, seamless collaborator that adapts to your specific development style.",
     "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_y2nrxky2nr.2e16d0ba.fill-1200x600.jpg",
     "ai_summary": ""
@@ -85,9 +85,35 @@
     "category_id": "google",
     "category_name": "Google",
     "category_emoji": "🟥",
-    "published": "2026-04-12T09:17:53.789760+00:00",
+    "published": "2026-04-12T11:34:44.505896+00:00",
     "snippet": "Google has introduced Finish Changes and Outlines for Gemini Code Assist in IntelliJ and VS Code to reduce developer friction and eliminate the need for long, manual prompting. Finish Changes acts as an AI pair programmer that completes code, implements pseudocode, and applies refactoring patterns by observing your current edits and context. Meanwhile, Outlines improves code comprehension by generating interactive, high-level English summaries interleaved directly within the source code to help ",
     "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_eao8o6eao8.2e16d0ba.fill-1200x600.jpg",
+    "ai_summary": ""
+  },
+  {
+    "id": "eaae4daf7de80bebfd945bd6acaad341",
+    "title": "30 years later, I returned to Enlightenment Linux to test the Elive beta - and it's much better",
+    "url": "https://www.zdnet.com/article/elive-linux/",
+    "source": "ZDNet AI",
+    "category_id": "industry",
+    "category_name": "Industry",
+    "category_emoji": "🔵",
+    "published": "2026-04-12T11:00:46+00:00",
+    "snippet": "This Debian-based distro brings back the old-school desktop environment but shrugs off the boring UI. It's still missing some features, though.",
+    "image": "https://www.zdnet.com/a/img/resize/3c29d7d784e0397a5a69f0f899132d057ed2cda8/2026/04/10/4808953b-dcbf-48bf-a348-51e4ee100bf9/enlightenment-linux.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+    "ai_summary": ""
+  },
+  {
+    "id": "59fb91ca2e86c2f301ac4bd495b8c7fc",
+    "title": "Growing void between enterprise and frontier AI puts open weights models in the spotlight",
+    "url": "https://go.theregister.com/feed/www.theregister.com/2026/04/12/ai_open_weights_models/",
+    "source": "The Register AI",
+    "category_id": "top-stories",
+    "category_name": "Top Stories",
+    "category_emoji": "🔥",
+    "published": "2026-04-12T10:51:06+00:00",
+    "snippet": "Most customers don't need the biggest baddest models, just ones that work, are cheap, and won't pirate their proprietary data FEATURE  Spring has sprung and that means another wave of open weights AI models from the likes of Google, Microsoft, Alibaba, and Nvidia. But this time feels a bit different.…",
+    "image": "https://regmedia.co.uk/2025/07/10/aidatacenters.jpg",
     "ai_summary": ""
   },
   {
@@ -312,19 +338,6 @@
     "ai_summary": ""
   },
   {
-    "id": "0c435af68924f3a27c14ab7b57823e80",
-    "title": "Here's how to watch the Artemis II splashdown",
-    "url": "https://go.theregister.com/feed/www.theregister.com/2026/04/10/watch_artemis_ii_splashdown/",
-    "source": "The Register AI",
-    "category_id": "top-stories",
-    "category_name": "Top Stories",
-    "category_emoji": "🔥",
-    "published": "2026-04-10T21:44:52+00:00",
-    "snippet": "Crew went farther from Earth than any humans we know about, now they’re coming back! In a world wracked by wars, beset by difficult economic conditions, and struggling with exploding RAM costs, there's one piece of good news. NASA's Artemis II mission has been an unqualified success, having carried four astronauts farther from Earth than any humans before them.…",
-    "image": "https://regmedia.co.uk/2026/04/10/artemis2.jpg",
-    "ai_summary": ""
-  },
-  {
     "id": "be45b95f6e6f151ee65b0fcaad7df8c6",
     "title": "Copilot usage metrics now aggregate Copilot cloud agent active user counts",
     "url": "https://github.blog/changelog/2026-04-10-copilot-usage-metrics-now-aggregate-copilot-cloud-agent-active-user-counts",
@@ -413,19 +426,6 @@
     "published": "2026-04-10T19:40:59+00:00",
     "snippet": "This National Robotics Week, NVIDIA is highlighting the breakthroughs that are bringing AI into the physical world — as well as the growing wave of robots transforming industries, from agricultural and manufacturing to energy and beyond. Advancements in robot learning, simulation and foundation models are accelerating development, enabling robots to move from training in virtual [&#8230;]",
     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/04/robotics-tech-blog-nrw-rolling-blog-1280x680-1.jpg",
-    "ai_summary": ""
-  },
-  {
-    "id": "525787c420e84292041a327827f216e4",
-    "title": "This Ryobi yard essentials bundle packs a free power tool - how to get yours",
-    "url": "https://www.zdnet.com/article/ryobi-power-tool-bundle-deal-home-depot-spring-black-friday-2026/",
-    "source": "ZDNet AI",
-    "category_id": "industry",
-    "category_name": "Industry",
-    "category_emoji": "🔵",
-    "published": "2026-04-10T19:21:00+00:00",
-    "snippet": "Prep your lawn and garden with this Ryobi string trimmer and leaf blower bundle, plus choose an extra tool for absolutely free during Home Depot's sale.",
-    "image": "https://www.zdnet.com/a/img/resize/b1d8a3bb846a75032b1831fe5ac44bd19c4ec588/2026/04/10/3e5d07e8-567f-4dc0-9012-74b46c183968/ryobi-bundle.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
     "ai_summary": ""
   },
   {
@@ -633,7 +633,7 @@
     "category_emoji": "🏭",
     "published": "2026-04-09T19:00:00+00:00",
     "snippet": "Microsoft is named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms, recognizing Microsoft Sovereign Cloud leadership in evolving sovereignty needs.\nThe post Microsoft named a Leader in The Forrester Wave™ for Sovereign Cloud Platforms appeared first on Microsoft Azure Blog.",
-    "image": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/04/Image_Sovereign-Cloud-Platforms-Q2-2026-772x1024.webp",
+    "image": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/04/Azure-Forrester-2026-1c.jpg",
     "ai_summary": ""
   },
   {
