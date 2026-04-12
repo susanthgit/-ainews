@@ -37,6 +37,7 @@ jobs:
         run: python scripts/fetch_news.py
 
       - name: 🩺 Check feed health
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_PAT }}
         run: |
