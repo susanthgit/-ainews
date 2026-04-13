@@ -21,8 +21,30 @@ SCRIPT_DIR = Path(__file__).parent
 FEEDS_FILE = SCRIPT_DIR / "feeds.json"
 OUTPUT_FILE = SCRIPT_DIR / ".." / "site" / "articles.json"
 BROKEN_FEEDS_FILE = SCRIPT_DIR / ".." / "site" / "broken_feeds.json"
+SEEN_IDS_FILE = SCRIPT_DIR / ".." / "site" / "seen_ids.json"
 NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
 HOURS_LOOKBACK = 72  # fetch last 72 hours to catch delayed proxy feeds
+
+
+def load_seen_ids():
+    """Load previously seen article IDs to prevent re-ingestion of edited articles."""
+    if SEEN_IDS_FILE.exists():
+        try:
+            with open(SEEN_IDS_FILE, "r") as f:
+                data = json.load(f)
+            # Prune entries older than 14 days
+            cutoff = (datetime.now(timezone.utc) - timedelta(days=14)).isoformat()
+            return {k: v for k, v in data.items() if v > cutoff}
+        except (json.JSONDecodeError, IOError):
+            pass
+    return {}
+
+
+def save_seen_ids(seen):
+    """Save seen article IDs for cross-run deduplication."""
+    SEEN_IDS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(SEEN_IDS_FILE, "w") as f:
+        json.dump(seen, f)
 
 
 def load_feeds():
@@ -425,6 +447,13 @@ def main():
     all_articles = rss_articles + newsapi_articles
     all_articles = deduplicate(all_articles)
 
+    # Cross-run dedup: skip articles seen in previous runs (prevents RSS re-publish ghost articles)
+    seen_ids = load_seen_ids()
+    before_count = len(all_articles)
+    all_articles = [a for a in all_articles if a["id"] not in seen_ids]
+    if before_count > len(all_articles):
+        print(f"   🔁 Skipped {before_count - len(all_articles)} previously seen article(s)")
+
     # Re-categorize: move articles from general feeds to vendor categories based on keywords
     print()
     print("🏷️  Keyword re-categorization:")
@@ -472,6 +501,12 @@ def main():
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(all_articles, f, indent=2, ensure_ascii=False)
+
+    # Update seen IDs for cross-run dedup
+    now_iso = datetime.now(timezone.utc).isoformat()
+    for a in all_articles:
+        seen_ids[a["id"]] = now_iso
+    save_seen_ids(seen_ids)
 
     print()
     print(f"✅ Total: {len(all_articles)} unique articles")
