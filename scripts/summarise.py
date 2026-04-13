@@ -190,11 +190,57 @@ def main():
 
     skipped = len(articles) - summarised
 
+    # === DAILY BRIEFING: Generate 5-bullet summary from headlines ===
+    headline_articles = [a for a in articles if a.get("tier") == "headline"]
+    briefing = None
+    breaking = []
+    if headline_articles and AZURE_TOKEN:
+        print("\n📝 Generating daily briefing...")
+        titles = [f"- {a['title']} ({a.get('source', '')})" for a in headline_articles[:12]]
+        briefing_prompt = (
+            "You are writing a daily AI news briefing. Based on these headlines:\n\n"
+            + "\n".join(titles) + "\n\n"
+            "Generate:\n"
+            "1. **briefing**: Array of 3-5 bullet point strings. Each bullet is one sentence (max 20 words) "
+            "summarising a key takeaway. Start each with an action verb or impact word. "
+            "Cover the most important stories only.\n"
+            "2. **breaking**: Array of article titles (exact match from input) that are TRULY breaking news "
+            "(major launches, paradigm shifts, huge funding). Usually 0-1 per day. Empty array if nothing qualifies.\n\n"
+            'Return ONLY a JSON object: {"briefing": ["..."], "breaking": ["..."]}'
+        )
+        try:
+            resp = client.chat.completions.create(
+                model=DEPLOYMENT,
+                messages=[
+                    {"role": "system", "content": "You are a concise AI news editor. Return ONLY JSON."},
+                    {"role": "user", "content": briefing_prompt}
+                ],
+                temperature=0.3,
+                max_tokens=500,
+            )
+            raw = resp.choices[0].message.content.strip()
+            raw = raw.strip("`").removeprefix("json").strip()
+            result = json.loads(raw)
+            briefing = result.get("briefing", [])
+            breaking = result.get("breaking", [])
+            print(f"  ✅ Briefing: {len(briefing)} bullets, {len(breaking)} breaking")
+        except Exception as e:
+            print(f"  ⚠️ Briefing generation failed: {e}")
+
+    # Mark breaking articles
+    if breaking:
+        breaking_lower = [b.lower() for b in breaking]
+        for a in articles:
+            if a.get("title", "").lower() in breaking_lower:
+                a["is_breaking"] = True
+                print(f"  🔴 BREAKING: {a['title']}")
+
     # Wrap in an object with metadata for the frontend
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_articles": len(articles),
         "summarised": summarised,
+        "briefing": briefing,
         "articles": articles,
     }
 
