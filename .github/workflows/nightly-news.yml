@@ -9,22 +9,21 @@ on:
     - cron: '0 23 * * *'  # 12 PM NZT (noon) → catches morning NZ/AU + late US
   workflow_dispatch:  # Manual trigger button
 
-permissions:
-  contents: write
-  id-token: write  # For Azure OIDC login
-
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   fetch-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     steps:
       - name: 📥 Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: 🐍 Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
         with:
           python-version: '3.12'
 
@@ -73,7 +72,7 @@ jobs:
           fi
 
       - name: 🔐 Login to Azure (OIDC — no expiring secrets)
-        uses: azure/login@v2
+        uses: azure/login@a65d910e8af852a8061c627c456678983e180302 # v2.2.0
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -103,7 +102,8 @@ jobs:
           GH_TOKEN: ${{ secrets.PERSONAL_PAT }}
         run: |
           # Clone the main site repo, update news data, push
-          git clone https://x-access-token:${GH_TOKEN}@github.com/susanthgit/aguidetocloud-revamp.git /tmp/main-site
+          git clone https://github.com/susanthgit/aguidetocloud-revamp.git /tmp/main-site
+          git -C /tmp/main-site config http.https://github.com/.extraheader "Authorization: bearer ${GH_TOKEN}"
           mkdir -p /tmp/main-site/static/data/ainews
           cp site/summaries.json /tmp/main-site/static/data/ainews/latest.json
           # Copy weekly and monthly JSON for tab switching
@@ -122,6 +122,8 @@ jobs:
 
   notify-on-failure:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     needs: fetch-and-deploy
     if: failure()
     steps:
