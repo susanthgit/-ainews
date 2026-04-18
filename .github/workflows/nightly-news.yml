@@ -101,9 +101,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_PAT }}
         run: |
-          # Clone the main site repo, update news data, push
-          git clone https://github.com/susanthgit/aguidetocloud-revamp.git /tmp/main-site
-          git -C /tmp/main-site config http.https://github.com/.extraheader "Authorization: bearer ${GH_TOKEN}"
+          # Clone the main site repo with token auth, update news data, push
+          git clone https://x-access-token:${GH_TOKEN}@github.com/susanthgit/aguidetocloud-revamp.git /tmp/main-site
           mkdir -p /tmp/main-site/static/data/ainews
           cp site/summaries.json /tmp/main-site/static/data/ainews/latest.json
           # Copy weekly and monthly JSON for tab switching
