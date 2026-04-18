@@ -115,6 +115,7 @@ jobs:
           git config user.email "ainews-bot@aguidetocloud.com"
           git add static/data/ainews/
           git diff --cached --quiet || git commit -m "📰 AI News data update — $(date -u +%Y-%m-%d)"
+          git pull --rebase || true
           git push
 
       # Git push above triggers Cloudflare Pages auto-build — no manual deploy needed
