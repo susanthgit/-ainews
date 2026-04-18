@@ -5,407 +5,407 @@
     <link>https://www.aguidetocloud.com/ai-news/</link>
     <description>Daily AI news digest — curated headlines, summaries and trends</description>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Apr 2026 11:36:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 17:35:50 +0000</lastBuildDate>
     <atom:link href="https://www.aguidetocloud.com/data/ainews/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Schematik Is ‘Cursor for Hardware.’ Anthropic Wants In</title>
-      <link>https://www.wired.com/story/schematik-is-cursor-for-hardware-anthropic-wants-in-on-it/</link>
-      <description>Schematik is a new program designed to assist users in coding for physical devices, aiming to enhance user interaction with hardware safely.</description>
+      <title>Anthropic’s relationship with the Trump administration seems to be thawing</title>
+      <link>https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/</link>
+      <description>Anthropic is maintaining communication with high-level members of the Trump administration, despite being labeled a supply-chain risk by the Pentagon. This indicates a potential shift in their relationship with the government.</description>
       <category>Anthropic</category>
-      <pubDate>Sat, 18 Apr 2026 10:30:00 +0000</pubDate>
-      <guid>https://www.wired.com/story/schematik-is-cursor-for-hardware-anthropic-wants-in-on-it/</guid>
+      <pubDate>Sat, 18 Apr 2026 14:56:48 +0000</pubDate>
+      <guid>https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/</guid>
     </item>
     <item>
-      <title>It Takes 2 Minutes to Hack the EU’s New Age-Verification App</title>
-      <link>https://www.wired.com/story/security-news-this-week-it-takes-2-minutes-to-hack-the-eus-new-age-verification-app/</link>
-      <description>A new EU age-verification app can be hacked in just two minutes, highlighting significant security vulnerabilities alongside other data breach incidents.</description>
+      <title>The App Store is booming again, and AI may be why</title>
+      <link>https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/</link>
+      <description>The App Store is experiencing a resurgence, with a significant increase in app launches attributed to AI tools. This trend suggests that AI is driving innovation in mobile software.</description>
       <category>Top Stories</category>
-      <pubDate>Sat, 18 Apr 2026 10:30:00 +0000</pubDate>
-      <guid>https://www.wired.com/story/security-news-this-week-it-takes-2-minutes-to-hack-the-eus-new-age-verification-app/</guid>
+      <pubDate>Sat, 18 Apr 2026 13:00:00 +0000</pubDate>
+      <guid>https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/</guid>
     </item>
     <item>
-      <title>Cloudflare can remember it for you wholesale</title>
-      <link>https://go.theregister.com/feed/www.theregister.com/2026/04/18/cloudflare_agent_memory/</link>
-      <description>Cloudflare's Agent Memory feature helps manage AI chat data by storing and recalling conversational context, addressing memory limitations in hardware.</description>
-      <category>Top Stories</category>
-      <pubDate>Sat, 18 Apr 2026 08:30:13 +0000</pubDate>
-      <guid>https://go.theregister.com/feed/www.theregister.com/2026/04/18/cloudflare_agent_memory/</guid>
+      <title>The best TV antenna of 2026: Expert tested</title>
+      <link>https://www.zdnet.com/article/best-tv-antenna/</link>
+      <description>The article reviews the best TV antennas of 2026, emphasizing their ability to provide free access to local channels, which can reduce reliance on cable subscriptions. This reflects a growing trend towards cost-effective entertainment solutions.</description>
+      <category>Industry</category>
+      <pubDate>Sat, 18 Apr 2026 12:00:49 +0000</pubDate>
+      <guid>https://www.zdnet.com/article/best-tv-antenna/</guid>
     </item>
     <item>
-      <title>Atlassian’s new data collection policy protects rich customers while AI eats the rest</title>
-      <link>https://go.theregister.com/feed/www.theregister.com/2026/04/18/atlassians_new_data_collection_policy/</link>
-      <description>Atlassian's new data policy will automatically collect customer metadata to train its AI models unless users opt for the highest tier subscription.</description>
-      <category>Top Stories</category>
-      <pubDate>Sat, 18 Apr 2026 07:30:10 +0000</pubDate>
-      <guid>https://go.theregister.com/feed/www.theregister.com/2026/04/18/atlassians_new_data_collection_policy/</guid>
-    </item>
-    <item>
-      <title>Cal.com Goes Close Source Because "AI Can Easily Exploit Open Source Software"</title>
-      <link>https://itsfoss.com/news/cal-com-goes-proprietary/</link>
-      <description>Cal.com has transitioned to a closed-source model, citing concerns that AI could exploit open-source software, while maintaining an older version under an MIT license.</description>
+      <title>claude-jacked 0.41.14</title>
+      <link>https://pypi.org/project/claude-jacked/0.41.14/</link>
+      <description>Claude Code has introduced new features like smart reviewers and session search, enhancing user interaction and functionality. These updates aim to improve the overall user experience.</description>
       <category>Anthropic</category>
-      <pubDate>Fri, 17 Apr 2026 11:33:20 +0000</pubDate>
-      <guid>https://itsfoss.com/news/cal-com-goes-proprietary/</guid>
+      <pubDate>Fri, 17 Apr 2026 17:33:14 +0000</pubDate>
+      <guid>https://pypi.org/project/claude-jacked/0.41.14/</guid>
     </item>
     <item>
-      <title>The Morning After: Our verdict on the DJI Osmo Pocket 4</title>
-      <link>https://slashdot.org/firehose.pl?op=view&amp;amp;id=181737680</link>
-      <description>The DJI Osmo Pocket 4 is reviewed positively for its user-friendly design and high-quality video capabilities, making it popular among content creators.</description>
-      <category>Anthropic</category>
-      <pubDate>Fri, 17 Apr 2026 11:32:16 +0000</pubDate>
-      <guid>https://slashdot.org/firehose.pl?op=view&amp;amp;id=181737680</guid>
+      <title>Gemini for Home sounds impressive until you realize Home Assistant already does it better</title>
+      <link>https://www.xda-developers.com/googles-gemini-for-home-is-expanding-but-home-assistant-is-better/</link>
+      <description>Google's Gemini for Home is being criticized for arriving too late in a market already dominated by Home Assistant. This raises questions about its competitive edge.</description>
+      <category>Google</category>
+      <pubDate>Fri, 17 Apr 2026 17:30:21 +0000</pubDate>
+      <guid>https://www.xda-developers.com/googles-gemini-for-home-is-expanding-but-home-assistant-is-better/</guid>
     </item>
     <item>
-      <title>Google’s Product Feed Strategy Points To The Future Of Retail Discovery via @sejournal, @brookeosmundson</title>
-      <link>https://www.searchenginejournal.com/googles-product-feed-strategy-points-to-the-future-of-retail-discovery/572291/</link>
-      <description>Google's strategy for product feeds is evolving to enhance retail discovery across various platforms, emphasizing the importance of feed optimization for AI search.</description>
-      <category>Perplexity</category>
-      <pubDate>Fri, 17 Apr 2026 11:30:50 +0000</pubDate>
-      <guid>https://www.searchenginejournal.com/googles-product-feed-strategy-points-to-the-future-of-retail-discovery/572291/</guid>
+      <title>Other Barks &amp; Bites for Friday, April 17: CAFC Reverses District Court Rulings in Penile Implant Patent Case; CJEU Clarifies Scope of ‘Pastiche’ Copyright Exception; Stanford AI Index Shows Tech Gap Between U.S. And China Nearly Gone</title>
+      <link>https://ipwatchdog.com/?p=200592</link>
+      <description>This week's legal updates include a reversal of a district court ruling on a penile implant patent case and advancements in AI-related legislation. These developments reflect ongoing legal complexities in tech and healthcare.</description>
+      <category>xAI</category>
+      <pubDate>Fri, 17 Apr 2026 17:30:18 +0000</pubDate>
+      <guid>https://ipwatchdog.com/?p=200592</guid>
     </item>
     <item>
-      <title>Myseum.AI Accepted into Advanced Micro Devices AI Developer Program</title>
-      <link>https://www.globenewswire.com/news-release/2026/04/17/3276083/0/en/Myseum-AI-Accepted-into-Advanced-Micro-Devices-AI-Developer-Program.html</link>
-      <description>Myseum.AI has been accepted into AMD's AI Developer Program, indicating growth and innovation potential in its AI platform.</description>
-      <category>AI Foundry</category>
-      <pubDate>Fri, 17 Apr 2026 11:30:00 +0000</pubDate>
-      <guid>https://www.globenewswire.com/news-release/2026/04/17/3276083/0/en/Myseum-AI-Accepted-into-Advanced-Micro-Devices-AI-Developer-Program.html</guid>
-    </item>
-    <item>
-      <title>Anthropic CEO to meet top Trump aide today amid Pentagon dispute</title>
-      <link>https://cryptobriefing.com/anthropic-white-house-meeting-april-17/</link>
-      <description>Anthropic's CEO is set to meet with a top Trump aide to discuss AI policy, potentially impacting cybersecurity and ethical AI practices in government.</description>
+      <title>Steve Bannon says Anthropic 'had it right' in rejecting deal with the Pentagon</title>
+      <link>https://www.businessinsider.com/steve-bannon-backs-anthropics-pentagon-deal-rejection-2026-4</link>
+      <description>Steve Bannon praised Anthropic's decision to reject a Pentagon deal, emphasizing the need for clarity on AI's role in military applications. This commentary underscores ongoing debates about AI ethics in defense.</description>
       <category>OpenAI</category>
-      <pubDate>Fri, 17 Apr 2026 11:26:15 +0000</pubDate>
-      <guid>https://cryptobriefing.com/anthropic-white-house-meeting-april-17/</guid>
+      <pubDate>Fri, 17 Apr 2026 17:29:54 +0000</pubDate>
+      <guid>https://www.businessinsider.com/steve-bannon-backs-anthropics-pentagon-deal-rejection-2026-4</guid>
     </item>
     <item>
       <title>Iconiq, Go-To Wealth Adviser for Tech’s Elite, Is Putting Billions Into AI</title>
-      <link>https://financialpost.com/pmn/business-pmn/iconiq-go-to-wealth-adviser-for-techs-elite-is-putting-billions-into-ai</link>
-      <description>Iconiq, a wealth adviser for tech elites, is investing billions into AI, reflecting the growing financial interest in AI technologies among wealthy investors.</description>
+      <link>https://www.wealthmanagement.com/artificial-intelligence/iconiq-go-to-wealth-adviser-for-tech-s-elite-is-putting-billions-into-ai</link>
+      <description>Iconiq, a wealth adviser for tech elites, is investing billions into AI, indicating strong confidence in the sector's future. This move could influence market trends and investment strategies.</description>
       <category>OpenAI</category>
-      <pubDate>Fri, 17 Apr 2026 11:19:55 +0000</pubDate>
-      <guid>https://financialpost.com/pmn/business-pmn/iconiq-go-to-wealth-adviser-for-techs-elite-is-putting-billions-into-ai</guid>
+      <pubDate>Fri, 17 Apr 2026 17:27:42 +0000</pubDate>
+      <guid>https://www.wealthmanagement.com/artificial-intelligence/iconiq-go-to-wealth-adviser-for-tech-s-elite-is-putting-billions-into-ai</guid>
     </item>
     <item>
-      <title>7 Advanced Claude Cowork Skills You Probably Aren’t Using Yet</title>
-      <link>https://www.geeky-gadgets.com/powerful-claude-cowork-skills/</link>
-      <description>Claude Cowork Skills enhance efficiency by automating repetitive tasks, allowing users to focus on strategic priorities. These skills provide structured instructions for better workflow management.</description>
+      <title>AI chipmaker Cerebras set to file for IPO as soon as today</title>
+      <link>https://www.cnbc.com/2026/04/17/cerebras-new-ipo-ai-chips.html</link>
+      <description>Cerebras is preparing to file for an IPO, potentially valuing the company significantly higher than its last funding round. This move reflects growing investor interest in AI hardware.</description>
+      <category>OpenAI</category>
+      <pubDate>Fri, 17 Apr 2026 17:26:56 +0000</pubDate>
+      <guid>https://www.cnbc.com/2026/04/17/cerebras-new-ipo-ai-chips.html</guid>
+    </item>
+    <item>
+      <title>No design skills? Claude design plus Canva could change that as Anthropic partnership expands AI visual creation</title>
+      <link>https://economictimes.indiatimes.com/news/international/us/no-design-skills-claude-design-plus-canva-could-change-that-as-anthropic-partnership-expands-ai-visual-creation/articleshow/130339258.cms</link>
+      <description>The partnership between Claude Design and Canva is transforming visual content creation, allowing users without design skills to produce professional-looking graphics easily. This democratizes design for many.</description>
       <category>Anthropic</category>
-      <pubDate>Fri, 17 Apr 2026 11:15:00 +0000</pubDate>
-      <guid>https://www.geeky-gadgets.com/powerful-claude-cowork-skills/</guid>
+      <pubDate>Fri, 17 Apr 2026 17:26:43 +0000</pubDate>
+      <guid>https://economictimes.indiatimes.com/news/international/us/no-design-skills-claude-design-plus-canva-could-change-that-as-anthropic-partnership-expands-ai-visual-creation/articleshow/130339258.cms</guid>
     </item>
     <item>
-      <title>Apple and John Giannandrea Part Ways</title>
-      <link>https://www.ilounge.com/news/apple-and-john-giannandrea-part-ways</link>
-      <description>John Giannandrea, Apple's former AI chief, is leaving the company as his role diminishes following the Apple Intelligence launch. His departure marks a significant change in Apple's AI leadership.</description>
-      <category>Apple</category>
-      <pubDate>Fri, 17 Apr 2026 11:14:25 +0000</pubDate>
-      <guid>https://www.ilounge.com/news/apple-and-john-giannandrea-part-ways</guid>
-    </item>
-    <item>
-      <title>cc-sentiment 0.1.30</title>
-      <link>https://pypi.org/project/cc-sentiment/0.1.30/</link>
-      <description>The cc-sentiment 0.1.30 update introduces a local scoring system for Claude Code sessions, enhancing sentiment analysis capabilities.</description>
+      <title>claude-status 0.5.5</title>
+      <link>https://pypi.org/project/claude-status/0.5.5/</link>
+      <description>Claude Code has released version 0.5.5, featuring a new status line that is informative and cross-platform with no dependencies. This update enhances user experience by providing clear status updates.</description>
       <category>Anthropic</category>
-      <pubDate>Fri, 17 Apr 2026 11:13:57 +0000</pubDate>
-      <guid>https://pypi.org/project/cc-sentiment/0.1.30/</guid>
+      <pubDate>Fri, 17 Apr 2026 17:25:23 +0000</pubDate>
+      <guid>https://pypi.org/project/claude-status/0.5.5/</guid>
     </item>
     <item>
-      <title>gemini-calo 0.3.1</title>
-      <link>https://pypi.org/project/gemini-calo/0.3.1/</link>
-      <description>The gemini-calo 0.3.1 release features a FastAPI-based proxy for the Gemini API, streamlining API interactions for developers.</description>
-      <category>Google</category>
-      <pubDate>Fri, 17 Apr 2026 11:13:50 +0000</pubDate>
-      <guid>https://pypi.org/project/gemini-calo/0.3.1/</guid>
+      <title>langchain-yutori 0.1.1</title>
+      <link>https://pypi.org/project/langchain-yutori/0.1.1/</link>
+      <description>LangChain has launched version 0.1.1, integrating with the Yutori API for enhanced browser control, automation, and web research capabilities. This integration allows developers to streamline their workflows significantly.</description>
+      <category>Open Source</category>
+      <pubDate>Fri, 17 Apr 2026 17:24:43 +0000</pubDate>
+      <guid>https://pypi.org/project/langchain-yutori/0.1.1/</guid>
     </item>
     <item>
-      <title>It’s not “bad marketing” from A.I. companies</title>
-      <link>https://www.slowboring.com/p/its-not-bad-marketing-from-ai-companies</link>
-      <description>The article discusses various political figures and events, asserting that AI companies are not engaging in poor marketing practices. It touches on broader political themes.</description>
-      <category>OpenAI</category>
-      <pubDate>Fri, 17 Apr 2026 11:12:41 +0000</pubDate>
-      <guid>https://www.slowboring.com/p/its-not-bad-marketing-from-ai-companies</guid>
+      <title>sage-ai-cli 1.13.39</title>
+      <link>https://pypi.org/project/sage-ai-cli/1.13.39/</link>
+      <description>Sage AI CLI version 1.13.39 has been released, offering a local-first command-line interface for AI coding using free and open models. This tool aims to provide developers with more accessible AI coding options.</description>
+      <category>Anthropic</category>
+      <pubDate>Fri, 17 Apr 2026 17:23:39 +0000</pubDate>
+      <guid>https://pypi.org/project/sage-ai-cli/1.13.39/</guid>
     </item>
     <item>
-      <title>AirPods Pro 3 is $49 off</title>
-      <link>https://www.ilounge.com/news/daily-deals/airpods-pro-3-is-49-off-2</link>
-      <description>AirPods Pro 3 are now available at a discount, featuring new eartips and a Hearing Aid feature to protect users from loud noises, enhancing user experience.</description>
+      <title>iPhone 18 Pro Max Rumors Explode: Under-Display Face ID, Variable Aperture Camera and Massive Battery</title>
+      <link>https://www.ibtimes.com.au/iphone-18-pro-max-rumors-explode-under-display-face-id-variable-aperture-camera-massive-battery-1866904</link>
+      <description>Rumors about Apple's iPhone 18 Pro Max suggest significant upgrades, including under-display Face ID, a variable aperture camera, and a larger battery. These features could redefine user expectations for smartphone technology.</description>
       <category>Apple</category>
-      <pubDate>Fri, 17 Apr 2026 11:10:41 +0000</pubDate>
-      <guid>https://www.ilounge.com/news/daily-deals/airpods-pro-3-is-49-off-2</guid>
+      <pubDate>Fri, 17 Apr 2026 17:23:25 +0000</pubDate>
+      <guid>https://www.ibtimes.com.au/iphone-18-pro-max-rumors-explode-under-display-face-id-variable-aperture-camera-massive-battery-1866904</guid>
     </item>
     <item>
-      <title>Apple Creating Different Styles for Smart Glasses</title>
-      <link>https://www.ilounge.com/news/apple/apple-creating-different-styles-for-smart-glasses</link>
-      <description>Apple is developing four distinct styles of smart glasses, aiming to differentiate its products from competitors with a focus on high-quality materials.</description>
+      <title>sirius-chat 0.28.0</title>
+      <link>https://pypi.org/project/sirius-chat/0.28.0/</link>
+      <description>Sirius Chat version 0.28.0 has been released, providing a multi-user RPG dialogue framework compatible with OpenAI's models. This framework allows for more interactive and engaging gaming experiences.</description>
+      <category>OpenAI</category>
+      <pubDate>Fri, 17 Apr 2026 17:21:44 +0000</pubDate>
+      <guid>https://pypi.org/project/sirius-chat/0.28.0/</guid>
+    </item>
+    <item>
+      <title>langchain-rustchain 0.1.0</title>
+      <link>https://pypi.org/project/langchain-rustchain/0.1.0/</link>
+      <description>LangChain has introduced tools for the RustChain Proof-of-Antiquity blockchain with version 0.1.0, aiming to integrate blockchain technology with AI applications. This could foster innovative solutions in decentralized systems.</description>
+      <category>Open Source</category>
+      <pubDate>Fri, 17 Apr 2026 17:21:38 +0000</pubDate>
+      <guid>https://pypi.org/project/langchain-rustchain/0.1.0/</guid>
+    </item>
+    <item>
+      <title>langchain-rustchain added to PyPI</title>
+      <link>https://pypi.org/project/langchain-rustchain/</link>
+      <description>LangChain tools for the RustChain Proof-of-Antiquity blockchain have been added to PyPI, facilitating easier access for developers. This addition supports the growing intersection of AI and blockchain.</description>
+      <category>Open Source</category>
+      <pubDate>Fri, 17 Apr 2026 17:21:38 +0000</pubDate>
+      <guid>https://pypi.org/project/langchain-rustchain/</guid>
+    </item>
+    <item>
+      <title>OpenAI Starts Offering a Biology-Tuned LLM</title>
+      <link>https://slashdot.org/submission/17346554/openai-starts-offering-a-biology-tuned-llm</link>
+      <description>OpenAI has launched a new biology-tuned large language model named GPT-Rosalind, designed for common biology workflows. This model distinguishes itself from existing science-focused models by its specialized training.</description>
+      <category>OpenAI</category>
+      <pubDate>Fri, 17 Apr 2026 17:17:45 +0000</pubDate>
+      <guid>https://slashdot.org/submission/17346554/openai-starts-offering-a-biology-tuned-llm</guid>
+    </item>
+    <item>
+      <title>gemini-solver 0.1.0</title>
+      <link>https://pypi.org/project/gemini-solver/0.1.0/</link>
+      <description>Gemini Solver version 0.1.0 has been released, designed to tackle olympiad programming tasks effectively. This tool aims to assist students and professionals in enhancing their programming skills.</description>
+      <category>Google</category>
+      <pubDate>Fri, 17 Apr 2026 17:15:39 +0000</pubDate>
+      <guid>https://pypi.org/project/gemini-solver/0.1.0/</guid>
+    </item>
+    <item>
+      <title>gemini-solver added to PyPI</title>
+      <link>https://pypi.org/project/gemini-solver/</link>
+      <description>Gemini Solver has been added to PyPI, making it more accessible for users interested in solving olympiad programming tasks. This addition encourages more engagement in competitive programming.</description>
+      <category>Google</category>
+      <pubDate>Fri, 17 Apr 2026 17:15:39 +0000</pubDate>
+      <guid>https://pypi.org/project/gemini-solver/</guid>
+    </item>
+    <item>
+      <title>Sam Altman’s World releases major protocol upgrade, introduces World ID app</title>
+      <link>https://cryptobriefing.com/world-upgrade-world-id-new-app-ai-agent-delegation/</link>
+      <description>Sam Altman's World has released a significant protocol upgrade along with the World ID app, enhancing digital identity security and ensuring human authenticity in AI environments. This upgrade could change how users interact online, particularly in AI-driven contexts.</description>
+      <category>OpenAI</category>
+      <pubDate>Fri, 17 Apr 2026 17:15:15 +0000</pubDate>
+      <guid>https://cryptobriefing.com/world-upgrade-world-id-new-app-ai-agent-delegation/</guid>
+    </item>
+    <item>
+      <title>elitea-sdk 0.5.38</title>
+      <link>https://pypi.org/project/elitea-sdk/0.5.38/</link>
+      <description>The elitea-sdk 0.5.38 has been released, providing a software development kit for building Langchain agents using resources from EliteA. This update aims to enhance the development of AI-driven applications.</description>
+      <category>Open Source</category>
+      <pubDate>Fri, 17 Apr 2026 17:14:09 +0000</pubDate>
+      <guid>https://pypi.org/project/elitea-sdk/0.5.38/</guid>
+    </item>
+    <item>
+      <title>Show HN: Tachyon: 56 ns zero-copy IPC across Python, Rust, Java</title>
+      <link>https://github.com/riyaneel/Tachyon</link>
+      <description>Tachyon is a new tool that enables 56 ns zero-copy inter-process communication across Python, Rust, and Java. This technology promises to improve performance in multi-language applications.</description>
+      <category>Meta</category>
+      <pubDate>Fri, 17 Apr 2026 17:13:02 +0000</pubDate>
+      <guid>https://github.com/riyaneel/Tachyon</guid>
+    </item>
+    <item>
+      <title>sugra-api-mcp 0.1.4</title>
+      <link>https://pypi.org/project/sugra-api-mcp/0.1.4/</link>
+      <description>The sugra-api-mcp 0.1.4 has been introduced, acting as a connector between LLM agents and various world data sources. It aggregates over 518 endpoints from diverse sectors, enhancing data accessibility for AI applications.</description>
+      <category>OpenAI</category>
+      <pubDate>Fri, 17 Apr 2026 17:12:28 +0000</pubDate>
+      <guid>https://pypi.org/project/sugra-api-mcp/0.1.4/</guid>
+    </item>
+    <item>
+      <title>Show HN: Ccmd – TUI to audit and clean developer caches</title>
+      <link>https://github.com/juliensimon/cache-commander</link>
+      <description>Ccmd is a new terminal UI tool for auditing and cleaning developer cache directories on macOS and Linux. It helps developers manage disk space and maintain security by scanning for known vulnerabilities.</description>
+      <category>Meta</category>
+      <pubDate>Fri, 17 Apr 2026 17:12:17 +0000</pubDate>
+      <guid>https://github.com/juliensimon/cache-commander</guid>
+    </item>
+    <item>
+      <title>chatbot-auditor added to PyPI</title>
+      <link>https://pypi.org/project/chatbot-auditor/</link>
+      <description>The chatbot-auditor has been added to PyPI, designed to identify seven common ways AI chatbots fail customers. This tool aims to improve chatbot performance and user satisfaction.</description>
+      <category>Perplexity</category>
+      <pubDate>Fri, 17 Apr 2026 17:11:49 +0000</pubDate>
+      <guid>https://pypi.org/project/chatbot-auditor/</guid>
+    </item>
+    <item>
+      <title>Canva becomes the design layer inside Claude with new Anthropic partnership</title>
+      <link>https://thenextweb.com/news/canva-anthropic-claude-design-ai-powered-visual-suite/</link>
+      <description>Canva has partnered with Anthropic to launch Claude Design, integrating Canva’s Design Engine with Claude Opus 4.7 to create editable visuals from text descriptions. This collaboration aims to enhance design capabilities using AI.</description>
+      <category>AI Foundry</category>
+      <pubDate>Fri, 17 Apr 2026 17:11:05 +0000</pubDate>
+      <guid>https://thenextweb.com/news/canva-anthropic-claude-design-ai-powered-visual-suite/</guid>
+    </item>
+    <item>
+      <title>NVIDIA Stock Climbs 1.2% to $200 as AI Demand Fuels Continued Momentum in Chip Sector</title>
+      <link>https://www.ibtimes.com.au/nvidia-stock-climbs-12-200-ai-demand-fuels-continued-momentum-chip-sector-1866903</link>
+      <description>NVIDIA's stock rose by 1.2% to $200, driven by strong demand for AI infrastructure despite market volatility. Investors remain optimistic about NVIDIA's leading role in the AI chip sector.</description>
+      <category>NVIDIA</category>
+      <pubDate>Fri, 17 Apr 2026 17:07:05 +0000</pubDate>
+      <guid>https://www.ibtimes.com.au/nvidia-stock-climbs-12-200-ai-demand-fuels-continued-momentum-chip-sector-1866903</guid>
+    </item>
+    <item>
+      <title>We like big bubbles and we cannot lie</title>
+      <link>https://www.businessinsider.com/ai-long-play-big-bubbles-bryan-johnson-longevity-2026-4</link>
+      <description>An article from Business Insider discusses various topics related to AI, talent wars, and biohacking, highlighting the disconnect between longevity advice and real-life practices in San Francisco.</description>
+      <category>Google</category>
+      <pubDate>Fri, 17 Apr 2026 17:05:04 +0000</pubDate>
+      <guid>https://www.businessinsider.com/ai-long-play-big-bubbles-bryan-johnson-longevity-2026-4</guid>
+    </item>
+    <item>
+      <title>mlable-torch 0.5.2</title>
+      <link>https://pypi.org/project/mlable-torch/0.5.2/</link>
+      <description>The mlable-torch 0.5.2 update introduces new PyTorch libraries, including layers, blocks, and optimizers, aimed at enhancing machine learning model development.</description>
+      <category>Meta</category>
+      <pubDate>Fri, 17 Apr 2026 17:02:54 +0000</pubDate>
+      <guid>https://pypi.org/project/mlable-torch/0.5.2/</guid>
+    </item>
+    <item>
+      <title>langchain-provider 0.2.0</title>
+      <link>https://pypi.org/project/langchain-provider/0.2.0/</link>
+      <description>Langchain has released version 0.2.0 of its completions provider for Spyder, enhancing the integration of AI tools in coding environments. This update is significant for developers using Spyder who seek improved AI capabilities.</description>
+      <category>Open Source</category>
+      <pubDate>Fri, 17 Apr 2026 16:58:22 +0000</pubDate>
+      <guid>https://pypi.org/project/langchain-provider/0.2.0/</guid>
+    </item>
+    <item>
+      <title>OpenAI’s New Codex App Has the Best ‘Computer Use’ Feature I’ve Ever Tested</title>
+      <link>https://www.macstories.net/notes/openais-new-codex-app-has-the-best-computer-use-feature-ive-ever-tested/</link>
+      <description>OpenAI launched an updated Codex app for Mac, featuring a new tool that allows users to interact with multiple applications simultaneously using parallel cursors. This innovation significantly improves productivity for Mac users.</description>
+      <category>Perplexity</category>
+      <pubDate>Fri, 17 Apr 2026 16:52:13 +0000</pubDate>
+      <guid>https://www.macstories.net/notes/openais-new-codex-app-has-the-best-computer-use-feature-ive-ever-tested/</guid>
+    </item>
+    <item>
+      <title>AWS Deadline Cloud announces AI-powered troubleshooting assistant for render jobs</title>
+      <link>https://aws.amazon.com/about-aws/whats-new/2026/04/deadline-cloud-ai-troubleshooting/</link>
+      <description>AWS Deadline Cloud introduced an AI-powered troubleshooting assistant designed to help users quickly diagnose and fix render job failures in 2D/3D graphics. This tool aims to streamline workflows and reduce downtime for creatives.</description>
+      <category>Amazon</category>
+      <pubDate>Fri, 17 Apr 2026 16:40:00 +0000</pubDate>
+      <guid>https://aws.amazon.com/about-aws/whats-new/2026/04/deadline-cloud-ai-troubleshooting/</guid>
+    </item>
+    <item>
+      <title>Elon Musk demands that banks advising on SpaceX’s blockbuster IPO must subscribe to his AI chatbot, Grok</title>
+      <link>https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_b918d53d-9a88-4b89-b9e2-97245d577baa</link>
+      <description>Elon Musk has mandated that banks advising on SpaceX’s IPO must subscribe to his AI chatbot, Grok, indicating a push for AI integration in financial advisory roles. This reflects Musk's ongoing commitment to AI technology.</description>
+      <category>xAI</category>
+      <pubDate>Fri, 17 Apr 2026 16:35:00 +0000</pubDate>
+      <guid>https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_b918d53d-9a88-4b89-b9e2-97245d577baa</guid>
+    </item>
+    <item>
+      <title>Ask Paul: April 17 ⭐️</title>
+      <link>https://www.thurrott.com/paul/335062/ask-paul-april-17-2</link>
+      <description>A casual post about a weekend getaway, with no significant news or updates related to AI or tech. It serves as a light-hearted break from the usual content.</description>
       <category>Apple</category>
-      <pubDate>Fri, 17 Apr 2026 11:07:16 +0000</pubDate>
-      <guid>https://www.ilounge.com/news/apple/apple-creating-different-styles-for-smart-glasses</guid>
+      <pubDate>Fri, 17 Apr 2026 16:34:02 +0000</pubDate>
+      <guid>https://www.thurrott.com/paul/335062/ask-paul-april-17-2</guid>
     </item>
     <item>
-      <title>Nvidia AI chip rivals attract record funding as competition heats up</title>
-      <link>https://www.cnbc.com/2026/04/17/nvidia-ai-chip-rivals-funding-euclyd-fractile.html</link>
-      <description>Startups challenging Nvidia's dominance in AI chips are attracting record funding, indicating a competitive shift in the semiconductor industry.</description>
-      <category>OpenAI</category>
-      <pubDate>Fri, 17 Apr 2026 11:06:46 +0000</pubDate>
-      <guid>https://www.cnbc.com/2026/04/17/nvidia-ai-chip-rivals-funding-euclyd-fractile.html</guid>
-    </item>
-    <item>
-      <title>Olivia Rodrigo Daydreams About Her Crush in “Drop Dead” Lyrics</title>
-      <link>https://www.cosmopolitan.com/entertainment/celebs/a71017938/olivia-rodrigo-drop-dead-lyrics-meaning/</link>
-      <description>Olivia Rodrigo's new song 'Drop Dead' explores themes of infatuation, with lyrics reflecting her daydreams about a crush.</description>
-      <category>Google</category>
-      <pubDate>Fri, 17 Apr 2026 11:04:29 +0000</pubDate>
-      <guid>https://www.cosmopolitan.com/entertainment/celebs/a71017938/olivia-rodrigo-drop-dead-lyrics-meaning/</guid>
-    </item>
-    <item>
-      <title>I went to an AI conference and got a crash course in middle management</title>
-      <link>https://www.businessinsider.com/ai-agent-management-software-engineer-openai-anthropic-google-coding-2026-4</link>
-      <description>An AI conference revealed significant changes in software engineering roles, emphasizing that professionals will increasingly manage AI agents.</description>
-      <category>Top Stories</category>
-      <pubDate>Fri, 17 Apr 2026 11:04:13 +0000</pubDate>
-      <guid>https://www.businessinsider.com/ai-agent-management-software-engineer-openai-anthropic-google-coding-2026-4</guid>
-    </item>
-    <item>
-      <title>Mythos and Cybersecurity</title>
-      <link>https://www.schneier.com/blog/archives/2026/04/mythos-and-cybersecurity.html</link>
-      <description>Anthropic has decided not to release its Claude Mythos Preview AI model due to its advanced capabilities in identifying software vulnerabilities, citing safety concerns. This decision highlights the potential risks associated with powerful AI technologies.</description>
-      <category>OpenAI</category>
-      <pubDate>Fri, 17 Apr 2026 11:02:52 +0000</pubDate>
-      <guid>https://www.schneier.com/blog/archives/2026/04/mythos-and-cybersecurity.html</guid>
-    </item>
-    <item>
-      <title>NanoClaw partners with Vercel to deliver one-click approvals for AI agents working on sensitive tasks</title>
-      <link>https://siliconangle.com/2026/04/17/nanoclaw-partners-vercel-deliver-one-click-approvals-ai-agents-working-sensitive-tasks/</link>
-      <description>NanoCo has partnered with Vercel to enhance trust in AI agents by enabling one-click approvals for sensitive tasks, addressing a key issue in AI deployment. This collaboration aims to streamline processes while ensuring security.</description>
-      <category>OpenAI</category>
-      <pubDate>Fri, 17 Apr 2026 11:00:38 +0000</pubDate>
-      <guid>https://siliconangle.com/2026/04/17/nanoclaw-partners-vercel-deliver-one-click-approvals-ai-agents-working-sensitive-tasks/</guid>
-    </item>
-    <item>
-      <title>Google and Pentagon in talks to run custom AI chips inside classified environments — Google pushes for tight controls for TPUs surrounding use for mass surveillance and autonomous weapons</title>
-      <link>https://www.tomshardware.com/tech-industry/artificial-intelligence/google-and-pentagon-in-talks-to-run-tpus-inside-classified-environments</link>
-      <description>Google is in discussions with the Pentagon to deploy its custom AI chips, Gemini, in classified environments, focusing on strict controls for sensitive applications like surveillance. This move could significantly impact military AI capabilities.</description>
-      <category>OpenAI</category>
-      <pubDate>Fri, 17 Apr 2026 11:00:00 +0000</pubDate>
-      <guid>https://www.tomshardware.com/tech-industry/artificial-intelligence/google-and-pentagon-in-talks-to-run-tpus-inside-classified-environments</guid>
-    </item>
-    <item>
-      <title>Google wipes out 602 million scam ads with Gemini on duty</title>
-      <link>https://www.helpnetsecurity.com/2026/04/17/google-gemini-harmful-ads-blocking/</link>
-      <description>Google reports that its Gemini AI models have successfully blocked 602 million scam ads, showcasing their effectiveness in combating deceptive advertising practices. This reflects the growing need for AI in digital security.</description>
-      <category>Google</category>
-      <pubDate>Fri, 17 Apr 2026 10:59:38 +0000</pubDate>
-      <guid>https://www.helpnetsecurity.com/2026/04/17/google-gemini-harmful-ads-blocking/</guid>
-    </item>
-    <item>
-      <title>sie-langchain 0.2.0</title>
-      <link>https://pypi.org/project/sie-langchain/0.2.0/</link>
-      <description>The release of SIE integration for LangChain marks an update in the AI development framework, enhancing its capabilities for developers. This integration aims to improve the functionality of AI applications.</description>
-      <category>Open Source</category>
-      <pubDate>Fri, 17 Apr 2026 10:59:27 +0000</pubDate>
-      <guid>https://pypi.org/project/sie-langchain/0.2.0/</guid>
-    </item>
-    <item>
-      <title>Boardcon Tiny1126B is a smaller and lighter Rockchip RV1126B system-on-module, yet with more I/Os</title>
-      <link>https://www.cnx-software.com/2026/04/17/boardcon-tiny1126b-smaller-lighter-rockchip-rv1126b-system-on-module-yet-with-more-ios/</link>
-      <description>Boardcon has introduced the Tiny1126B, a compact system-on-module that is smaller yet offers more I/O options, targeting AI vision systems. This advancement supports the trend towards miniaturization in tech.</description>
-      <category>Meta</category>
-      <pubDate>Fri, 17 Apr 2026 10:57:49 +0000</pubDate>
-      <guid>https://www.cnx-software.com/2026/04/17/boardcon-tiny1126b-smaller-lighter-rockchip-rv1126b-system-on-module-yet-with-more-ios/</guid>
-    </item>
-    <item>
-      <title>Dew Drop – April 17, 2026 (#4649)</title>
-      <link>https://www.alvinashcraft.com/2026/04/17/dew-drop-april-17-2026-4649/</link>
-      <description>A newsletter update includes various tech links, including the introduction of Claude Opus 4.7 and updates on Visual Studio Code. This reflects ongoing developments in AI tools and software.</description>
-      <category>Microsoft</category>
-      <pubDate>Fri, 17 Apr 2026 10:56:51 +0000</pubDate>
-      <guid>https://www.alvinashcraft.com/2026/04/17/dew-drop-april-17-2026-4649/</guid>
-    </item>
-    <item>
-      <title>Top 10 AI Companies in Netherlands 2026: Leading Innovators Powering Europe's AI Talent Hub</title>
-      <link>https://www.ibtimes.com.au/top-10-ai-companies-netherlands-2026-leading-innovators-powering-europes-ai-talent-hub-1866857</link>
-      <description>The Netherlands is recognized as a leading AI hub in Europe, with a high density of AI professionals despite startup scaling challenges. This positions the country as a key player in the AI landscape.</description>
-      <category>Top Stories</category>
-      <pubDate>Fri, 17 Apr 2026 10:55:10 +0000</pubDate>
-      <guid>https://www.ibtimes.com.au/top-10-ai-companies-netherlands-2026-leading-innovators-powering-europes-ai-talent-hub-1866857</guid>
-    </item>
-    <item>
-      <title>Horoscope for Friday, April 17, 2026 - Chicago Sun-Times</title>
-      <link>https://slashdot.org/firehose.pl?op=view&amp;amp;id=181737530</link>
-      <description>A horoscope article providing daily astrological insights, unrelated to AI or tech developments. It serves as entertainment rather than informative content.</description>
-      <category>Google</category>
-      <pubDate>Fri, 17 Apr 2026 10:52:32 +0000</pubDate>
-      <guid>https://slashdot.org/firehose.pl?op=view&amp;amp;id=181737530</guid>
-    </item>
-    <item>
-      <title>torchtomo 0.2.0</title>
-      <link>https://pypi.org/project/torchtomo/0.2.0/</link>
-      <description>The release of torchtomo 0.2.0 introduces differentiable CT reconstruction capabilities in PyTorch, enhancing the toolkit for developers working on medical imaging applications. This update supports advancements in AI-driven healthcare.</description>
-      <category>Meta</category>
-      <pubDate>Fri, 17 Apr 2026 10:48:56 +0000</pubDate>
-      <guid>https://pypi.org/project/torchtomo/0.2.0/</guid>
-    </item>
-    <item>
-      <title>Google Blocks 8.3B Policy-Violating Ads in 2025, Launches Android 17 Privacy Overhaul</title>
-      <link>https://thehackernews.com/2026/04/google-blocks-83b-policy-violating-ads.html</link>
-      <description>Google announced updates to its Play policy aimed at enhancing user privacy and combating fraud, revealing it blocked over 8.3 billion ads and suspended nearly 25 million accounts in 2025.</description>
-      <category>Google</category>
-      <pubDate>Fri, 17 Apr 2026 10:47:00 +0000</pubDate>
-      <guid>https://thehackernews.com/2026/04/google-blocks-83b-policy-violating-ads.html</guid>
-    </item>
-    <item>
-      <title>litert-torch-nightly 0.9.0.dev20260417</title>
-      <link>https://pypi.org/project/litert-torch-nightly/0.9.0.dev20260417/</link>
-      <description>The release of litert-torch-nightly 0.9.0.dev20260417 introduces support for converting PyTorch models with LiteRT, enhancing model deployment efficiency.</description>
-      <category>Meta</category>
-      <pubDate>Fri, 17 Apr 2026 10:39:14 +0000</pubDate>
-      <guid>https://pypi.org/project/litert-torch-nightly/0.9.0.dev20260417/</guid>
-    </item>
-    <item>
-      <title>5 Crypto Marketing Mistakes to Stop Now</title>
-      <link>https://techbullion.com/stop-doing-these-5-things-in-crypto-marketing-we-see-them-every-week/</link>
-      <description>This guide highlights five common marketing mistakes in the crypto sector, emphasizing the importance of avoiding repetitive errors to optimize budget use.</description>
-      <category>Google</category>
-      <pubDate>Fri, 17 Apr 2026 10:32:09 +0000</pubDate>
-      <guid>https://techbullion.com/stop-doing-these-5-things-in-crypto-marketing-we-see-them-every-week/</guid>
-    </item>
-    <item>
-      <title>ragwise added to PyPI</title>
-      <link>https://pypi.org/project/ragwise/</link>
-      <description>The ragwise library has been added to PyPI, offering production-grade RAG features with hybrid search and streaming capabilities in a simplified format.</description>
-      <category>Open Source</category>
-      <pubDate>Fri, 17 Apr 2026 10:28:55 +0000</pubDate>
-      <guid>https://pypi.org/project/ragwise/</guid>
-    </item>
-    <item>
-      <title>Ethereum NFT platform Foundation shuts down after failed Blackdove sale</title>
-      <link>https://cointelegraph.com/news/foundation-nft-marketplace-shutdown-failed-sale</link>
-      <description>The Ethereum NFT platform Foundation is shutting down following a failed acquisition by Blackdove, marking the end of a notable marketplace in the NFT space.</description>
-      <category>Google</category>
-      <pubDate>Fri, 17 Apr 2026 10:26:23 +0000</pubDate>
-      <guid>https://cointelegraph.com/news/foundation-nft-marketplace-shutdown-failed-sale</guid>
-    </item>
-    <item>
-      <title>Snap Inc. plans major layoffs and cancels Perplexity deal</title>
-      <link>https://nextbigwhat.com/snap-inc-plans-major-layoffs-and-cancels-perplexity-deal/</link>
-      <description>Snap Inc. plans to lay off 15-20% of its workforce and has canceled a $400 million deal with Perplexity as part of a restructuring effort.</description>
-      <category>Perplexity</category>
-      <pubDate>Fri, 17 Apr 2026 10:25:05 +0000</pubDate>
-      <guid>https://nextbigwhat.com/snap-inc-plans-major-layoffs-and-cancels-perplexity-deal/</guid>
-    </item>
-    <item>
-      <title>Claude wants your passport as identity verification to access 'certain capabilities' — but promises it isn't using your face to train its models</title>
-      <link>https://www.techradar.com/pro/claude-wants-your-passport-as-identity-verification-to-access-certain-capabilities-but-promises-it-isnt-using-your-face-to-train-its-models</link>
-      <description>Claude will require users to provide government ID for identity verification to access certain features, clarifying it won't use facial data for model training.</description>
-      <category>AI Foundry</category>
-      <pubDate>Fri, 17 Apr 2026 10:25:00 +0000</pubDate>
-      <guid>https://www.techradar.com/pro/claude-wants-your-passport-as-identity-verification-to-access-certain-capabilities-but-promises-it-isnt-using-your-face-to-train-its-models</guid>
-    </item>
-    <item>
-      <title>Elon Musk vs Sam Altman Lawsuit Update: Ouster Bid and $134B Stakes as OpenAI Trial Looms in Days</title>
-      <link>https://www.ibtimes.com.au/elon-musk-vs-sam-altman-lawsuit-update-ouster-bid-134b-stakes-openai-trial-looms-days-1866854</link>
-      <description>Elon Musk has intensified his lawsuit against OpenAI and CEO Sam Altman, seeking to remove Altman as jury selection approaches for their trial.</description>
+      <title>Anthropic CEO Dario Amodei set to meet White House Chief of Staff Susie Wiles amid AI fight: reports</title>
+      <link>https://nypost.com/2026/04/17/business/anthropic-ceo-dario-amodei-set-to-meet-white-house-chief-of-staff-susie-wiles-amid-ai-fight-reports/</link>
+      <description>Dario Amodei, CEO of Anthropic, is set to meet with White House Chief of Staff Susie Wiles, suggesting a potential thaw in relations over AI policy discussions. This meeting could influence future AI regulations.</description>
       <category>xAI</category>
-      <pubDate>Fri, 17 Apr 2026 10:24:00 +0000</pubDate>
-      <guid>https://www.ibtimes.com.au/elon-musk-vs-sam-altman-lawsuit-update-ouster-bid-134b-stakes-openai-trial-looms-days-1866854</guid>
+      <pubDate>Fri, 17 Apr 2026 16:33:34 +0000</pubDate>
+      <guid>https://nypost.com/2026/04/17/business/anthropic-ceo-dario-amodei-set-to-meet-white-house-chief-of-staff-susie-wiles-amid-ai-fight-reports/</guid>
     </item>
     <item>
-      <title>Perplexity launches AI assistant for Mac users</title>
-      <link>https://nextbigwhat.com/perplexity-launches-ai-assistant-for-mac-users/</link>
-      <description>Perplexity has launched a new AI assistant for Mac users, enhancing functionality with advanced multi-model orchestration to improve user experience.</description>
-      <category>Perplexity</category>
-      <pubDate>Fri, 17 Apr 2026 10:23:28 +0000</pubDate>
-      <guid>https://nextbigwhat.com/perplexity-launches-ai-assistant-for-mac-users/</guid>
+      <title>Panic says the Playdate Catalog won't accept games made with generative AI</title>
+      <link>https://slashdot.org/firehose.pl?op=view&amp;amp;id=181739186</link>
+      <description>Panic, the company behind the Playdate console, announced it will no longer accept games that utilize generative AI for art in its catalog. This decision underscores a stance against generative AI in gaming.</description>
+      <category>Google</category>
+      <pubDate>Fri, 17 Apr 2026 16:32:06 +0000</pubDate>
+      <guid>https://slashdot.org/firehose.pl?op=view&amp;amp;id=181739186</guid>
     </item>
     <item>
-      <title>torchax 0.0.12.dev20260417</title>
-      <link>https://pypi.org/project/torchax/0.0.12.dev20260417/</link>
-      <description>The torchax library version 0.0.12.dev20260417 allows for running Jax and PyTorch together, facilitating interoperability between the two frameworks.</description>
+      <title>Intel launches Core Series 3 processors for more affordable laptops</title>
+      <link>https://www.gsmarena.com/intel_launches_core_series_3_processors_for_more_affordable_laptops-news-72423.php</link>
+      <description>Intel has launched its Core Series 3 processors aimed at more affordable laptops, complementing its recent Core Ultra Series. This move targets budget-conscious consumers and expands Intel's market reach.</description>
+      <category>NVIDIA</category>
+      <pubDate>Fri, 17 Apr 2026 16:29:02 +0000</pubDate>
+      <guid>https://www.gsmarena.com/intel_launches_core_series_3_processors_for_more_affordable_laptops-news-72423.php</guid>
+    </item>
+    <item>
+      <title>Salesforce Agentforce Contact Center Review: Strengths, Gaps and How It Compares to Rivals</title>
+      <link>https://www.cmswire.com/contact-center/salesforce-agentforce-contact-center-review-strengths-gaps-and-how-it-compares-to-rivals/</link>
+      <description>A detailed review of Salesforce's Agentforce Contact Center highlights its strengths and weaknesses in unifying CRM, AI, and workflows. The analysis provides insights into its competitive positioning in the market.</description>
+      <category>Amazon</category>
+      <pubDate>Fri, 17 Apr 2026 16:21:40 +0000</pubDate>
+      <guid>https://www.cmswire.com/contact-center/salesforce-agentforce-contact-center-review-strengths-gaps-and-how-it-compares-to-rivals/</guid>
+    </item>
+    <item>
+      <title>I'm spending 3 months coding the old way</title>
+      <link>https://miguelconner.substack.com/p/im-coding-by-hand</link>
+      <description>An individual shares their experience of coding manually for three months, reflecting on the challenges and insights gained from stepping away from automated tools. This personal journey emphasizes the value of traditional coding skills.</description>
       <category>Meta</category>
-      <pubDate>Fri, 17 Apr 2026 10:22:39 +0000</pubDate>
-      <guid>https://pypi.org/project/torchax/0.0.12.dev20260417/</guid>
+      <pubDate>Fri, 17 Apr 2026 16:19:53 +0000</pubDate>
+      <guid>https://miguelconner.substack.com/p/im-coding-by-hand</guid>
     </item>
     <item>
-      <title>Canva unveils new platform, transitions to ‘AI platform with design tools’ from ‘design platform with AI tools’</title>
-      <link>https://economictimes.indiatimes.com/tech/artificial-intelligence/canva-unveils-new-platform-transitions-to-ai-platform-with-design-tools-from-design-platform-with-ai-tools/articleshow/130329592.cms</link>
-      <description>Canva has launched its AI-native platform, Canva 2.0, marking a shift to an AI-first approach with new tools for users. This transformation aims to enhance design capabilities and attract a new generation of creators.</description>
-      <category>AI Foundry</category>
-      <pubDate>Fri, 17 Apr 2026 10:19:17 +0000</pubDate>
-      <guid>https://economictimes.indiatimes.com/tech/artificial-intelligence/canva-unveils-new-platform-transitions-to-ai-platform-with-design-tools-from-design-platform-with-ai-tools/articleshow/130329592.cms</guid>
-    </item>
-    <item>
-      <title>(VIDEO) Elon Musk Predicts Universal High Income and Deflation as AI Boom Reshapes Economy</title>
-      <link>https://www.ibtimes.com.au/video-elon-musk-predicts-universal-high-income-deflation-ai-boom-reshapes-economy-1866852</link>
-      <description>Elon Musk predicts that the rise of AI will lead to universal high income supported by government payments, sparking discussions about the future economic landscape. His views highlight the potential societal impacts of AI advancements.</description>
-      <category>xAI</category>
-      <pubDate>Fri, 17 Apr 2026 10:18:36 +0000</pubDate>
-      <guid>https://www.ibtimes.com.au/video-elon-musk-predicts-universal-high-income-deflation-ai-boom-reshapes-economy-1866852</guid>
-    </item>
-    <item>
-      <title>Avid to demonstrate use of Google’s agentic AI at NAB 2026</title>
-      <link>https://www.provideocoalition.com/avid-to-demonstrate-use-of-googles-agentic-ai-at-nab-2026/</link>
-      <description>Avid has partnered with Google Cloud to showcase the integration of Gemini models and Vertex AI into its software, aiming to streamline post-production processes in film and TV. This collaboration highlights the growing role of AI in media production.</description>
-      <category>Perplexity</category>
-      <pubDate>Fri, 17 Apr 2026 10:14:09 +0000</pubDate>
-      <guid>https://www.provideocoalition.com/avid-to-demonstrate-use-of-googles-agentic-ai-at-nab-2026/</guid>
-    </item>
-    <item>
-      <title>Bitcoin Breaks Above $75K, But Bears Refuse To Blink</title>
-      <link>http://www.newsbtc.com/bitcoin-news/bitcoin-breaks-above-75k-but-bears-refuse-to-blink/</link>
-      <description>Bitcoin has surged above $75,000, yet analysts note a lack of confidence in the rally as derivatives data shows bearish sentiment persists. This situation raises questions about Bitcoin's stability and market perception.</description>
-      <category>Perplexity</category>
-      <pubDate>Fri, 17 Apr 2026 10:13:56 +0000</pubDate>
-      <guid>http://www.newsbtc.com/bitcoin-news/bitcoin-breaks-above-75k-but-bears-refuse-to-blink/</guid>
-    </item>
-    <item>
-      <title>llama-index-vector-stores-endee 0.1.0b5</title>
-      <link>https://pypi.org/project/llama-index-vector-stores-endee/0.1.0b5/</link>
-      <description>The `llama-index-vector-stores-endee 0.1.0b5` release focuses on enhancing vector databases for efficient approximate nearest neighbor searches. This update aims to improve data retrieval speeds and capabilities.</description>
+      <title>i6-models 1.20260417.181141</title>
+      <link>https://pypi.org/project/i6-models/1.20260417.181141/</link>
+      <description>The release of i6-models 1.20260417.181141 introduces a new collection of neural network models for PyTorch, enhancing tools for developers. This update signifies ongoing advancements in AI model accessibility.</description>
       <category>Meta</category>
-      <pubDate>Fri, 17 Apr 2026 10:04:05 +0000</pubDate>
-      <guid>https://pypi.org/project/llama-index-vector-stores-endee/0.1.0b5/</guid>
+      <pubDate>Fri, 17 Apr 2026 16:17:36 +0000</pubDate>
+      <guid>https://pypi.org/project/i6-models/1.20260417.181141/</guid>
     </item>
     <item>
-      <title>abstract-hugpy 0.1.169</title>
-      <link>https://pypi.org/project/abstract-hugpy/0.1.169/</link>
-      <description>The `abstract-hugpy 0.1.169` module facilitates the use of Hugging Face models, enhancing accessibility for developers. This tool aims to streamline the integration of AI models into applications.</description>
-      <category>Open Source</category>
-      <pubDate>Fri, 17 Apr 2026 10:03:21 +0000</pubDate>
-      <guid>https://pypi.org/project/abstract-hugpy/0.1.169/</guid>
-    </item>
-    <item>
-      <title>iPhone 18 Pro colors revealed: Exclusive look at Apple’s 2026 models</title>
-      <link>https://www.macworld.com/article/3116701/iphone-18-pro-colors-revealed-exclusive-look-at-apples-2026-models.html</link>
-      <description>Leaks reveal details about the upcoming iPhone 18 Pro and its new color options, alongside a rumored foldable iPhone Ultra. This information builds anticipation for Apple's 2026 product lineup.</description>
+      <title>Marvel Rivals now finally lets us play as Black Cat, but her awful posture makes me worry for her back — 'I just know her spine is killing her!'</title>
+      <link>https://www.techradar.com/gaming/marvel-rivals-now-finally-lets-us-play-as-black-cat-but-her-awful-posture-makes-me-worry-for-her-back-i-just-know-her-spine-is-killing-her</link>
+      <description>The latest update to Marvel Rivals introduces Black Cat as a playable character, but her awkward posture in the game has sparked concerns among fans. This highlights the ongoing discussions about character design in gaming.</description>
       <category>Rumours &amp; Gossip</category>
-      <pubDate>Fri, 17 Apr 2026 10:00:00 +0000</pubDate>
-      <guid>https://www.macworld.com/article/3116701/iphone-18-pro-colors-revealed-exclusive-look-at-apples-2026-models.html</guid>
+      <pubDate>Fri, 17 Apr 2026 16:15:27 +0000</pubDate>
+      <guid>https://www.techradar.com/gaming/marvel-rivals-now-finally-lets-us-play-as-black-cat-but-her-awful-posture-makes-me-worry-for-her-back-i-just-know-her-spine-is-killing-her</guid>
     </item>
     <item>
-      <title>Spatie Guidelines as AI skills</title>
-      <link>https://spatie.be/blog/spatie-guidelines-as-ai-skills?utm_source=laravelnews&amp;utm_medium=link&amp;utm_campaign=laravelnews</link>
-      <description>Spatie has developed AI skills based on its guidelines, enabling compatibility with various coding assistants. This initiative aims to enhance developer productivity and streamline coding practices.</description>
-      <category>GitHub Copilot</category>
-      <pubDate>Fri, 17 Apr 2026 10:00:00 +0000</pubDate>
-      <guid>https://spatie.be/blog/spatie-guidelines-as-ai-skills?utm_source=laravelnews&amp;utm_medium=link&amp;utm_campaign=laravelnews</guid>
+      <title>The Race for Fashion Smart Glasses Is On</title>
+      <link>https://www.cnet.com/tech/mobile/smart-glasses-fashion-brands-race-gucci-google-meta/</link>
+      <description>The competition for fashion smart glasses is heating up, with brands like Gucci potentially entering the market. This trend mirrors the early days of smartwatches, indicating a growing interest in wearable tech.</description>
+      <category>Rumours &amp; Gossip</category>
+      <pubDate>Fri, 17 Apr 2026 16:14:21 +0000</pubDate>
+      <guid>https://www.cnet.com/tech/mobile/smart-glasses-fashion-brands-race-gucci-google-meta/</guid>
     </item>
     <item>
-      <title>EU awards its €180 million sovereign cloud contract to four European providers</title>
-      <link>https://thenextweb.com/news/eu-sovereign-cloud-180-million-awarded/</link>
-      <description>The EU has awarded a €180 million sovereign cloud contract to four providers, aiming to enhance data sovereignty and security within Europe. This initiative reflects the EU's commitment to developing a robust cloud infrastructure.</description>
-      <category>Mistral</category>
-      <pubDate>Fri, 17 Apr 2026 09:59:10 +0000</pubDate>
-      <guid>https://thenextweb.com/news/eu-sovereign-cloud-180-million-awarded/</guid>
-    </item>
-    <item>
-      <title>AIGEG: MeitY’s new AI governance body excludes regulators recommended by its own AI guidelines</title>
-      <link>https://www.medianama.com/2026/04/223-aigeg-meitys-ai-governance-body-excludes-regulators-recommended-ai-guidelines/</link>
-      <description>India's new AI governance body, AIGEG, has been criticized for excluding independent regulators from its framework, raising concerns about oversight and accountability in AI regulation. This decision may impact the effectiveness of AI governance in the country.</description>
+      <title>Fox News AI Newsletter: Tech company cuts 1,000 jobs in AI-driven restructuring</title>
+      <link>https://www.foxnews.com/tech/ai-newsletter-tech-company-cuts-1000-jobs-ai-driven-restructuring</link>
+      <description>Fox News reports that a tech company has laid off 1,000 employees as part of an AI-driven restructuring effort. This reflects the broader impact of AI on employment in the tech industry.</description>
       <category>Top Stories</category>
-      <pubDate>Fri, 17 Apr 2026 09:57:44 +0000</pubDate>
-      <guid>https://www.medianama.com/2026/04/223-aigeg-meitys-ai-governance-body-excludes-regulators-recommended-ai-guidelines/</guid>
+      <pubDate>Fri, 17 Apr 2026 16:09:27 +0000</pubDate>
+      <guid>https://www.foxnews.com/tech/ai-newsletter-tech-company-cuts-1000-jobs-ai-driven-restructuring</guid>
+    </item>
+    <item>
+      <title>sigil-sdk-gemini 0.1.3</title>
+      <link>https://pypi.org/project/sigil-sdk-gemini/0.1.3/</link>
+      <description>The release of sigil-sdk-gemini 0.1.3 provides new helper wrappers for the Sigil Python SDK, aimed at enhancing development efficiency. This update contributes to the growing ecosystem of AI tools.</description>
+      <category>Google</category>
+      <pubDate>Fri, 17 Apr 2026 16:03:26 +0000</pubDate>
+      <guid>https://pypi.org/project/sigil-sdk-gemini/0.1.3/</guid>
+    </item>
+    <item>
+      <title>Steven Soderbergh’s AI contradiction</title>
+      <link>https://www.salon.com/2026/04/17/steven-soderberghs-ai-contradiction/</link>
+      <description>Filmmaker Steven Soderbergh expresses confusion over the backlash against AI in art, while his new film underscores the importance of human creativity. This raises questions about the role of AI in creative industries.</description>
+      <category>xAI</category>
+      <pubDate>Fri, 17 Apr 2026 16:00:42 +0000</pubDate>
+      <guid>https://www.salon.com/2026/04/17/steven-soderberghs-ai-contradiction/</guid>
+    </item>
+    <item>
+      <title>Apple now supports multiple AI chatbot apps on CarPlay</title>
+      <link>https://macdailynews.com/2026/04/17/apple-now-supports-multiple-ai-chatbot-apps-on-carplay/</link>
+      <description>Apple's latest iOS update (26.4) now supports multiple AI chatbot apps on CarPlay, starting with ChatGPT. This integration marks a significant step in enhancing user interaction with AI on mobile devices.</description>
+      <category>Google</category>
+      <pubDate>Fri, 17 Apr 2026 16:00:35 +0000</pubDate>
+      <guid>https://macdailynews.com/2026/04/17/apple-now-supports-multiple-ai-chatbot-apps-on-carplay/</guid>
+    </item>
+    <item>
+      <title>iTunes Gamed Again with Another AI Singer at Number 1!</title>
+      <link>https://www.showbiz411.com/2026/04/16/exclusive-itunes-gamed-again-with-another-ai-singer-at-number-1-ingarose-follows-eddie-dalton-as-fake-hit-performer</link>
+      <description>An AI-generated singer named Eddie Dalton has topped the iTunes charts with multiple hits, showcasing the growing influence of AI in the music industry. This trend raises questions about the future of music creation.</description>
+      <category>AI Foundry</category>
+      <pubDate>Fri, 17 Apr 2026 16:00:13 +0000</pubDate>
+      <guid>https://www.showbiz411.com/2026/04/16/exclusive-itunes-gamed-again-with-another-ai-singer-at-number-1-ingarose-follows-eddie-dalton-as-fake-hit-performer</guid>
+    </item>
+    <item>
+      <title>Canva Announces Anthropic Collaboration to Bring AI-Powered Design to Millions</title>
+      <link>https://financialpost.com/pmn/business-wire-news-releases-pmn/canva-announces-anthropic-collaboration-to-bring-ai-powered-design-to-millions</link>
+      <description>Canva has announced a collaboration with Anthropic to integrate AI-powered design tools into its platform, allowing users to create editable designs from AI-generated ideas. This partnership enhances Canva's offerings in visual communication.</description>
+      <category>AI Foundry</category>
+      <pubDate>Fri, 17 Apr 2026 15:55:53 +0000</pubDate>
+      <guid>https://financialpost.com/pmn/business-wire-news-releases-pmn/canva-announces-anthropic-collaboration-to-bring-ai-powered-design-to-millions</guid>
+    </item>
+    <item>
+      <title>iOS 27 rumored to bring new design changes in two key areas - 9to5Mac</title>
+      <link>https://slashdot.org/firehose.pl?op=view&amp;amp;id=181738966</link>
+      <description>Rumors about iOS 27 suggest significant design changes and new intelligence features, indicating Apple's continued commitment to enhancing user experience. This update could redefine how users interact with their devices.</description>
+      <category>Apple</category>
+      <pubDate>Fri, 17 Apr 2026 15:52:40 +0000</pubDate>
+      <guid>https://slashdot.org/firehose.pl?op=view&amp;amp;id=181738966</guid>
     </item>
   </channel>
 </rss>
