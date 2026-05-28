@@ -3,7 +3,13 @@
     "name": "Azure Blog",
     "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
     "category": "Microsoft",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
+    "error": "<unknown>:14:71: not well-formed (invalid token)"
+  },
+  {
+    "name": "Microsoft 365 Copilot Blog",
+    "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot/bg-p/Microsoft365CopilotBlog/rss/board",
+    "category": "M365 Copilot",
+    "error": "HTTPSConnectionPool(host='techcommunity.microsoft.com', port=443): Read timed out. (read timeout=15)"
   },
   {
     "name": "Copilot Studio Blog",
@@ -27,6 +33,6 @@
     "name": "Azure AI Services Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Services-blog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   }
 ]
