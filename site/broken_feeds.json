@@ -3,7 +3,7 @@
     "name": "Azure Blog",
     "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
     "category": "Microsoft",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "Copilot Studio Blog",
@@ -21,18 +21,12 @@
     "name": "AI Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
+    "error": "<unknown>:14:71: not well-formed (invalid token)"
   },
   {
     "name": "Azure AI Services Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Services-blog/rss/board",
     "category": "AI Foundry",
-    "error": "HTTPSConnectionPool(host='techcommunity.microsoft.com', port=443): Read timed out. (read timeout=15)"
-  },
-  {
-    "name": "Hugging Face Blog",
-    "url": "https://huggingface.co/blog/feed.xml",
-    "category": "Open Source",
-    "error": "429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   }
 ]
