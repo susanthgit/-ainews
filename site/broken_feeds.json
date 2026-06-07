@@ -6,12 +6,6 @@
     "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
-    "name": "Microsoft 365 Blog",
-    "url": "https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/rss/board",
-    "category": "Microsoft",
-    "error": "502 Server Error: Bad Gateway for url: https://techcommunity.microsoft.com/category/microsoft365/blog/microsoft_365blog"
-  },
-  {
     "name": "Copilot Studio Blog",
     "url": "https://techcommunity.microsoft.com/t5/copilot-studio-blog/bg-p/CopilotStudioBlog/rss/board",
     "category": "Copilot Studio",
