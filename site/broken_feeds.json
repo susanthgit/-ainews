@@ -1,5 +1,11 @@
 [
   {
+    "name": "Microsoft AI Blog",
+    "url": "https://blogs.microsoft.com/ai/feed/",
+    "category": "Microsoft",
+    "error": "410 Client Error: Gone for url: https://blogs.microsoft.com/ai/feed/"
+  },
+  {
     "name": "Azure Blog",
     "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
     "category": "Microsoft",
@@ -9,7 +15,7 @@
     "name": "Copilot Studio Blog",
     "url": "https://techcommunity.microsoft.com/t5/copilot-studio-blog/bg-p/CopilotStudioBlog/rss/board",
     "category": "Copilot Studio",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "Power Platform Blog",
@@ -28,11 +34,5 @@
     "url": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Services-blog/rss/board",
     "category": "AI Foundry",
     "error": "<unknown>:14:71: not well-formed (invalid token)"
-  },
-  {
-    "name": "Hugging Face Blog",
-    "url": "https://huggingface.co/blog/feed.xml",
-    "category": "Open Source",
-    "error": "429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml"
   }
 ]
