@@ -15,13 +15,13 @@
     "name": "Azure Blog",
     "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
     "category": "Microsoft",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
+    "error": "502 Server Error: Bad Gateway for url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/auth/oidcss/sso_login_redirec"
   },
   {
     "name": "Copilot Studio Blog",
     "url": "https://techcommunity.microsoft.com/t5/copilot-studio-blog/bg-p/CopilotStudioBlog/rss/board",
     "category": "Copilot Studio",
-    "error": "502 Server Error: Bad Gateway for url: https://techcommunity.microsoft.com/category/-/blog/CopilotStudioBlog"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "Power Platform Blog",
