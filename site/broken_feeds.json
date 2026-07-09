@@ -1,11 +1,5 @@
 [
   {
-    "name": "The Register AI",
-    "url": "https://www.theregister.com/headlines.atom",
-    "category": "Top Stories",
-    "error": "403 Client Error: Forbidden for url: https://api.theregister.com/api/v1/article?orderBy=published&site_id=2&remapper=rss"
-  },
-  {
     "name": "Microsoft AI Blog",
     "url": "https://blogs.microsoft.com/ai/feed/",
     "category": "Microsoft",
@@ -15,7 +9,7 @@
     "name": "Azure Blog",
     "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
     "category": "Microsoft",
-    "error": "502 Server Error: Bad Gateway for url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/auth/oidcss/sso_login_redirec"
+    "error": "<unknown>:14:71: not well-formed (invalid token)"
   },
   {
     "name": "Copilot Studio Blog",
@@ -33,12 +27,18 @@
     "name": "AI Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
+    "error": "<unknown>:14:71: not well-formed (invalid token)"
   },
   {
     "name": "Azure AI Services Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Services-blog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
+  },
+  {
+    "name": "Mistral AI Blog",
+    "url": "https://raw.githubusercontent.com/0xSMW/rss-feeds/main/feeds/feed_mistral_news.xml",
+    "category": "Mistral",
+    "error": "429 Client Error: Too Many Requests for url: https://raw.githubusercontent.com/0xSMW/rss-feeds/main/feeds/feed_mistral_n"
   }
 ]
