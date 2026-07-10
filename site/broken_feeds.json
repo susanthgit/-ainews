@@ -21,18 +21,18 @@
     "name": "Power Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/power-platform-blog/bg-p/powerplatformblog/rss/board",
     "category": "Copilot Studio",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "AI Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "Azure AI Services Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/Azure-AI-Services-blog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   }
 ]
