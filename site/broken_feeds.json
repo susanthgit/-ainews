@@ -15,13 +15,13 @@
     "name": "Copilot Studio Blog",
     "url": "https://techcommunity.microsoft.com/t5/copilot-studio-blog/bg-p/CopilotStudioBlog/rss/board",
     "category": "Copilot Studio",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
+    "error": "<unknown>:14:71: not well-formed (invalid token)"
   },
   {
     "name": "Power Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/power-platform-blog/bg-p/powerplatformblog/rss/board",
     "category": "Copilot Studio",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "AI Platform Blog",
