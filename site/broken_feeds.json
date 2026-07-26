@@ -3,7 +3,7 @@
     "name": "The Register AI",
     "url": "https://www.theregister.com/headlines.atom",
     "category": "Top Stories",
-    "error": "<unknown>:8:22: not well-formed (invalid token)"
+    "error": "403 Client Error: Forbidden for url: https://www.theregister.com/headlines.atom"
   },
   {
     "name": "Microsoft AI Blog",
@@ -15,7 +15,7 @@
     "name": "Azure Blog",
     "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
     "category": "Microsoft",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "Copilot Studio Blog",
@@ -27,7 +27,7 @@
     "name": "Power Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/power-platform-blog/bg-p/powerplatformblog/rss/board",
     "category": "Copilot Studio",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
+    "error": "<unknown>:14:71: not well-formed (invalid token)"
   },
   {
     "name": "AI Platform Blog",
