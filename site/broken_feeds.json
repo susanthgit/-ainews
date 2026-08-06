@@ -1,11 +1,5 @@
 [
   {
-    "name": "The Register AI",
-    "url": "https://www.theregister.com/headlines.atom",
-    "category": "Top Stories",
-    "error": "<unknown>:8:22: not well-formed (invalid token)"
-  },
-  {
     "name": "Microsoft AI Blog",
     "url": "https://blogs.microsoft.com/ai/feed/",
     "category": "Microsoft",
@@ -39,7 +33,7 @@
     "name": "AI Platform Blog",
     "url": "https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog/rss/board",
     "category": "AI Foundry",
-    "error": "<unknown>:14:73: not well-formed (invalid token)"
+    "error": "<unknown>:14:71: not well-formed (invalid token)"
   },
   {
     "name": "Azure AI Services Blog",
