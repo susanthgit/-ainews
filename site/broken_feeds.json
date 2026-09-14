@@ -9,13 +9,13 @@
     "name": "Azure Blog",
     "url": "https://techcommunity.microsoft.com/t5/azure-blog/bg-p/AzureBlog/rss/board",
     "category": "Microsoft",
-    "error": "<unknown>:14:71: not well-formed (invalid token)"
+    "error": "<unknown>:14:73: not well-formed (invalid token)"
   },
   {
     "name": "Microsoft 365 Copilot Blog",
     "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot/bg-p/Microsoft365CopilotBlog/rss/board",
     "category": "M365 Copilot",
-    "error": "<unknown>:402:5236: undefined entity"
+    "error": "<unknown>:404:5236: undefined entity"
   },
   {
     "name": "Copilot Studio Blog",
@@ -46,11 +46,5 @@
     "url": "https://venturebeat.com/category/ai/feed/",
     "category": "Industry",
     "error": "429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/"
-  },
-  {
-    "name": "ZDNet AI",
-    "url": "https://www.zdnet.com/topic/artificial-intelligence/rss.xml",
-    "category": "Industry",
-    "error": "404 Client Error: Not Found for url: https://www.zdnet.com/news/rss.xml"
   }
 ]
